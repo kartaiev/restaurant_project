@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/_redirects" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +116,7 @@
       <workItem from="1576239339672" duration="2007000" />
       <workItem from="1576242061451" duration="245000" />
       <workItem from="1576242354322" duration="299000" />
-      <workItem from="1576242715741" duration="2054000" />
+      <workItem from="1576242715741" duration="3840000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1576241091900</created>
@@ -132,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576249586221</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="video-background">
+      <created>1576249805587</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1576249805587</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,17 +148,22 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="video-background" />
+    <option name="LAST_COMMIT_MESSAGE" value="video-background" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="348" y="207" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576252651583">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="348" y="207" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1280.777@0.23.1280.777" timestamp="1576252651583" />
     <state x="315" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576232184807">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="315" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.777@0.23.1280.777" timestamp="1576232184807" />
-    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1576249585860">
+    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1576249805313">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1576249585860" />
+    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1576249805313" />
     <state x="248" y="152" key="EditFileWatcherDialog" timestamp="1576193894905">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -176,14 +188,14 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1278" height="191" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1576248543675" />
-    <state x="40" y="23" key="SettingsEditor" timestamp="1576249395034">
+    <state x="40" y="23" key="SettingsEditor" timestamp="1576250232792">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="40" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1576249395034" />
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1576249596186">
+    <state x="40" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1576250232792" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1576249815669">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1576249596186" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1576249815669" />
     <state x="223" y="205" key="com.intellij.ide.util.TipDialog" timestamp="1576242719587">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
