@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,600&display=swap');
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  z-index: 1;
+
+  .nav-bar__wrap {
+    width: 80%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+      width: 60%;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      li {
+        border-right: rgba(244, 165, 6, 0.3) 1px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 7%;
+
+        a{
+          text-decoration: none;
+          color: #F4A506;
+          font-family: 'Western', serif;
+        }
+
+        a:hover {
+          color: #9D231F;
+        }
+      }
+
+      li:last-child {
+        border-right: none;
+      }
+
+    }
+
+    .rico {
+      width: 10%;
+    }
+  }
+}
