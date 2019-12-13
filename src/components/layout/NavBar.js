@@ -10,7 +10,7 @@ export const NavBar = () => {
         <div className="logo__group">
           <img className="steakhouse" src={steakhouse} alt="logo" />
           <p className="logo__title">
-            Holy <br /> Smoke
+            Holy <br /> Smokes
           </p>
         </div>
 
