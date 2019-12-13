@@ -3,10 +3,12 @@
 .video-wrapper {
     width: 100%;
     height: 100vh;
+
     position: relative;
 
     .title {
         position: absolute;
+        margin-top: 5vh;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -14,7 +16,6 @@
         width: 35%;
         z-index: 5;
     }
-
 }
 
 .video-wrapper::after {
