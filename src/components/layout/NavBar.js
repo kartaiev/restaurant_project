@@ -1,13 +1,19 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './NavBar.scss';
-import rico from '../../assets/images/steakhouse.png';
+import steakhouse from '../../assets/images/steakhouse.png';
 
 export const NavBar = () => {
   return (
     <div className="nav-bar">
       <div className="nav-bar__wrap">
-        <img className="rico" src={rico} alt="rico" />
+        <div className="logo__group">
+          <img className="steakhouse" src={steakhouse} alt="logo" />
+          <p className="logo__title">
+            Holy <br /> Smoke
+          </p>
+        </div>
+
         <ul>
           <li>
             <NavLink to="/about">About</NavLink>

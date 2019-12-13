@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,600&display=swap');
 @import "src/colors";
+
 .nav-bar {
   position: fixed;
   top: 0;
@@ -18,6 +18,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .logo__group {
+      width: 15%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .logo__title {
+        color: $main-hover-color;
+        font-family: Western, serif;
+        font-size: 2.1rem;
+      }
+    }
+
 
     ul {
       width: 60%;
@@ -47,8 +61,8 @@
 
     }
 
-    .rico {
-      width: 10%;
+    .steakhouse {
+      height: 15vh;
     }
   }
 }

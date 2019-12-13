@@ -1,7 +1,33 @@
+@import "src/colors";
+
 .video-wrapper {
     width: 100%;
     height: 100vh;
     position: relative;
+
+    .title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #9D231F;
+        font-size: 7rem;
+        z-index: 5;
+        font-family: Western, serif;
+
+    }
+
+    //.logo{
+    //    position: absolute;
+    //    top: 50%;
+    //    left: 50%;
+    //    transform: translate(-50%, -50%);
+    //    z-index: 4;
+    //    width: 30%;
+    //    background-color: rgba(7, 7, 7, 0.2);
+    //    backdrop-filter: blur(8px);
+    //    border-radius: 50%;
+    //}
 }
 
 .video-wrapper::after {
@@ -23,13 +49,5 @@
     object-fit: cover;
 }
 
-.logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 20%;
-    background-color: rgba(11, 11, 11, 0.5);
-    backdrop-filter: blur(8px);
-    border-radius: 50%;
-}
+
+
