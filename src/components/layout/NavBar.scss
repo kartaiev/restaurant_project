@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,600&display=swap');
-
+@import "src/colors";
 .nav-bar {
   position: fixed;
   top: 0;
@@ -13,7 +13,7 @@
   z-index: 1;
 
   .nav-bar__wrap {
-    width: 80%;
+    width: 90%;
     height: 15vh;
     display: flex;
     justify-content: space-between;
@@ -27,20 +27,17 @@
       align-items: center;
 
       li {
-        border-right: rgba(244, 165, 6, 0.3) 1px solid;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        border-right: rgba($main-color, .3) 1px solid;
         padding: 0 7%;
 
         a{
           text-decoration: none;
-          color: #F4A506;
+          color: $main-color;
           font-family: 'Western', serif;
         }
 
         a:hover {
-          color: #9D231F;
+          color: $main-hover-color;
         }
       }
 

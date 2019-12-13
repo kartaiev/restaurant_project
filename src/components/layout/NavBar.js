@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './NavBar.scss';
-import rico from '../steakhouse.png';
+import rico from '../../assets/images/steakhouse.png';
 
 export const NavBar = () => {
   return (
