@@ -1,0 +1,63 @@
+@import "src/colors";
+
+.nav-btn {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 35px;
+  justify-content: center;
+  position: fixed;
+  right: 1.5rem;
+  top: 1.5rem;
+  transition: 1s;
+  z-index: 10;
+
+  .nav-line {
+    background: linear-gradient(
+                    to right,
+                    $main-hover-color 50%,
+                    $main-color 50%
+    );
+    background-size: 200% 100%;
+    transition: all 0.5s ease-out;
+    height: 2px;
+    margin-bottom: 5px;
+    width: 2rem;
+  }
+
+  .nav-line {
+    background-position: right bottom;
+  }
+
+  &.open {
+    transform: rotate(180deg);
+    transition: 1s;
+
+    .nav-line:nth-child(1) {
+      background-position: left bottom;
+      height: 3px;
+      margin-bottom: 5px;
+      transform: rotate(45deg) translate(5px, 5px);
+      transition: 1s;
+      width: 2rem;
+    }
+
+    .nav-line:nth-child(2) {
+      background-position: left bottom;
+      height: 3px;
+      margin-bottom: 5px;
+      opacity: 0;
+      transition: 1s;
+      width: 2rem;
+    }
+
+    .nav-line:nth-child(3) {
+      background-position: left bottom;
+      height: 3px;
+      margin-bottom: 5px;
+      transform: rotate(-45deg) translate(7px, -6px);
+      transition: 1s;
+      width: 2rem;
+    }
+  }
+}
