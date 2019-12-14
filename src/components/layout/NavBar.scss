@@ -60,6 +60,7 @@
 
         .link {
           text-decoration: none;
+          @include menu-font;
           color: $main-color;
           @include ease-out;
 
