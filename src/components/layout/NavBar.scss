@@ -38,7 +38,7 @@
 
       @for $i from 1 through 4 {
         .li-style:nth-child(#{$i}) {
-          transition-delay: ($i) * 0.1s;
+          transition-delay: ($i + 1) * 0.1s;
           transition-duration: 0.5s;
         }
       }
