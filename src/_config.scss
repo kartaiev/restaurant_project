@@ -1,7 +1,7 @@
 //Colors
 $main-color: #FFB915;
 $main-hover-color: #9D231F;
-$overlay: #121212;
+$overlay: rgba(#121212, .85);
 
 //Mixins
 @mixin ease-out {

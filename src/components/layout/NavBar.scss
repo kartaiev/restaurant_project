@@ -9,13 +9,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba($overlay, 0.8);
+  background-color: $overlay;
   backdrop-filter: blur(8px);
   z-index: 6;
   @include ease-out;
+  transform: translateY(-110%);
 
-  &.close {
-    transform: translate3d(0, -110%, 0);
+  &.open {
+    transform: translateY(0);
     @include ease-out;
   }
 
@@ -44,6 +45,7 @@
 
       .li-style {
         position: relative;
+        padding-bottom: 5px;
 
         &::after {
           display: block;
@@ -59,6 +61,7 @@
         .link {
           text-decoration: none;
           color: $main-color;
+          @include ease-out;
 
           &:hover {
             color: $main-hover-color;
@@ -68,8 +71,7 @@
 
       .li-style {
         &.close {
-          transform: translate3d(-110%, 0, 0);
-          @include ease-out;
+          transform: translateX(-110%);
         }
       }
     }
