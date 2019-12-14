@@ -118,7 +118,7 @@
       <workItem from="1576242354322" duration="299000" />
       <workItem from="1576242715741" duration="14170000" />
       <workItem from="1576272974342" duration="441000" />
-      <workItem from="1576273628395" duration="25361000" />
+      <workItem from="1576273628395" duration="25613000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1576241091900</created>
@@ -211,7 +211,21 @@
       <option name="project" value="LOCAL" />
       <updated>1576354940162</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="nav-bar elements animation">
+      <created>1576355101114</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1576355101114</updated>
+    </task>
+    <task id="LOCAL-00015" summary="nav-bar elements animation">
+      <created>1576355167147</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1576355167147</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,10 +253,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="315" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.777@0.23.1280.777" timestamp="1576232184807" />
-    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1576355100601">
+    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1576355166874">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1576355100601" />
+    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1576355166874" />
     <state x="248" y="152" key="EditFileWatcherDialog" timestamp="1576193894905">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -271,10 +285,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="40" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1576348980295" />
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1576355111516">
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1576355172418">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1576355111516" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1576355172418" />
     <state x="223" y="205" key="com.intellij.ide.util.TipDialog" timestamp="1576273640549">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
