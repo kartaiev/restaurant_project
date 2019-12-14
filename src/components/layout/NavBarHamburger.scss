@@ -1,52 +1,43 @@
-@import "../../config";
+@import '../../config';
 
 .nav-btn {
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
   height: 35px;
-  justify-content: center;
+  @include column-center-center;
   position: fixed;
   right: 1.5rem;
   top: 1.5rem;
   @include ease-out;
+  cursor: pointer;
   z-index: 10;
 
   .nav-line {
+    width: 2rem;
+    height: 2px;
     background-image: linear-gradient(
-                    to right,
-                    $main-hover-color 50%,
-                    $main-color 50%
+      to right,
+      $main-hover-color 50%,
+      $main-color 50%
     );
     background-size: 200% 100%;
     background-position: right bottom;
     @include ease-out;
-    height: 2px;
     margin-bottom: 5px;
-    width: 2rem;
   }
-
 
   &.open {
     transform: rotate(180deg);
-    transition: 1s;
+    @include ease-out;
 
     .nav-line:nth-child(1) {
       background-position: left bottom;
-      height: 3px;
-      margin-bottom: 5px;
       transform: rotate(45deg) translate(5px, 5px);
       @include ease-out;
-      width: 2rem;
     }
 
     .nav-line:nth-child(2) {
       background-position: left bottom;
-      height: 3px;
-      margin-bottom: 5px;
       transform: rotate(-45deg) translate(1px, -1px);
       @include ease-out;
-      width: 2rem;
     }
   }
 }
