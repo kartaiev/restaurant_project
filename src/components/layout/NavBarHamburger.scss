@@ -36,7 +36,7 @@
 
     .nav-line:nth-child(2) {
       background-position: left bottom;
-      transform: rotate(-45deg) translate(1px, -1px);
+      transform: rotate(-45deg) translate(.5px, .5px);
       @include ease-out;
     }
   }
