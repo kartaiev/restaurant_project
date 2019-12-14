@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="App">
       <Logo />
-      <NavBar />
+      <NavBar classEl={classToggle.classEl} />
       <Hamburger showEl={showEl} classEl={classToggle.classEl} />
       <Home />
     </div>
