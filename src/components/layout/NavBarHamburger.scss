@@ -1,4 +1,4 @@
-@import "src/colors";
+@import "../../config";
 
 .nav-btn {
   cursor: pointer;
@@ -9,7 +9,7 @@
   position: fixed;
   right: 1.5rem;
   top: 1.5rem;
-  transition: 1s;
+  @include ease-out;
   z-index: 10;
 
   .nav-line {
@@ -20,7 +20,7 @@
     );
     background-size: 200% 100%;
     background-position: right bottom;
-    transition: all 0.5s ease-out;
+    @include ease-out;
     height: 2px;
     margin-bottom: 5px;
     width: 2rem;
@@ -36,7 +36,7 @@
       height: 3px;
       margin-bottom: 5px;
       transform: rotate(45deg) translate(5px, 5px);
-      transition: 1s;
+      @include ease-out;
       width: 2rem;
     }
 
@@ -44,17 +44,8 @@
       background-position: left bottom;
       height: 3px;
       margin-bottom: 5px;
-      opacity: 0;
-      transition: 1s;
-      width: 2rem;
-    }
-
-    .nav-line:nth-child(3) {
-      background-position: left bottom;
-      height: 3px;
-      margin-bottom: 5px;
-      transform: rotate(-45deg) translate(7px, -6px);
-      transition: 1s;
+      transform: rotate(-45deg) translate(1px, -1px);
+      @include ease-out;
       width: 2rem;
     }
   }

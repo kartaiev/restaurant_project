@@ -1,0 +1,9 @@
+//Colors
+$main-color: #FFB915;
+$main-hover-color: #9D231F;
+$overlay: #121212;
+
+//Mixins
+@mixin ease-out {
+  transition: all .5s ease-out;
+}

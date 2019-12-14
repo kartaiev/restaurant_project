@@ -6,7 +6,6 @@ export const Hamburger = ({ classEl, showEl }) => {
     <div className={`nav-btn ${classEl}`} onClick={showEl}>
       <div className="nav-line" />
       <div className="nav-line" />
-      <div className="nav-line" />
     </div>
   );
 };

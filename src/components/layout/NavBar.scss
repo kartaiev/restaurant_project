@@ -1,4 +1,4 @@
-@import 'src/colors';
+@import '../../config';
 
 .nav-bar {
   position: fixed;
@@ -12,11 +12,11 @@
   background-color: rgba($overlay, 0.8);
   backdrop-filter: blur(8px);
   z-index: 6;
-  transition: 1s;
+  @include ease-out;
 
   &.close {
-    transform: translateY(-110%);
-    transition: 1s;
+    transform: translate3d(0, -110%, 0);
+    @include ease-out;
   }
 
   &__wrap {
@@ -35,35 +35,42 @@
       justify-content: space-between;
       align-items: flex-start;
 
-      li {
-        //border-bottom: rgba(white, .5) 1px solid;
-        //padding: 0 15% 0 7%;
+      @for $i from 1 through 4 {
+        .li-style:nth-child(#{$i}) {
+          transition-delay: ($i) * 0.1s;
+          transition-duration: 0.5s;
+        }
+      }
+
+      .li-style {
         position: relative;
 
-        a {
+        &::after {
+          display: block;
+          content: '';
+          width: 7rem;
+          height: 1px;
+          background: rgba(white, 0.3);
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+
+        .link {
           text-decoration: none;
           color: $main-color;
-          font-family: 'Oswald', sans-serif;
-        }
 
-        a:hover {
-          color: $main-hover-color;
+          &:hover {
+            color: $main-hover-color;
+          }
         }
       }
 
-      li:last-child {
-        border-right: none;
-      }
-
-      li::after {
-        display: block;
-        content: '';
-        width: 7rem;
-        height: 1px;
-        background: rgba(white, 0.4);
-        position: absolute;
-        bottom: 0;
-        left: 0;
+      .li-style {
+        &.close {
+          transform: translate3d(-110%, 0, 0);
+          @include ease-out;
+        }
       }
     }
   }
