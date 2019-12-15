@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/About.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/About.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -124,7 +123,7 @@
       <workItem from="1576272974342" duration="441000" />
       <workItem from="1576273628395" duration="47768000" />
       <workItem from="1576443493216" duration="5000" />
-      <workItem from="1576445551744" duration="824000" />
+      <workItem from="1576445551744" duration="1066000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1576241091900</created>
@@ -371,7 +370,21 @@
       <option name="project" value="LOCAL" />
       <updated>1576446252184</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="about-img-border">
+      <created>1576446483911</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1576446483911</updated>
+    </task>
+    <task id="LOCAL-00037" summary="about-img-border">
+      <created>1576446580755</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1576446580755</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -395,7 +408,8 @@
     <MESSAGE value="refactor nav-bar" />
     <MESSAGE value="about-text" />
     <MESSAGE value="about-img" />
-    <option name="LAST_COMMIT_MESSAGE" value="about-img" />
+    <MESSAGE value="about-img-border" />
+    <option name="LAST_COMMIT_MESSAGE" value="about-img-border" />
   </component>
   <component name="WindowStateProjectService">
     <state x="140" y="23" key="#Notifications" timestamp="1576417498894">
@@ -410,10 +424,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="315" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.777@0.23.1280.777" timestamp="1576357508942" />
-    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1576446483721">
+    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1576446580562">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1576446483721" />
+    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1576446580562" />
     <state x="248" y="152" key="EditFileWatcherDialog" timestamp="1576193894905">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -422,30 +436,30 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="485" y="295" key="Github.ShareDialog/0.23.1280.777@0.23.1280.777" timestamp="1576241150516" />
-    <state width="1280" height="191" key="GridCell.Tab.0.bottom" timestamp="1576445819147">
+    <state width="1280" height="191" key="GridCell.Tab.0.bottom" timestamp="1576446707308">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="191" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1576445819147" />
-    <state width="1280" height="191" key="GridCell.Tab.0.center" timestamp="1576445819144">
+    <state width="1280" height="191" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1576446707308" />
+    <state width="1280" height="191" key="GridCell.Tab.0.center" timestamp="1576446707306">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="191" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1576445819144" />
-    <state width="1280" height="191" key="GridCell.Tab.0.left" timestamp="1576445819143">
+    <state width="1280" height="191" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1576446707306" />
+    <state width="1280" height="191" key="GridCell.Tab.0.left" timestamp="1576446707306">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="191" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1576445819143" />
-    <state width="1280" height="191" key="GridCell.Tab.0.right" timestamp="1576445819145">
+    <state width="1280" height="191" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1576446707306" />
+    <state width="1280" height="191" key="GridCell.Tab.0.right" timestamp="1576446707307">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="191" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1576445819145" />
+    <state width="1280" height="191" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1576446707307" />
     <state x="40" y="23" key="SettingsEditor" timestamp="1576418925160">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="40" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1576418925160" />
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1576446488210">
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1576446584703">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1576446488210" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1576446584703" />
     <state x="223" y="205" key="com.intellij.ide.util.TipDialog" timestamp="1576445674251">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
