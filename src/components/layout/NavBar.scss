@@ -9,7 +9,7 @@
   background-color: $overlay;
   backdrop-filter: blur(8px);
   @include ease-out;
-  z-index: 6;
+  z-index: 25;
 
   &.close {
     transform: translateY(-110%);
