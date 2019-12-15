@@ -12,16 +12,16 @@
     top: 0;
     left: 0;
 
-    //&::after {
-    //  width: 100%;
-    //  height: 100%;
-    //  position: absolute;
-    //  top: 0;
-    //  left: 0;
-    //  background-color: rgba($background-color, .6);
-    //  content: '';
-    //  z-index: 4;
-    //}
+    &::after {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba($background-color, .4);
+      content: '';
+      z-index: 4;
+    }
 
     .about__img {
       width: 100%;
