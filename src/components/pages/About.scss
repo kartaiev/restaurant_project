@@ -4,7 +4,7 @@
   @include full-screen;
   @include column-start-center;
   position: relative;
-  background-color: $background-color;
+  background-color: black;
   overflow-x: hidden;
   overflow-y: scroll;
 
@@ -37,7 +37,7 @@
     .border__img {
       width: 100%;
       position: absolute;
-      bottom: -5vh;
+      bottom: -10vh;
       left: 0;
       z-index: 4;
     }
@@ -52,10 +52,10 @@
     &-title {
       @include page-title;
       position: absolute;
-      top: -5%;
+      top: 0;
       left: 50%;
       transform: translate(-50%);
-      background-color: $overlay;
+      background-color: black;
       backdrop-filter: blur(4px);
       padding: 7% 50%;
     }
