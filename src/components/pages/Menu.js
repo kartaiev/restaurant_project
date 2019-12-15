@@ -1,23 +1,19 @@
 import React from 'react';
 import './Menu.scss';
-import steakForkKnife from '../../assets/images/meat.jpeg';
+import beefSteak from '../../assets/images/beef-steak.png';
 
 export const Menu = () => {
   return (
     <article className="menu">
       <div className="menu__img-wrap">
-        <img
-          className="menu__img"
-          src={steakForkKnife}
-          alt="steak fork & knife"
-        />
+        <img className="menu__img" src={beefSteak} alt="beef steak with fork" />
         */}
       </div>
       <section className="menu__content">
         <h2 className="menu__content-title">Menu</h2>
 
         <div className="menu__content-text">
-          <h3>Holy Smokes?</h3>
+          <h3>Appetizers & Salads</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
             mollitia non, officia sed sequi veritatis voluptatibus. Ab assumenda
