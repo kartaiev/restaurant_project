@@ -18,7 +18,7 @@
       position: absolute;
       top: 0;
       left: 0;
-      background-color: rgba($background-color, .5);
+      background-color: rgba($background-color, 0.5);
       content: '';
       z-index: 4;
     }
@@ -38,7 +38,7 @@
     position: absolute;
     @include element-to-center;
     background-color: $overlay;
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(4px);
     padding: 5% 15%;
     z-index: 5;
   }
