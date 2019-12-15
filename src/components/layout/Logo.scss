@@ -1,7 +1,22 @@
-.logo {
-  width: 10vh;
-  position: fixed;
-  top: .35rem;
-  left: .7rem;
-  z-index: 7;
+.logo-wrap {
+  position: relative;
+
+  .logo {
+    width: 19%;
+    position: fixed;
+    top: 0.35rem;
+    left: 0.7rem;
+    cursor: pointer;
+    z-index: 7;
+  }
+
+  .logo-link {
+    width: 17%;
+    height: 8vh;
+    position: fixed;
+    top: 1rem;
+    left: 1.2rem;
+    background-color: transparent;
+    z-index: 10;
+  }
 }

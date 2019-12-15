@@ -2,31 +2,23 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './NavBar.scss';
 
-export const NavBar = ({ classEl }) => {
+export const NavBar = ({ classEl, showEl }) => {
+  const pages = ['About', 'Gallery', 'Menu', 'Contact'];
   return (
     <div className={`nav-bar ${classEl}`}>
       <div className="nav-bar__wrap">
         <ul>
-          <li className={`li-style  ${classEl}`}>
-            <NavLink className={`link ${classEl}`} to="/about">
-              About
-            </NavLink>
-          </li>
-          <li className={`li-style  ${classEl}`}>
-            <NavLink className={`link ${classEl}`} to="/gallery">
-              Gallery
-            </NavLink>
-          </li>
-          <li className={`li-style  ${classEl}`}>
-            <NavLink className={`link ${classEl}`} to="/menu">
-              Menu
-            </NavLink>
-          </li>
-          <li className={`li-style  ${classEl}`}>
-            <NavLink className={`link ${classEl}`} to="/contact">
-              Contact
-            </NavLink>
-          </li>
+          {pages.map(page => (
+            <li className={`li-style  ${classEl}`}>
+              <NavLink
+                className={`link ${classEl}`}
+                to={`/${page.toLowerCase()}`}
+                onClick={showEl}
+              >
+                {page}
+              </NavLink>
+            </li>
+          ))}
         </ul>
       </div>
     </div>
