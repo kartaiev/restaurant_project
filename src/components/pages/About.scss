@@ -36,10 +36,12 @@
   &__title {
     @include page-title;
     position: absolute;
-    @include element-to-center;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
     background-color: $overlay;
     backdrop-filter: blur(4px);
-    padding: 5% 15%;
+    padding: 5% 30%;
     z-index: 5;
   }
 }
