@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './NavBar.scss';
 
-export const NavBar = ({ classEl, showEl }) => {
+export const NavBar = ({ classEl, toggleEl }) => {
   const pages = ['About', 'Gallery', 'Menu', 'Contact'];
   return (
     <div className={`nav-bar ${classEl}`}>
@@ -13,7 +13,7 @@ export const NavBar = ({ classEl, showEl }) => {
               <NavLink
                 className={`link ${classEl}`}
                 to={`/${page.toLowerCase()}`}
-                onClick={showEl}
+                onClick={toggleEl}
               >
                 {page}
               </NavLink>

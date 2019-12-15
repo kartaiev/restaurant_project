@@ -16,17 +16,18 @@ function App() {
     classEl: 'close'
   });
 
-
-  const showEl = () => {
-    if (classToggle.open) setClassToggle({ open: false, classEl: 'open' });
-    else setClassToggle({ open: true, classEl: 'close' });
+  //*Toggle Element//
+  const toggleEl = () => {
+    classToggle.open
+      ? setClassToggle({ open: false, classEl: 'open' })
+      : setClassToggle({ open: true, classEl: 'close' });
   };
 
   return (
     <div className="App">
       <Logo />
-      <NavBar classEl={classToggle.classEl} showEl={showEl} />
-      <Hamburger classEl={classToggle.classEl} showEl={showEl} />
+      <NavBar classEl={classToggle.classEl} toggleEl={toggleEl} />
+      <Hamburger classEl={classToggle.classEl} toggleEl={toggleEl} />
 
       <Switch>
         <Route exact path="/" component={Home} />

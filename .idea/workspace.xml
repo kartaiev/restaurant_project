@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Sanchezregular-ita.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Sanchezregular.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/steak-1.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/Logo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Logo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_config.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/_config.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout/Logo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Logo.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/NavBarHamburger.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/NavBarHamburger.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/About.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/About.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/About.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +63,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/fonts" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -70,6 +75,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/fonts" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components/pages" />
       <recent name="$PROJECT_DIR$/src/assets/images" />
@@ -123,7 +131,7 @@
       <workItem from="1576242354322" duration="299000" />
       <workItem from="1576242715741" duration="14170000" />
       <workItem from="1576272974342" duration="441000" />
-      <workItem from="1576273628395" duration="36907000" />
+      <workItem from="1576273628395" duration="41179000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1576241091900</created>
@@ -265,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576417401093</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="refactor nav-bar">
+      <created>1576427052541</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1576427052541</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,7 +301,8 @@
     <MESSAGE value="nav-bar elements font" />
     <MESSAGE value="refactoring" />
     <MESSAGE value="pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="pages" />
+    <MESSAGE value="refactor nav-bar" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor nav-bar" />
   </component>
   <component name="WindowStateProjectService">
     <state x="140" y="23" key="#Notifications" timestamp="1576417498894">
@@ -301,10 +317,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="315" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.777@0.23.1280.777" timestamp="1576357508942" />
-    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1576417400888">
+    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1576427052081">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1576417400888" />
+    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1576427052081" />
     <state x="248" y="152" key="EditFileWatcherDialog" timestamp="1576193894905">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -333,10 +349,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="40" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1576418925160" />
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1576417414073">
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1576427057498">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1576417414073" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1576427057498" />
     <state x="223" y="205" key="com.intellij.ide.util.TipDialog" timestamp="1576273640549">
       <screen x="0" y="23" width="1280" height="777" />
     </state>

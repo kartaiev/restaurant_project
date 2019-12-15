@@ -1,10 +1,17 @@
 //--------------------------------------------------------Colors-------------------------------------------------//
+$background-color: #121212;
 $main-color: #ffb915;
 $main-hover-color: #9d231f;
-$overlay: rgba(#121212, 0.85);
+$overlay: rgba($background-color, 0.85);
 
 //Fonts
 @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+@font-face {
+  font-family: 'Sanchez';
+  src: local('Sanchez'),
+  url('./assets/fonts/Sanchezregular.otf') format('opentype');
+}
 
 //--------------------------------------------------------Mixins-------------------------------------------------//
 @mixin ease-out {
@@ -14,6 +21,12 @@ $overlay: rgba(#121212, 0.85);
 @mixin menu-font {
   font-family: 'Oswald', sans-serif;
   letter-spacing: 0.1rem;
+}
+
+@mixin page-title {
+  font-family: Sanchez, serif;
+  letter-spacing: 0.1rem;
+  color: $main-color;
 }
 
 @mixin full-screen {
