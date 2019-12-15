@@ -4,7 +4,7 @@
   @include full-screen;
   @include column-start-center;
   position: relative;
-  background-color: black;
+  background-color: $background-color;
   overflow-x: hidden;
   overflow-y: scroll;
 
@@ -55,7 +55,7 @@
       top: 0;
       left: 50%;
       transform: translate(-50%);
-      background-color: black;
+      background-color: $background-color;
       backdrop-filter: blur(4px);
       padding: 7% 50%;
     }
