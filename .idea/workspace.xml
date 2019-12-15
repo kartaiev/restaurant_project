@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/Logo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Logo.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/NavBar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/NavBar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/NavBarHamburger.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/NavBarHamburger.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_config.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/_config.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/About.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/About.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +126,7 @@
       <workItem from="1576272974342" duration="441000" />
       <workItem from="1576273628395" duration="47768000" />
       <workItem from="1576443493216" duration="5000" />
-      <workItem from="1576445551744" duration="4435000" />
+      <workItem from="1576445551744" duration="4925000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1576241091900</created>
@@ -429,7 +429,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576449430720</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="z-index refactoring">
+      <created>1576450570165</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1576450570165</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -454,7 +461,8 @@
     <MESSAGE value="about-img" />
     <MESSAGE value="about-img-border" />
     <MESSAGE value="about-text" />
-    <option name="LAST_COMMIT_MESSAGE" value="about-text" />
+    <MESSAGE value="z-index refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="z-index refactoring" />
   </component>
   <component name="WindowStateProjectService">
     <state x="140" y="23" key="#Notifications" timestamp="1576417498894">
@@ -469,10 +477,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="315" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.777@0.23.1280.777" timestamp="1576357508942" />
-    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1576449430562">
+    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1576450569991">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1576449430562" />
+    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1576450569991" />
     <state x="248" y="152" key="EditFileWatcherDialog" timestamp="1576193894905">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -501,10 +509,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="40" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1576418925160" />
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1576449434573">
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1576450576279">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1576449434573" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1576450576279" />
     <state x="223" y="205" key="com.intellij.ide.util.TipDialog" timestamp="1576445674251">
       <screen x="0" y="23" width="1280" height="777" />
     </state>

@@ -19,7 +19,7 @@
        position: absolute;
        top: 0;
        left: 0;
-       background-color: rgba($background-color, 0.5);
+       background-color: rgba($background-color, .6);
        content: '';
        z-index: 4;
      }
@@ -47,7 +47,7 @@
     width: 80%;
     @include column-start-center;
     position: relative;
-    padding: 15vh 0;
+    padding: 15vh 0 10vh 0;
     z-index: 6;
 
     h2 {
