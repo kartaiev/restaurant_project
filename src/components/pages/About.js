@@ -7,8 +7,8 @@ export const About = () => {
     <article className="about">
       <div className="about__img-wrap">
         <img className="about__img" src={standingSteak} alt="standing steak" />
+        <h1 className="about__title">About</h1>
       </div>
-      <h1 className="about__title">About</h1>
     </article>
   );
 };
