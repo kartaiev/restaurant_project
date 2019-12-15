@@ -1,6 +1,6 @@
 import React from 'react';
 import './Menu.scss';
-import beefSteak from '../../assets/images/beef-steak.png';
+import beefSteak from '../../assets/images/Beefsteak.png';
 
 export const Menu = () => {
   return (
