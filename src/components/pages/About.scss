@@ -49,13 +49,13 @@
       transform: translate(-50%);
       background-color: $overlay;
       backdrop-filter: blur(4px);
-      padding: 5% 50%;
+      padding: 7% 50% 3%;
     }
     &-text {
       font-family: 'Oswald', sans-serif;
       letter-spacing: .1rem;
       color: #cccccc;
-      padding: 8vh 0;
+      padding: 5vh 0;
     }
   }
 }
