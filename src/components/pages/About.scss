@@ -2,20 +2,21 @@
 
 .about {
   @include full-screen;
+  @include column-start-center;
   position: relative;
   background-color: $background-color;
+  overflow-x: hidden;
+  overflow-y: scroll;
 
   &__img-wrap {
     width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
+    height: 70vh;
 
     &::after {
       width: 100%;
-      height: 100%;
+      height: 100vh;
       position: absolute;
+
       top: 0;
       left: 0;
       background-color: rgba($background-color, 0.5);
@@ -33,15 +34,28 @@
       background-repeat: no-repeat;
     }
   }
-  &__title {
-    @include page-title;
-    position: absolute;
-    bottom: -5%;
-    left: 50%;
-    transform: translate(-50%);
-    background-color: $overlay;
-    backdrop-filter: blur(4px);
-    padding: 5% 50%;
+
+  .about__content {
+    width: 80%;
+    @include column-start-center;
+    position: relative;
     z-index: 5;
+
+    &-title {
+      @include page-title;
+      position: absolute;
+      top: -5%;
+      left: 50%;
+      transform: translate(-50%);
+      background-color: $overlay;
+      backdrop-filter: blur(4px);
+      padding: 5% 50%;
+    }
+    &-text {
+      font-family: 'Oswald', sans-serif;
+      letter-spacing: .1rem;
+      color: #cccccc;
+      padding: 8vh 0;
+    }
   }
 }

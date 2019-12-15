@@ -68,6 +68,12 @@ $overlay: rgba($background-color, 0.85);
   align-items: center;
 }
 
+@mixin column-start-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @mixin column-between-start {
   display: flex;
   flex-direction: column;
