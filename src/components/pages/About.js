@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.scss';
-import standingSteak from '../../assets/images/steak-2.jpg';
+import standingSteak from '../../assets/images/steak-1.jpg';
 
 export const About = () => {
   return (
