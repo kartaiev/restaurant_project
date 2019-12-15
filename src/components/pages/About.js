@@ -12,36 +12,42 @@ export const About = () => {
       </div>
       <section className="about__content">
         <h2 className="about__content-title">About</h2>
-        <p className="about__content-text">
-          Overlooking Botany Bay on the Grand Parade of Brighton Le Sands sits a
-          cosy Greek restaurant. For over five years, Meet The Greek has been
-          serving up classic Greek dishes, like souvlaki, seafood and housemade
-          dips, as well as delicious variations on the classics.
-          <br />
-          <br />
-          Overlooking Botany Bay on the Grand Parade of Brighton Le Sands sits a
-          cosy Greek restaurant. For over five years, Meet The Greek has been
-          serving up classic Greek dishes, like souvlaki, seafood and housemade
-          dips, as well as delicious variations on the classics.
-          <br />
-          <br />
-          Overlooking Botany Bay on the Grand Parade of Brighton Le Sands sits a
-          cosy Greek restaurant. For over five years, Meet The Greek has been
-          serving up classic Greek dishes, like souvlaki, seafood and housemade
-          dips, as well as delicious variations on the classics.
-          <br />
-          <br />
-          Overlooking Botany Bay on the Grand Parade of Brighton Le Sands sits a
-          cosy Greek restaurant. For over five years, Meet The Greek has been
-          serving up classic Greek dishes, like souvlaki, seafood and housemade
-          dips, as well as delicious variations on the classics.
-          <br />
-          <br />
-          Overlooking Botany Bay on the Grand Parade of Brighton Le Sands sits a
-          cosy Greek restaurant. For over five years, Meet The Greek has been
-          serving up classic Greek dishes, like souvlaki, seafood and housemade
-          dips, as well as delicious variations on the classics.
-        </p>
+
+        <div className="about__content-text">
+          <h3>Holy Smokes?</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
+            mollitia non, officia sed sequi veritatis voluptatibus. Ab assumenda
+            consectetur distinctio dolore et eveniet ex expedita maiores soluta
+            ullam? Accusantium aut deserunt est fuga magnam modi nam
+            necessitatibus neque obcaecati, odit provident qui quis recusandae
+            tempora.
+          </p>
+        </div>
+        <br />
+        <br />
+        <div className="about__content-text">
+          <h3>Philosophy</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A corporis
+            error, exercitationem fuga id illum ipsam laboriosam laborum, magni
+            modi nemo nulla odit perferendis quos unde! Cumque dolore doloremque
+            hic in maiores nisi omnis sit?
+          </p>
+        </div>
+        <br />
+        <br />
+        <div className="about__content-text">
+          <h3>History</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum
+            deleniti deserunt repellendus. Adipisci cupiditate ex in laboriosam
+            quae, quam quis quo reprehenderit sed voluptate. Debitis dolorem
+            eligendi est minima nobis odio officia quo ullam vel vitae. Ea
+            exercitationem fugiat laborum tenetur velit? Illo itaque iure nulla
+            numquam recusandae rerum sed.
+          </p>
+        </div>
       </section>
     </article>
   );
