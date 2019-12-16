@@ -13,8 +13,10 @@ export const Menu = () => {
       .get()
       .then(snapshot =>
         snapshot.docs.map(docsItem => {
+          let menuArr = menuDocs.menuDocs;
+          menuArr.push(docsItem);
           return setMenuDocs({
-            menuDocs: [docsItem]
+            menuDocs: menuArr
           });
         })
       );
@@ -27,16 +29,35 @@ export const Menu = () => {
         */}
       </div>
       <section className="menu__content">
-        <h2 className="menu__content-title">Menu</h2>
+        <h2>Menu</h2>
 
         <div className="menu__content-text">
           <h3>Appetizers & Salads</h3>
-          <ul className="menu-items">
-            {menuDocs.menuDocs.map((menuDoc, index) => (
-              <li key={index}>
-                {menuDoc.data().dish} {menuDoc.data().price}
-              </li>
-            ))}
+          <ul>
+            {menuDocs.menuDocs.map(menuDoc => {
+              if (menuDoc.data().type === 'Appetizers & Salads') {
+                return (
+                  <li key={menuDoc.id}>
+                    <div>{menuDoc.data().dish}</div>
+                    <div>{menuDoc.data().price}</div>
+                  </li>
+                );
+              }
+            })}
+          </ul>
+
+          <h3>Sides</h3>
+          <ul>
+            {menuDocs.menuDocs.map(menuDoc => {
+              if (menuDoc.data().type === 'Sides') {
+                return (
+                  <li key={menuDoc.id}>
+                    <div>{menuDoc.data().dish}</div>
+                    <div>{menuDoc.data().price}</div>
+                  </li>
+                );
+              }
+            })}
           </ul>
         </div>
         <br />

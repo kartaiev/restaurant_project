@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/pages/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/Beefsteak.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Beefsteak.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Menu.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,14 +127,7 @@
       <workItem from="1576273628395" duration="47768000" />
       <workItem from="1576443493216" duration="5000" />
       <workItem from="1576445551744" duration="8176000" />
-      <workItem from="1576460512706" duration="14912000" />
-    </task>
-    <task id="LOCAL-00002" summary="first commit">
-      <created>1576249586221</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1576249586221</updated>
+      <workItem from="1576460512706" duration="18897000" />
     </task>
     <task id="LOCAL-00003" summary="video-background">
       <created>1576249805587</created>
@@ -469,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576499530065</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="menu - firebase">
+      <created>1576499867560</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1576499867560</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -512,10 +515,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="315" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.777@0.23.1280.777" timestamp="1576357508942" />
-    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1576499529710">
+    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1576499867379">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1576499529710" />
+    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1576499867379" />
     <state x="248" y="152" key="EditFileWatcherDialog" timestamp="1576193894905">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -524,30 +527,30 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="485" y="295" key="Github.ShareDialog/0.23.1280.777@0.23.1280.777" timestamp="1576241150516" />
-    <state width="1280" height="191" key="GridCell.Tab.0.bottom" timestamp="1576499351398">
+    <state width="1280" height="191" key="GridCell.Tab.0.bottom" timestamp="1576503183562">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="191" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1576499351398" />
-    <state width="1280" height="191" key="GridCell.Tab.0.center" timestamp="1576499351397">
+    <state width="1280" height="191" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1576503183562" />
+    <state width="1280" height="191" key="GridCell.Tab.0.center" timestamp="1576503183561">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="191" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1576499351397" />
-    <state width="1280" height="191" key="GridCell.Tab.0.left" timestamp="1576499351396">
+    <state width="1280" height="191" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1576503183561" />
+    <state width="1280" height="191" key="GridCell.Tab.0.left" timestamp="1576503183561">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="191" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1576499351396" />
-    <state width="1280" height="191" key="GridCell.Tab.0.right" timestamp="1576499351397">
+    <state width="1280" height="191" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1576503183561" />
+    <state width="1280" height="191" key="GridCell.Tab.0.right" timestamp="1576503183562">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="191" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1576499351397" />
+    <state width="1280" height="191" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1576503183562" />
     <state x="40" y="23" key="SettingsEditor" timestamp="1576418925160">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="40" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1576418925160" />
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1576499546102">
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1576499877413">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1576499546102" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1576499877413" />
     <state x="223" y="205" key="com.intellij.ide.util.TipDialog" timestamp="1576460518367">
       <screen x="0" y="23" width="1280" height="777" />
     </state>

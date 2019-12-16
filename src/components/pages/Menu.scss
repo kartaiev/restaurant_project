@@ -56,6 +56,7 @@
     }
 
     &-text {
+      width: 100%;
       @include menu-font;
       color: #cccccc;
 
@@ -77,10 +78,16 @@
         }
       }
 
-      .menu-items {
-        padding-top: 10vh;
-        height: 100%;
-      };
+      ul {
+        width: 100%;
+        padding: 1vh 0 3vh 0;
+
+        li {
+          @include row-between-center;
+          padding: 1vh 0;
+        }
+      }
+
     }
   }
 }
