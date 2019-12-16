@@ -8,8 +8,8 @@ export const NavBar = ({ classEl, toggleEl }) => {
     <div className={`nav-bar ${classEl}`}>
       <div className="nav-bar__wrap">
         <ul>
-          {pages.map(page => (
-            <li className={`li-style  ${classEl}`}>
+          {pages.map((page, index) => (
+            <li key={index} className={`li-style  ${classEl}`}>
               <NavLink
                 className={`link ${classEl}`}
                 to={`/${page.toLowerCase()}`}

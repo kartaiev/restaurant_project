@@ -1,8 +1,25 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import fb from '../../config/fbConfig';
 import './Menu.scss';
 import beefSteak from '../../assets/images/Beefsteak.png';
 
 export const Menu = () => {
+  const [menuDocs, setMenuDocs] = useState({
+    menuDocs: []
+  });
+
+  useEffect(() => {
+    fb.collection('menu')
+      .get()
+      .then(snapshot =>
+        snapshot.docs.map(docsItem => {
+          return setMenuDocs({
+            menuDocs: [docsItem]
+          });
+        })
+      );
+  }, []);
+
   return (
     <article className="menu">
       <div className="menu__img-wrap">
@@ -14,14 +31,13 @@ export const Menu = () => {
 
         <div className="menu__content-text">
           <h3>Appetizers & Salads</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
-            mollitia non, officia sed sequi veritatis voluptatibus. Ab assumenda
-            consectetur distinctio dolore et eveniet ex expedita maiores soluta
-            ullam? Accusantium aut deserunt est fuga magnam modi nam
-            necessitatibus neque obcaecati, odit provident qui quis recusandae
-            tempora.
-          </p>
+          <ul className="menu-items">
+            {menuDocs.menuDocs.map((menuDoc, index) => (
+              <li key={index}>
+                {menuDoc.data().dish} {menuDoc.data().price}
+              </li>
+            ))}
+          </ul>
         </div>
         <br />
         <br />

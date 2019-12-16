@@ -10,7 +10,7 @@ $overlay: rgba($background-color, 0.85);
 @font-face {
   font-family: 'Sanchez';
   src: local('Sanchez'),
-  url('./assets/fonts/Sanchezregular.otf') format('opentype');
+  url('../assets/fonts/Sanchezregular.otf') format('opentype');
 }
 
 @mixin menu-font {

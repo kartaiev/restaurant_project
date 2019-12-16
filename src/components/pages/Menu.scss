@@ -1,6 +1,6 @@
-@import "../../config";
+@import "../../config/scssConfig";
 
-@import '../../config';
+@import '../../config/scssConfig';
 
 .menu {
   @include full-screen;
@@ -77,8 +77,9 @@
         }
       }
 
-      p {
-        padding-top: 3vh;
+      .menu-items {
+        padding-top: 10vh;
+        height: 100%;
       };
     }
   }
