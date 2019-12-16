@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/About.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/About.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Menu.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +66,7 @@
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.better-comments" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -125,14 +128,7 @@
       <workItem from="1576273628395" duration="47768000" />
       <workItem from="1576443493216" duration="5000" />
       <workItem from="1576445551744" duration="8176000" />
-      <workItem from="1576460512706" duration="24764000" />
-    </task>
-    <task id="LOCAL-00008" summary="video-player">
-      <created>1576276939531</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1576276939531</updated>
+      <workItem from="1576460512706" duration="27756000" />
     </task>
     <task id="LOCAL-00009" summary="mobile">
       <created>1576328427940</created>
@@ -470,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576508956737</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="menu - img">
+      <created>1576511450165</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1576511450165</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -514,10 +517,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="315" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.777@0.23.1280.777" timestamp="1576357508942" />
-    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1576508956542">
+    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1576511450023">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1576508956542" />
+    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1576511450023" />
     <state x="248" y="152" key="EditFileWatcherDialog" timestamp="1576193894905">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -526,30 +529,30 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="485" y="295" key="Github.ShareDialog/0.23.1280.777@0.23.1280.777" timestamp="1576241150516" />
-    <state width="1280" height="191" key="GridCell.Tab.0.bottom" timestamp="1576503183562">
+    <state width="1280" height="191" key="GridCell.Tab.0.bottom" timestamp="1576518286473">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="191" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1576503183562" />
-    <state width="1280" height="191" key="GridCell.Tab.0.center" timestamp="1576503183561">
+    <state width="1280" height="191" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1576518286473" />
+    <state width="1280" height="191" key="GridCell.Tab.0.center" timestamp="1576518286472">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="191" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1576503183561" />
-    <state width="1280" height="191" key="GridCell.Tab.0.left" timestamp="1576503183561">
+    <state width="1280" height="191" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1576518286472" />
+    <state width="1280" height="191" key="GridCell.Tab.0.left" timestamp="1576518286471">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="191" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1576503183561" />
-    <state width="1280" height="191" key="GridCell.Tab.0.right" timestamp="1576503183562">
+    <state width="1280" height="191" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1576518286471" />
+    <state width="1280" height="191" key="GridCell.Tab.0.right" timestamp="1576518286472">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="191" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1576503183562" />
-    <state x="40" y="23" key="SettingsEditor" timestamp="1576418925160">
+    <state width="1280" height="191" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1576518286472" />
+    <state x="40" y="23" key="SettingsEditor" timestamp="1576517326159">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="40" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1576418925160" />
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1576508962749">
+    <state x="40" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1576517326159" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1576511454990">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1576508962749" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1576511454990" />
     <state x="223" y="205" key="com.intellij.ide.util.TipDialog" timestamp="1576460518367">
       <screen x="0" y="23" width="1280" height="777" />
     </state>

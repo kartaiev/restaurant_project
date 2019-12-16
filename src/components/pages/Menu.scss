@@ -1,7 +1,5 @@
 @import "../../config/scssConfig";
 
-@import '../../config/scssConfig';
-
 .menu {
   @include full-screen;
   @include column-start-center;
@@ -87,7 +85,6 @@
           padding: 1vh 0;
         }
       }
-
     }
   }
 }

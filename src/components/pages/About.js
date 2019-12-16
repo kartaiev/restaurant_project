@@ -1,14 +1,12 @@
 import React from 'react';
 import './About.scss';
 import standingSteak from '../../assets/images/steak-1.jpg';
-// import border from '../../assets/images/border.png';
 
 export const About = () => {
   return (
     <article className="about">
       <div className="about__img-wrap">
         <img className="about__img" src={standingSteak} alt="standing steak" />
-        {/*<img className="border__img" src={border} alt="border" />*/}
       </div>
       <section className="about__content">
         <h2 className="about__content-title">About</h2>
@@ -24,8 +22,7 @@ export const About = () => {
             tempora.
           </p>
         </div>
-        <br />
-        <br />
+
         <div className="about__content-text">
           <h3>Philosophy</h3>
           <p>
@@ -35,8 +32,7 @@ export const About = () => {
             hic in maiores nisi omnis sit?
           </p>
         </div>
-        <br />
-        <br />
+
         <div className="about__content-text">
           <h3>History</h3>
           <p>
@@ -47,8 +43,6 @@ export const About = () => {
             exercitationem fugiat laborum tenetur velit? Illo itaque iure nulla
             numquam recusandae rerum sed.
           </p>
-          <br />
-          <br />
         </div>
       </section>
     </article>

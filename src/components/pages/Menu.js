@@ -10,6 +10,7 @@ export const Menu = () => {
 
   const { menuDocs } = menuState;
 
+  //*Fetching Data//
   useEffect(() => {
     fb.collection('menu')
       .get()
