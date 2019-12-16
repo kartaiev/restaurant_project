@@ -59,6 +59,34 @@ export const Menu = () => {
               }
             })}
           </ul>
+
+          <h3>Steaks & Chops</h3>
+          <ul>
+            {menuDocs.menuDocs.map(menuDoc => {
+              if (menuDoc.data().type === 'Steaks & Chops') {
+                return (
+                  <li key={menuDoc.id}>
+                    <div>{menuDoc.data().dish}</div>
+                    <div>{menuDoc.data().price}</div>
+                  </li>
+                );
+              }
+            })}
+          </ul>
+
+          <h3>Seafood</h3>
+          <ul>
+            {menuDocs.menuDocs.map(menuDoc => {
+              if (menuDoc.data().type === 'Seafood') {
+                return (
+                  <li key={menuDoc.id}>
+                    <div>{menuDoc.data().dish}</div>
+                    <div>{menuDoc.data().price}</div>
+                  </li>
+                );
+              }
+            })}
+          </ul>
         </div>
         <br />
         <br />
