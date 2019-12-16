@@ -47,6 +47,8 @@ export const About = () => {
             exercitationem fugiat laborum tenetur velit? Illo itaque iure nulla
             numquam recusandae rerum sed.
           </p>
+          <br />
+          <br />
         </div>
       </section>
     </article>

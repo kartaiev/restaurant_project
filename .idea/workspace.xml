@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/config/fbConfig.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/vladimirkartaev.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/vladimirkartaev.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_config.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/scssConfig.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/NavBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/NavBar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/NavBar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/NavBarHamburger.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/NavBarHamburger.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/About.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/About.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Contact.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Gallery.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Gallery.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Menu.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/About.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,14 +124,7 @@
       <workItem from="1576273628395" duration="47768000" />
       <workItem from="1576443493216" duration="5000" />
       <workItem from="1576445551744" duration="8176000" />
-      <workItem from="1576460512706" duration="14569000" />
-    </task>
-    <task id="LOCAL-00001" summary="first commit">
-      <created>1576241091900</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1576241091900</updated>
+      <workItem from="1576460512706" duration="14912000" />
     </task>
     <task id="LOCAL-00002" summary="first commit">
       <created>1576249586221</created>
@@ -484,7 +462,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576454502876</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="menu - firebase">
+      <created>1576499530064</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1576499530065</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -511,7 +496,8 @@
     <MESSAGE value="about-text" />
     <MESSAGE value="z-index refactoring" />
     <MESSAGE value="menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="menu" />
+    <MESSAGE value="menu - firebase" />
+    <option name="LAST_COMMIT_MESSAGE" value="menu - firebase" />
   </component>
   <component name="WindowStateProjectService">
     <state x="140" y="23" key="#Notifications" timestamp="1576417498894">
@@ -526,10 +512,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="315" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.777@0.23.1280.777" timestamp="1576357508942" />
-    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1576454502609">
+    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1576499529710">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1576454502609" />
+    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1576499529710" />
     <state x="248" y="152" key="EditFileWatcherDialog" timestamp="1576193894905">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -558,10 +544,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="40" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1576418925160" />
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1576454591041">
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1576499546102">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1576454591041" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1576499546102" />
     <state x="223" y="205" key="com.intellij.ide.util.TipDialog" timestamp="1576460518367">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
