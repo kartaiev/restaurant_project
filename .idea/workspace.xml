@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/images/steak_knife.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Menu.js" afterDir="false" />
     </list>
@@ -125,14 +126,7 @@
       <workItem from="1576273628395" duration="47768000" />
       <workItem from="1576443493216" duration="5000" />
       <workItem from="1576445551744" duration="8176000" />
-      <workItem from="1576460512706" duration="21703000" />
-    </task>
-    <task id="LOCAL-00005" summary="logo">
-      <created>1576264319698</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1576264319698</updated>
+      <workItem from="1576460512706" duration="22301000" />
     </task>
     <task id="LOCAL-00006" summary="logo-title">
       <created>1576269434552</created>
@@ -470,7 +464,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576507367704</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="menu - firebase">
+      <created>1576507775332</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1576507775332</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -513,10 +514,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="315" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.777@0.23.1280.777" timestamp="1576357508942" />
-    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1576507367561">
+    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1576507775141">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1576507367561" />
+    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1576507775141" />
     <state x="248" y="152" key="EditFileWatcherDialog" timestamp="1576193894905">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -545,10 +546,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="40" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1576418925160" />
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1576507373867">
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1576507779569">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1576507373867" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1576507779569" />
     <state x="223" y="205" key="com.intellij.ide.util.TipDialog" timestamp="1576460518367">
       <screen x="0" y="23" width="1280" height="777" />
     </state>

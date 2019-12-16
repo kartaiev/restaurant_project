@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import fb from '../../config/fbConfig';
 import './Menu.scss';
-import beefSteak from '../../assets/images/steak-2.jpg';
+import beefSteak from '../../assets/images/Steak_Rosemary.png';
 
 export const Menu = () => {
   const [menuDocs, setMenuDocs] = useState({
