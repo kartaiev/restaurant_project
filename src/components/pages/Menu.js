@@ -4,18 +4,20 @@ import './Menu.scss';
 import beefSteak from '../../assets/images/Steak_Rosemary.png';
 
 export const Menu = () => {
-  const [menuDocs, setMenuDocs] = useState({
+  const [menuState, setMenuState] = useState({
     menuDocs: []
   });
+
+  const { menuDocs } = menuState;
 
   useEffect(() => {
     fb.collection('menu')
       .get()
       .then(snapshot =>
         snapshot.docs.map(docsItem => {
-          let menuArr = menuDocs.menuDocs;
+          let menuArr = menuDocs;
           menuArr.push(docsItem);
-          return setMenuDocs({
+          return setMenuState({
             menuDocs: menuArr
           });
         })
@@ -34,7 +36,7 @@ export const Menu = () => {
         <div className="menu__content-text">
           <h3>Appetizers & Salads</h3>
           <ul>
-            {menuDocs.menuDocs.map(menuDoc => {
+            {menuDocs.map(menuDoc => {
               if (menuDoc.data().type === 'Appetizers & Salads') {
                 return (
                   <li key={menuDoc.id}>
@@ -45,10 +47,11 @@ export const Menu = () => {
               }
             })}
           </ul>
-
+          <br />
+          <br />
           <h3>Sides</h3>
           <ul>
-            {menuDocs.menuDocs.map(menuDoc => {
+            {menuDocs.map(menuDoc => {
               if (menuDoc.data().type === 'Sides') {
                 return (
                   <li key={menuDoc.id}>
@@ -59,10 +62,11 @@ export const Menu = () => {
               }
             })}
           </ul>
-
+          <br />
+          <br />
           <h3>Steaks & Chops</h3>
           <ul>
-            {menuDocs.menuDocs.map(menuDoc => {
+            {menuDocs.map(menuDoc => {
               if (menuDoc.data().type === 'Steaks & Chops') {
                 return (
                   <li key={menuDoc.id}>
@@ -73,10 +77,11 @@ export const Menu = () => {
               }
             })}
           </ul>
-
+          <br />
+          <br />
           <h3>Seafood</h3>
           <ul>
-            {menuDocs.menuDocs.map(menuDoc => {
+            {menuDocs.map(menuDoc => {
               if (menuDoc.data().type === 'Seafood') {
                 return (
                   <li key={menuDoc.id}>
