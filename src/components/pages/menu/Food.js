@@ -1,32 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import fb from '../../config/fbConfig';
-import './Menu.scss';
-import beefSteak from '../../assets/images/Steak_Rosemary.png';
+import React from 'react';
+import './Food.scss';
+import beefSteak from '../../../assets/images/Steak_Rosemary.png';
 
-export const Menu = () => {
-  const [menuState, setMenuState] = useState({
-    menuDocs: []
-  });
-
-  const { menuDocs } = menuState;
-
-  //*Fetching Data//
-  useEffect(() => {
-    fb.collection('menu')
-      .get()
-      .then(snapshot =>
-        snapshot.docs.map(docsItem => {
-          let menuArr = menuDocs;
-          menuArr.push(docsItem);
-          return setMenuState({
-            menuDocs: menuArr
-          });
-        })
-      );
-  }, []);
-
-  return (
-    <article className="menu">
+export const Food = ({menuDocs}) => {
+    return (
+        <article className="menu">
       <div className="menu__img-wrap">
         <img className="menu__img" src={beefSteak} alt="beef steak with fork" />
         */}
@@ -98,5 +76,6 @@ export const Menu = () => {
         <br />
       </section>
     </article>
-  );
-};
+    )
+}
+

@@ -7,7 +7,7 @@ import { Hamburger } from './components/layout/NavBarHamburger';
 import { Logo } from './components/layout/Logo';
 import { About } from './components/pages/About';
 import { Gallery } from './components/pages/Gallery';
-import { Menu } from './components/pages/Menu';
+import { Menu } from './components/pages/menu/Menu';
 import { Contact } from './components/pages/Contact';
 
 function App() {

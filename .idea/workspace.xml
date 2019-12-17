@@ -3,17 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/Beefsteak.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Beefsteak.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/HS_Logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/HS_Logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/Steak_Rosemary.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Steak_Rosemary.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/beef-steak.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/beef-steak.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/meat.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/meat.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/steak-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/steak-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/steak-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/steak-2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/steak_knife.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/steak_knife.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/steakhouse.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/steakhouse.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/About.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/About.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Menu.scss" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,11 +56,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/fonts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
@@ -136,6 +131,7 @@
       <workItem from="1576443493216" duration="5000" />
       <workItem from="1576445551744" duration="8176000" />
       <workItem from="1576460512706" duration="28999000" />
+      <workItem from="1576608416883" duration="391000" />
     </task>
     <task id="LOCAL-00011" summary="nav-bar slider">
       <created>1576341458072</created>
@@ -512,6 +508,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="menu - img" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="139" y="23" key="#ESLint" timestamp="1576608760592">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="139" y="23" key="#ESLint/0.23.1280.777@0.23.1280.777" timestamp="1576608760592" />
     <state x="140" y="23" key="#Notifications" timestamp="1576417498894">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -520,6 +520,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="348" y="207" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1280.777@0.23.1280.777" timestamp="1576252651583" />
+    <state x="327" y="147" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1576608427480">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="327" y="147" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1280.777@0.23.1280.777" timestamp="1576608427480" />
     <state x="315" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576357508942">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
