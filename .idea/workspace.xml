@@ -3,6 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/Beefsteak.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Beefsteak.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/HS_Logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/HS_Logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/Steak_Rosemary.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Steak_Rosemary.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/beef-steak.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/beef-steak.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/meat.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/meat.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/steak-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/steak-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/steak-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/steak-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/steak_knife.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/steak_knife.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/steakhouse.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/steakhouse.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/About.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/About.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -125,14 +135,7 @@
       <workItem from="1576273628395" duration="47768000" />
       <workItem from="1576443493216" duration="5000" />
       <workItem from="1576445551744" duration="8176000" />
-      <workItem from="1576460512706" duration="27861000" />
-    </task>
-    <task id="LOCAL-00010" summary="mobile">
-      <created>1576332157268</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1576332157268</updated>
+      <workItem from="1576460512706" duration="28999000" />
     </task>
     <task id="LOCAL-00011" summary="nav-bar slider">
       <created>1576341458072</created>
@@ -470,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576519744929</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="menu - img">
+      <created>1576519909038</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1576519909038</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -514,10 +524,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="315" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.777@0.23.1280.777" timestamp="1576357508942" />
-    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1576519743989">
+    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1576519908854">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1576519743989" />
+    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1576519908854" />
     <state x="248" y="152" key="EditFileWatcherDialog" timestamp="1576193894905">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -526,22 +536,22 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="485" y="295" key="Github.ShareDialog/0.23.1280.777@0.23.1280.777" timestamp="1576241150516" />
-    <state width="1280" height="191" key="GridCell.Tab.0.bottom" timestamp="1576518286473">
+    <state width="1280" height="191" key="GridCell.Tab.0.bottom" timestamp="1576525493565">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="191" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1576518286473" />
-    <state width="1280" height="191" key="GridCell.Tab.0.center" timestamp="1576518286472">
+    <state width="1280" height="191" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1576525493565" />
+    <state width="1280" height="191" key="GridCell.Tab.0.center" timestamp="1576525493564">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="191" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1576518286472" />
-    <state width="1280" height="191" key="GridCell.Tab.0.left" timestamp="1576518286471">
+    <state width="1280" height="191" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1576525493564" />
+    <state width="1280" height="191" key="GridCell.Tab.0.left" timestamp="1576525493564">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="191" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1576518286471" />
-    <state width="1280" height="191" key="GridCell.Tab.0.right" timestamp="1576518286472">
+    <state width="1280" height="191" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1576525493564" />
+    <state width="1280" height="191" key="GridCell.Tab.0.right" timestamp="1576525493565">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="191" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1576518286472" />
+    <state width="1280" height="191" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1576525493565" />
     <state x="40" y="23" key="SettingsEditor" timestamp="1576517326159">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
