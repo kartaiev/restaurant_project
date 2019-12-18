@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "type": "Appetizers & Salads",
+    "dish": "Baked Clams Oreganata",
+    "price": 17
+  },
+  {
+    "id": 2,
+    "type": "Appetizers & Salads",
+    "dish": "Manhattan Clam Chowder",
+    "price": 14
+  },
+  {
+    "id": 3,
+    "type": "Appetizers & Salads",
+    "dish": "Green Salad",
+    "price": 12
+  },
+  {
+    "id": 4,
+    "type": "Appetizers & Salads",
+    "dish": "Jumbo Lump Crab Cake",
+    "price": 21
+  },
+  {
+    "id": 5,
+    "type": "Appetizers & Salads",
+    "dish": "Beef Carpaccio",
+    "price": 16
+  },
+  {
+    "id": 6,
+    "type": "Appetizers & Salads",
+    "dish": "French Onion Soup",
+    "price": 12
+  },
+  {
+    "id": 7,
+    "type": "Appetizers & Salads",
+    "dish": "Jumbo Lump Crab Cake",
+    "price": 21
+  },
+  {
+    "id": 8,
+    "type": "Appetizers & Salads",
+    "dish": "Caesar",
+    "price": 14
+  }
+]

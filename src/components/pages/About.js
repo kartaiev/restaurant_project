@@ -34,7 +34,7 @@ export const About = () => {
         </div>
 
         <div className="about__content-text">
-          <h3>History</h3>
+          <h3>History </h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum
             deleniti deserunt repellendus. Adipisci cupiditate ex in laboriosam

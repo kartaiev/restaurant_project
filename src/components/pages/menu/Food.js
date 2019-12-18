@@ -1,17 +1,19 @@
 import React from 'react';
-import './Food.scss';
+import './Menu.scss';
 import beefSteak from '../../../assets/images/Steak_Rosemary.png';
+import { MenuBtns } from '../../layout/MenuBtns';
 
-export const Food = ({menuDocs}) => {
-    return (
-        <article className="menu">
+export const Food = ({ menuDocs }) => {
+  
+
+  return (
+    <article className="menu">
       <div className="menu__img-wrap">
         <img className="menu__img" src={beefSteak} alt="beef steak with fork" />
-        */}
       </div>
       <section className="menu__content">
         <h2>Menu</h2>
-
+        <MenuBtns />
         <div className="menu__content-text">
           <h3>Appetizers & Salads</h3>
           <ul>
@@ -76,6 +78,5 @@ export const Food = ({menuDocs}) => {
         <br />
       </section>
     </article>
-    )
-}
-
+  );
+};

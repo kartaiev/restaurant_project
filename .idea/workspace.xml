@@ -2,10 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/layout/MenuBtns.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/MenuBtns.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/menu/Drinks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/contexts/BtnsStyleContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/menu.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/vladimirkartaev.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/vladimirkartaev.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/env.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/env.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/jest/cssTransform.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/jest/cssTransform.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/jest/fileTransform.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/jest/fileTransform.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/modules.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/modules.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/paths.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/paths.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/webpackDevServer.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpackDevServer.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/build.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/build.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/start.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/start.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Menu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Menu.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/menu/Food.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/menu/Food.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/menu/Food.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/menu/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/menu/Menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/menu/Menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/menu/Menu.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/scssConfig.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/scssConfig.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +56,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="SCSS File" />
         <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -68,7 +90,7 @@
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.better-comments" />
+    <property name="settings.editor.selected.configurable" value="preferences.customizations" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -132,6 +154,8 @@
       <workItem from="1576445551744" duration="8176000" />
       <workItem from="1576460512706" duration="28999000" />
       <workItem from="1576608416883" duration="391000" />
+      <workItem from="1576619230643" duration="456000" />
+      <workItem from="1576619738125" duration="17549000" />
     </task>
     <task id="LOCAL-00011" summary="nav-bar slider">
       <created>1576341458072</created>
@@ -520,6 +544,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="348" y="207" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1280.777@0.23.1280.777" timestamp="1576252651583" />
+    <state x="207" y="134" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1576633762909">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="207" y="134" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.23.1280.777@0.23.1280.777" timestamp="1576633762909" />
     <state x="327" y="147" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1576608427480">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -540,33 +568,33 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="485" y="295" key="Github.ShareDialog/0.23.1280.777@0.23.1280.777" timestamp="1576241150516" />
-    <state width="1280" height="191" key="GridCell.Tab.0.bottom" timestamp="1576525493565">
+    <state width="1280" height="191" key="GridCell.Tab.0.bottom" timestamp="1576674830750">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="191" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1576525493565" />
-    <state width="1280" height="191" key="GridCell.Tab.0.center" timestamp="1576525493564">
+    <state width="1280" height="191" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1576674830750" />
+    <state width="1280" height="191" key="GridCell.Tab.0.center" timestamp="1576674830748">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="191" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1576525493564" />
-    <state width="1280" height="191" key="GridCell.Tab.0.left" timestamp="1576525493564">
+    <state width="1280" height="191" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1576674830748" />
+    <state width="1280" height="191" key="GridCell.Tab.0.left" timestamp="1576674830748">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="191" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1576525493564" />
-    <state width="1280" height="191" key="GridCell.Tab.0.right" timestamp="1576525493565">
+    <state width="1280" height="191" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1576674830748" />
+    <state width="1280" height="191" key="GridCell.Tab.0.right" timestamp="1576674830749">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="191" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1576525493565" />
-    <state x="40" y="23" key="SettingsEditor" timestamp="1576517326159">
+    <state width="1280" height="191" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1576674830749" />
+    <state x="40" y="23" key="SettingsEditor" timestamp="1576674097229">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="40" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1576517326159" />
+    <state x="40" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1576674097229" />
     <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1576519750153">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1576519750153" />
-    <state x="223" y="205" key="com.intellij.ide.util.TipDialog" timestamp="1576460518367">
+    <state x="223" y="205" key="com.intellij.ide.util.TipDialog" timestamp="1576619742656">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="223" y="205" key="com.intellij.ide.util.TipDialog/0.23.1280.777@0.23.1280.777" timestamp="1576460518367" />
+    <state x="223" y="205" key="com.intellij.ide.util.TipDialog/0.23.1280.777@0.23.1280.777" timestamp="1576619742656" />
   </component>
 </project>

@@ -73,7 +73,7 @@
     "test": "node scripts/test.js"
   },
   "eslintConfig": {
-    "extends": "wesbos"
+    "extends": "react-app"
   },
   "browserslist": {
     "production": [
@@ -142,5 +142,8 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "eslint-config-wesbos": "^0.0.19"
   }
 }

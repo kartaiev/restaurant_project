@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import './App.scss';
+import fb from './config/fbConfig';
 import { Home } from './components/Home';
 import { NavBar } from './components/layout/NavBar';
 import { Hamburger } from './components/layout/NavBarHamburger';
@@ -9,12 +10,29 @@ import { About } from './components/pages/About';
 import { Gallery } from './components/pages/Gallery';
 import { Menu } from './components/pages/menu/Menu';
 import { Contact } from './components/pages/Contact';
+import { Drinks } from './components/pages/menu/Drinks';
+
 
 function App() {
   const [classToggle, setClassToggle] = useState({
     open: true,
     classEl: 'close'
   });
+
+  const [menuState, setMenuState] = useState({
+    menuDocs: []
+  });
+
+   //*Fetching Data from Firebase//
+  useEffect(() => {
+    const fetchData = async () => {
+      const snapshot = await fb.collection('menu').get();
+      setMenuState({ menuDocs: snapshot.docs });
+    };
+    fetchData();
+  }, []);
+
+  const { menuDocs } = menuState;
 
   //*Toggle Element//
   const toggleEl = () => {
@@ -33,7 +51,11 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
         <Route exact path="/gallery" component={Gallery} />
-        <Route exact path="/menu" component={Menu} />
+        <Route exact path="/menu/:menuCategory" render={({ match }) => {
+          return <Drinks menuDocs={ menuDocs }/>
+  
+        }} />
+        <Route exact path="/menu" render={() =>  <Menu menuDocs={ menuDocs }/>} />
         <Route exact path="/contact" component={Contact} />
       </Switch>
     </div>
