@@ -1,5 +1,5 @@
 import React from 'react';
-import wine from '../../../assets/images/wine.jpeg';
+import wine from '../../../assets/images/wine.png';
 import { MenuBtns } from '../../layout/MenuBtns';
 import './Menu.scss';
 
