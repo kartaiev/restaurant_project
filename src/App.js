@@ -14,16 +14,19 @@ import { Drinks } from './components/pages/menu/Drinks';
 
 
 function App() {
+
+  //* Toggle Class/Element State //
   const [classToggle, setClassToggle] = useState({
     open: true,
     classEl: 'close'
   });
 
+  //* Menu State //
   const [menuState, setMenuState] = useState({
     menuDocs: []
   });
 
-   //*Fetching Data from Firebase//
+   //*Fetching Data from Firebase / Putting Data into Menu State//
   useEffect(() => {
     const fetchData = async () => {
       const snapshot = await fb.collection('menu').get();

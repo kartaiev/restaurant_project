@@ -1,7 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Logo.scss';
-import steakhouse from '../../assets/images/steakhouse.png';
+import steakhouse from '../../assets/images/charc-2.png';
+
 
 export const Logo = () => {
   return (
