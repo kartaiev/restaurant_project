@@ -1,18 +1,18 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './MenuBtns.scss';
 
 export const MenuBtns = () => {
   return (
     <div className="btns">
       <div className="btns__wrap">
-        <NavLink className="btns__link" to="/menu">
+        <Link className="btns__link" to="/menu">
           <button className="btns__link-btn">Food</button>
-        </NavLink>
+        </Link>
 
-        <NavLink className="btns__link" to="/menu/drinks">
+        <Link className="btns__link" to="/menu/drinks">
           <button className="btns__link-btn">Drinks</button>
-        </NavLink>
+        </Link>
       </div>
     </div>
   );
