@@ -1,5 +1,5 @@
 import React from 'react';
-import beefSteak from '../../../assets/images/Steak_Rosemary.png';
+import wine from '../../../assets/images/wine.jpeg';
 import { MenuBtns } from '../../layout/MenuBtns';
 import './Menu.scss';
 
@@ -7,7 +7,7 @@ export const Drinks = ({ menuDocs }) => {
   return (
     <article className="menu">
       <div className="menu__img-wrap">
-        <img className="menu__img" src={beefSteak} alt="beef steak with fork" />
+        <img className="menu__img" src={wine} alt="beef steak with fork" />
       </div>
       <section className="menu__content">
         <h2>Menu</h2>
