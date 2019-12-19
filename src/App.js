@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import './App.scss';
-// import fb from './config/fbConfig';
 import { Home } from './components/Home';
 import { NavBar } from './components/layout/NavBar';
 import { Hamburger } from './components/layout/NavBarHamburger';
@@ -12,6 +11,7 @@ import { Menu } from './components/pages/menu/Menu';
 import { Contact } from './components/pages/Contact';
 import { Drinks } from './components/pages/menu/Drinks';
 import menuData from './data/menuData';
+// import fb from './config/fbConfig';
 
 const App = () => {
   //* Toggle Class/Element State //
@@ -49,18 +49,17 @@ const App = () => {
       <Hamburger classEl={classToggle.classEl} toggleEl={toggleEl} />
 
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/gallery" component={Gallery} />
+        <Route path="/" exact component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/gallery" component={Gallery} />
         <Route
-          exact
           path="/menu/:menuCategory"
           render={() => {
             return <Drinks menuFunc={menuFunc} />;
           }}
         />
-        <Route exact path="/menu" render={() => <Menu menuFunc={menuFunc} />} />
-        <Route exact path="/contact" component={Contact} />
+        <Route path="/menu" exact render={() => <Menu menuFunc={menuFunc} />} />
+        <Route path="/contact" component={Contact} />
       </Switch>
     </div>
   );

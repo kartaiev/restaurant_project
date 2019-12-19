@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/vladimirkartaev.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/vladimirkartaev.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/Logo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Logo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/menu/Drinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/menu/Drinks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/menu/Food.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/menu/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/menu/Menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/menu.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/menuData.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/menuData.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/menuData.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,14 +137,7 @@
       <workItem from="1576741843746" duration="3054000" />
       <workItem from="1576751575927" duration="638000" />
       <workItem from="1576763355091" duration="9958000" />
-      <workItem from="1576781791368" duration="175000" />
-    </task>
-    <task id="LOCAL-00011" summary="nav-bar slider">
-      <created>1576341458072</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1576341458072</updated>
+      <workItem from="1576781791368" duration="2875000" />
     </task>
     <task id="LOCAL-00012" summary="nav-bar elements animation">
       <created>1576352673108</created>
@@ -486,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576519909038</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="getting menu from json insted of firebase">
+      <created>1576782023090</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1576782023091</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -515,7 +511,8 @@
     <MESSAGE value="menu" />
     <MESSAGE value="menu - firebase" />
     <MESSAGE value="menu - img" />
-    <option name="LAST_COMMIT_MESSAGE" value="menu - img" />
+    <MESSAGE value="getting menu from json insted of firebase" />
+    <option name="LAST_COMMIT_MESSAGE" value="getting menu from json insted of firebase" />
   </component>
   <component name="WindowStateProjectService">
     <state x="139" y="23" key="#ESLint" timestamp="1576608760592">
@@ -542,10 +539,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="315" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.777@0.23.1280.777" timestamp="1576357508942" />
-    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1576519908854">
+    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1576782022771">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1576519908854" />
+    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1576782022771" />
     <state x="248" y="152" key="EditFileWatcherDialog" timestamp="1576193894905">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -554,30 +551,30 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="485" y="295" key="Github.ShareDialog/0.23.1280.777@0.23.1280.777" timestamp="1576241150516" />
-    <state width="1280" height="191" key="GridCell.Tab.0.bottom" timestamp="1576674830750">
+    <state width="1225" height="191" key="GridCell.Tab.0.bottom" timestamp="1576782242983">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="191" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1576674830750" />
-    <state width="1280" height="191" key="GridCell.Tab.0.center" timestamp="1576674830748">
+    <state width="1225" height="191" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1576782242983" />
+    <state width="1225" height="191" key="GridCell.Tab.0.center" timestamp="1576782242982">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="191" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1576674830748" />
-    <state width="1280" height="191" key="GridCell.Tab.0.left" timestamp="1576674830748">
+    <state width="1225" height="191" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1576782242982" />
+    <state width="1225" height="191" key="GridCell.Tab.0.left" timestamp="1576782242981">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="191" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1576674830748" />
-    <state width="1280" height="191" key="GridCell.Tab.0.right" timestamp="1576674830749">
+    <state width="1225" height="191" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1576782242981" />
+    <state width="1225" height="191" key="GridCell.Tab.0.right" timestamp="1576782242982">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="191" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1576674830749" />
-    <state x="40" y="23" key="SettingsEditor" timestamp="1576763454134">
+    <state width="1225" height="191" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1576782242982" />
+    <state x="40" y="23" key="SettingsEditor" timestamp="1576785044639">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="40" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1576763454134" />
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1576519750153">
+    <state x="40" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1576785044639" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1576782060101">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1576519750153" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1576782060101" />
     <state x="223" y="205" key="com.intellij.ide.util.TipDialog" timestamp="1576763358335">
       <screen x="0" y="23" width="1280" height="777" />
     </state>

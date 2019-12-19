@@ -13,11 +13,14 @@ export const Drinks = ({ menuFunc }) => {
         <h2>Menu</h2>
         <MenuBtns />
         <div className="menu__content-text">
-          <h3>Appetizers & Salads</h3>
-          <ul>{menuFunc('Appetizers & Salads')}</ul>
+          <h3>Red Wines</h3>
+          <ul>{menuFunc('Red Wines')}</ul>
 
-          <h3>Sides</h3>
-          <ul>{menuFunc('Sides')}</ul>
+          <h3>White Wines</h3>
+          <ul>{menuFunc('White Wines')}</ul>
+
+          <h3>Whisky</h3>
+          <ul>{menuFunc('Whisky')}</ul>
         </div>
       </section>
     </article>
