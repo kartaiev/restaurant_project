@@ -23,11 +23,11 @@ export const Gallery = () => {
         <img src={steakHouse4} alt="" />
       </div>
       <div className="btns-wrap">
-        <button onClick={handleClick}>
+        <button>
           <FiChevronLeft className="arrow" />
         </button>
 
-        <button onClick={handleClick}>
+        <button>
           <FiChevronRight className="arrow" />
         </button>
       </div>

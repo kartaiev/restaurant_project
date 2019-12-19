@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/images/gallery/steak-house-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/gallery/steak-house-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/gallery/steak-house-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/gallery/steak-house-4.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/About.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/Gallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Gallery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Gallery.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Gallery.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Pages.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Pages.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/menu/Drinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/menu/Drinks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/menu/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/menu/Menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/scssConfig.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/scssConfig.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,14 +136,7 @@
       <workItem from="1576741843746" duration="3054000" />
       <workItem from="1576751575927" duration="638000" />
       <workItem from="1576763355091" duration="9958000" />
-      <workItem from="1576781791368" duration="15200000" />
-    </task>
-    <task id="LOCAL-00020" summary="pages">
-      <created>1576417401093</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1576417401093</updated>
+      <workItem from="1576781791368" duration="15243000" />
     </task>
     <task id="LOCAL-00021" summary="refactor nav-bar">
       <created>1576427052541</created>
@@ -492,7 +474,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576792668367</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="gallery">
+      <created>1576799891400</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1576799891400</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -500,7 +489,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="logo" />
     <MESSAGE value="logo-title" />
     <MESSAGE value="video-player" />
     <MESSAGE value="mobile" />
@@ -525,7 +513,8 @@
     <MESSAGE value="refactoring scss files" />
     <MESSAGE value="overlay" />
     <MESSAGE value="scss refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="scss refactoring" />
+    <MESSAGE value="gallery" />
+    <option name="LAST_COMMIT_MESSAGE" value="gallery" />
   </component>
   <component name="WindowStateProjectService">
     <state x="139" y="23" key="#ESLint" timestamp="1576608760592">
@@ -552,10 +541,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="315" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.777@0.23.1280.777" timestamp="1576357508942" />
-    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1576792668210">
+    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1576799891184">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1576792668210" />
+    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1576799891184" />
     <state x="248" y="152" key="EditFileWatcherDialog" timestamp="1576193894905">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
