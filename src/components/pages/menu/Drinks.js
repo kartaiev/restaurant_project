@@ -3,7 +3,7 @@ import wine from '../../../assets/images/wine.png';
 import { MenuBtns } from '../../layout/MenuBtns';
 import './Menu.scss';
 
-export const Drinks = ({ menuDocs }) => {
+export const Drinks = ({ menuFunc }) => {
   return (
     <article className="menu">
       <div className="menu__img-wrap">
@@ -13,67 +13,12 @@ export const Drinks = ({ menuDocs }) => {
         <h2>Menu</h2>
         <MenuBtns />
         <div className="menu__content-text">
-          <h3>Red Wines</h3>
-          <ul>
-            {menuDocs.map(menuDoc => {
-              if (menuDoc.data().type === 'Appetizers & Salads') {
-                return (
-                  <li key={menuDoc.id}>
-                    <div>{menuDoc.data().dish}</div>
-                    <div>{menuDoc.data().price}</div>
-                  </li>
-                );
-              }
-            })}
-          </ul>
-          <br />
-          <br />
+          <h3>Appetizers & Salads</h3>
+          <ul>{menuFunc('Appetizers & Salads')}</ul>
+
           <h3>Sides</h3>
-          <ul>
-            {menuDocs.map(menuDoc => {
-              if (menuDoc.data().type === 'Sides') {
-                return (
-                  <li key={menuDoc.id}>
-                    <div>{menuDoc.data().dish}</div>
-                    <div>{menuDoc.data().price}</div>
-                  </li>
-                );
-              }
-            })}
-          </ul>
-          <br />
-          <br />
-          <h3>Steaks & Chops</h3>
-          <ul>
-            {menuDocs.map(menuDoc => {
-              if (menuDoc.data().type === 'Steaks & Chops') {
-                return (
-                  <li key={menuDoc.id}>
-                    <div>{menuDoc.data().dish}</div>
-                    <div>{menuDoc.data().price}</div>
-                  </li>
-                );
-              }
-            })}
-          </ul>
-          <br />
-          <br />
-          <h3>Seafood</h3>
-          <ul>
-            {menuDocs.map(menuDoc => {
-              if (menuDoc.data().type === 'Seafood') {
-                return (
-                  <li key={menuDoc.id}>
-                    <div>{menuDoc.data().dish}</div>
-                    <div>{menuDoc.data().price}</div>
-                  </li>
-                );
-              }
-            })}
-          </ul>
+          <ul>{menuFunc('Sides')}</ul>
         </div>
-        <br />
-        <br />
       </section>
     </article>
   );

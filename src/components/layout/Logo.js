@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom';
 import './Logo.scss';
 import steakhouse from '../../assets/images/steakhouse.png';
 
-
 export const Logo = () => {
   return (
     <div className="logo-wrap">

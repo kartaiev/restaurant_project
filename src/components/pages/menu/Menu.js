@@ -1,14 +1,11 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
 import './Menu.scss';
-import { Drinks } from './Drinks';
 import beefSteak from '../../../assets/images/Steak_Rosemary.png';
 import { MenuBtns } from '../../layout/MenuBtns';
 
-export const Menu = ({menuDocs}) => {
- 
+export const Menu = ({ menuFunc }) => {
   return (
-      <article className="menu">
+    <article className="menu">
       <div className="menu__img-wrap">
         <img className="menu__img" src={beefSteak} alt="beef steak with fork" />
       </div>
@@ -17,75 +14,18 @@ export const Menu = ({menuDocs}) => {
         <MenuBtns />
         <div className="menu__content-text">
           <h3>Appetizers & Salads</h3>
-          <ul>
-            {menuDocs.map(menuDoc => {
-              if (menuDoc.data().type === 'Appetizers & Salads') {
-                return (
-                  <li key={menuDoc.id}>
-                    <div>{menuDoc.data().dish}</div>
-                    <div>{menuDoc.data().price}</div>
-                  </li>
-                );
-              }
-            })}
-          </ul>
-          <br />
-          <br />
+          <ul>{menuFunc('Appetizers & Salads')}</ul>
+
           <h3>Sides</h3>
-          <ul>
-            {menuDocs.map(menuDoc => {
-              if (menuDoc.data().type === 'Sides') {
-                return (
-                  <li key={menuDoc.id}>
-                    <div>{menuDoc.data().dish}</div>
-                    <div>{menuDoc.data().price}</div>
-                  </li>
-                );
-              }
-            })}
-          </ul>
-          <br />
-          <br />
+          <ul>{menuFunc('Sides')}</ul>
+
           <h3>Steaks & Chops</h3>
-          <ul>
-            {menuDocs.map(menuDoc => {
-              if (menuDoc.data().type === 'Steaks & Chops') {
-                return (
-                  <li key={menuDoc.id}>
-                    <div>{menuDoc.data().dish}</div>
-                    <div>{menuDoc.data().price}</div>
-                  </li>
-                );
-              }
-            })}
-          </ul>
-          <br />
-          <br />
+          <ul>{menuFunc('Steaks & Chops')}</ul>
+
           <h3>Seafood</h3>
-          <ul>
-            {menuDocs.map(menuDoc => {
-              if (menuDoc.data().type === 'Seafood') {
-                return (
-                  <li key={menuDoc.id}>
-                    <div>{menuDoc.data().dish}</div>
-                    <div>{menuDoc.data().price}</div>
-                  </li>
-                );
-              }
-            })}
-          </ul>
+          <ul>{menuFunc('Seafood')}</ul>
         </div>
-        <br />
-        <br />
       </section>
-    
-        <Switch>
-          <Route
-            exact
-            path="/menu/drinks"
-            render={() => <Drinks menuDocs={menuDocs} />}
-          />
-        </Switch>
-      </article>
+    </article>
   );
 };

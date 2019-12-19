@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "type": "Appetizers & Salads",
+    "dish": "Baked Clams Oreganata",
+    "price": 17
+  },
+  {
+    "id": 2,
+    "type": "Appetizers & Salads",
+    "dish": "Manhattan Clam Chowder",
+    "price": 14
+  },
+  {
+    "id": 3,
+    "type": "Appetizers & Salads",
+    "dish": "Green Salad",
+    "price": 12
+  },
+  {
+    "id": 4,
+    "type": "Appetizers & Salads",
+    "dish": "Jumbo Lump Crab Cake",
+    "price": 21
+  },
+  {
+    "id": 5,
+    "type": "Appetizers & Salads",
+    "dish": "Beef Carpaccio",
+    "price": 16
+  },
+  {
+    "id": 6,
+    "type": "Appetizers & Salads",
+    "dish": "French Onion Soup",
+    "price": 12
+  },
+  {
+    "id": 7,
+    "type": "Appetizers & Salads",
+    "dish": "Jumbo Lump Crab Cake",
+    "price": 21
+  },
+  {
+    "id": 8,
+    "type": "Appetizers & Salads",
+    "dish": "Caesar",
+    "price": 14
+  },
+  {
+    "id": 9,
+    "type": "Sides",
+    "dish": "Baked Potato",
+    "price": 10
+  },
+  {
+    "id": 10,
+    "type": "Sides",
+    "dish": "French Fries",
+    "price": 11
+  },
+  {
+    "id": 11,
+    "type": "Sides",
+    "dish": "Lyonnaise",
+    "price": 11
+  },
+  {
+    "id": 12,
+    "type": "Sides",
+    "dish": "Onion Rings",
+    "price": 11
+  },
+  {
+    "id": 13,
+    "type": "Sides",
+    "dish": "Mashed Potatoes",
+    "price": 11
+  },
+{
+    "id": 14,
+    "type": "Sides",
+    "dish": "Hash Browns",
+    "price": 11
+  },
+{
+    "id": 15,
+    "type": "Steaks & Chops",
+    "dish": "Chopped Steak",
+    "price": 23
+  },
+{
+    "id": 16,
+    "type": "Steaks & Chops",
+    "dish": "Filet Mignon 14oz",
+    "price": 52
+  },
+{
+    "id": 17,
+    "type": "Steaks & Chops",
+    "dish": "Lamb Chops",
+    "price": 51
+  },
+{
+    "id": 18,
+    "type": "Steaks & Chops",
+    "dish": "New York Sirloin",
+    "price": 53
+  },
+{
+    "id": 19,
+    "type": "Steaks & Chops",
+    "dish": "Rib Veal Chop",
+    "price": 52
+  },
+{
+    "id": 20,
+    "type": "Steaks & Chops",
+    "dish": "Ribeye",
+    "price": 56
+  },
+{
+    "id": 21,
+    "type": "Seafood",
+    "dish": "Broiled Swordfish",
+    "price": 36
+  },
+{
+    "id": 22,
+    "type": "Seafood",
+    "dish": "Jumbo Shrimp",
+    "price": 36
+  },
+{
+    "id": 23,
+    "type": "Seafood",
+    "dish": "Grilled Scottish Salmon",
+    "price": 34
+  },
+{
+    "id": 24,
+    "type": "Seafood",
+    "dish": "Jumbo Maine Lobster",
+    "price": 44
+  }
+]
