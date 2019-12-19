@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import './App.scss';
+import menuData from './data/menuData';
 import { Home } from './components/Home';
 import { NavBar } from './components/layout/NavBar';
 import { Hamburger } from './components/layout/NavBarHamburger';
@@ -10,7 +10,7 @@ import { Gallery } from './components/pages/Gallery';
 import { Menu } from './components/pages/menu/Menu';
 import { Contact } from './components/pages/Contact';
 import { Drinks } from './components/pages/menu/Drinks';
-import menuData from './data/menuData';
+import './App.scss';
 // import fb from './config/fbConfig';
 
 const App = () => {

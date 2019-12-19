@@ -1,8 +1,8 @@
 import React from 'react';
-import wine from '../../../assets/images/wine.png';
 import { MenuBtns } from '../../layout/MenuBtns';
-import './Menu.scss';
 import '../Pages.scss';
+import './Menu.scss';
+import wine from '../../../assets/images/wine.png';
 
 export const Drinks = ({ menuFunc }) => {
   return (

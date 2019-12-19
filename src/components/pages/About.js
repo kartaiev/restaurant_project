@@ -1,6 +1,6 @@
 import React from 'react';
-import './About.scss';
 import './Pages.scss';
+import './About.scss';
 import standingSteak from '../../assets/images/steak-3.png';
 
 export const About = () => {

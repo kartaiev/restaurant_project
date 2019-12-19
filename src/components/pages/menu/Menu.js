@@ -1,8 +1,8 @@
 import React from 'react';
-import './Menu.scss';
-import '../Pages.scss';
-import beefSteak from '../../../assets/images/Steak_Rosemary.png';
 import { MenuBtns } from '../../layout/MenuBtns';
+import '../Pages.scss';
+import './Menu.scss';
+import beefSteak from '../../../assets/images/Steak_Rosemary.png';
 
 export const Menu = ({ menuFunc }) => {
   return (
