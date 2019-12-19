@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/About.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/About.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/About.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/menu/Menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/menu/Menu.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,14 +137,7 @@
       <workItem from="1576741843746" duration="3054000" />
       <workItem from="1576751575927" duration="638000" />
       <workItem from="1576763355091" duration="9958000" />
-      <workItem from="1576781791368" duration="7578000" />
-    </task>
-    <task id="LOCAL-00017" summary="nav-bar elements font">
-      <created>1576356653537</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1576356653537</updated>
+      <workItem from="1576781791368" duration="7791000" />
     </task>
     <task id="LOCAL-00018" summary="refactoring">
       <created>1576359649415</created>
@@ -482,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576788897979</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="overlay">
+      <created>1576790346965</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1576790346966</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -490,7 +490,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="video-background" />
     <MESSAGE value="redirects" />
     <MESSAGE value="logo" />
     <MESSAGE value="logo-title" />
@@ -515,7 +514,8 @@
     <MESSAGE value="menu styling" />
     <MESSAGE value="refactoring 'list from menuData' function." />
     <MESSAGE value="refactoring scss files" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring scss files" />
+    <MESSAGE value="overlay" />
+    <option name="LAST_COMMIT_MESSAGE" value="overlay" />
   </component>
   <component name="WindowStateProjectService">
     <state x="139" y="23" key="#ESLint" timestamp="1576608760592">
@@ -542,10 +542,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="315" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.777@0.23.1280.777" timestamp="1576357508942" />
-    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1576788897444">
+    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1576790346797">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1576788897444" />
+    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1576790346797" />
     <state x="248" y="152" key="EditFileWatcherDialog" timestamp="1576193894905">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -574,10 +574,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="40" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1576785044639" />
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1576788902784">
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1576790350134">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1576788902784" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1576790350134" />
     <state x="223" y="205" key="com.intellij.ide.util.TipDialog" timestamp="1576763358335">
       <screen x="0" y="23" width="1280" height="777" />
     </state>

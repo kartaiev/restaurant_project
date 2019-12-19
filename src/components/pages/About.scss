@@ -8,15 +8,15 @@
   overflow-x: hidden;
   overflow-y: scroll;
 
-  &::after {
-    @include full-screen;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba($background-color, .4);
-    content: '';
-    z-index: 5;
-  }
+  //&::after {
+  //  @include full-screen;
+  //  position: absolute;
+  //  top: 0;
+  //  left: 0;
+  //  background-color: rgba($background-color, .4);
+  //  content: '';
+  //  z-index: 5;
+  //}
 
   &__img {
     width: 100%;
