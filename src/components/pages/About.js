@@ -5,9 +5,8 @@ import standingSteak from '../../assets/images/steak-3.png';
 export const About = () => {
   return (
     <article className="about">
-      <div className="about__img-wrap">
-        <img className="about__img" src={standingSteak} alt="standing steak" />
-      </div>
+      <img className="about__img" src={standingSteak} alt="standing steak" />
+
       <section className="about__content">
         <h2 className="about__content-title">About</h2>
 
