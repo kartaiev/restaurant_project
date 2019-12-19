@@ -1,17 +1,22 @@
 import React from 'react';
 import './Menu.scss';
+import '../Pages.scss';
 import beefSteak from '../../../assets/images/Steak_Rosemary.png';
 import { MenuBtns } from '../../layout/MenuBtns';
 
 export const Menu = ({ menuFunc }) => {
   return (
-    <article className="menu">
-      <img className="menu__img" src={beefSteak} alt="beef steak with fork" />
+    <article className="article">
+      <img
+        className="article__img"
+        src={beefSteak}
+        alt="beef steak with fork"
+      />
 
-      <section className="menu__content">
+      <section className="article__content">
         <h2>Menu</h2>
         <MenuBtns />
-        <div className="menu__content-text">
+        <div className="article__content-text">
           <h3>Appetizers & Salads</h3>
           <ul>{menuFunc('Appetizers & Salads')}</ul>
 

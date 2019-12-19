@@ -1,16 +1,17 @@
 import React from 'react';
 import './About.scss';
+import './Pages.scss';
 import standingSteak from '../../assets/images/steak-3.png';
 
 export const About = () => {
   return (
-    <article className="about">
-      <img className="about__img" src={standingSteak} alt="standing steak" />
+    <article className="article">
+      <img className="article__img" src={standingSteak} alt="standing steak" />
 
-      <section className="about__content">
-        <h2 className="about__content-title">About</h2>
+      <section className="article__content">
+        <h2 className="article__content-title">About</h2>
 
-        <div className="about__content-text">
+        <div className="article__content-text">
           <h3>Holy Smokes?</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
@@ -22,7 +23,7 @@ export const About = () => {
           </p>
         </div>
 
-        <div className="about__content-text">
+        <div className="article__content-text">
           <h3>Philosophy</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. A corporis
@@ -32,7 +33,7 @@ export const About = () => {
           </p>
         </div>
 
-        <div className="about__content-text">
+        <div className="article__content-text">
           <h3>History </h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum
