@@ -8,31 +8,15 @@
   overflow-x: hidden;
   overflow-y: scroll;
 
-  &__img-wrap {
+  &__img {
     width: 100%;
     height: 60vh;
     position: relative;
-
-    &::after {
-      width: 100%;
-      height: 100vh;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-color: rgba($background-color, .5);
-      content: '';
-      z-index: 4;
-    }
-
-    .menu__img {
-      width: 100%;
-      height: 100%;
-      min-width: 100%;
-      min-height: 60%;
-      background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat;
-    }
+    min-width: 100%;
+    min-height: 60vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
   }
 
   .menu__content {

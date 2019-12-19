@@ -6,9 +6,8 @@ import { MenuBtns } from '../../layout/MenuBtns';
 export const Menu = ({ menuFunc }) => {
   return (
     <article className="menu">
-      <div className="menu__img-wrap">
-        <img className="menu__img" src={beefSteak} alt="beef steak with fork" />
-      </div>
+      <img className="menu__img" src={beefSteak} alt="beef steak with fork" />
+
       <section className="menu__content">
         <h2>Menu</h2>
         <MenuBtns />
