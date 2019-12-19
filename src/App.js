@@ -31,16 +31,13 @@ const App = () => {
   const menuFunc = type =>
     menuData
       .map(item => item)
-      .map(item => {
-        if (item.type === type) {
-          return (
-            <li key={item.id}>
-              <div>{item.dish}</div>
-              <div>{item.price}</div>
-            </li>
-          );
-        }
-      });
+      .filter(item => item.type === type)
+      .map(item => (
+        <li key={item.id}>
+          <div>{item.dish}</div>
+          <div>{item.price}</div>
+        </li>
+      ));
 
   return (
     <div className="App">
