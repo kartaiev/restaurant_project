@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/menu/Drinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/menu/Drinks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/menuData.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/menuData.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/menu/Menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/menu/Menu.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,14 +135,7 @@
       <workItem from="1576741843746" duration="3054000" />
       <workItem from="1576751575927" duration="638000" />
       <workItem from="1576763355091" duration="9958000" />
-      <workItem from="1576781791368" duration="2875000" />
-    </task>
-    <task id="LOCAL-00012" summary="nav-bar elements animation">
-      <created>1576352673108</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1576352673108</updated>
+      <workItem from="1576781791368" duration="3313000" />
     </task>
     <task id="LOCAL-00013" summary="nav-bar elements animation">
       <created>1576354940162</created>
@@ -482,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576782023091</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="menu from JSON - done">
+      <created>1576785066219</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1576785066219</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -512,7 +510,8 @@
     <MESSAGE value="menu - firebase" />
     <MESSAGE value="menu - img" />
     <MESSAGE value="getting menu from json insted of firebase" />
-    <option name="LAST_COMMIT_MESSAGE" value="getting menu from json insted of firebase" />
+    <MESSAGE value="menu from JSON - done" />
+    <option name="LAST_COMMIT_MESSAGE" value="menu from JSON - done" />
   </component>
   <component name="WindowStateProjectService">
     <state x="139" y="23" key="#ESLint" timestamp="1576608760592">
@@ -539,10 +538,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="315" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.777@0.23.1280.777" timestamp="1576357508942" />
-    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1576782022771">
+    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1576785066021">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1576782022771" />
+    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1576785066021" />
     <state x="248" y="152" key="EditFileWatcherDialog" timestamp="1576193894905">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -571,10 +570,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="40" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1576785044639" />
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1576782060101">
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1576785074209">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1576782060101" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1576785074209" />
     <state x="223" y="205" key="com.intellij.ide.util.TipDialog" timestamp="1576763358335">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
