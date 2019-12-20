@@ -2,7 +2,7 @@ import React from 'react';
 import { MenuBtns } from '../../layout/MenuBtns';
 import '../Pages.scss';
 import './Menu.scss';
-import beefSteak from '../../../assets/images/Steak_Rosemary.png';
+import beefSteak from '../../../assets/images/pages/menu.jpg';
 
 export const Menu = ({ menuFunc }) => {
   return (

@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/images/pages/about.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/pages/drinks.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/pages/menu.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Pages.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Pages.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/menu/Drinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/menu/Drinks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/menu/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/menu/Menu.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,15 +75,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/fonts" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/images/pages" />
       <recent name="$PROJECT_DIR$/src/assets/images/gallery" />
       <recent name="$PROJECT_DIR$/src/assets/images" />
       <recent name="$PROJECT_DIR$/src/config" />
       <recent name="$PROJECT_DIR$/src/components/pages" />
-      <recent name="$PROJECT_DIR$/src/components/layout" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/assets/fonts" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -139,14 +144,7 @@
       <workItem from="1576781791368" duration="16738000" />
       <workItem from="1576830778447" duration="347000" />
       <workItem from="1576831180745" duration="1731000" />
-      <workItem from="1576834556515" duration="517000" />
-    </task>
-    <task id="LOCAL-00022" summary="about-img">
-      <created>1576431363320</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1576431363320</updated>
+      <workItem from="1576834556515" duration="1395000" />
     </task>
     <task id="LOCAL-00023" summary="about-img">
       <created>1576431492785</created>
@@ -484,7 +482,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576799921450</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="photo responsive">
+      <created>1576835418556</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1576835418557</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -492,7 +497,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="logo-title" />
     <MESSAGE value="video-player" />
     <MESSAGE value="mobile" />
     <MESSAGE value="nav-bar slider" />
@@ -517,7 +521,8 @@
     <MESSAGE value="overlay" />
     <MESSAGE value="scss refactoring" />
     <MESSAGE value="gallery" />
-    <option name="LAST_COMMIT_MESSAGE" value="gallery" />
+    <MESSAGE value="photo responsive" />
+    <option name="LAST_COMMIT_MESSAGE" value="photo responsive" />
   </component>
   <component name="WindowStateProjectService">
     <state x="139" y="23" key="#ESLint" timestamp="1576608760592">
@@ -544,10 +549,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="315" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.777@0.23.1280.777" timestamp="1576827964140" />
-    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1576799921268">
+    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1576835418044">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1576799921268" />
+    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1576835418044" />
     <state x="248" y="152" key="EditFileWatcherDialog" timestamp="1576193894905">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -576,10 +581,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="40" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1576831406429" />
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1576799936454">
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1576835423027">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1576799936454" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1576835423027" />
     <state x="223" y="205" key="com.intellij.ide.util.TipDialog" timestamp="1576763358335">
       <screen x="0" y="23" width="1280" height="777" />
     </state>

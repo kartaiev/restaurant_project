@@ -2,7 +2,7 @@ import React from 'react';
 import { MenuBtns } from '../../layout/MenuBtns';
 import '../Pages.scss';
 import './Menu.scss';
-import wine from '../../../assets/images/wine.png';
+import wine from '../../../assets/images/pages/drinks.jpg';
 
 export const Drinks = ({ menuFunc }) => {
   return (

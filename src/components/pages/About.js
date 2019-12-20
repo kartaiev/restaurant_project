@@ -1,7 +1,7 @@
 import React from 'react';
 import './Pages.scss';
 import './About.scss';
-import standingSteak from '../../assets/images/steak-3.png';
+import standingSteak from '../../assets/images/pages/about.jpg';
 
 export const About = () => {
   return (
