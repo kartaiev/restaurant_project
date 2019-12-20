@@ -18,18 +18,26 @@
       &-btn {
         width: 100%;
         height: 100%;
-        border: $text-font-color 1px solid;
         background-color: $overlay;
         @include menu-font;
         font-size: 1.5rem;
-        color: #cccccc;
-        padding: .8vh 0;
+        padding: 0.8vh 0;
         cursor: pointer;
 
         &:hover {
           border: $main-hover-color 1px solid;
           color: $main-color;
         }
+      }
+
+      .btn-1 {
+        border: $main-hover-color 1px solid;
+        color: $main-color;
+      }
+
+      .btn-2 {
+        border: $text-font-color 1px solid;
+        color: $text-font-color;
       }
     }
   }

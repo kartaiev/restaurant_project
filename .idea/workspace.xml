@@ -2,13 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/images/pages/about.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/pages/drinks.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/pages/menu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/gallery/steak-house-mbl-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/gallery/steak-house-mbl-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/gallery/steak-house-mbl-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/gallery/steak-house-mbl-4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/vladimirkartaev.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/vladimirkartaev.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/MenuBtns.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/MenuBtns.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/MenuBtns.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/MenuBtns.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Gallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Gallery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Gallery.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Gallery.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/menu/Drinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/menu/Drinks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/menu/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/menu/Menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/menuData.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/menuData.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +78,7 @@
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -144,14 +150,7 @@
       <workItem from="1576781791368" duration="16738000" />
       <workItem from="1576830778447" duration="347000" />
       <workItem from="1576831180745" duration="1731000" />
-      <workItem from="1576834556515" duration="1395000" />
-    </task>
-    <task id="LOCAL-00023" summary="about-img">
-      <created>1576431492785</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1576431492785</updated>
+      <workItem from="1576834556515" duration="10658000" />
     </task>
     <task id="LOCAL-00024" summary="about-img">
       <created>1576431773257</created>
@@ -489,7 +488,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576835418557</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="photo resizing">
+      <created>1576836963416</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1576836963416</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -497,7 +503,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="video-player" />
     <MESSAGE value="mobile" />
     <MESSAGE value="nav-bar slider" />
     <MESSAGE value="nav-bar elements animation" />
@@ -522,7 +527,8 @@
     <MESSAGE value="scss refactoring" />
     <MESSAGE value="gallery" />
     <MESSAGE value="photo responsive" />
-    <option name="LAST_COMMIT_MESSAGE" value="photo responsive" />
+    <MESSAGE value="photo resizing" />
+    <option name="LAST_COMMIT_MESSAGE" value="photo resizing" />
   </component>
   <component name="WindowStateProjectService">
     <state x="139" y="23" key="#ESLint" timestamp="1576608760592">
@@ -549,10 +555,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="315" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.777@0.23.1280.777" timestamp="1576827964140" />
-    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1576835418044">
+    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1576836963076">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1576835418044" />
+    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1576836963076" />
     <state x="248" y="152" key="EditFileWatcherDialog" timestamp="1576193894905">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -577,14 +583,14 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1280" height="192" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1576835204086" />
-    <state x="40" y="23" key="SettingsEditor" timestamp="1576831406429">
+    <state x="40" y="23" key="SettingsEditor" timestamp="1576844821109">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="40" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1576831406429" />
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1576835423027">
+    <state x="40" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1576844821109" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1576836969851">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1576835423027" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1576836969850" />
     <state x="223" y="205" key="com.intellij.ide.util.TipDialog" timestamp="1576763358335">
       <screen x="0" y="23" width="1280" height="777" />
     </state>

@@ -20,9 +20,11 @@ const App = () => {
     classEl: 'close'
   });
 
+  const { classEl, open } = classToggle;
+
   //* Toggle Element Func //
   const toggleEl = () => {
-    classToggle.open
+    open
       ? setClassToggle({ open: false, classEl: 'open' })
       : setClassToggle({ open: true, classEl: 'close' });
   };
@@ -42,8 +44,8 @@ const App = () => {
   return (
     <div className="App">
       <Logo />
-      <NavBar classEl={classToggle.classEl} toggleEl={toggleEl} />
-      <Hamburger classEl={classToggle.classEl} toggleEl={toggleEl} />
+      <NavBar classEl={classEl} toggleEl={toggleEl} />
+      <Hamburger classEl={classEl} toggleEl={toggleEl} />
 
       <Switch>
         <Route path="/" exact component={Home} />
