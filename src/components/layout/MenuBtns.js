@@ -23,6 +23,7 @@ export const MenuBtns = () => {
           <button
             className={`btns__link-btn ${on ? 'active' : ''}`}
             onClick={addActiveClass}
+            onTouchStart={activeClass}
           >
             Food
           </button>
@@ -32,6 +33,7 @@ export const MenuBtns = () => {
           <button
             className={`btns__link-btn ${on ? '' : 'active'}`}
             onClick={addActiveClass}
+            onTouchStart={activeClass}
           >
             Drinks
           </button>
