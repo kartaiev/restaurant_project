@@ -21,7 +21,7 @@ export const MenuBtns = () => {
       <div className="btns__wrap">
         <Link className="btns__link" to="/menu">
           <button
-            className={`btns__link-btn ${on ? { activeClass } : ''}`}
+            className={`btns__link-btn ${on ? 'active' : ''}`}
             onClick={addActiveClass}
           >
             Food
@@ -30,7 +30,7 @@ export const MenuBtns = () => {
 
         <Link className="btns__link" to="/menu/drinks">
           <button
-            className={`btns__link-btn ${on ? '' : { activeClass }}`}
+            className={`btns__link-btn ${on ? '' : 'active'}`}
             onClick={addActiveClass}
           >
             Drinks
