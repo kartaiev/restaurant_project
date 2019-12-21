@@ -4,19 +4,16 @@ import './MenuBtns.scss';
 
 export const MenuBtns = () => {
   const [btnActiveState, setBtnActiveState] = useState({
-    isActive: true,
-    activeStyle: {
-      border: '#9d231f',
-      color: '#ffb915'
-    }
+    on: false,
+    activeClass: 'active'
   });
 
-  const { isActive, activeStyle } = btnActiveState;
+  const { on, activeClass } = btnActiveState;
 
   const addActiveClass = () => {
-    isActive
-      ? setBtnActiveState({ isActive: false })
-      : setBtnActiveState({ isActive: true });
+    setBtnActiveState({
+      on: !on
+    })
   };
 
   return (
@@ -24,8 +21,7 @@ export const MenuBtns = () => {
       <div className="btns__wrap">
         <Link className="btns__link" to="/menu">
           <button
-            style={isActive ? { activeStyle } : null}
-            className={`btns__link-btn`}
+            className={`btns__link-btn ${on ? { activeClass } : ''}`}
             onClick={addActiveClass}
           >
             Food
@@ -34,8 +30,7 @@ export const MenuBtns = () => {
 
         <Link className="btns__link" to="/menu/drinks">
           <button
-            style={isActive ? null : { activeStyle }}
-            className={`btns__link-btn`}
+            className={`btns__link-btn ${on ? '' : { activeClass }}`}
             onClick={addActiveClass}
           >
             Drinks

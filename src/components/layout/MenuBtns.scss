@@ -26,17 +26,15 @@
         padding: 0.8vh 0;
         cursor: pointer;
 
-
+        &.active {
+          border: $main-hover-color 1px solid;
+          color: $main-color;
+        }
 
         &:hover {
           border: $main-hover-color 1px solid;
           color: $main-color;
         }
-      }
-
-      .active {
-        border: $main-hover-color 1px solid;
-        color: $main-color;
       }
     }
   }
