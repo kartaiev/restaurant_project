@@ -9,11 +9,10 @@ export const ButtonLink = styled(NavLink)`
   background: ${overlay};
   ${({ type }) =>
     type === 'active' && `color: ${yellow}; border: 1px solid ${red};`};
-  padding: 0.8vh 0;
+  padding: 1vh 0;
   outline: none;
   text-align: center;
   text-decoration: none;
-  box-shadow: ${elevations[2]};
 
   &:hover {
     color: ${yellow};

@@ -11,6 +11,7 @@ import { Menu } from './components/pages/menu/Menu';
 import { Contact } from './components/pages/Contact';
 import { Drinks } from './components/pages/menu/Drinks';
 import './App.scss';
+import GlobalStyle from './utilities/Global';
 // import fb from './config/fbConfig';
 
 const App = () => {
@@ -43,6 +44,7 @@ const App = () => {
 
   return (
     <div className="App">
+      <GlobalStyle />
       <Logo />
       <NavBar classEl={classEl} toggleEl={toggleEl} />
       <Hamburger classEl={classEl} toggleEl={toggleEl} />

@@ -19,7 +19,7 @@ export const MenuBtns = ({ on, toggle }) => {
 const BtnsWrap = styled.div`
   width: 100%;
   ${betweenCenter()};
-  padding-bottom: 5vh;
+  padding: 5vh 0;
 
   ${ButtonLink} {
     width: 45%;
