@@ -3,6 +3,7 @@ import { MenuBtns } from '../../layout/MenuBtns';
 import '../Pages.scss';
 import './Menu.scss';
 import beefSteak from '../../../assets/images/pages/menu.jpg';
+import { Toggle } from '../../../utilities';
 
 export const Menu = ({ menuFunc }) => {
   return (
@@ -15,7 +16,9 @@ export const Menu = ({ menuFunc }) => {
 
       <section className="article__content">
         <h2>Menu</h2>
-        <MenuBtns />
+        <Toggle>
+          {({ on, toggle }) => <MenuBtns on={on} toggle={toggle} />}
+        </Toggle>
         <div className="article__content-text">
           <h3>Appetizers & Salads</h3>
           <ul>{menuFunc('Appetizers & Salads')}</ul>
