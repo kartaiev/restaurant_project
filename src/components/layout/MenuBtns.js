@@ -4,7 +4,7 @@ import './MenuBtns.scss';
 
 export const MenuBtns = () => {
   const [btnActiveState, setBtnActiveState] = useState({
-    on: false,
+    on: true,
     activeClass: 'active'
   });
 

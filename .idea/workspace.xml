@@ -39,6 +39,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsbtTreeLayoutManager">
@@ -596,6 +601,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="223" y="205" key="com.intellij.ide.util.TipDialog/0.23.1280.777@0.23.1280.777" timestamp="1576763358335" />
+    <state x="413" y="318" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577115824141">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="413" y="318" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.777@0.23.1280.777" timestamp="1577115824141" />
     <state x="483" y="244" width="313" height="349" key="jetbrains.javascript.buildTools.run-task-popup" timestamp="1576951035091">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
