@@ -1,28 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/elements/Article.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/elements/Image.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/elements/Titles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utilities/fonts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utilities/sizes.js" afterDir="false" />
+    <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="refactoring scss to styled components">
+      <change afterPath="$PROJECT_DIR$/src/components/layout/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utilities/transitions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Sanchezregular-ita.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Western.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout/MenuBtns.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/MenuBtns.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/NavBar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/NavBar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/NavBarHamburger.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/NavBarHamburger.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/NavBarHamburger.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/About.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Pages.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Pages.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/About.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Contact.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Gallery.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Gallery.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Pages.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/menu/Drinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/menu/Drinks.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/menu/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/menu/Menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/scssConfig.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/scssConfig.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/elements/Buttons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/Buttons.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/menu/Menu.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/scssConfig.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/elements/Article.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/Containers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/elements/Titles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/Titles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/elements/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utilities/Global.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/Global.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utilities/colors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/colors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilities/Toggle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/Toggle.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utilities/flexes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/flexes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utilities/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilities/positions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/positions.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,14 +189,8 @@
       <workItem from="1577172622321" duration="425000" />
       <workItem from="1577173739934" duration="214000" />
       <workItem from="1577174085453" duration="378000" />
-      <workItem from="1577175190740" duration="5511000" />
-    </task>
-    <task id="LOCAL-00031" summary="about-img">
-      <created>1576439108829</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1576439108829</updated>
+      <workItem from="1577175190740" duration="22896000" />
+      <workItem from="1577219093131" duration="801000" />
     </task>
     <task id="LOCAL-00032" summary="about-img">
       <created>1576439324913</created>
@@ -525,7 +528,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577136590646</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="refactoring scss to styled components">
+      <created>1577181340055</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1577181340056</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -581,14 +591,14 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="327" y="147" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1280.777@0.23.1280.777" timestamp="1576608427480" />
-    <state x="315" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576827964140">
+    <state x="315" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1577196748337">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="315" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.777@0.23.1280.777" timestamp="1576827964140" />
-    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1577136590312">
+    <state x="315" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.777@0.23.1280.777" timestamp="1577196748337" />
+    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1577220147882">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1577136590312" />
+    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1577220147882" />
     <state x="248" y="152" key="EditFileWatcherDialog" timestamp="1576193894905">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -597,30 +607,30 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="485" y="295" key="Github.ShareDialog/0.23.1280.777@0.23.1280.777" timestamp="1576241150516" />
-    <state width="1280" height="192" key="GridCell.Tab.0.bottom" timestamp="1577180403580">
+    <state width="1280" height="192" key="GridCell.Tab.0.bottom" timestamp="1577219245104">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="192" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1577180403580" />
-    <state width="1280" height="192" key="GridCell.Tab.0.center" timestamp="1577180403577">
+    <state width="1280" height="192" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1577219245104" />
+    <state width="1280" height="192" key="GridCell.Tab.0.center" timestamp="1577219245102">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="192" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1577180403577" />
-    <state width="1280" height="192" key="GridCell.Tab.0.left" timestamp="1577180403574">
+    <state width="1280" height="192" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1577219245102" />
+    <state width="1280" height="192" key="GridCell.Tab.0.left" timestamp="1577219245101">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="192" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1577180403574" />
-    <state width="1280" height="192" key="GridCell.Tab.0.right" timestamp="1577180403579">
+    <state width="1280" height="192" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1577219245101" />
+    <state width="1280" height="192" key="GridCell.Tab.0.right" timestamp="1577219245103">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="192" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1577180403579" />
+    <state width="1280" height="192" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1577219245103" />
     <state x="40" y="23" key="SettingsEditor" timestamp="1577175773924">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="40" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1577175773924" />
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1577136595955">
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1577181345711">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1577136595955" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1577181345711" />
     <state x="223" y="205" key="com.intellij.ide.util.TipDialog" timestamp="1576763358335">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -637,9 +647,9 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="358" y="269" width="858" height="350" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.23.1280.777@0.23.1280.777" timestamp="1576941427259" />
-    <state x="219" y="23" width="840" height="777" key="search.everywhere.popup" timestamp="1577137295828">
+    <state x="219" y="23" width="840" height="775" key="search.everywhere.popup" timestamp="1577216588209">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="219" y="23" width="840" height="777" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1577137295828" />
+    <state x="219" y="23" width="840" height="775" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1577216588209" />
   </component>
 </project>

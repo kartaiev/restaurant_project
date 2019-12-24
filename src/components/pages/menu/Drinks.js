@@ -1,29 +1,34 @@
 import React from 'react';
 import { MenuBtns } from '../../layout/MenuBtns';
-import '../Pages.scss';
-import './Menu.scss';
 import wine from '../../../assets/images/pages/drinks.jpg';
-import { Image, Subtitile, Title } from '../../../elements';
+import {
+  Article,
+  Image,
+  MenuContent,
+  Section,
+  Subtitle,
+  Title
+} from '../../../elements';
 
 export const Drinks = ({ menuFunc }) => {
   return (
-    <article className="article">
+    <Article className="article">
       <Image src={wine} alt="beef steak with fork" />
 
-      <section className="article__content">
+      <Section>
         <Title>Menu</Title>
         <MenuBtns />
-        <div className="article__content-text">
-          <Subtitile>Red Wine</Subtitile>
+        <MenuContent>
+          <Subtitle>Red Wine</Subtitle>
           <ul>{menuFunc('Red Wine')}</ul>
 
-          <Subtitile>White Wines</Subtitile>
+          <Subtitle>White Wines</Subtitle>
           <ul>{menuFunc('White Wine')}</ul>
 
-          <Subtitile>Whisky</Subtitile>
+          <Subtitle>Whisky</Subtitle>
           <ul>{menuFunc('Whisky')}</ul>
-        </div>
-      </section>
-    </article>
+        </MenuContent>
+      </Section>
+    </Article>
   );
 };

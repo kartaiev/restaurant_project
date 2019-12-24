@@ -20,3 +20,10 @@ export const betweenCenter = ({ fd = 'row' } = {}) => css`
   justify-content: space-between;
   align-items: center;
 `;
+
+export const betweenStart = ({ fd = 'row' } = {}) => css`
+  display: flex;
+  flex-direction: ${fd};
+  justify-content: space-between;
+  align-items: flex-start;
+`;

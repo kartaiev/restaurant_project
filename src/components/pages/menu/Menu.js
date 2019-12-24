@@ -1,35 +1,40 @@
 import React from 'react';
 import { MenuBtns } from '../../layout/MenuBtns';
-import '../Pages.scss';
-import './Menu.scss';
 import beefSteak from '../../../assets/images/pages/menu.jpg';
 import { Toggle } from '../../../utilities';
-import { Image, Subtitile, Title } from '../../../elements';
+import {
+  Article,
+  Image,
+  MenuContent,
+  Section,
+  Subtitle,
+  Title
+} from '../../../elements';
 
 export const Menu = ({ menuFunc }) => {
   return (
-    <article className="article">
+    <Article className="article">
       <Image src={beefSteak} alt="beef steak with fork" />
 
-      <section className="article__content">
+      <Section>
         <Title>Menu</Title>
         <Toggle>
           {({ on, toggle }) => <MenuBtns on={on} toggle={toggle} />}
         </Toggle>
-        <div className="article__content-text">
-          <Subtitile>Appetizers & Salads</Subtitile>
+        <MenuContent>
+          <Subtitle>Appetizers & Salads</Subtitle>
           <ul>{menuFunc('Appetizers & Salads')}</ul>
 
-          <Subtitile>Sides</Subtitile>
+          <Subtitle>Sides</Subtitle>
           <ul>{menuFunc('Sides')}</ul>
 
-          <Subtitile>Steaks & Chops</Subtitile>
+          <Subtitle>Steaks & Chops</Subtitle>
           <ul>{menuFunc('Steaks & Chops')}</ul>
 
-          <Subtitile>Seafood</Subtitile>
+          <Subtitle>Seafood</Subtitle>
           <ul>{menuFunc('Seafood')}</ul>
-        </div>
-      </section>
-    </article>
+        </MenuContent>
+      </Section>
+    </Article>
   );
 };

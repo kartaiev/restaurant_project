@@ -1,53 +1,53 @@
-@import "../../config/scssConfig";
-
-.gallery {
-  @include full-screen;
-  position: relative;
-  @include column-center-center;
-
-  &__slide {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity .4s ease-in-out;
-
-    &.open {
-      opacity: 1;
-    }
-
-    img {
-      background: no-repeat center center/cover;
-    }
-  }
-
-  .btns-wrap {
-    @include full-screen;
-    position: fixed;
-    @include row-between-center;
-
-    button {
-      height: 10vh;
-      width: 17%;
-      background: transparent;
-      border: none;
-
-      &:hover {
-        cursor: pointer;
-      }
-
-      .arrow {
-        color: $text-font-color;
-        z-index: 509;
-        font-size: 3rem;
-
-        &:hover {
-          cursor: pointer;
-          color: $main-color;
-        }
-      }
-    }
-  }
-}
+//
+//
+//.gallery {
+//  @include full-screen;
+//  position: relative;
+//  @include column-center-center;
+//
+//  &__slide {
+//    width: 100%;
+//    height: 100%;
+//    position: absolute;
+//    top: 0;
+//    left: 0;
+//    opacity: 0;
+//    transition: opacity .4s ease-in-out;
+//
+//    &.open {
+//      opacity: 1;
+//    }
+//
+//    img {
+//      background: no-repeat center center/cover;
+//    }
+//  }
+//
+//  .btns-wrap {
+//    @include full-screen;
+//    position: fixed;
+//    @include row-between-center;
+//
+//    button {
+//      height: 10vh;
+//      width: 17%;
+//      background: transparent;
+//      border: none;
+//
+//      &:hover {
+//        cursor: pointer;
+//      }
+//
+//      .arrow {
+//        color: $text-font-color;
+//        z-index: 509;
+//        font-size: 3rem;
+//
+//        &:hover {
+//          cursor: pointer;
+//          color: $main-color;
+//        }
+//      }
+//    }
+//  }
+//}

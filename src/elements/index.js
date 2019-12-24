@@ -1,4 +1,4 @@
 export * from './Buttons';
 export * from './Titles';
-export * from './Article';
+export * from './Containers';
 export * from './Image';

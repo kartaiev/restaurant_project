@@ -1,26 +1,117 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './NavBar.scss';
+import styled, { css } from 'styled-components';
+import {
+  absolute,
+  betweenStart,
+  centerCenter,
+  easeOut,
+  fixed,
+  fullScreen,
+  overlay,
+  red,
+  yellow
+} from '../../utilities';
 
-export const NavBar = ({ classEl, toggleEl }) => {
+export const NavBar = ({ on, toggle }) => {
   const pages = ['About', 'Gallery', 'Menu', 'Contact'];
   return (
-    <div className={`nav-bar ${classEl}`}>
-      <div className="nav-bar__wrap">
-        <ul>
-          {pages.map((page, index) => (
-            <li key={index} className={`li-style  ${classEl}`}>
-              <NavLink
-                className={`link ${classEl}`}
-                to={`/${page.toLowerCase()}`}
-                onClick={toggleEl}
-              >
-                {page}
-              </NavLink>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </div>
+    <Nav trans={!on ? 'slide' : ''}>
+      <ul>
+        {pages.map((page, index) => (
+          <li key={index} trans={!on ? 'slide' : ''}>
+            <NavLink to={`/${page.toLowerCase()}`} onClick={toggle}>
+              {page}
+            </NavLink>
+          </li>
+        ))}
+      </ul>
+    </Nav>
   );
 };
+
+//* Style //
+const liAnimation = () => {
+  let styles = '';
+  for (let i = 1; i < 5; i++) {
+    styles += `
+    li:nth-child(${i}) {
+    transition-delay: '($i + 1) * 0.15s';
+    transition-duration: 0.5s;
+}
+    `;
+  }
+  return css`
+    ${styles}
+  `;
+};
+
+const Nav = styled.nav`
+  ${fullScreen};
+  ${centerCenter()};
+  ${fixed};
+  background: ${overlay};
+  backdrop-filter: blur(8px);
+  ${easeOut};
+  transform: translateY(-110%);
+  z-index: 25;
+  ${({ trans }) => trans === 'slide' && `transform: translateY(0); ${easeOut}`}
+
+  ul {
+    width: 70%;
+    height: 35vh;
+    ${betweenStart({ fd: 'column' })};
+    list-style: none;
+
+    li {
+      position: relative;
+      padding-bottom: 5px;
+      transform: translateX(-600px);
+      ${liAnimation()};
+      ${({ trans }) =>
+        trans === 'slide' && `transform: translateX(0); ${easeOut}`};  
+      
+      
+       &::after {
+        width: 7rem;
+        height: 1px;
+        display: block;
+        ${absolute({ yProp: 'bottom' })};
+        background: whitesmoke;
+        content: '';
+      }
+      
+      &:nth-child(1) {
+      transition-delay: .1s;
+      }
+      
+      &:nth-child(2) {
+      transition-delay: .2s;
+      }
+      
+      &:nth-child(3) {
+      transition-delay: .4s;
+      }
+      
+      &:nth-child(4) {
+      transition-delay: .6s;
+      }
+      
+  }
+ 
+};
+
+    
+      
+      a {
+        color: ${yellow};
+        ${easeOut};
+        text-decoration: none;
+        
+         &:hover {
+          color: ${red};
+          }
+    }
+  }
+`;

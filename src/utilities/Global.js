@@ -9,14 +9,14 @@ const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
  
   font-face {
-  font-family: 'Sanchez', serif;
-  url('../assets/fonts/Sanchezregular.otf') format('opentype');
+    font-family: 'Sanchez', serif;
+    url('../assets/fonts/Sanchezregular.otf') format('opentype');
 }
 
- * {
- margin: 0;
- padding: 0;
-}
+  * {
+    margin: 0;
+    padding: 0;
+  }
 
   html {
     box-sizing: border-box;
@@ -30,8 +30,8 @@ const GlobalStyle = createGlobalStyle`
   }
   
   a {
-  font-size: 1.5rem;
-}
+    font-size: 1.5rem;
+  }
 `;
 
 export default GlobalStyle;
