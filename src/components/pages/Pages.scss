@@ -30,7 +30,7 @@
       transform: translate(-50%);
       background-color: $overlay;
       backdrop-filter: blur(4px);
-
+      margin-top: 5vh;
     }
 
     &-text {
@@ -41,6 +41,7 @@
         display: inline-block;
         position: relative;
         padding-bottom: 1vh;
+
 
         &::after {
           width: 100%;

@@ -7,6 +7,13 @@ export const centerCenter = ({ fd = 'row' } = {}) => css`
   align-items: center;
 `;
 
+export const startCenter = ({ fd = 'row' } = {}) => css`
+  display: flex;
+  flex-direction: ${fd};
+  justify-content: flex-start;
+  align-items: center;
+`;
+
 export const betweenCenter = ({ fd = 'row' } = {}) => css`
   display: flex;
   flex-direction: ${fd};

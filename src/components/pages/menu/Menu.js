@@ -4,32 +4,29 @@ import '../Pages.scss';
 import './Menu.scss';
 import beefSteak from '../../../assets/images/pages/menu.jpg';
 import { Toggle } from '../../../utilities';
+import { Image, Subtitile, Title } from '../../../elements';
 
 export const Menu = ({ menuFunc }) => {
   return (
     <article className="article">
-      <img
-        className="article__img"
-        src={beefSteak}
-        alt="beef steak with fork"
-      />
+      <Image src={beefSteak} alt="beef steak with fork" />
 
       <section className="article__content">
-        <h2>Menu</h2>
+        <Title>Menu</Title>
         <Toggle>
           {({ on, toggle }) => <MenuBtns on={on} toggle={toggle} />}
         </Toggle>
         <div className="article__content-text">
-          <h3>Appetizers & Salads</h3>
+          <Subtitile>Appetizers & Salads</Subtitile>
           <ul>{menuFunc('Appetizers & Salads')}</ul>
 
-          <h3>Sides</h3>
+          <Subtitile>Sides</Subtitile>
           <ul>{menuFunc('Sides')}</ul>
 
-          <h3>Steaks & Chops</h3>
+          <Subtitile>Steaks & Chops</Subtitile>
           <ul>{menuFunc('Steaks & Chops')}</ul>
 
-          <h3>Seafood</h3>
+          <Subtitile>Seafood</Subtitile>
           <ul>{menuFunc('Seafood')}</ul>
         </div>
       </section>

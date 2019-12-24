@@ -2,17 +2,18 @@ import React from 'react';
 import './Pages.scss';
 import './About.scss';
 import standingSteak from '../../assets/images/pages/about.jpg';
+import { Article, Image, Subtitile, Title } from '../../elements';
 
 export const About = () => {
   return (
-    <article className="article">
-      <img className="article__img" src={standingSteak} alt="standing steak" />
+    <Article>
+      <Image src={standingSteak} alt="standing steak" />
 
       <section className="article__content">
-        <h2 className="article__content-title">About</h2>
+        <Title>About</Title>
 
         <div className="article__content-text">
-          <h3>Holy Smokes?</h3>
+          <Subtitile>Holy Smokes?</Subtitile>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
             mollitia non, officia sed sequi veritatis voluptatibus. Ab assumenda
@@ -24,7 +25,7 @@ export const About = () => {
         </div>
 
         <div className="article__content-text">
-          <h3>Philosophy</h3>
+          <Subtitile>Philosophy</Subtitile>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. A corporis
             error, exercitationem fuga id illum ipsam laboriosam laborum, magni
@@ -34,7 +35,7 @@ export const About = () => {
         </div>
 
         <div className="article__content-text">
-          <h3>History </h3>
+          <Subtitile>History </Subtitile>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum
             deleniti deserunt repellendus. Adipisci cupiditate ex in laboriosam
@@ -45,6 +46,6 @@ export const About = () => {
           </p>
         </div>
       </section>
-    </article>
+    </Article>
   );
 };

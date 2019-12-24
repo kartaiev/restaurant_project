@@ -3,23 +3,24 @@ import { MenuBtns } from '../../layout/MenuBtns';
 import '../Pages.scss';
 import './Menu.scss';
 import wine from '../../../assets/images/pages/drinks.jpg';
+import { Image, Subtitile, Title } from '../../../elements';
 
 export const Drinks = ({ menuFunc }) => {
   return (
     <article className="article">
-      <img className="article__img" src={wine} alt="beef steak with fork" />
+      <Image src={wine} alt="beef steak with fork" />
 
       <section className="article__content">
-        <h2>Menu</h2>
+        <Title>Menu</Title>
         <MenuBtns />
         <div className="article__content-text">
-          <h3>Red Wine</h3>
+          <Subtitile>Red Wine</Subtitile>
           <ul>{menuFunc('Red Wine')}</ul>
 
-          <h3>White Wines</h3>
+          <Subtitile>White Wines</Subtitile>
           <ul>{menuFunc('White Wine')}</ul>
 
-          <h3>Whisky</h3>
+          <Subtitile>Whisky</Subtitile>
           <ul>{menuFunc('Whisky')}</ul>
         </div>
       </section>

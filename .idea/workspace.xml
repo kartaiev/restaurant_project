@@ -2,15 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/utilities/Global.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/elements/Article.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/elements/Image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/elements/Titles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utilities/fonts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utilities/sizes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Sanchezregular-ita.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Western.otf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout/MenuBtns.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/MenuBtns.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/About.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/Pages.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Pages.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/menu/Drinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/menu/Drinks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/menu/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/menu/Menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/scssConfig.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/scssConfig.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/elements/Buttons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/Buttons.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/elements/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilities/Global.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/Global.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilities/colors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/colors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilities/flexes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/flexes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilities/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +96,7 @@
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.externalResources" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -163,14 +175,12 @@
       <workItem from="1576961277975" duration="220000" />
       <workItem from="1576961674997" duration="236000" />
       <workItem from="1576962110037" duration="305000" />
-      <workItem from="1577115769799" duration="13425000" />
-    </task>
-    <task id="LOCAL-00030" summary="about-img">
-      <created>1576438970475</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1576438970475</updated>
+      <workItem from="1577115769799" duration="15540000" />
+      <workItem from="1577138750984" duration="2336000" />
+      <workItem from="1577172622321" duration="425000" />
+      <workItem from="1577173739934" duration="214000" />
+      <workItem from="1577174085453" duration="378000" />
+      <workItem from="1577175190740" duration="5511000" />
     </task>
     <task id="LOCAL-00031" summary="about-img">
       <created>1576439108829</created>
@@ -508,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577133780708</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="refactoring scss to styled components">
+      <created>1577136590646</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1577136590646</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -516,7 +533,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="nav-bar slider" />
     <MESSAGE value="nav-bar elements animation" />
     <MESSAGE value="nav-bar elements animation – like it" />
     <MESSAGE value="nav-bar elements font" />
@@ -541,7 +557,8 @@
     <MESSAGE value="photo responsive" />
     <MESSAGE value="photo resizing" />
     <MESSAGE value="menu-buttons style toggle" />
-    <option name="LAST_COMMIT_MESSAGE" value="menu-buttons style toggle" />
+    <MESSAGE value="refactoring scss to styled components" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring scss to styled components" />
   </component>
   <component name="WindowStateProjectService">
     <state x="139" y="23" key="#ESLint" timestamp="1576608760592">
@@ -568,10 +585,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="315" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.777@0.23.1280.777" timestamp="1576827964140" />
-    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1577133780301">
+    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1577136590312">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1577133780301" />
+    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1577136590312" />
     <state x="248" y="152" key="EditFileWatcherDialog" timestamp="1576193894905">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -580,30 +597,30 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="485" y="295" key="Github.ShareDialog/0.23.1280.777@0.23.1280.777" timestamp="1576241150516" />
-    <state width="1280" height="192" key="GridCell.Tab.0.bottom" timestamp="1577127303196">
+    <state width="1280" height="192" key="GridCell.Tab.0.bottom" timestamp="1577180403580">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="192" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1577127303196" />
-    <state width="1280" height="192" key="GridCell.Tab.0.center" timestamp="1577127303195">
+    <state width="1280" height="192" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1577180403580" />
+    <state width="1280" height="192" key="GridCell.Tab.0.center" timestamp="1577180403577">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="192" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1577127303195" />
-    <state width="1280" height="192" key="GridCell.Tab.0.left" timestamp="1577127303194">
+    <state width="1280" height="192" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1577180403577" />
+    <state width="1280" height="192" key="GridCell.Tab.0.left" timestamp="1577180403574">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="192" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1577127303194" />
-    <state width="1280" height="192" key="GridCell.Tab.0.right" timestamp="1577127303195">
+    <state width="1280" height="192" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1577180403574" />
+    <state width="1280" height="192" key="GridCell.Tab.0.right" timestamp="1577180403579">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="192" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1577127303195" />
-    <state x="40" y="23" key="SettingsEditor" timestamp="1577135983935">
+    <state width="1280" height="192" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1577180403579" />
+    <state x="40" y="23" key="SettingsEditor" timestamp="1577175773924">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="40" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1577135983935" />
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1577133797679">
+    <state x="40" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1577175773924" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1577136595955">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1577133797679" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1577136595955" />
     <state x="223" y="205" key="com.intellij.ide.util.TipDialog" timestamp="1576763358335">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -620,9 +637,9 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="358" y="269" width="858" height="350" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.23.1280.777@0.23.1280.777" timestamp="1576941427259" />
-    <state x="219" y="23" width="840" height="777" key="search.everywhere.popup" timestamp="1577131142456">
+    <state x="219" y="23" width="840" height="777" key="search.everywhere.popup" timestamp="1577137295828">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="219" y="23" width="840" height="777" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1577131142456" />
+    <state x="219" y="23" width="840" height="777" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1577137295828" />
   </component>
 </project>
