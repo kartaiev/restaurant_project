@@ -1,37 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="refactoring scss to styled components">
-      <change afterPath="$PROJECT_DIR$/src/components/layout/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utilities/transitions.js" afterDir="false" />
+    <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/Logo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Logo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/Logo.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout/MenuBtns.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/MenuBtns.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/NavBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/NavBar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/NavBar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/NavBarHamburger.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/NavBarHamburger.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/NavBarHamburger.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/About.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/About.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Contact.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Contact.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Gallery.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Gallery.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Pages.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/menu/Drinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/menu/Drinks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/menu/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/menu/Menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/menu/Menu.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/scssConfig.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/elements/Article.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/Containers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/elements/Titles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/Titles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/elements/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/NavBar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/elements/Buttons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/Buttons.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utilities/Global.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/Global.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utilities/Toggle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/Toggle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utilities/flexes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/flexes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utilities/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utilities/positions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/positions.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,14 +168,7 @@
       <workItem from="1577173739934" duration="214000" />
       <workItem from="1577174085453" duration="378000" />
       <workItem from="1577175190740" duration="22896000" />
-      <workItem from="1577219093131" duration="801000" />
-    </task>
-    <task id="LOCAL-00032" summary="about-img">
-      <created>1576439324913</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1576439324913</updated>
+      <workItem from="1577219093131" duration="4389000" />
     </task>
     <task id="LOCAL-00033" summary="about-text">
       <created>1576442397721</created>
@@ -535,7 +506,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577181340056</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="refactoring scss to styled components - nav">
+      <created>1577220239994</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1577220239994</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -543,7 +521,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="nav-bar elements animation" />
     <MESSAGE value="nav-bar elements animation – like it" />
     <MESSAGE value="nav-bar elements font" />
     <MESSAGE value="refactoring" />
@@ -568,7 +545,8 @@
     <MESSAGE value="photo resizing" />
     <MESSAGE value="menu-buttons style toggle" />
     <MESSAGE value="refactoring scss to styled components" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring scss to styled components" />
+    <MESSAGE value="refactoring scss to styled components - nav" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring scss to styled components - nav" />
   </component>
   <component name="WindowStateProjectService">
     <state x="139" y="23" key="#ESLint" timestamp="1576608760592">
@@ -591,14 +569,14 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="327" y="147" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1280.777@0.23.1280.777" timestamp="1576608427480" />
-    <state x="315" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1577196748337">
+    <state x="315" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1577220324724">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="315" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.777@0.23.1280.777" timestamp="1577196748337" />
-    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1577220147882">
+    <state x="315" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.777@0.23.1280.777" timestamp="1577220324724" />
+    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1577223738133">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1577220147882" />
+    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1577223738133" />
     <state x="248" y="152" key="EditFileWatcherDialog" timestamp="1576193894905">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -627,10 +605,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="40" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1577175773924" />
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1577181345711">
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1577220244508">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1577181345711" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1577220244508" />
     <state x="223" y="205" key="com.intellij.ide.util.TipDialog" timestamp="1576763358335">
       <screen x="0" y="23" width="1280" height="777" />
     </state>

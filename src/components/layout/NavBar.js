@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './NavBar.scss';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import {
   absolute,
   betweenStart,
@@ -9,6 +8,7 @@ import {
   easeOut,
   fixed,
   fullScreen,
+  grey,
   overlay,
   red,
   yellow
@@ -32,21 +32,6 @@ export const NavBar = ({ on, toggle }) => {
 };
 
 //* Style //
-const liAnimation = () => {
-  let styles = '';
-  for (let i = 1; i < 5; i++) {
-    styles += `
-    li:nth-child(${i}) {
-    transition-delay: '($i + 1) * 0.15s';
-    transition-duration: 0.5s;
-}
-    `;
-  }
-  return css`
-    ${styles}
-  `;
-};
-
 const Nav = styled.nav`
   ${fullScreen};
   ${centerCenter()};
@@ -68,17 +53,15 @@ const Nav = styled.nav`
       position: relative;
       padding-bottom: 5px;
       transform: translateX(-600px);
-      ${liAnimation()};
       ${({ trans }) =>
         trans === 'slide' && `transform: translateX(0); ${easeOut}`};  
-      
       
        &::after {
         width: 7rem;
         height: 1px;
         display: block;
         ${absolute({ yProp: 'bottom' })};
-        background: whitesmoke;
+        background: ${grey};
         content: '';
       }
       
@@ -96,22 +79,15 @@ const Nav = styled.nav`
       
       &:nth-child(4) {
       transition-delay: .6s;
-      }
-      
-  }
- 
-};
-
-    
+      }  
       
       a {
         color: ${yellow};
         ${easeOut};
-        text-decoration: none;
         
          &:hover {
           color: ${red};
-          }
+      }
     }
-  }
+  }  
 `;

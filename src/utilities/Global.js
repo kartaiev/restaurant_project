@@ -31,6 +31,7 @@ const GlobalStyle = createGlobalStyle`
   
   a {
     font-size: 1.5rem;
+    text-decoration: none;
   }
 `;
 
