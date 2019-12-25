@@ -1,36 +1,38 @@
 import React from 'react';
-import './Gallery.scss';
-import steakHouse1 from '../../assets/images/gallery/steak-house-mbl-1.jpg';
-import steakHouse2 from '../../assets/images/gallery/steak-house-mbl-2.jpg';
-import steakHouse3 from '../../assets/images/gallery/steak-house-mbl-3.jpg';
-import steakHouse4 from '../../assets/images/gallery/steak-house-mbl-4.jpg';
-import { FiChevronLeft } from 'react-icons/fi';
-import { FiChevronRight } from 'react-icons/fi';
+import styled from 'styled-components';
+import { absolute, easeOut, fullScreen } from '../../utilities';
+import { loft1, loft2, loft3, loft4 } from '../../assets/images/gallery';
+import { SlideImage } from '../../elements';
 
-export const Gallery = () => {
+const Gallery = () => {
   return (
-    <div className="gallery">
-      <div className="gallery__slide">
-        <img src={steakHouse1} alt="" />
-      </div>
-      <div className="gallery__slide open">
-        <img src={steakHouse2} alt="" />
-      </div>
-      <div className="gallery__slide ">
-        <img src={steakHouse3} alt="" />
-      </div>
-      <div className="gallery__slide">
-        <img src={steakHouse4} alt="" />
-      </div>
-      <div className="btns-wrap">
-        <button>
-          <FiChevronLeft className="arrow" />
-        </button>
-
-        <button>
-          <FiChevronRight className="arrow" />
-        </button>
-      </div>
-    </div>
+    <GalleryTag>
+      <Slide>
+        <SlideImage src={loft1} alt="loft-1" />
+      </Slide>
+      <Slide>
+        <SlideImage src={loft2} alt="loft-2" />
+      </Slide>
+      <Slide>
+        <SlideImage src={loft3} alt="loft-3" />
+      </Slide>
+      <Slide>
+        <SlideImage src={loft4} alt="loft-4" />
+      </Slide>
+    </GalleryTag>
   );
 };
+
+export default Gallery;
+
+const GalleryTag = styled.section`
+  ${fullScreen};
+  position: relative;
+  overflow: hidden;
+`;
+
+const Slide = styled.div`
+  ${fullScreen};
+  ${absolute}
+  ${easeOut};
+`;

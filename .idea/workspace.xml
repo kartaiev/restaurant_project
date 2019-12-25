@@ -2,14 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/images/gallery/1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/gallery/1L.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/gallery/2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/gallery/2L.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/gallery/3.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/gallery/3L.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/gallery/4.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/gallery/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/gallery/4L.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/gallery/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/gallery/steak-house-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/gallery/steak-house-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/gallery/steak-house-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/gallery/steak-house-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/gallery/steak-house-mbl-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/gallery/steak-house-mbl-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/gallery/steak-house-mbl-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/gallery/steak-house-mbl-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout/Logo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Logo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/Logo.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/MenuBtns.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/MenuBtns.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/NavBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/NavBar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Gallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Gallery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Gallery.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/elements/Buttons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/Buttons.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/elements/Image.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/Image.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utilities/Global.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/Global.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilities/transitions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/transitions.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,11 +92,12 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="js.linters.configure.manually.selectedeslint" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.eslint" value="/usr/local/Cellar/node/13.2.0/bin/node" />
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
@@ -83,7 +105,7 @@
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -103,11 +125,9 @@
     </configuration>
     <configuration name="npm start" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start" />
-      </scripts>
-      <node-interpreter value="project" />
+      <command value="start" />
+      <node-interpreter value="/usr/local/Cellar/node/13.2.0/bin/node" />
+      <package-manager value="npm" />
       <envs />
       <method v="2" />
     </configuration>
@@ -168,14 +188,9 @@
       <workItem from="1577173739934" duration="214000" />
       <workItem from="1577174085453" duration="378000" />
       <workItem from="1577175190740" duration="22896000" />
-      <workItem from="1577219093131" duration="4389000" />
-    </task>
-    <task id="LOCAL-00033" summary="about-text">
-      <created>1576442397721</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1576442397721</updated>
+      <workItem from="1577219093131" duration="4699000" />
+      <workItem from="1577225238814" duration="1611000" />
+      <workItem from="1577280458740" duration="7919000" />
     </task>
     <task id="LOCAL-00034" summary="about-text">
       <created>1576442614756</created>
@@ -513,7 +528,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577220239994</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="refactoring scss to styled components - buttons">
+      <created>1577223785086</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1577223785086</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -521,7 +543,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="nav-bar elements animation – like it" />
     <MESSAGE value="nav-bar elements font" />
     <MESSAGE value="refactoring" />
     <MESSAGE value="pages" />
@@ -546,13 +567,14 @@
     <MESSAGE value="menu-buttons style toggle" />
     <MESSAGE value="refactoring scss to styled components" />
     <MESSAGE value="refactoring scss to styled components - nav" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring scss to styled components - nav" />
+    <MESSAGE value="refactoring scss to styled components - buttons" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring scss to styled components - buttons" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="139" y="23" key="#ESLint" timestamp="1576608760592">
+    <state x="139" y="23" key="#ESLint" timestamp="1577228018862">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="139" y="23" key="#ESLint/0.23.1280.777@0.23.1280.777" timestamp="1576608760592" />
+    <state x="139" y="23" key="#ESLint/0.23.1280.777@0.23.1280.777" timestamp="1577228018862" />
     <state x="140" y="23" key="#Notifications" timestamp="1576941359438">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -573,10 +595,14 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="315" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.777@0.23.1280.777" timestamp="1577220324724" />
-    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1577223738133">
+    <state x="322" y="48" key="#npm_start" timestamp="1577228070676">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1577223738133" />
+    <state x="322" y="48" key="#npm_start/0.23.1280.777@0.23.1280.777" timestamp="1577228070676" />
+    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1577223781956">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1577223781956" />
     <state x="248" y="152" key="EditFileWatcherDialog" timestamp="1576193894905">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -585,30 +611,34 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="485" y="295" key="Github.ShareDialog/0.23.1280.777@0.23.1280.777" timestamp="1576241150516" />
-    <state width="1280" height="192" key="GridCell.Tab.0.bottom" timestamp="1577219245104">
+    <state width="1280" height="192" key="GridCell.Tab.0.bottom" timestamp="1577314395947">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="192" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1577219245104" />
-    <state width="1280" height="192" key="GridCell.Tab.0.center" timestamp="1577219245102">
+    <state width="1280" height="192" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1577314395947" />
+    <state width="1280" height="192" key="GridCell.Tab.0.center" timestamp="1577314395945">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="192" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1577219245102" />
-    <state width="1280" height="192" key="GridCell.Tab.0.left" timestamp="1577219245101">
+    <state width="1280" height="192" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1577314395945" />
+    <state width="1280" height="192" key="GridCell.Tab.0.left" timestamp="1577314395945">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="192" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1577219245101" />
-    <state width="1280" height="192" key="GridCell.Tab.0.right" timestamp="1577219245103">
+    <state width="1280" height="192" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1577314395945" />
+    <state width="1280" height="192" key="GridCell.Tab.0.right" timestamp="1577314395946">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="192" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1577219245103" />
-    <state x="40" y="23" key="SettingsEditor" timestamp="1577175773924">
+    <state width="1280" height="192" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1577314395946" />
+    <state x="3" y="23" key="SettingsEditor" timestamp="1577281902211">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="40" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1577175773924" />
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1577220244508">
+    <state x="3" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1577281902211" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1577223791624">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1577220244508" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1577223791624" />
+    <state x="346" y="232" key="cloudConfig.SelfSettingsDialog" timestamp="1577313845734">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="346" y="232" key="cloudConfig.SelfSettingsDialog/0.23.1280.777@0.23.1280.777" timestamp="1577313845734" />
     <state x="223" y="205" key="com.intellij.ide.util.TipDialog" timestamp="1576763358335">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -625,9 +655,9 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="358" y="269" width="858" height="350" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.23.1280.777@0.23.1280.777" timestamp="1576941427259" />
-    <state x="219" y="23" width="840" height="775" key="search.everywhere.popup" timestamp="1577216588209">
+    <state x="219" y="23" width="840" height="775" key="search.everywhere.popup" timestamp="1577314285425">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="219" y="23" width="840" height="775" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1577216588209" />
+    <state x="219" y="23" width="840" height="775" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1577314285425" />
   </component>
 </project>

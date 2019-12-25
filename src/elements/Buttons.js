@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { grey, overlay, red, yellow } from '../utilities';
+import { easeOut, grey, overlay, red, yellow } from '../utilities';
 
 export const LinkButton = styled.button`
   font-size: 1.5rem;
@@ -17,5 +17,6 @@ export const LinkButton = styled.button`
     color: ${yellow};
     border: 1px solid ${red};
     cursor: pointer;
+    ${easeOut};
   }
 `;

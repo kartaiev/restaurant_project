@@ -4,13 +4,13 @@ import menuData from './data/menuData';
 import { Home } from './components/Home';
 import { NavBar } from './components/layout/NavBar';
 import { About } from './components/pages/About';
-import { Gallery } from './components/pages/Gallery';
 import { Menu } from './components/pages/menu/Menu';
 import { Contact } from './components/pages/Contact';
 import { Drinks } from './components/pages/menu/Drinks';
 import GlobalStyle from './utilities/Global';
 import Header from './components/layout/Header';
 import { Toggle } from './utilities';
+import Gallery from './components/pages/Gallery';
 // import fb from './config/fbConfig';
 
 const App = () => {

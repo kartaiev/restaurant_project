@@ -20,6 +20,7 @@ const GlobalStyle = createGlobalStyle`
 
   html {
     box-sizing: border-box;
+    
   }
   
   body {
@@ -27,7 +28,10 @@ const GlobalStyle = createGlobalStyle`
     letter-spacing: 0.1rem;
     overflow: hidden;
     color: ${grey};
+    
   }
+  
+  
   
   a {
     font-size: 1.5rem;

@@ -18,9 +18,10 @@ export default Header;
 //* Style //
 const HeaderContainer = styled.header`
   width: 100%;
-  height: 10vh;
+  height: 7vh;
   background-color: ${overlay};
   ${fixed()};
   ${betweenCenter};
   z-index: 30;
+  
 `;
