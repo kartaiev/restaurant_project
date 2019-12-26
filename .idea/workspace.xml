@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Gallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Gallery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/elements/Image.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/Image.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/gallery/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/gallery/5.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,14 +163,7 @@
       <workItem from="1577175190740" duration="22896000" />
       <workItem from="1577219093131" duration="4699000" />
       <workItem from="1577225238814" duration="1611000" />
-      <workItem from="1577280458740" duration="18683000" />
-    </task>
-    <task id="LOCAL-00036" summary="about-img-border">
-      <created>1576446483911</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1576446483911</updated>
+      <workItem from="1577280458740" duration="18987000" />
     </task>
     <task id="LOCAL-00037" summary="about-img-border">
       <created>1576446580755</created>
@@ -509,7 +501,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577323595884</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="gallery slider">
+      <created>1577332719723</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1577332719723</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -517,7 +516,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="refactoring" />
     <MESSAGE value="pages" />
     <MESSAGE value="refactor nav-bar" />
     <MESSAGE value="about-img" />
@@ -542,7 +540,8 @@
     <MESSAGE value="refactoring scss to styled components - buttons" />
     <MESSAGE value="gallery" />
     <MESSAGE value="gallery buttons" />
-    <option name="LAST_COMMIT_MESSAGE" value="gallery buttons" />
+    <MESSAGE value="gallery slider" />
+    <option name="LAST_COMMIT_MESSAGE" value="gallery slider" />
   </component>
   <component name="WindowStateProjectService">
     <state x="139" y="23" key="#ESLint" timestamp="1577228018862">
@@ -573,10 +572,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="322" y="48" key="#npm_start/0.23.1280.777@0.23.1280.777" timestamp="1577228070676" />
-    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1577332699147">
+    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1577332719435">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1577332699147" />
+    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1577332719435" />
     <state x="248" y="152" key="EditFileWatcherDialog" timestamp="1576193894905">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -605,10 +604,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="3" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1577324124679" />
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1577323602806">
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1577332722778">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1577323602806" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1577332722778" />
     <state x="346" y="232" key="cloudConfig.SelfSettingsDialog" timestamp="1577313845734">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
