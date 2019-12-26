@@ -1,4 +1,5 @@
 import React from 'react';
+import { rgba } from 'polished';
 import {
   Article,
   Button,
@@ -88,6 +89,7 @@ const Sched = styled.div`
   width: 100%;
   ${betweenCenter};
   padding-bottom: 3vh;
+  color: ${rgba('#cccccc', 0.6)};
 `;
 const Time = styled.div`
   ${centerEnd({ fd: 'column' })};
