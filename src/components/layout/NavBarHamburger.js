@@ -14,7 +14,7 @@ export const Hamburger = ({ on, toggle }) => {
 //* Style //
 const HamBtn = styled.div`
   height: 10vh;
-  width: 10%;
+  width: 7%;
   ${centerCenter({ fd: 'column' })};
   ${fixed({ x: '1.5rem', y: '1,5rem', xProp: 'right' })};
   ${easeOut};
@@ -24,7 +24,7 @@ const HamBtn = styled.div`
     trans === 'rotate' && `transform: rotate(180deg); ${easeOut}`}
 
   span {
-    width: 2rem;
+    width: 100%;
     height: 2px;
     background-image: linear-gradient(to right, ${red} 50%, ${yellow} 50%);
     background-size: 200% 100%;

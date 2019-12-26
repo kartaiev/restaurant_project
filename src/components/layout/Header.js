@@ -23,5 +23,4 @@ const HeaderContainer = styled.header`
   ${fixed()};
   ${betweenCenter};
   z-index: 30;
-  
 `;

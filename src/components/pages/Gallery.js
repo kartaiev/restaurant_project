@@ -1,30 +1,37 @@
 import React from 'react';
 import styled from 'styled-components';
-import { absolute, easeOut, fullScreen } from '../../utilities';
-import { loft1, loft2, loft3, loft4 } from '../../assets/images/gallery';
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
+import {
+  absolute,
+  betweenCenter,
+  easeOut,
+  fullScreen,
+  yellow
+} from '../../utilities';
+import { loft1, loft2, loft3, loft4, loft5 } from '../../assets/images/gallery';
 import { SlideImage } from '../../elements';
 
 const Gallery = () => {
+  const pics = [{ loft1 }, { loft2 }, { loft3 }, { loft4 }, { loft5 }];
+
   return (
     <GalleryTag>
-      <Slide>
-        <SlideImage src={loft1} alt="loft-1" />
-      </Slide>
-      <Slide>
-        <SlideImage src={loft2} alt="loft-2" />
-      </Slide>
-      <Slide>
-        <SlideImage src={loft3} alt="loft-3" />
-      </Slide>
-      <Slide>
-        <SlideImage src={loft4} alt="loft-4" />
-      </Slide>
+      {pics.map((pic, i) => (
+        <Slide key={i}>
+          <SlideImage src={Object.values(pic)} alt={`loft-${i + 1}`} />
+        </Slide>
+      ))}
+      <BtnsWrap>
+        <IoIosArrowBack />
+        <IoIosArrowForward />
+      </BtnsWrap>
     </GalleryTag>
   );
 };
 
 export default Gallery;
 
+//* Style //
 const GalleryTag = styled.section`
   ${fullScreen};
   position: relative;
@@ -35,4 +42,21 @@ const Slide = styled.div`
   ${fullScreen};
   ${absolute}
   ${easeOut};
+`;
+
+const BtnsWrap = styled.div`
+  ${fullScreen};
+  ${betweenCenter};
+  position: fixed;
+
+  svg {
+    font-size: 3rem;
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+      color: ${yellow};
+      cursor: pointer;
+    }
+  }
 `;

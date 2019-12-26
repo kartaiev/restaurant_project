@@ -2,35 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/images/gallery/1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/gallery/1L.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/gallery/2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/gallery/2L.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/gallery/3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/gallery/3L.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/gallery/4.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/gallery/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/gallery/4L.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/gallery/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/gallery/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/gallery/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/gallery/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/gallery/4L.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/gallery/5.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/gallery/steak-house-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/gallery/steak-house-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/gallery/steak-house-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/gallery/steak-house-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/gallery/steak-house-mbl-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/gallery/steak-house-mbl-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/gallery/steak-house-mbl-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/gallery/steak-house-mbl-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/gallery/1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/gallery/2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/gallery/3.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/gallery/4.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/gallery/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/gallery/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/gallery/4L.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/gallery/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/gallery/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/logo.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/Logo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Logo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/NavBarHamburger.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/NavBarHamburger.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/Gallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Gallery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Gallery.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/elements/Buttons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/Buttons.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/elements/Image.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/Image.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utilities/Global.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/Global.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utilities/transitions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/transitions.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,14 +178,7 @@
       <workItem from="1577175190740" duration="22896000" />
       <workItem from="1577219093131" duration="4699000" />
       <workItem from="1577225238814" duration="1611000" />
-      <workItem from="1577280458740" duration="7919000" />
-    </task>
-    <task id="LOCAL-00034" summary="about-text">
-      <created>1576442614756</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1576442614756</updated>
+      <workItem from="1577280458740" duration="12295000" />
     </task>
     <task id="LOCAL-00035" summary="about-img">
       <created>1576446252184</created>
@@ -535,7 +516,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577223785086</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="gallery">
+      <created>1577314410432</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1577314410433</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -561,14 +549,14 @@
     <MESSAGE value="refactoring scss files" />
     <MESSAGE value="overlay" />
     <MESSAGE value="scss refactoring" />
-    <MESSAGE value="gallery" />
     <MESSAGE value="photo responsive" />
     <MESSAGE value="photo resizing" />
     <MESSAGE value="menu-buttons style toggle" />
     <MESSAGE value="refactoring scss to styled components" />
     <MESSAGE value="refactoring scss to styled components - nav" />
     <MESSAGE value="refactoring scss to styled components - buttons" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring scss to styled components - buttons" />
+    <MESSAGE value="gallery" />
+    <option name="LAST_COMMIT_MESSAGE" value="gallery" />
   </component>
   <component name="WindowStateProjectService">
     <state x="139" y="23" key="#ESLint" timestamp="1577228018862">
@@ -579,10 +567,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="140" y="23" key="#Notifications/0.23.1280.777@0.23.1280.777" timestamp="1576941359438" />
-    <state x="348" y="207" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1577132046261">
+    <state x="348" y="207" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1577315357482">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="348" y="207" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1280.777@0.23.1280.777" timestamp="1577132046261" />
+    <state x="348" y="207" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1280.777@0.23.1280.777" timestamp="1577315357482" />
     <state x="207" y="134" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1576633762909">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -591,18 +579,18 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="327" y="147" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1280.777@0.23.1280.777" timestamp="1576608427480" />
-    <state x="315" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1577220324724">
+    <state x="315" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1577315952115">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="315" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.777@0.23.1280.777" timestamp="1577220324724" />
+    <state x="315" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.777@0.23.1280.777" timestamp="1577315952115" />
     <state x="322" y="48" key="#npm_start" timestamp="1577228070676">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="322" y="48" key="#npm_start/0.23.1280.777@0.23.1280.777" timestamp="1577228070676" />
-    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1577223781956">
+    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1577314415620">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1577223781956" />
+    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1577314415620" />
     <state x="248" y="152" key="EditFileWatcherDialog" timestamp="1576193894905">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -611,30 +599,30 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="485" y="295" key="Github.ShareDialog/0.23.1280.777@0.23.1280.777" timestamp="1576241150516" />
-    <state width="1280" height="192" key="GridCell.Tab.0.bottom" timestamp="1577314395947">
+    <state width="1280" height="192" key="GridCell.Tab.0.bottom" timestamp="1577322319968">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="192" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1577314395947" />
-    <state width="1280" height="192" key="GridCell.Tab.0.center" timestamp="1577314395945">
+    <state width="1280" height="192" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1577322319968" />
+    <state width="1280" height="192" key="GridCell.Tab.0.center" timestamp="1577322319966">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="192" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1577314395945" />
-    <state width="1280" height="192" key="GridCell.Tab.0.left" timestamp="1577314395945">
+    <state width="1280" height="192" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1577322319966" />
+    <state width="1280" height="192" key="GridCell.Tab.0.left" timestamp="1577322319965">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="192" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1577314395945" />
-    <state width="1280" height="192" key="GridCell.Tab.0.right" timestamp="1577314395946">
+    <state width="1280" height="192" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1577322319965" />
+    <state width="1280" height="192" key="GridCell.Tab.0.right" timestamp="1577322319967">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="192" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1577314395946" />
+    <state width="1280" height="192" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1577322319967" />
     <state x="3" y="23" key="SettingsEditor" timestamp="1577281902211">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="3" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1577281902211" />
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1577223791624">
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1577314436839">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1577223791624" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1577314436839" />
     <state x="346" y="232" key="cloudConfig.SelfSettingsDialog" timestamp="1577313845734">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -655,9 +643,9 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="358" y="269" width="858" height="350" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.23.1280.777@0.23.1280.777" timestamp="1576941427259" />
-    <state x="219" y="23" width="840" height="775" key="search.everywhere.popup" timestamp="1577314285425">
+    <state x="219" y="23" width="840" height="775" key="search.everywhere.popup" timestamp="1577322689495">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="219" y="23" width="840" height="775" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1577314285425" />
+    <state x="219" y="23" width="840" height="775" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1577322689495" />
   </component>
 </project>
