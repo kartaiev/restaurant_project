@@ -1,15 +1,19 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { applyStyleModifiers } from 'styled-components-modifiers';
+
+const IMAGE_MODIFIERS = {
+  page: () => css`
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+  `,
+  slide: () => css`
+    height: 100%;
+  `
+};
 
 export const Image = styled.img`
   background: no-repeat center center/cover;
-  width: 100%;
-  min-width: 100%;
-  height: auto;
-`;
 
-export const SlideImage = styled.img`
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100%;
+  ${applyStyleModifiers(IMAGE_MODIFIERS)};
 `;

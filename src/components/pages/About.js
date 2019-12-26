@@ -13,7 +13,7 @@ import {
 export const About = () => {
   return (
     <Article>
-      <Image src={standingSteak} alt="standing steak" />
+      <Image modifiers="page" src={standingSteak} alt="standing steak" />
 
       <Section>
         <Title>About</Title>
@@ -66,5 +66,5 @@ export const About = () => {
 };
 
 const Paragraph = styled.p`
-  padding: 3vh 0 5vh 0;
+  padding: 1.5vh 0 5vh 0;
 `;

@@ -1,22 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
-import { LinkButton } from '../../elements';
+import { Button } from '../../elements';
 import { betweenCenter } from '../../utilities';
 
 export const MenuBtns = ({ on, toggle }) => {
   return (
     <BtnsWrap>
       <NavLink to="/menu">
-        <LinkButton onClick={toggle} type={on ? 'active' : ''}>
+        <Button onClick={toggle} type={on ? 'active' : ''}>
           Food
-        </LinkButton>
+        </Button>
       </NavLink>
 
       <NavLink to="/menu/drinks">
-        <LinkButton onClick={toggle} type={on ? '' : 'active'}>
+        <Button onClick={toggle} type={on ? '' : 'active'}>
           Drinks
-        </LinkButton>
+        </Button>
       </NavLink>
     </BtnsWrap>
   );
@@ -31,7 +31,7 @@ const BtnsWrap = styled.div`
     width: 45%;
     height: 100%;
 
-    ${LinkButton} {
+    ${Button} {
       width: 100%;
       height: 100%;
       text-align: center;

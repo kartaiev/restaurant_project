@@ -13,7 +13,7 @@ import {
 export const Drinks = ({ menuFunc }) => {
   return (
     <Article className="article">
-      <Image src={wine} alt="beef steak with fork" />
+      <Image modifiers="page" src={wine} alt="beef steak with fork" />
 
       <Section>
         <Title>Menu</Title>

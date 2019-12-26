@@ -14,7 +14,7 @@ import {
 export const Menu = ({ menuFunc }) => {
   return (
     <Article className="article">
-      <Image src={beefSteak} alt="beef steak with fork" />
+      <Image modifiers="page" src={beefSteak} alt="beef steak with fork" />
 
       <Section>
         <Title>Menu</Title>

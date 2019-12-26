@@ -1,7 +1,15 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { applyStyleModifiers } from 'styled-components-modifiers';
 import { easeOut, grey, overlay, red, yellow } from '../utilities';
 
-export const LinkButton = styled.button`
+const BUTTONS_MODIFIERS = {
+  big: () => css`
+    width: 100%;
+    margin: 0 0 6vh 0;
+  `
+};
+
+export const Button = styled.button`
   font-size: 1.5rem;
   color: ${grey};
   border: 1px solid ${grey};
@@ -19,4 +27,6 @@ export const LinkButton = styled.button`
     cursor: pointer;
     ${easeOut};
   }
+
+  ${applyStyleModifiers(BUTTONS_MODIFIERS)}
 `;

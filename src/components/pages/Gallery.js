@@ -12,7 +12,7 @@ import {
   yellow
 } from '../../utilities';
 import { loft1, loft2, loft3, loft4, loft5 } from '../../assets/images/gallery';
-import { SlideImage } from '../../elements';
+import { Image } from '../../elements';
 
 const Gallery = () => {
   const pics = [{ loft1 }, { loft2 }, { loft3 }, { loft4 }, { loft5 }];
@@ -44,7 +44,11 @@ const Gallery = () => {
   return (
     <GalleryWrap>
       <Slide>
-        <SlideImage src={Object.values(pics[num])} alt={`loft-${num}`} />
+        <Image
+          modifiers="slide"
+          src={Object.values(pics[num])}
+          alt={`loft-${num}`}
+        />
       </Slide>
       <BtnsWrap>
         <Back onClick={back} />
