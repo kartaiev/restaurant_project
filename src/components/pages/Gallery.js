@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
-import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
+import {
+  IoIosArrowBack as Back,
+  IoIosArrowForward as Forward
+} from 'react-icons/io';
 import {
   absolute,
   betweenCenter,
@@ -14,25 +17,47 @@ import { SlideImage } from '../../elements';
 const Gallery = () => {
   const pics = [{ loft1 }, { loft2 }, { loft3 }, { loft4 }, { loft5 }];
 
+  const [imageNum, setImageNum] = useState({
+    num: 0
+  });
+
+  const { num } = imageNum;
+
+  const forward = () => {
+    if (num < pics.length - 1) {
+      setImageNum({ num: num + 1 });
+      console.log(num);
+    } else {
+      setImageNum({ num: 0 });
+    }
+  };
+
+  const back = () => {
+    if (num > 0) {
+      setImageNum({ num: num - 1 });
+      console.log(num);
+    } else {
+      setImageNum({ num: pics.length - 1 });
+    }
+  };
+
   return (
-    <GalleryTag>
-      {pics.map((pic, i) => (
-        <Slide key={i}>
-          <SlideImage src={Object.values(pic)} alt={`loft-${i + 1}`} />
-        </Slide>
-      ))}
+    <GalleryWrap>
+      <Slide>
+        <SlideImage src={Object.values(pics[num])} alt={`loft-${num}`} />
+      </Slide>
       <BtnsWrap>
-        <IoIosArrowBack />
-        <IoIosArrowForward />
+        <Back onClick={back} />
+        <Forward onClick={forward} />
       </BtnsWrap>
-    </GalleryTag>
+    </GalleryWrap>
   );
 };
 
 export default Gallery;
 
 //* Style //
-const GalleryTag = styled.section`
+const GalleryWrap = styled.section`
   ${fullScreen};
   position: relative;
   overflow: hidden;
@@ -47,16 +72,15 @@ const Slide = styled.div`
 const BtnsWrap = styled.div`
   ${fullScreen};
   ${betweenCenter};
-  position: fixed;
 
   svg {
     font-size: 3rem;
     opacity: 0.5;
+    z-index: 20;
 
     &:hover {
       opacity: 1;
       color: ${yellow};
-      cursor: pointer;
     }
   }
 `;
