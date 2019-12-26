@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/MenuBtns.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/MenuBtns.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/MenuBtns.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/MenuBtns.scss" afterDir="false" />
-    </list>
+    <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,6 +35,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsbtTreeLayoutManager">
@@ -61,11 +62,12 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="js.linters.configure.manually.selectedeslint" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.eslint" value="/usr/local/Cellar/node/13.2.0/bin/node" />
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
@@ -76,15 +78,15 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/assets/fonts" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/utilities" />
       <recent name="$PROJECT_DIR$/src/assets/images/pages" />
       <recent name="$PROJECT_DIR$/src/assets/images/gallery" />
       <recent name="$PROJECT_DIR$/src/assets/images" />
       <recent name="$PROJECT_DIR$/src/config" />
-      <recent name="$PROJECT_DIR$/src/components/pages" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/fonts" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -93,11 +95,9 @@
     </configuration>
     <configuration name="npm start" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start" />
-      </scripts>
-      <node-interpreter value="project" />
+      <command value="start" />
+      <node-interpreter value="/usr/local/Cellar/node/13.2.0/bin/node" />
+      <package-manager value="npm" />
       <envs />
       <method v="2" />
     </configuration>
@@ -152,69 +152,15 @@
       <workItem from="1576961277975" duration="220000" />
       <workItem from="1576961674997" duration="236000" />
       <workItem from="1576962110037" duration="305000" />
-    </task>
-    <task id="LOCAL-00028" summary="about-img">
-      <created>1576436379192</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1576436379192</updated>
-    </task>
-    <task id="LOCAL-00029" summary="about-img">
-      <created>1576436494972</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1576436494972</updated>
-    </task>
-    <task id="LOCAL-00030" summary="about-img">
-      <created>1576438970475</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1576438970475</updated>
-    </task>
-    <task id="LOCAL-00031" summary="about-img">
-      <created>1576439108829</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1576439108829</updated>
-    </task>
-    <task id="LOCAL-00032" summary="about-img">
-      <created>1576439324913</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1576439324913</updated>
-    </task>
-    <task id="LOCAL-00033" summary="about-text">
-      <created>1576442397721</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1576442397721</updated>
-    </task>
-    <task id="LOCAL-00034" summary="about-text">
-      <created>1576442614756</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1576442614756</updated>
-    </task>
-    <task id="LOCAL-00035" summary="about-img">
-      <created>1576446252184</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1576446252184</updated>
-    </task>
-    <task id="LOCAL-00036" summary="about-img-border">
-      <created>1576446483911</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1576446483911</updated>
+      <workItem from="1577115769799" duration="15540000" />
+      <workItem from="1577138750984" duration="2336000" />
+      <workItem from="1577172622321" duration="425000" />
+      <workItem from="1577173739934" duration="214000" />
+      <workItem from="1577174085453" duration="378000" />
+      <workItem from="1577175190740" duration="22896000" />
+      <workItem from="1577219093131" duration="4699000" />
+      <workItem from="1577225238814" duration="1611000" />
+      <workItem from="1577280458740" duration="18987000" />
     </task>
     <task id="LOCAL-00037" summary="about-img-border">
       <created>1576446580755</created>
@@ -496,7 +442,70 @@
       <option name="project" value="LOCAL" />
       <updated>1576943665432</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="menu-buttons style toggle">
+      <created>1577115977026</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1577115977027</updated>
+    </task>
+    <task id="LOCAL-00078" summary="menu-buttons style toggle">
+      <created>1577133780708</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1577133780708</updated>
+    </task>
+    <task id="LOCAL-00079" summary="refactoring scss to styled components">
+      <created>1577136590646</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1577136590646</updated>
+    </task>
+    <task id="LOCAL-00080" summary="refactoring scss to styled components">
+      <created>1577181340055</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1577181340056</updated>
+    </task>
+    <task id="LOCAL-00081" summary="refactoring scss to styled components - nav">
+      <created>1577220239994</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1577220239994</updated>
+    </task>
+    <task id="LOCAL-00082" summary="refactoring scss to styled components - buttons">
+      <created>1577223785086</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1577223785086</updated>
+    </task>
+    <task id="LOCAL-00083" summary="gallery">
+      <created>1577314410432</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1577314410433</updated>
+    </task>
+    <task id="LOCAL-00084" summary="gallery buttons">
+      <created>1577323595883</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1577323595884</updated>
+    </task>
+    <task id="LOCAL-00085" summary="gallery slider">
+      <created>1577332719723</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1577332719723</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -504,11 +513,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="nav-bar slider" />
-    <MESSAGE value="nav-bar elements animation" />
-    <MESSAGE value="nav-bar elements animation – like it" />
-    <MESSAGE value="nav-bar elements font" />
-    <MESSAGE value="refactoring" />
     <MESSAGE value="pages" />
     <MESSAGE value="refactor nav-bar" />
     <MESSAGE value="about-img" />
@@ -525,25 +529,30 @@
     <MESSAGE value="refactoring scss files" />
     <MESSAGE value="overlay" />
     <MESSAGE value="scss refactoring" />
-    <MESSAGE value="gallery" />
     <MESSAGE value="photo responsive" />
     <MESSAGE value="photo resizing" />
     <MESSAGE value="menu-buttons style toggle" />
-    <option name="LAST_COMMIT_MESSAGE" value="menu-buttons style toggle" />
+    <MESSAGE value="refactoring scss to styled components" />
+    <MESSAGE value="refactoring scss to styled components - nav" />
+    <MESSAGE value="refactoring scss to styled components - buttons" />
+    <MESSAGE value="gallery" />
+    <MESSAGE value="gallery buttons" />
+    <MESSAGE value="gallery slider" />
+    <option name="LAST_COMMIT_MESSAGE" value="gallery slider" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="139" y="23" key="#ESLint" timestamp="1576608760592">
+    <state x="139" y="23" key="#ESLint" timestamp="1577228018862">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="139" y="23" key="#ESLint/0.23.1280.777@0.23.1280.777" timestamp="1576608760592" />
+    <state x="139" y="23" key="#ESLint/0.23.1280.777@0.23.1280.777" timestamp="1577228018862" />
     <state x="140" y="23" key="#Notifications" timestamp="1576941359438">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="140" y="23" key="#Notifications/0.23.1280.777@0.23.1280.777" timestamp="1576941359438" />
-    <state x="348" y="207" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576252651583">
+    <state x="348" y="207" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1577315357482">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="348" y="207" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1280.777@0.23.1280.777" timestamp="1576252651583" />
+    <state x="348" y="207" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1280.777@0.23.1280.777" timestamp="1577315357482" />
     <state x="207" y="134" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1576633762909">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -552,14 +561,18 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="327" y="147" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1280.777@0.23.1280.777" timestamp="1576608427480" />
-    <state x="315" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576827964140">
+    <state x="315" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1577315952115">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="315" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.777@0.23.1280.777" timestamp="1576827964140" />
-    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1576943665111">
+    <state x="315" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.777@0.23.1280.777" timestamp="1577315952115" />
+    <state x="322" y="48" key="#npm_start" timestamp="1577228070676">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1576943665111" />
+    <state x="322" y="48" key="#npm_start/0.23.1280.777@0.23.1280.777" timestamp="1577228070676" />
+    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1577332719435">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1577332719435" />
     <state x="248" y="152" key="EditFileWatcherDialog" timestamp="1576193894905">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -568,38 +581,42 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="485" y="295" key="Github.ShareDialog/0.23.1280.777@0.23.1280.777" timestamp="1576241150516" />
-    <state width="1280" height="192" key="GridCell.Tab.0.bottom" timestamp="1576957622733">
+    <state width="1280" height="192" key="GridCell.Tab.0.bottom" timestamp="1577363483575">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="192" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1576957622733" />
-    <state width="1280" height="192" key="GridCell.Tab.0.center" timestamp="1576957622731">
+    <state width="1280" height="192" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1577363483575" />
+    <state width="1280" height="192" key="GridCell.Tab.0.center" timestamp="1577363483574">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="192" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1576957622731" />
-    <state width="1280" height="192" key="GridCell.Tab.0.left" timestamp="1576957622730">
+    <state width="1280" height="192" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1577363483574" />
+    <state width="1280" height="192" key="GridCell.Tab.0.left" timestamp="1577363483573">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="192" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1576957622730" />
-    <state width="1280" height="192" key="GridCell.Tab.0.right" timestamp="1576957622732">
+    <state width="1280" height="192" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1577363483573" />
+    <state width="1280" height="192" key="GridCell.Tab.0.right" timestamp="1577363483574">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1280" height="192" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1576957622732" />
-    <state x="40" y="23" key="SettingsEditor" timestamp="1576962188012">
+    <state width="1280" height="192" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1577363483574" />
+    <state x="3" y="23" key="SettingsEditor" timestamp="1577324124679">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="40" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1576962188012" />
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1576943669238">
+    <state x="3" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1577324124679" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1577332722778">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1576943669238" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1577332722778" />
+    <state x="346" y="232" key="cloudConfig.SelfSettingsDialog" timestamp="1577313845734">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="346" y="232" key="cloudConfig.SelfSettingsDialog/0.23.1280.777@0.23.1280.777" timestamp="1577313845734" />
     <state x="223" y="205" key="com.intellij.ide.util.TipDialog" timestamp="1576763358335">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="223" y="205" key="com.intellij.ide.util.TipDialog/0.23.1280.777@0.23.1280.777" timestamp="1576763358335" />
-    <state x="318" y="168" key="git4idea.merge.GitMergeDialog" timestamp="1577363558320">
+    <state x="413" y="318" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577115824141">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="318" y="168" key="git4idea.merge.GitMergeDialog/0.23.1280.777@0.23.1280.777" timestamp="1577363558320" />
+    <state x="413" y="318" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.777@0.23.1280.777" timestamp="1577115824141" />
     <state x="483" y="244" width="313" height="349" key="jetbrains.javascript.buildTools.run-task-popup" timestamp="1576951035091">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -608,5 +625,9 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="358" y="269" width="858" height="350" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.23.1280.777@0.23.1280.777" timestamp="1576941427259" />
+    <state x="219" y="23" width="840" height="775" key="search.everywhere.popup" timestamp="1577326219236">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="219" y="23" width="840" height="775" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1577326219236" />
   </component>
 </project>

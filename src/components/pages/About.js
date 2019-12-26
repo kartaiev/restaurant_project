@@ -1,50 +1,70 @@
 import React from 'react';
-import './Pages.scss';
-import './About.scss';
 import standingSteak from '../../assets/images/pages/about.jpg';
+import styled from 'styled-components';
+import {
+  Article,
+  Content,
+  Image,
+  Section,
+  Subtitle,
+  Title
+} from '../../elements';
 
 export const About = () => {
   return (
-    <article className="article">
-      <img className="article__img" src={standingSteak} alt="standing steak" />
+    <Article>
+      <Image src={standingSteak} alt="standing steak" />
 
-      <section className="article__content">
-        <h2 className="article__content-title">About</h2>
+      <Section>
+        <Title>About</Title>
 
-        <div className="article__content-text">
-          <h3>Holy Smokes?</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
-            mollitia non, officia sed sequi veritatis voluptatibus. Ab assumenda
-            consectetur distinctio dolore et eveniet ex expedita maiores soluta
-            ullam? Accusantium aut deserunt est fuga magnam modi nam
-            necessitatibus neque obcaecati, odit provident qui quis recusandae
-            tempora.
-          </p>
-        </div>
+        <Content>
+          <Subtitle>Holy Smokes?</Subtitle>
+          <Paragraph>
+            Hot chicken ugh sustainable food truck microdosing franzen wayfarers
+            post-ironic unicorn marfa tbh twee woke selvage kogi. 3 wolf moon
+            cliche migas subway tile, synth art party health goth tofu kinfolk
+            literally air plant. Squid messenger bag next level enamel pin
+            humblebrag master cleanse sartorial bespoke. Messenger bag tilde
+            yuccie copper mug gochujang hella 8-bit iceland marfa air plant
+            scenester pinterest truffaut. Pinterest disrupt PBR&B squid four
+            loko narwhal farm-to-table leggings pabst meggings fingerstache
+            cray. Raw denim aesthetic ugh flannel pork belly, bitters
+            microdosing. Typewriter before they sold out truffaut, direct trade
+            chillwave YOLO next level.
+          </Paragraph>
+        </Content>
 
-        <div className="article__content-text">
-          <h3>Philosophy</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A corporis
-            error, exercitationem fuga id illum ipsam laboriosam laborum, magni
-            modi nemo nulla odit perferendis quos unde! Cumque dolore doloremque
-            hic in maiores nisi omnis sit?
-          </p>
-        </div>
+        <Content>
+          <Subtitle>Philosophy</Subtitle>
+          <Paragraph>
+            Art party poke vinyl iceland kale chips next level. Yr narwhal
+            hashtag meh kinfolk, fanny pack hammock portland artisan flannel.
+            Wayfarers synth hell of williamsburg craft beer drinking vinegar
+            kickstarter adaptogen man bun 3 wolf moon gluten-free roof party
+            master cleanse. Marfa trust fund typewriter, pop-up hexagon unicorn
+            taiyaki la croix you probably haven't heard of them edison bulb vice
+            try-hard.
+          </Paragraph>
+        </Content>
 
-        <div className="article__content-text">
-          <h3>History </h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum
-            deleniti deserunt repellendus. Adipisci cupiditate ex in laboriosam
-            quae, quam quis quo reprehenderit sed voluptate. Debitis dolorem
-            eligendi est minima nobis odio officia quo ullam vel vitae. Ea
-            exercitationem fugiat laborum tenetur velit? Illo itaque iure nulla
-            numquam recusandae rerum sed.
-          </p>
-        </div>
-      </section>
-    </article>
+        <Content>
+          <Subtitle>History </Subtitle>
+          <Paragraph>
+            Swag selfies green juice DIY cardigan sartorial. XOXO pickled YOLO
+            street art, distillery vape iceland jianbing messenger bag. Neutra
+            woke copper mug VHS tote bag echo park. Cold-pressed hoodie salvia
+            chartreuse raclette pabst leggings. Plaid tbh viral vape man bun,
+            fanny pack retro neutra PBR&B next level thundercats. Pork belly
+            ramps iceland, vape small batch forage raclette deep v you probably
+            haven't heard of them cardigan keffiyeh.
+          </Paragraph>
+        </Content>
+      </Section>
+    </Article>
   );
 };
+
+const Paragraph = styled.p`
+  padding: 3vh 0 5vh 0;
+`;

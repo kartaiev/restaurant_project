@@ -1,36 +1,86 @@
-import React from 'react';
-import './Gallery.scss';
-import steakHouse1 from '../../assets/images/gallery/steak-house-mbl-1.jpg';
-import steakHouse2 from '../../assets/images/gallery/steak-house-mbl-2.jpg';
-import steakHouse3 from '../../assets/images/gallery/steak-house-mbl-3.jpg';
-import steakHouse4 from '../../assets/images/gallery/steak-house-mbl-4.jpg';
-import { FiChevronLeft } from 'react-icons/fi';
-import { FiChevronRight } from 'react-icons/fi';
+import React, { useState } from 'react';
+import styled from 'styled-components';
+import {
+  IoIosArrowBack as Back,
+  IoIosArrowForward as Forward
+} from 'react-icons/io';
+import {
+  absolute,
+  betweenCenter,
+  easeOut,
+  fullScreen,
+  yellow
+} from '../../utilities';
+import { loft1, loft2, loft3, loft4, loft5 } from '../../assets/images/gallery';
+import { SlideImage } from '../../elements';
 
-export const Gallery = () => {
+const Gallery = () => {
+  const pics = [{ loft1 }, { loft2 }, { loft3 }, { loft4 }, { loft5 }];
+
+  const [imageNum, setImageNum] = useState({
+    num: 0
+  });
+
+  const { num } = imageNum;
+
+  const forward = () => {
+    if (num < pics.length - 1) {
+      setImageNum({ num: num + 1 });
+      console.log(num);
+    } else {
+      setImageNum({ num: 0 });
+    }
+  };
+
+  const back = () => {
+    if (num > 0) {
+      setImageNum({ num: num - 1 });
+      console.log(num);
+    } else {
+      setImageNum({ num: pics.length - 1 });
+    }
+  };
+
   return (
-    <div className="gallery">
-      <div className="gallery__slide">
-        <img src={steakHouse1} alt="" />
-      </div>
-      <div className="gallery__slide open">
-        <img src={steakHouse2} alt="" />
-      </div>
-      <div className="gallery__slide ">
-        <img src={steakHouse3} alt="" />
-      </div>
-      <div className="gallery__slide">
-        <img src={steakHouse4} alt="" />
-      </div>
-      <div className="btns-wrap">
-        <button>
-          <FiChevronLeft className="arrow" />
-        </button>
-
-        <button>
-          <FiChevronRight className="arrow" />
-        </button>
-      </div>
-    </div>
+    <GalleryWrap>
+      <Slide>
+        <SlideImage src={Object.values(pics[num])} alt={`loft-${num}`} />
+      </Slide>
+      <BtnsWrap>
+        <Back onClick={back} />
+        <Forward onClick={forward} />
+      </BtnsWrap>
+    </GalleryWrap>
   );
 };
+
+export default Gallery;
+
+//* Style //
+const GalleryWrap = styled.section`
+  ${fullScreen};
+  position: relative;
+  overflow: hidden;
+`;
+
+const Slide = styled.div`
+  ${fullScreen};
+  ${absolute}
+  ${easeOut};
+`;
+
+const BtnsWrap = styled.div`
+  ${fullScreen};
+  ${betweenCenter};
+
+  svg {
+    font-size: 3rem;
+    opacity: 0.5;
+    z-index: 20;
+
+    &:hover {
+      opacity: 1;
+      color: ${yellow};
+    }
+  }
+`;

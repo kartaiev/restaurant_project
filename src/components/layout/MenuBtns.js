@@ -1,44 +1,40 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import './MenuBtns.scss';
+import React from 'react';
+import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
+import { LinkButton } from '../../elements';
+import { betweenCenter } from '../../utilities';
 
-export const MenuBtns = () => {
-  const [btnActiveState, setBtnActiveState] = useState({
-    on: false,
-    activeClass: 'active'
-  });
-
-  const { on, activeClass } = btnActiveState;
-
-  const addActiveClass = () => {
-    setBtnActiveState({
-      on: !on
-    });
-  };
-
+export const MenuBtns = ({ on, toggle }) => {
   return (
-    <div className="btns">
-      <div className="btns__wrap">
-        <Link className="btns__link" to="/menu">
-          <button
-            className={`btns__link-btn ${on ? 'active' : ''}`}
-            onClick={addActiveClass}
-            onTouchStart={activeClass}
-          >
-            Food
-          </button>
-        </Link>
+    <BtnsWrap>
+      <NavLink to="/menu">
+        <LinkButton onClick={toggle} type={on ? 'active' : ''}>
+          Food
+        </LinkButton>
+      </NavLink>
 
-        <Link className="btns__link" to="/menu/drinks">
-          <button
-            className={`btns__link-btn ${on ? '' : 'active'}`}
-            onClick={addActiveClass}
-            onTouchStart={activeClass}
-          >
-            Drinks
-          </button>
-        </Link>
-      </div>
-    </div>
+      <NavLink to="/menu/drinks">
+        <LinkButton onClick={toggle} type={on ? '' : 'active'}>
+          Drinks
+        </LinkButton>
+      </NavLink>
+    </BtnsWrap>
   );
 };
+
+const BtnsWrap = styled.div`
+  width: 100%;
+  ${betweenCenter()};
+  padding: 0 0 5vh 0;
+
+  a {
+    width: 45%;
+    height: 100%;
+
+    ${LinkButton} {
+      width: 100%;
+      height: 100%;
+      text-align: center;
+    }
+  }
+`;
