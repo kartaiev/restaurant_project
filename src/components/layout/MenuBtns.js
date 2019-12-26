@@ -13,7 +13,7 @@ export const MenuBtns = () => {
   const addActiveClass = () => {
     setBtnActiveState({
       on: !on
-    })
+    });
   };
 
   return (
