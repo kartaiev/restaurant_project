@@ -10,6 +10,7 @@ import {
   Subtitle,
   Title
 } from '../../../elements';
+import Search from '../../layout/Search';
 
 export const Menu = ({ menuFunc }) => {
   return (
@@ -21,6 +22,7 @@ export const Menu = ({ menuFunc }) => {
         <Toggle>
           {({ on, toggle }) => <MenuBtns on={on} toggle={toggle} />}
         </Toggle>
+        <Search />
         <MenuContent>
           <Subtitle>Appetizers & Salads</Subtitle>
           <ul>{menuFunc('Appetizers & Salads')}</ul>

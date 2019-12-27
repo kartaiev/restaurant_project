@@ -13,7 +13,7 @@ export const Subtitle = styled.h3`
   display: inline-block;
   position: relative;
   padding-bottom: 1vh;
-  margin-bottom: 3vh;
+  margin: 4vh 0 4vh 0;
 
   &::after {
     width: 100%;

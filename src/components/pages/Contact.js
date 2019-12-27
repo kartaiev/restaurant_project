@@ -18,7 +18,9 @@ export const Contact = () => {
         <Title>Contact</Title>
         <Content>
           <Subtitle>Bookings</Subtitle>
-          <Button modifiers="big">Book table online</Button>
+          <Button modifiers="big">
+            <span>Book table online</span>
+          </Button>
         </Content>
         <Content>
           <Subtitle>Opening Hours</Subtitle>
@@ -82,7 +84,7 @@ const DaysWrap = styled.div`
 `;
 
 const OpeningsTitle = styled.h4`
-  padding-bottom: 1vh;
+  padding-bottom: 2vh;
 `;
 
 const Sched = styled.div`

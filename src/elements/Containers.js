@@ -30,7 +30,7 @@ export const Content = styled.div`
 export const MenuContent = styled(Content)`
   ul {
     width: 100%;
-    padding: 3vh 0 5vh;
+    padding: 0 0 5vh 0;
     list-style: none;
 
     li {
