@@ -2,19 +2,14 @@ import React from 'react';
 import { MenuBtns } from '../../layout/MenuBtns';
 import beefSteak from '../../../assets/images/pages/menu.jpg';
 import { Toggle } from '../../../utilities';
-import {
-  Article,
-  Image,
-  MenuContent,
-  Section,
-  Subtitle,
-  Title
-} from '../../../elements';
+import { Article, Image, MenuContent, Section, Title } from '../../../elements';
 import Search from '../../layout/Search';
 
-export const Menu = ({ menuFunc }) => {
+export const Menu = ({ menuSectionFunc }) => {
+  const typeArr = ['Appetizers & Salads', 'Steaks & Chops', 'Seafood'];
+
   return (
-    <Article className="article">
+    <Article>
       <Image modifiers="page" src={beefSteak} alt="beef steak with fork" />
 
       <Section>
@@ -23,19 +18,7 @@ export const Menu = ({ menuFunc }) => {
           {({ on, toggle }) => <MenuBtns on={on} toggle={toggle} />}
         </Toggle>
         <Search />
-        <MenuContent>
-          <Subtitle>Appetizers & Salads</Subtitle>
-          <ul>{menuFunc('Appetizers & Salads')}</ul>
-
-          <Subtitle>Sides</Subtitle>
-          <ul>{menuFunc('Sides')}</ul>
-
-          <Subtitle>Steaks & Chops</Subtitle>
-          <ul>{menuFunc('Steaks & Chops')}</ul>
-
-          <Subtitle>Seafood</Subtitle>
-          <ul>{menuFunc('Seafood')}</ul>
-        </MenuContent>
+        <MenuContent>{menuSectionFunc(typeArr)}</MenuContent>
       </Section>
     </Article>
   );

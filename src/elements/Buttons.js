@@ -5,7 +5,7 @@ import { absolute, background, easeOut, grey, red, yellow } from '../utilities';
 const BUTTONS_MODIFIERS = {
   big: () => css`
     width: 100%;
-    margin: 0 0 6vh 0;
+    //margin: 0 0 6vh 0;
   `
 };
 
@@ -15,7 +15,7 @@ export const Button = styled.button`
   color: ${grey};
   border: 1px solid ${grey};
   background: ${background};
-  padding: 2vh 0;
+  padding: 1vh 0;
   outline: none;
   ${({ type }) =>
     type === 'active' && `color: ${yellow}; border: 1px solid ${red};`};

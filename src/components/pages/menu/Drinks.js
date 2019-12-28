@@ -10,8 +10,11 @@ import {
   Title
 } from '../../../elements';
 import Search from '../../layout/Search';
+import menuData from '../../../data/menuData';
 
-export const Drinks = ({ menuFunc }) => {
+export const Drinks = ({ menuSectionFunc }) => {
+  const typeArr = ['Red Wine', 'White Wine', 'Whisky'];
+
   return (
     <Article className="article">
       <Image modifiers="page" src={wine} alt="beef steak with fork" />
@@ -20,16 +23,7 @@ export const Drinks = ({ menuFunc }) => {
         <Title>Menu</Title>
         <MenuBtns />
         <Search />
-        <MenuContent>
-          <Subtitle>Red Wine</Subtitle>
-          <ul>{menuFunc('Red Wine')}</ul>
-
-          <Subtitle>White Wines</Subtitle>
-          <ul>{menuFunc('White Wine')}</ul>
-
-          <Subtitle>Whisky</Subtitle>
-          <ul>{menuFunc('Whisky')}</ul>
-        </MenuContent>
+        <MenuContent>{menuSectionFunc(typeArr)}</MenuContent>
       </Section>
     </Article>
   );

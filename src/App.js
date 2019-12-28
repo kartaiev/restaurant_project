@@ -11,13 +11,13 @@ import GlobalStyle from './utilities/Global';
 import Header from './components/layout/Header';
 import { Toggle } from './utilities';
 import Gallery from './components/pages/Gallery';
+import { Subtitle } from './elements';
 // import fb from './config/fbConfig';
 
 const App = () => {
-  //* List from MenuData Func //
-  const menuFunc = type =>
-    menuData
-      .map(item => item)
+  //* List of menu items according to type from menuData JSON //
+  const menuListFunc = type => {
+    return menuData
       .filter(item => item.type === type)
       .map(item => (
         <li key={item.id}>
@@ -25,6 +25,17 @@ const App = () => {
           <div>{item.price}</div>
         </li>
       ));
+  };
+
+  //* Menu sections with a list of menu items //
+  const menuSectionFunc = typeArr => {
+    return typeArr.map((type, i) => (
+      <div key={i}>
+        <Subtitle>{type}</Subtitle>
+        <ul>{menuListFunc(type)}</ul>
+      </div>
+    ));
+  };
 
   return (
     <div className="App">
@@ -45,10 +56,14 @@ const App = () => {
         <Route
           path="/menu/:menuCategory"
           render={() => {
-            return <Drinks menuFunc={menuFunc} />;
+            return <Drinks menuSectionFunc={menuSectionFunc} />;
           }}
         />
-        <Route path="/menu" exact render={() => <Menu menuFunc={menuFunc} />} />
+        <Route
+          path="/menu"
+          exact
+          render={() => <Menu menuSectionFunc={menuSectionFunc} />}
+        />
         <Route path="/contact" component={Contact} />
       </Switch>
     </div>

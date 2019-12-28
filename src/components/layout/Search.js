@@ -1,14 +1,22 @@
-import React from 'react';
-import { IoIosSearch as SearchIcon } from 'react-icons/io';
-import { Input } from '../../elements';
+import React, { useState } from 'react';
+// import { IoIosSearch as SearchIcon } from 'react-icons/io';
+import { Button, Input } from '../../elements';
 import styled from 'styled-components';
-import { absolute, grey } from '../../utilities';
+import { absolute, betweenCenter, grey } from '../../utilities';
 
 const Search = () => {
+  const [search, setSearch] = useState('');
+
   return (
     <Form>
-      <Input type="text" />
-      <SearchIcon />
+      <Input
+        type="search"
+        placeholder="search menu"
+        onChange={e => setSearch(e.target.value)}
+      />
+      <Button modifiers="big">
+        <span>Search</span>
+      </Button>
     </Form>
   );
 };
@@ -17,8 +25,10 @@ export default Search;
 
 const Form = styled.form`
   width: 100%;
+  ${betweenCenter({ fd: 'column' })};
   position: relative;
-  height: 5vh;
+  height: 15vh;
+  margin-bottom: 5vh;
 
   svg {
     ${absolute({ xProp: 'right', y: '5%' })};

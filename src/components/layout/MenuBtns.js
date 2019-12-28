@@ -8,13 +8,13 @@ export const MenuBtns = ({ on, toggle }) => {
   return (
     <BtnsWrap>
       <NavLink to="/menu">
-        <Button onClick={toggle} type={on && 'active'}>
+        <Button onClick={toggle} type={on ? 'active' : ''}>
           <span>Food</span>
         </Button>
       </NavLink>
 
       <NavLink to="/menu/drinks">
-        <Button onClick={toggle} type={!on && 'active'}>
+        <Button onClick={toggle} type={!on ? 'active' : ''}>
           <span>Drinks</span>
         </Button>
       </NavLink>
@@ -25,7 +25,7 @@ export const MenuBtns = ({ on, toggle }) => {
 const BtnsWrap = styled.div`
   width: 100%;
   ${betweenCenter()};
-  padding: 0 0 2vh 0;
+  padding: 0 0 5vh 0;
 
   a {
     width: 45%;

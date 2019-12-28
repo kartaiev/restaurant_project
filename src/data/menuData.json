@@ -1,272 +1,272 @@
 [
   {
-    "id": 1,
-    "type": "Appetizers & Salads",
-    "dish": "Baked Clams Oreganata",
-    "price": 17
+    "id":1,
+    "type":"Appetizers & Salads",
+    "dish":"Baked Clams Oreganata",
+    "price":17
   },
   {
-    "id": 2,
-    "type": "Appetizers & Salads",
-    "dish": "Manhattan Clam Chowder",
-    "price": 14
+    "id":2,
+    "type":"Appetizers & Salads",
+    "dish":"Manhattan Clam Chowder",
+    "price":14
   },
   {
-    "id": 3,
-    "type": "Appetizers & Salads",
-    "dish": "Green Salad",
-    "price": 12
+    "id":3,
+    "type":"Appetizers & Salads",
+    "dish":"Green Salad",
+    "price":12
   },
   {
-    "id": 4,
-    "type": "Appetizers & Salads",
-    "dish": "Jumbo Lump Crab Cake",
-    "price": 21
+    "id":4,
+    "type":"Appetizers & Salads",
+    "dish":"Jumbo Lump Crab Cake",
+    "price":21
   },
   {
-    "id": 5,
-    "type": "Appetizers & Salads",
-    "dish": "Beef Carpaccio",
-    "price": 16
+    "id":5,
+    "type":"Appetizers & Salads",
+    "dish":"Beef Carpaccio",
+    "price":16
   },
   {
-    "id": 6,
-    "type": "Appetizers & Salads",
-    "dish": "French Onion Soup",
-    "price": 12
+    "id":6,
+    "type":"Appetizers & Salads",
+    "dish":"French Onion Soup",
+    "price":12
   },
   {
-    "id": 7,
-    "type": "Appetizers & Salads",
-    "dish": "Jumbo Lump Crab Cake",
-    "price": 21
+    "id":7,
+    "type":"Appetizers & Salads",
+    "dish":"Jumbo Lump Crab Cake",
+    "price":21
   },
   {
-    "id": 8,
-    "type": "Appetizers & Salads",
-    "dish": "Caesar",
-    "price": 14
+    "id":8,
+    "type":"Appetizers & Salads",
+    "dish":"Caesar",
+    "price":14
   },
   {
-    "id": 9,
-    "type": "Sides",
-    "dish": "Baked Potato",
-    "price": 10
+    "id":9,
+    "type":"Sides",
+    "dish":"Baked Potato",
+    "price":10
   },
   {
-    "id": 10,
-    "type": "Sides",
-    "dish": "French Fries",
-    "price": 11
+    "id":10,
+    "type":"Sides",
+    "dish":"French Fries",
+    "price":11
   },
   {
-    "id": 11,
-    "type": "Sides",
-    "dish": "Lyonnaise",
-    "price": 11
+    "id":11,
+    "type":"Sides",
+    "dish":"Lyonnaise",
+    "price":11
   },
   {
-    "id": 12,
-    "type": "Sides",
-    "dish": "Onion Rings",
-    "price": 11
+    "id":12,
+    "type":"Sides",
+    "dish":"Onion Rings",
+    "price":11
   },
   {
-    "id": 13,
-    "type": "Sides",
-    "dish": "Mashed Potatoes",
-    "price": 11
+    "id":13,
+    "type":"Sides",
+    "dish":"Mashed Potatoes",
+    "price":11
   },
-{
-    "id": 14,
-    "type": "Sides",
-    "dish": "Hash Browns",
-    "price": 11
+  {
+    "id":14,
+    "type":"Sides",
+    "dish":"Hash Browns",
+    "price":11
   },
-{
-    "id": 15,
-    "type": "Steaks & Chops",
-    "dish": "Chopped Steak",
-    "price": 23
+  {
+    "id":15,
+    "type":"Steaks & Chops",
+    "dish":"Chopped Steak",
+    "price":23
   },
-{
-    "id": 16,
-    "type": "Steaks & Chops",
-    "dish": "Filet Mignon 14oz",
-    "price": 52
+  {
+    "id":16,
+    "type":"Steaks & Chops",
+    "dish":"Filet Mignon 14oz",
+    "price":52
   },
-{
-    "id": 17,
-    "type": "Steaks & Chops",
-    "dish": "Lamb Chops",
-    "price": 51
+  {
+    "id":17,
+    "type":"Steaks & Chops",
+    "dish":"Lamb Chops",
+    "price":51
   },
-{
-    "id": 18,
-    "type": "Steaks & Chops",
-    "dish": "New York Sirloin",
-    "price": 53
+  {
+    "id":18,
+    "type":"Steaks & Chops",
+    "dish":"New York Sirloin",
+    "price":53
   },
-{
-    "id": 19,
-    "type": "Steaks & Chops",
-    "dish": "Rib Veal Chop",
-    "price": 52
+  {
+    "id":19,
+    "type":"Steaks & Chops",
+    "dish":"Rib Veal Chop",
+    "price":52
   },
-{
-    "id": 20,
-    "type": "Steaks & Chops",
-    "dish": "Ribeye",
-    "price": 56
+  {
+    "id":20,
+    "type":"Steaks & Chops",
+    "dish":"Ribeye",
+    "price":56
   },
-{
-    "id": 21,
-    "type": "Seafood",
-    "dish": "Broiled Swordfish",
-    "price": 36
+  {
+    "id":21,
+    "type":"Seafood",
+    "dish":"Broiled Swordfish",
+    "price":36
   },
-{
-    "id": 22,
-    "type": "Seafood",
-    "dish": "Jumbo Shrimp",
-    "price": 36
+  {
+    "id":22,
+    "type":"Seafood",
+    "dish":"Jumbo Shrimp",
+    "price":36
   },
-{
-    "id": 23,
-    "type": "Seafood",
-    "dish": "Grilled Scottish Salmon",
-    "price": 34
+  {
+    "id":23,
+    "type":"Seafood",
+    "dish":"Grilled Scottish Salmon",
+    "price":34
   },
-{
-    "id": 24,
-    "type": "Seafood",
-    "dish": "Jumbo Maine Lobster",
-    "price": 44
+  {
+    "id":24,
+    "type":"Seafood",
+    "dish":"Jumbo Maine Lobster",
+    "price":44
   },
-{
-    "id": 25,
-    "type": "Red Wine",
-    "dish": "Trumpeter Reserve 2013",
-    "price": "9/32"
+  {
+    "id":25,
+    "type":"Red Wine",
+    "dish":"Trumpeter Reserve 2013",
+    "price":"9/32"
   },
-{
-    "id": 26,
-    "type": "Red Wine",
-    "dish": "Signature Malbec 2017",
-    "price": "14/44"
+  {
+    "id":26,
+    "type":"Red Wine",
+    "dish":"Signature Malbec 2017",
+    "price":"14/44"
   },
-{
-    "id": 27,
-    "type": "Red Wine",
-    "dish": "Lapostolle Grand Selection Merlot 2017",
-    "price": "13/50"
+  {
+    "id":27,
+    "type":"Red Wine",
+    "dish":"Lapostolle Grand Selection Merlot 2017",
+    "price":"13/50"
   },
-{
-    "id": 28,
-    "type": "Red Wine",
-    "dish": "Lapostolle Cuvée Alexandre Merlot 2015",
-    "price": "15/50"
+  {
+    "id":28,
+    "type":"Red Wine",
+    "dish":"Lapostolle Cuvée Alexandre Merlot 2015",
+    "price":"15/50"
   },
-{
-    "id": 29,
-    "type": "Red Wine",
-    "dish": "Lapostolle Cuvée Alexandre Carmenere 2016",
-    "price": "15/50"
+  {
+    "id":29,
+    "type":"Red Wine",
+    "dish":"Lapostolle Cuvée Alexandre Carmenere 2016",
+    "price":"15/50"
   },
-{
-    "id": 30,
-    "type": "Red Wine",
-    "dish": "Manos Negras Pinot Noir 2015",
-    "price": "9/32"
+  {
+    "id":30,
+    "type":"Red Wine",
+    "dish":"Manos Negras Pinot Noir 2015",
+    "price":"9/32"
   },
-{
-    "id": 31,
-    "type": "Red Wine",
-    "dish": "Malbec Clasico 2017",
-    "price": "13/38"
+  {
+    "id":31,
+    "type":"Red Wine",
+    "dish":"Malbec Clasico 2017",
+    "price":"13/38"
   },
-{
-    "id": 32,
-    "type": "Red Wine",
-    "dish": "Puramun Malbec Reserva 2014",
-    "price": "16/80"
+  {
+    "id":32,
+    "type":"Red Wine",
+    "dish":"Puramun Malbec Reserva 2014",
+    "price":"16/80"
   },
-{
-    "id": 33,
-    "type": "White Wine",
-    "dish": "La Mision Reserva Especial Sauvignon Blanc 2017",
-    "price": "13/42"
+  {
+    "id":33,
+    "type":"White Wine",
+    "dish":"La Mision Reserva Especial Sauvignon Blanc 2017",
+    "price":"13/42"
   },
-{
-    "id": 34,
-    "type": "White Wine",
-    "dish": "Rutini Destino Sauvignon Blanc 2017",
-    "price": "13/38"
+  {
+    "id":34,
+    "type":"White Wine",
+    "dish":"Rutini Destino Sauvignon Blanc 2017",
+    "price":"13/38"
   },
-{
-    "id": 35,
-    "type": "White Wine",
-    "dish": "Rutini Trumpeter Torrontes 2016",
-    "price": "13/38"
+  {
+    "id":35,
+    "type":"White Wine",
+    "dish":"Rutini Trumpeter Torrontes 2016",
+    "price":"13/38"
   },
-{
-    "id": 36,
-    "type": "White Wine",
-    "dish": "Catena Zapata Clasico Chardonnay 2016",
-    "price": "14/48"
+  {
+    "id":36,
+    "type":"White Wine",
+    "dish":"Catena Zapata Clasico Chardonnay 2016",
+    "price":"14/48"
   },
-{
-    "id": 37,
-    "type": "Whisky",
-    "dish": "Macallan '10 years'",
-    "price": 12
+  {
+    "id":37,
+    "type":"Whisky",
+    "dish":"Macallan '10 years'",
+    "price":12
   },
-{
-    "id": 38,
-    "type": "Whisky",
-    "dish": "The Glenlivet '12 years'",
-    "price": 12
+  {
+    "id":38,
+    "type":"Whisky",
+    "dish":"The Glenlivet '12 years'",
+    "price":12
   },
-{
-    "id": 39,
-    "type": "Whisky",
-    "dish": "Glenfiddich '12 years'",
-    "price": 12
+  {
+    "id":39,
+    "type":"Whisky",
+    "dish":"Glenfiddich '12 years'",
+    "price":12
   },
-{
-    "id": 40,
-    "type": "Whisky",
-    "dish": "Macallan '12 years'",
-    "price": 14
+  {
+    "id":40,
+    "type":"Whisky",
+    "dish":"Macallan '12 years'",
+    "price":14
   },
-{
-    "id": 41,
-    "type": "Whisky",
-    "dish": "Glenmorangie The Original '10 years'",
-    "price": 14
+  {
+    "id":41,
+    "type":"Whisky",
+    "dish":"Glenmorangie The Original '10 years'",
+    "price":14
   },
-{
-    "id": 42,
-    "type": "Whisky",
-    "dish": "Laphroaig Islay '10 years'",
-    "price": "14"
+  {
+    "id":42,
+    "type":"Whisky",
+    "dish":"Laphroaig Islay '10 years'",
+    "price":"14"
   },
-{
-    "id": 43,
-    "type": "Whisky",
-    "dish": "Glenfiddich Barrel Reserve '14 years'",
-    "price": "14"
+  {
+    "id":43,
+    "type":"Whisky",
+    "dish":"Glenfiddich Barrel Reserve '14 years'",
+    "price":"14"
   },
-{
-    "id": 44,
-    "type": "Whisky",
-    "dish": "The Dalmore '12 years' $15.00",
-    "price": "15"
+  {
+    "id":44,
+    "type":"Whisky",
+    "dish":"The Dalmore '12 years' $15.00",
+    "price":"15"
   },
-{
-    "id": 45,
-    "type": "Whisky",
-    "dish": "Cardhu '12 years'",
-    "price": "15"
+  {
+    "id":45,
+    "type":"Whisky",
+    "dish":"Cardhu '12 years'",
+    "price":"15"
   }
 ]

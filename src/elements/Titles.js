@@ -5,7 +5,7 @@ export const Title = styled.h2`
   ${titleFont};
   color: ${yellow};
   font-size: 3rem;
-  padding-bottom: 5vh;
+  margin-bottom: 5vh;
 `;
 
 export const Subtitle = styled.h3`
