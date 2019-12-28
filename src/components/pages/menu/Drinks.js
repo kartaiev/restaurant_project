@@ -4,9 +4,7 @@ import wine from '../../../assets/images/pages/drinks.jpg';
 import { Article, Image, MenuContent, Section, Title } from '../../../elements';
 import Search from '../../layout/Search';
 
-export const Drinks = ({ menuSectionFunc, onChange }) => {
-  const typeArr = ['Red Wine', 'White Wine', 'Whisky'];
-
+export const Drinks = ({ drinks, menuSectionFunc, onChange }) => {
   return (
     <Article className="article">
       <Image modifiers="page" src={wine} alt="beef steak with fork" />
@@ -15,7 +13,7 @@ export const Drinks = ({ menuSectionFunc, onChange }) => {
         <Title>Menu</Title>
         <MenuBtns />
         <Search onChange={onChange} />
-        <MenuContent>{menuSectionFunc(typeArr)}</MenuContent>
+        <MenuContent>{menuSectionFunc(drinks)}</MenuContent>
       </Section>
     </Article>
   );

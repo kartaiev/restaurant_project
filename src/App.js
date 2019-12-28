@@ -20,12 +20,12 @@ const App = () => {
     menu: []
   });
 
+  const { menu } = data;
+
   //* Get data from JSON and update data state
   useEffect(() => {
     return setData({ menu: menuData });
   }, []);
-
-  const { menu } = data;
 
   //* Search input state //
   const [search, setSearch] = useState('');
@@ -33,6 +33,20 @@ const App = () => {
   //* Filtered menu according to search input //
   const filteredMenu = menu.filter(item =>
     item.dish.toLowerCase().includes(search.toLowerCase())
+  );
+
+  const foodUnfiltered = filteredMenu
+    .filter(item => item.category === 'food')
+    .map(item => item.type);
+  const food = foodUnfiltered.filter(
+    (item, i) => foodUnfiltered.indexOf(item) >= i
+  );
+
+  const drinksUnfiltered = filteredMenu
+    .filter(item => item.category === 'drinks')
+    .map(item => item.type);
+  const drinks = drinksUnfiltered.filter(
+    (item, i) => drinksUnfiltered.indexOf(item) >= i
   );
 
   //* List of menu items according to type func //
@@ -48,9 +62,10 @@ const App = () => {
   };
 
   //* Menu sections with a list of menu items func //
-  const menuSectionFunc = () => {
-    const typesArr = filteredMenu.map(item => item.type);
-    return typesArr.map((type, i) => (
+  const menuSectionFunc = category => {
+    console.log(filteredMenu);
+    console.log(search);
+    return category.map((type, i) => (
       <div key={i}>
         <Subtitle>{type}</Subtitle>
         <ul>{menuListFunc(type)}</ul>
@@ -79,6 +94,7 @@ const App = () => {
           render={() => {
             return (
               <Drinks
+                drinks={drinks}
                 menuSectionFunc={menuSectionFunc}
                 onChange={e => setSearch(e.target.value)}
               />
@@ -90,6 +106,7 @@ const App = () => {
           exact
           render={() => (
             <Menu
+              food={food}
               menuSectionFunc={menuSectionFunc}
               onChange={e => setSearch(e.target.value)}
             />
