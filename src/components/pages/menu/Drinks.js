@@ -1,18 +1,10 @@
 import React from 'react';
 import { MenuBtns } from '../../layout/MenuBtns';
 import wine from '../../../assets/images/pages/drinks.jpg';
-import {
-  Article,
-  Image,
-  MenuContent,
-  Section,
-  Subtitle,
-  Title
-} from '../../../elements';
+import { Article, Image, MenuContent, Section, Title } from '../../../elements';
 import Search from '../../layout/Search';
-import menuData from '../../../data/menuData';
 
-export const Drinks = ({ menuSectionFunc }) => {
+export const Drinks = ({ menuSectionFunc, onChange }) => {
   const typeArr = ['Red Wine', 'White Wine', 'Whisky'];
 
   return (
@@ -22,7 +14,7 @@ export const Drinks = ({ menuSectionFunc }) => {
       <Section>
         <Title>Menu</Title>
         <MenuBtns />
-        <Search />
+        <Search onChange={onChange} />
         <MenuContent>{menuSectionFunc(typeArr)}</MenuContent>
       </Section>
     </Article>

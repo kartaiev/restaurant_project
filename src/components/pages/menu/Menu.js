@@ -5,7 +5,7 @@ import { Toggle } from '../../../utilities';
 import { Article, Image, MenuContent, Section, Title } from '../../../elements';
 import Search from '../../layout/Search';
 
-export const Menu = ({ menuSectionFunc }) => {
+export const Menu = ({ menuSectionFunc, onChange }) => {
   const typeArr = ['Appetizers & Salads', 'Steaks & Chops', 'Seafood'];
 
   return (
@@ -17,7 +17,7 @@ export const Menu = ({ menuSectionFunc }) => {
         <Toggle>
           {({ on, toggle }) => <MenuBtns on={on} toggle={toggle} />}
         </Toggle>
-        <Search />
+        <Search onChange={onChange} />
         <MenuContent>{menuSectionFunc(typeArr)}</MenuContent>
       </Section>
     </Article>

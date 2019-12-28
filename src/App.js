@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import menuData from './data/menuData';
 import { Home } from './components/Home';
@@ -15,9 +15,29 @@ import { Subtitle } from './elements';
 // import fb from './config/fbConfig';
 
 const App = () => {
-  //* List of menu items according to type from menuData JSON //
+  //* Initial data state
+  const [data, setData] = useState({
+    menu: []
+  });
+
+  //* Get data from JSON and update data state
+  useEffect(() => {
+    return setData({ menu: menuData });
+  }, []);
+
+  const { menu } = data;
+
+  //* Search input state //
+  const [search, setSearch] = useState('');
+
+  //* Filtered menu according to search input //
+  const filteredMenu = menu.filter(item =>
+    item.dish.toLowerCase().includes(search.toLowerCase())
+  );
+
+  //* List of menu items according to type func //
   const menuListFunc = type => {
-    return menuData
+    return filteredMenu
       .filter(item => item.type === type)
       .map(item => (
         <li key={item.id}>
@@ -27,9 +47,10 @@ const App = () => {
       ));
   };
 
-  //* Menu sections with a list of menu items //
-  const menuSectionFunc = typeArr => {
-    return typeArr.map((type, i) => (
+  //* Menu sections with a list of menu items func //
+  const menuSectionFunc = () => {
+    const typesArr = filteredMenu.map(item => item.type);
+    return typesArr.map((type, i) => (
       <div key={i}>
         <Subtitle>{type}</Subtitle>
         <ul>{menuListFunc(type)}</ul>
@@ -56,13 +77,23 @@ const App = () => {
         <Route
           path="/menu/:menuCategory"
           render={() => {
-            return <Drinks menuSectionFunc={menuSectionFunc} />;
+            return (
+              <Drinks
+                menuSectionFunc={menuSectionFunc}
+                onChange={e => setSearch(e.target.value)}
+              />
+            );
           }}
         />
         <Route
           path="/menu"
           exact
-          render={() => <Menu menuSectionFunc={menuSectionFunc} />}
+          render={() => (
+            <Menu
+              menuSectionFunc={menuSectionFunc}
+              onChange={e => setSearch(e.target.value)}
+            />
+          )}
         />
         <Route path="/contact" component={Contact} />
       </Switch>

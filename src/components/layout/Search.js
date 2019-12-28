@@ -1,22 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 // import { IoIosSearch as SearchIcon } from 'react-icons/io';
-import { Button, Input } from '../../elements';
+import { Input } from '../../elements';
 import styled from 'styled-components';
 import { absolute, betweenCenter, grey } from '../../utilities';
 
-const Search = () => {
-  const [search, setSearch] = useState('');
-
+const Search = ({ onChange, onSubmit }) => {
   return (
-    <Form>
-      <Input
-        type="search"
-        placeholder="search menu"
-        onChange={e => setSearch(e.target.value)}
-      />
-      <Button modifiers="big">
-        <span>Search</span>
-      </Button>
+    <Form onSubmit={onSubmit}>
+      <Input type="search" placeholder="search menu" onChange={onChange} />
     </Form>
   );
 };
