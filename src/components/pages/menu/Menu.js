@@ -1,6 +1,6 @@
 import React from 'react';
 import { MenuBtns } from '../../layout/MenuBtns';
-import beefSteak from '../../../assets/images/pages/menu.jpg';
+import beefSteak from '../../../assets/images/pages/menu1.jpg';
 import { Toggle } from '../../../utilities';
 import { Article, Image, MenuContent, Section, Title } from '../../../elements';
 import Search from '../../layout/Search';

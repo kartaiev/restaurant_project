@@ -3,10 +3,10 @@ import { rgba } from 'polished';
 import {
   Article,
   Button,
+  ContactTitle,
   Content,
   Section,
-  Subtitle,
-  Title
+  Subtitle
 } from '../../elements';
 import styled from 'styled-components';
 import { betweenCenter, betweenStart, startEnd } from '../../utilities';
@@ -15,7 +15,7 @@ export const Contact = () => {
   return (
     <Article>
       <Section>
-        <Title>Contact</Title>
+        <ContactTitle>Contact</ContactTitle>
         <Content>
           <Subtitle>Bookings</Subtitle>
           <Button modifiers="big">

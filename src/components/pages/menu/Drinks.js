@@ -1,6 +1,6 @@
 import React from 'react';
 import { MenuBtns } from '../../layout/MenuBtns';
-import wine from '../../../assets/images/pages/drinks.jpg';
+import wine from '../../../assets/images/pages/drinks1.jpg';
 import { Article, Image, MenuContent, Section, Title } from '../../../elements';
 import Search from '../../layout/Search';
 

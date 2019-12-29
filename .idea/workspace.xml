@@ -2,9 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/images/gallery/menu1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/menu1.afphoto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/pages/about1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/pages/drinks1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/pages/food1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/pages/menu1.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/About.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Contact.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utilities/flexes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/flexes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/menu/Drinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/menu/Drinks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/menu/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/menu/Menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/elements/Containers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/Containers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/elements/Titles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/Titles.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,14 +186,7 @@
       <workItem from="1577602078768" duration="1670000" />
       <workItem from="1577635580645" duration="2001000" />
       <workItem from="1577640879489" duration="225000" />
-      <workItem from="1577648770380" duration="2139000" />
-    </task>
-    <task id="LOCAL-00047" summary="menu">
-      <created>1576453913692</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1576453913692</updated>
+      <workItem from="1577648770380" duration="3357000" />
     </task>
     <task id="LOCAL-00048" summary="menu">
       <created>1576454343780</created>
@@ -521,7 +524,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577652817820</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="contact">
+      <created>1577653527234</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1577653527235</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -593,10 +603,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="322" y="48" key="#npm_start/0.23.1280.777@0.23.1280.777" timestamp="1577562451292" />
-    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1577653502078">
+    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1577653526745">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1577653502078" />
+    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1577653526745" />
     <state x="248" y="152" key="EditFileWatcherDialog" timestamp="1576193894905">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -625,10 +635,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="3" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1577477138058" />
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1577652821402">
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1577653530942">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1577652821402" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1577653530942" />
     <state x="346" y="232" key="cloudConfig.SelfSettingsDialog" timestamp="1577313845734">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -649,9 +659,9 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="358" y="269" width="858" height="350" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.23.1280.777@0.23.1280.777" timestamp="1576941427259" />
-    <state x="219" y="23" width="840" height="775" key="search.everywhere.popup" timestamp="1577652851517">
+    <state x="219" y="23" width="840" height="775" key="search.everywhere.popup" timestamp="1577654532557">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="219" y="23" width="840" height="775" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1577652851517" />
+    <state x="219" y="23" width="840" height="775" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1577654532557" />
   </component>
 </project>

@@ -1,5 +1,5 @@
 import React from 'react';
-import standingSteak from '../../assets/images/pages/about.jpg';
+import standingSteak from '../../assets/images/pages/about1.jpg';
 import styled from 'styled-components';
 import {
   Article,
