@@ -9,7 +9,7 @@ import {
   Title
 } from '../../elements';
 import styled from 'styled-components';
-import { betweenCenter, betweenStart, centerEnd } from '../../utilities';
+import { betweenCenter, betweenStart, startEnd } from '../../utilities';
 
 export const Contact = () => {
   return (
@@ -72,25 +72,20 @@ export const Contact = () => {
         <Content>
           <Subtitle>Details</Subtitle>
           <Details>
-            <OpeningsTitle>
-              <p>ADDRESS</p>
-            </OpeningsTitle>
+            <h4>ADDRESS</h4>
             <Time>
+              <p>772 N Main St,</p>
               <p>9J94+72 Bishop, California</p>
             </Time>
           </Details>
           <Details>
-            <OpeningsTitle>
-              <p>PHONE</p>
-            </OpeningsTitle>
+            <h4>PHONE</h4>
             <Time>
               <p>(760) 122-21322</p>
             </Time>
           </Details>
           <Details>
-            <OpeningsTitle>
-              <p>EMAIL</p>
-            </OpeningsTitle>
+            <h4>EMAIL</h4>
             <Time>
               <p>holysmokes@fake.net</p>
             </Time>
@@ -138,10 +133,11 @@ const Sched = styled.div`
 `;
 const Details = styled.div`
   width: 100%;
-  ${betweenCenter};
+  ${betweenStart};
   padding-bottom: 5vh;
 `;
 
 const Time = styled.div`
-  ${centerEnd({ fd: 'column' })};
+  ${startEnd({ fd: 'column' })};
+  color: ${rgba('#cccccc', 0.6)};
 `;

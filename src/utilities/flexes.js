@@ -34,3 +34,10 @@ export const centerEnd = ({ fd = 'row' } = {}) => css`
   justify-content: center;
   align-items: flex-end;
 `;
+
+export const startEnd = ({ fd = 'row' } = {}) => css`
+  display: flex;
+  flex-direction: ${fd};
+  justify-content: flex-start;
+  align-items: flex-end;
+`;
