@@ -2,7 +2,7 @@ import React from 'react';
 // import { IoIosSearch as SearchIcon } from 'react-icons/io';
 import { Input } from '../../elements';
 import styled from 'styled-components';
-import { absolute, centerCenter, grey } from '../../utilities';
+import { absolute, grey } from '../../utilities';
 
 const Search = ({ onChange, onSubmit, placeholder }) => {
   return (
@@ -16,9 +16,8 @@ export default Search;
 
 const Form = styled.form`
   width: 100%;
-  ${centerCenter({ fd: 'column' })};
   position: relative;
-  height: 10vh;
+  height: 7vh;
 
   svg {
     ${absolute({ xProp: 'right', y: '5%' })};
