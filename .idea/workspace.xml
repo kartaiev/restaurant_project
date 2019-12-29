@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="" />
+    <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/gallery/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/gallery/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/gallery/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/gallery/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/gallery/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/gallery/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/gallery/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/gallery/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/gallery/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/gallery/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/pages/about.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/pages/drinks.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/pages/menu.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/pages/menu.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/pages/menu1.jpg" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -172,14 +183,7 @@
       <workItem from="1577602078768" duration="1670000" />
       <workItem from="1577635580645" duration="2001000" />
       <workItem from="1577640879489" duration="225000" />
-      <workItem from="1577648770380" duration="3703000" />
-    </task>
-    <task id="LOCAL-00049" summary="menu">
-      <created>1576454502876</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1576454502876</updated>
+      <workItem from="1577648770380" duration="4201000" />
     </task>
     <task id="LOCAL-00050" summary="menu - firebase">
       <created>1576499530064</created>
@@ -517,7 +521,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577655850729</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="new photo for menu">
+      <created>1577656323207</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1577656323207</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -525,7 +536,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="z-index refactoring" />
     <MESSAGE value="menu" />
     <MESSAGE value="menu - firebase" />
     <MESSAGE value="menu - img" />
@@ -550,7 +560,8 @@
     <MESSAGE value="search logic" />
     <MESSAGE value="map" />
     <MESSAGE value="contact" />
-    <option name="LAST_COMMIT_MESSAGE" value="contact" />
+    <MESSAGE value="new photo for menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="new photo for menu" />
   </component>
   <component name="WindowStateProjectService">
     <state x="139" y="23" key="#ESLint" timestamp="1577228018862">
@@ -589,10 +600,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="322" y="48" key="#npm_start/0.23.1280.777@0.23.1280.777" timestamp="1577562451292" />
-    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1577655850434">
+    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1577656322743">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1577655850434" />
+    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1577656322743" />
     <state x="248" y="152" key="EditFileWatcherDialog" timestamp="1576193894905">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -621,10 +632,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="3" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1577477138058" />
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1577655853705">
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1577656325807">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1577655853705" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1577656325807" />
     <state x="346" y="232" key="cloudConfig.SelfSettingsDialog" timestamp="1577313845734">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
