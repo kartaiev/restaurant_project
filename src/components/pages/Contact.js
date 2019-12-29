@@ -91,7 +91,9 @@ const Map = styled.iframe`
 const OpeningsWrap = styled.div`
   width: 100%;
   ${betweenStart({ fd: 'column' })};
+  padding-bottom: 10vh;
 `;
+
 const DaysWrap = styled.div`
   width: 100%;
   ${betweenStart({ fd: 'column' })};
