@@ -69,6 +69,33 @@ export const Contact = () => {
             </DaysWrap>
           </OpeningsWrap>
         </Content>
+        <Content>
+          <Subtitle>Details</Subtitle>
+          <Details>
+            <OpeningsTitle>
+              <p>ADDRESS</p>
+            </OpeningsTitle>
+            <Time>
+              <p>9J94+72 Bishop, California</p>
+            </Time>
+          </Details>
+          <Details>
+            <OpeningsTitle>
+              <p>PHONE</p>
+            </OpeningsTitle>
+            <Time>
+              <p>(760) 122-21322</p>
+            </Time>
+          </Details>
+          <Details>
+            <OpeningsTitle>
+              <p>EMAIL</p>
+            </OpeningsTitle>
+            <Time>
+              <p>holysmokes@fake.net</p>
+            </Time>
+          </Details>
+        </Content>
         <Map
           title="map"
           id="gmap_canvas"
@@ -100,15 +127,21 @@ const DaysWrap = styled.div`
 `;
 
 const OpeningsTitle = styled.h4`
-  padding-bottom: 2vh;
+  padding-bottom: 3vh;
 `;
 
 const Sched = styled.div`
   width: 100%;
   ${betweenCenter};
-  padding-bottom: 3vh;
+  padding-bottom: 5vh;
   color: ${rgba('#cccccc', 0.6)};
 `;
+const Details = styled.div`
+  width: 100%;
+  ${betweenCenter};
+  padding-bottom: 5vh;
+`;
+
 const Time = styled.div`
   ${centerEnd({ fd: 'column' })};
 `;
