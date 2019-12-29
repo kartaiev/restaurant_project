@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="map">
-      <change afterPath="$PROJECT_DIR$/src/assets/images/retroLogo.png" afterDir="false" />
+    <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/MenuBtns.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/MenuBtns.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Search.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Contact.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Gallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Gallery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/menu/Drinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/menu/Drinks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/menu/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/menu/Menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/elements/Containers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/Containers.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,14 +173,7 @@
       <workItem from="1577554810845" duration="190000" />
       <workItem from="1577564367857" duration="2045000" />
       <workItem from="1577602078768" duration="1670000" />
-      <workItem from="1577635580645" duration="792000" />
-    </task>
-    <task id="LOCAL-00043" summary="about-text">
-      <created>1576449430720</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1576449430720</updated>
+      <workItem from="1577635580645" duration="955000" />
     </task>
     <task id="LOCAL-00044" summary="z-index refactoring">
       <created>1576450570165</created>
@@ -525,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577553590345</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="map">
+      <created>1577636442651</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1577636442651</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -597,10 +590,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="322" y="48" key="#npm_start/0.23.1280.777@0.23.1280.777" timestamp="1577562451292" />
-    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1577636361276">
+    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1577636442254">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1577636361276" />
+    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1577636442254" />
     <state x="248" y="152" key="EditFileWatcherDialog" timestamp="1576193894905">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -629,10 +622,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="3" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1577477138058" />
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1577553592717">
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1577636446959">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1577553592717" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1577636446959" />
     <state x="346" y="232" key="cloudConfig.SelfSettingsDialog" timestamp="1577313845734">
       <screen x="0" y="23" width="1280" height="777" />
     </state>

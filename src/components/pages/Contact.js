@@ -69,10 +69,8 @@ export const Contact = () => {
             </DaysWrap>
           </OpeningsWrap>
         </Content>
-        <iframe
+        <Map
           title="map"
-          width="350"
-          height="500"
           id="gmap_canvas"
           src="https://maps.google.com/maps?q=Holy%20Smoke%20Texas%20Style%20BBQ&t=&z=13&ie=UTF8&iwloc=&output=embed"
           frameBorder="0"
@@ -84,6 +82,11 @@ export const Contact = () => {
     </Article>
   );
 };
+
+const Map = styled.iframe`
+  width: 125%;
+  height: 500px;
+`;
 
 const OpeningsWrap = styled.div`
   width: 100%;
