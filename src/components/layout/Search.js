@@ -4,10 +4,10 @@ import { Input } from '../../elements';
 import styled from 'styled-components';
 import { absolute, centerCenter, grey } from '../../utilities';
 
-const Search = ({ onChange, onSubmit }) => {
+const Search = ({ onChange, onSubmit, placeholder }) => {
   return (
     <Form onSubmit={onSubmit}>
-      <Input type="search" placeholder="search menu" onChange={onChange} />
+      <Input type="search" placeholder={placeholder} onChange={onChange} />
     </Form>
   );
 };
@@ -18,8 +18,7 @@ const Form = styled.form`
   width: 100%;
   ${centerCenter({ fd: 'column' })};
   position: relative;
-  height: 5vh;
-  margin-bottom: 5vh;
+  height: 10vh;
 
   svg {
     ${absolute({ xProp: 'right', y: '5%' })};

@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="">
+    <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="map">
+      <change afterPath="$PROJECT_DIR$/src/assets/images/retroLogo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/MenuBtns.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/MenuBtns.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Gallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Gallery.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/menu/Drinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/menu/Drinks.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/menu/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/menu/Menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/elements/Containers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/Containers.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,15 +88,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/fonts" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/images" />
       <recent name="$PROJECT_DIR$/src/utilities" />
       <recent name="$PROJECT_DIR$/src/assets/images/pages" />
       <recent name="$PROJECT_DIR$/src/assets/images/gallery" />
-      <recent name="$PROJECT_DIR$/src/assets/images" />
       <recent name="$PROJECT_DIR$/src/config" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/assets/fonts" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -172,14 +176,11 @@
       <workItem from="1577463106470" duration="37000" />
       <workItem from="1577463190769" duration="3100000" />
       <workItem from="1577477093524" duration="42000" />
-      <workItem from="1577477168863" duration="21055000" />
-    </task>
-    <task id="LOCAL-00042" summary="about-img-border">
-      <created>1576447643059</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1576447643059</updated>
+      <workItem from="1577477168863" duration="21264000" />
+      <workItem from="1577554810845" duration="190000" />
+      <workItem from="1577564367857" duration="2045000" />
+      <workItem from="1577602078768" duration="1670000" />
+      <workItem from="1577635580645" duration="792000" />
     </task>
     <task id="LOCAL-00043" summary="about-text">
       <created>1576449430720</created>
@@ -517,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577539548804</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="search logic">
+      <created>1577553590345</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1577553590345</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -525,7 +533,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="about-text" />
     <MESSAGE value="z-index refactoring" />
     <MESSAGE value="menu" />
     <MESSAGE value="menu - firebase" />
@@ -550,7 +557,8 @@
     <MESSAGE value="buttons style" />
     <MESSAGE value="function for menu" />
     <MESSAGE value="search logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="search logic" />
+    <MESSAGE value="map" />
+    <option name="LAST_COMMIT_MESSAGE" value="map" />
   </component>
   <component name="WindowStateProjectService">
     <state x="139" y="23" key="#ESLint" timestamp="1577228018862">
@@ -585,14 +593,14 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="315" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.777@0.23.1280.777" timestamp="1577315952115" />
-    <state x="322" y="48" key="#npm_start" timestamp="1577228070676">
+    <state x="322" y="48" key="#npm_start" timestamp="1577562451292">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="322" y="48" key="#npm_start/0.23.1280.777@0.23.1280.777" timestamp="1577228070676" />
-    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1577553570836">
+    <state x="322" y="48" key="#npm_start/0.23.1280.777@0.23.1280.777" timestamp="1577562451292" />
+    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1577636361276">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1577553570836" />
+    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1577636361276" />
     <state x="248" y="152" key="EditFileWatcherDialog" timestamp="1576193894905">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -601,30 +609,30 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="485" y="295" key="Github.ShareDialog/0.23.1280.777@0.23.1280.777" timestamp="1576241150516" />
-    <state width="1254" height="174" key="GridCell.Tab.0.bottom" timestamp="1577477341553">
+    <state width="1254" height="174" key="GridCell.Tab.0.bottom" timestamp="1577635844240">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1254" height="174" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1577477341553" />
-    <state width="1254" height="174" key="GridCell.Tab.0.center" timestamp="1577477341552">
+    <state width="1254" height="174" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1577635844240" />
+    <state width="1254" height="174" key="GridCell.Tab.0.center" timestamp="1577635844232">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1254" height="174" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1577477341552" />
-    <state width="1254" height="174" key="GridCell.Tab.0.left" timestamp="1577477341551">
+    <state width="1254" height="174" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1577635844232" />
+    <state width="1254" height="174" key="GridCell.Tab.0.left" timestamp="1577635844228">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1254" height="174" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1577477341551" />
-    <state width="1254" height="174" key="GridCell.Tab.0.right" timestamp="1577477341553">
+    <state width="1254" height="174" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1577635844228" />
+    <state width="1254" height="174" key="GridCell.Tab.0.right" timestamp="1577635844237">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1254" height="174" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1577477341553" />
+    <state width="1254" height="174" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1577635844237" />
     <state x="3" y="23" key="SettingsEditor" timestamp="1577477138058">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="3" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1577477138058" />
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1577539552909">
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1577553592717">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1577539552909" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1577553592717" />
     <state x="346" y="232" key="cloudConfig.SelfSettingsDialog" timestamp="1577313845734">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -645,9 +653,9 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="358" y="269" width="858" height="350" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.23.1280.777@0.23.1280.777" timestamp="1576941427259" />
-    <state x="219" y="23" width="840" height="775" key="search.everywhere.popup" timestamp="1577533528336">
+    <state x="219" y="23" width="840" height="775" key="search.everywhere.popup" timestamp="1577636249398">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="219" y="23" width="840" height="775" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1577533528336" />
+    <state x="219" y="23" width="840" height="775" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1577636249398" />
   </component>
 </project>

@@ -19,7 +19,7 @@ export const Section = styled.section`
   width: 80%;
   ${startCenter({ fd: 'column' })};
   position: relative;
-  padding: 5vh;
+  padding: 10vh 0 0 0;
 `;
 
 export const Content = styled.div`
