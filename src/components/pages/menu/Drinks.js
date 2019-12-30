@@ -1,6 +1,6 @@
 import React from 'react';
 import { MenuBtns } from '../../layout/MenuBtns';
-import wine from '../../../assets/images/pages/drinks1.jpg';
+import wine from '../../../assets/images/pages/drinks.jpg';
 import { Article, Image, MenuContent, Section, Title } from '../../../elements';
 import Search from '../../layout/Search';
 
@@ -12,7 +12,7 @@ export const Drinks = ({ drinks, menuSectionFunc, onChange }) => {
       <Section>
         <Title>Menu</Title>
         <MenuBtns />
-        <Search onChange={onChange} placeholder="search drinks" />
+        <Search onChange={onChange} label="search drinks" />
         <MenuContent>{menuSectionFunc(drinks)}</MenuContent>
       </Section>
     </Article>

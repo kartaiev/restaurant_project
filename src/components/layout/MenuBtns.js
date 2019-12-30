@@ -25,7 +25,7 @@ export const MenuBtns = ({ on, toggle }) => {
 const BtnsWrap = styled.div`
   width: 100%;
   ${betweenCenter()};
-  //padding: 0 0 5vh 0;
+  padding: 0 0 5vh 0;
 
   a {
     width: 45%;

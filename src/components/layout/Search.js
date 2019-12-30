@@ -1,29 +1,16 @@
 import React from 'react';
 // import { IoIosSearch as SearchIcon } from 'react-icons/io';
-import { Input } from '../../elements';
-import styled from 'styled-components';
-import { absolute, grey } from '../../utilities';
+import { FormTag } from '../../elements';
 
-const Search = ({ onChange, onSubmit, placeholder }) => {
+const Search = ({ onChange, onSubmit, label }) => {
   return (
-    <Form onSubmit={onSubmit}>
-      <Input type="search" placeholder={placeholder} onChange={onChange} />
-    </Form>
+    <FormTag onSubmit={onSubmit}>
+      <input type="search" name="search" required onChange={onChange} />
+      <label htmlFor="search">
+        <span>{label}</span>
+      </label>
+    </FormTag>
   );
 };
 
 export default Search;
-
-const Form = styled.form`
-  width: 100%;
-  position: relative;
-  height: 7vh;
-
-  svg {
-    ${absolute({ xProp: 'right', y: '5%' })};
-    height: 100%;
-    z-index: 10;
-    font-size: 2rem;
-    color: ${grey};
-  }
-`;
