@@ -12,7 +12,7 @@ export const Drinks = ({ drinks, menuSectionFunc, onChange }) => {
       <Section>
         <Title>Menu</Title>
         <MenuBtns />
-        <Search onChange={onChange} label="search drinks" />
+        <Search onChange={onChange} label="Search drinks" />
         <MenuContent>{menuSectionFunc(drinks)}</MenuContent>
       </Section>
     </Article>

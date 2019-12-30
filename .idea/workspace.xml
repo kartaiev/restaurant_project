@@ -3,15 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/pages/about1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/pages/about.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/pages/drinks1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/pages/drinks.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/MenuBtns.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/MenuBtns.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/About.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/menu/Drinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/menu/Drinks.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/menu/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/menu/Menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/elements/Input.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/Form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/elements/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/elements/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/Form.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,14 +177,7 @@
       <workItem from="1577602078768" duration="1670000" />
       <workItem from="1577635580645" duration="2001000" />
       <workItem from="1577640879489" duration="225000" />
-      <workItem from="1577648770380" duration="8425000" />
-    </task>
-    <task id="LOCAL-00053" summary="menu - firebase">
-      <created>1576507367704</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1576507367704</updated>
+      <workItem from="1577648770380" duration="10463000" />
     </task>
     <task id="LOCAL-00054" summary="menu - firebase">
       <created>1576507775332</created>
@@ -528,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577696758769</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="new photos">
+      <created>1577700836061</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1577700836061</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -600,10 +594,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="322" y="48" key="#npm_start/0.23.1280.777@0.23.1280.777" timestamp="1577562451292" />
-    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1577696758374">
+    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1577700835754">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1577696758374" />
+    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1577700835754" />
     <state x="248" y="152" key="EditFileWatcherDialog" timestamp="1576193894905">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -612,30 +606,30 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="485" y="295" key="Github.ShareDialog/0.23.1280.777@0.23.1280.777" timestamp="1576241150516" />
-    <state width="1254" height="174" key="GridCell.Tab.0.bottom" timestamp="1577652927747">
+    <state width="1254" height="174" key="GridCell.Tab.0.bottom" timestamp="1577701393171">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1254" height="174" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1577652927747" />
-    <state width="1254" height="174" key="GridCell.Tab.0.center" timestamp="1577652927746">
+    <state width="1254" height="174" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1577701393171" />
+    <state width="1254" height="174" key="GridCell.Tab.0.center" timestamp="1577701393170">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1254" height="174" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1577652927746" />
-    <state width="1254" height="174" key="GridCell.Tab.0.left" timestamp="1577652927745">
+    <state width="1254" height="174" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1577701393170" />
+    <state width="1254" height="174" key="GridCell.Tab.0.left" timestamp="1577701393169">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1254" height="174" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1577652927745" />
-    <state width="1254" height="174" key="GridCell.Tab.0.right" timestamp="1577652927746">
+    <state width="1254" height="174" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1577701393169" />
+    <state width="1254" height="174" key="GridCell.Tab.0.right" timestamp="1577701393170">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1254" height="174" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1577652927746" />
+    <state width="1254" height="174" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1577701393170" />
     <state x="3" y="23" key="SettingsEditor" timestamp="1577477138058">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="3" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1577477138058" />
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1577696763733">
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1577700839686">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1577696763733" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1577700839686" />
     <state x="346" y="232" key="cloudConfig.SelfSettingsDialog" timestamp="1577313845734">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -656,9 +650,9 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="358" y="269" width="858" height="350" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.23.1280.777@0.23.1280.777" timestamp="1576941427259" />
-    <state x="219" y="23" width="840" height="775" key="search.everywhere.popup" timestamp="1577700627783">
+    <state x="219" y="23" width="840" height="775" key="search.everywhere.popup" timestamp="1577702220123">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="219" y="23" width="840" height="775" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1577700627783" />
+    <state x="219" y="23" width="840" height="775" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1577702220123" />
   </component>
 </project>
