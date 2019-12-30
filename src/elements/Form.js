@@ -41,7 +41,7 @@ export const FormTag = styled.form`
 
     &::after {
       content: '';
-      ${absolute({ yProp: 'bottom' })};
+      ${absolute({ yProp: 'bottom', y: '-1px' })};
       width: 100%;
       height: 100%;
       border-bottom: 1px solid ${red};
