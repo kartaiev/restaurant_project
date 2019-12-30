@@ -176,6 +176,7 @@
       <workItem from="1577635580645" duration="2001000" />
       <workItem from="1577640879489" duration="225000" />
       <workItem from="1577648770380" duration="12691000" />
+      <workItem from="1577717353993" duration="813000" />
     </task>
     <task id="LOCAL-00063" summary="refactoring 'list from menuData' function.">
       <created>1576786383527</created>
@@ -592,10 +593,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="322" y="48" key="#npm_start/0.23.1280.777@0.23.1280.777" timestamp="1577562451292" />
-    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1577709171339">
+    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1577709523056">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1577709171339" />
+    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1577709523056" />
     <state x="248" y="152" key="EditFileWatcherDialog" timestamp="1576193894905">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -604,30 +605,30 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="485" y="295" key="Github.ShareDialog/0.23.1280.777@0.23.1280.777" timestamp="1576241150516" />
-    <state width="1254" height="174" key="GridCell.Tab.0.bottom" timestamp="1577703712540">
+    <state width="1254" height="174" key="GridCell.Tab.0.bottom" timestamp="1577719100022">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1254" height="174" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1577703712540" />
-    <state width="1254" height="174" key="GridCell.Tab.0.center" timestamp="1577703712537">
+    <state width="1254" height="174" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1577719100022" />
+    <state width="1254" height="174" key="GridCell.Tab.0.center" timestamp="1577719100020">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1254" height="174" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1577703712537" />
-    <state width="1254" height="174" key="GridCell.Tab.0.left" timestamp="1577703712536">
+    <state width="1254" height="174" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1577719100020" />
+    <state width="1254" height="174" key="GridCell.Tab.0.left" timestamp="1577719100019">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1254" height="174" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1577703712536" />
-    <state width="1254" height="174" key="GridCell.Tab.0.right" timestamp="1577703712539">
+    <state width="1254" height="174" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1577719100019" />
+    <state width="1254" height="174" key="GridCell.Tab.0.right" timestamp="1577719100021">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1254" height="174" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1577703712538" />
+    <state width="1254" height="174" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1577719100021" />
     <state x="3" y="23" key="SettingsEditor" timestamp="1577477138058">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="3" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1577477138058" />
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1577709174735">
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1577709528073">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1577709174735" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1577709528073" />
     <state x="346" y="232" key="cloudConfig.SelfSettingsDialog" timestamp="1577313845734">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -648,9 +649,9 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="358" y="269" width="858" height="350" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.23.1280.777@0.23.1280.777" timestamp="1576941427259" />
-    <state x="219" y="23" width="840" height="775" key="search.everywhere.popup" timestamp="1577702220123">
+    <state x="219" y="23" width="840" height="775" key="search.everywhere.popup" timestamp="1577718361390">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="219" y="23" width="840" height="775" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1577702220123" />
+    <state x="219" y="23" width="840" height="775" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1577718361390" />
   </component>
 </project>

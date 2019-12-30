@@ -7,7 +7,7 @@ export const FormTag = styled.form`
   position: relative;
   height: 7vh;
   overflow: hidden;
-  margin: 10vh 0 7vh 0;
+  margin: 5vh 0 7vh 0;
 
   input {
     width: 100%;
@@ -21,6 +21,7 @@ export const FormTag = styled.form`
     &:focus + label span,
     &:valid + label span {
       transform: translateY(-200%);
+      opacity: 0;
       font-size: 0.8rem;
       color: ${yellow};
     }
@@ -47,14 +48,12 @@ export const FormTag = styled.form`
       border-bottom: 1px solid ${red};
       transform: translateX(-100%);
       ${easeOut};
-      z-index: 150;
     }
 
     span {
       position: absolute;
       bottom: 5px;
       ${easeOut};
-      z-index: 150;
     }
   }
 `;
