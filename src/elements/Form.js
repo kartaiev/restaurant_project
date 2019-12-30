@@ -6,8 +6,8 @@ export const FormTag = styled.form`
   width: 100%;
   position: relative;
   height: 7vh;
-  margin-bottom: 5vh;
   overflow: hidden;
+  margin: 10vh 0 7vh 0;
 
   input {
     width: 100%;
