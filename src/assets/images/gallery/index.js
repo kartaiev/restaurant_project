@@ -8,6 +8,14 @@ import loft2L from './2L.jpeg';
 import loft3L from './3L.jpeg';
 import loft4L from './4L.jpg';
 
+export const pics1 = [loft1, loft2, loft3, loft4, loft5];
+export const pics2 = [
+  { loft1L },
+  { loft2L },
+  { loft3L },
+  { loft4L },
+  { loft5 }
+];
 export { loft1 };
 export { loft2 };
 export { loft3 };

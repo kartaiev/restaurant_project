@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Route, Switch } from 'react-router-dom';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import menuData from './data/menuData';
 import { Home } from './components/Home';
 import { NavBar } from './components/layout/NavBar';
@@ -10,7 +11,7 @@ import { Drinks } from './components/pages/menu/Drinks';
 import GlobalStyle from './utilities/Global';
 import Header from './components/layout/Header';
 import { Toggle } from './utilities';
-import Gallery from './components/pages/Gallery';
+import GalleryComponent from './components/pages/GalleryComponent';
 import { Subtitle } from './elements';
 // import fb from './config/fbConfig';
 
@@ -88,7 +89,7 @@ const App = () => {
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/about" component={About} />
-        <Route path="/gallery" component={Gallery} />
+        <Route path="/gallery" component={GalleryComponent} />
         <Route
           path="/menu/:menuCategory"
           render={() => {
