@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/MenuBtns.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/MenuBtns.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/elements/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/Form.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -176,14 +175,7 @@
       <workItem from="1577602078768" duration="1670000" />
       <workItem from="1577635580645" duration="2001000" />
       <workItem from="1577640879489" duration="225000" />
-      <workItem from="1577648770380" duration="12261000" />
-    </task>
-    <task id="LOCAL-00061" summary="menu from JSON - done">
-      <created>1576785066219</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1576785066219</updated>
+      <workItem from="1577648770380" duration="12515000" />
     </task>
     <task id="LOCAL-00062" summary="menu styling">
       <created>1576785424218</created>
@@ -521,7 +513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577708340354</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="search design">
+      <created>1577708681752</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1577708681752</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -593,10 +592,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="322" y="48" key="#npm_start/0.23.1280.777@0.23.1280.777" timestamp="1577562451292" />
-    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1577708340004">
+    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1577708681348">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1577708340004" />
+    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1577708681348" />
     <state x="248" y="152" key="EditFileWatcherDialog" timestamp="1576193894905">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -625,10 +624,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="3" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1577477138058" />
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1577708343385">
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1577708684728">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1577708343385" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1577708684728" />
     <state x="346" y="232" key="cloudConfig.SelfSettingsDialog" timestamp="1577313845734">
       <screen x="0" y="23" width="1280" height="777" />
     </state>

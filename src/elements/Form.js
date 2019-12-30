@@ -47,13 +47,14 @@ export const FormTag = styled.form`
       border-bottom: 1px solid ${red};
       transform: translateX(-100%);
       ${easeOut};
+      z-index: 150;
     }
 
     span {
       position: absolute;
       bottom: 5px;
       ${easeOut};
-      z-index: 50;
+      z-index: 150;
     }
   }
 `;
