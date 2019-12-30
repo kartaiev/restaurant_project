@@ -20,7 +20,7 @@ export const FormTag = styled.form`
 
     &:focus + label span,
     &:valid + label span {
-      transform: translateY(-200%);
+      //transform: translateY(-200%);
       opacity: 0;
       font-size: 0.8rem;
       color: ${yellow};
