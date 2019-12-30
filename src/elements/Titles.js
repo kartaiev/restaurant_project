@@ -5,11 +5,11 @@ export const Title = styled.h2`
   ${titleFont};
   color: ${yellow};
   font-size: 3rem;
-  margin: 5vh;
+  margin-top: -5vh;
 `;
 
 export const ContactTitle = styled(Title)`
-  margin: 15vh 0 5vh 0;
+  margin: 5vh;
 `;
 
 export const Subtitle = styled.h3`
