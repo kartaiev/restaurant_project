@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { Gallery, GalleryImage } from 'react-gesture-gallery';
+import { Gallery as Gall, GalleryImage } from 'react-gesture-gallery';
 import { pics1 } from '../../assets/images/gallery';
 
-const GalleryComponent = () => {
+const Gallery = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <Gallery
+    <Gall
       style={{
         width: '100%',
         height: '100vh'
@@ -19,9 +19,8 @@ const GalleryComponent = () => {
       {pics1.map(pic => (
         <GalleryImage objectFit="cover" src={pic} alt="pic" />
       ))}
-    </Gallery>
+    </Gall>
   );
 };
 
-export default GalleryComponent;
-
+export default Gallery;

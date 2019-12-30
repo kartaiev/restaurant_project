@@ -1,5 +1,4 @@
 import React from 'react';
-// import { IoIosSearch as SearchIcon } from 'react-icons/io';
 import { FormTag } from '../../elements';
 
 const Search = ({ onChange, onSubmit, label }) => {

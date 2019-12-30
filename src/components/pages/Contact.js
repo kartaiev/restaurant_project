@@ -2,7 +2,6 @@ import React from 'react';
 import { rgba } from 'polished';
 import {
   Article,
-  Button,
   ContactTitle,
   Content,
   Section,
@@ -16,12 +15,6 @@ export const Contact = () => {
     <Article>
       <Section>
         <ContactTitle>Contact</ContactTitle>
-        <Content>
-          <Subtitle>Bookings</Subtitle>
-          <Button modifiers="big">
-            <span>Book table online</span>
-          </Button>
-        </Content>
         <Content>
           <Subtitle>Opening Hours</Subtitle>
           <OpeningsWrap>
@@ -108,12 +101,12 @@ export const Contact = () => {
 const Map = styled.iframe`
   width: 125%;
   height: 500px;
+  margin-top: 5vh;
 `;
 
 const OpeningsWrap = styled.div`
   width: 100%;
   ${betweenStart({ fd: 'column' })};
-  //padding-bottom: 10vh;
 `;
 
 const DaysWrap = styled.div`

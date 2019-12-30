@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import { normalize } from 'polished';
-import { grey } from './colors';
+import { background, grey } from './colors';
 
 const GlobalStyle = createGlobalStyle`
 
@@ -28,7 +28,7 @@ const GlobalStyle = createGlobalStyle`
     letter-spacing: 0.1rem;
     overflow: hidden;
     color: ${grey};
-    
+    background: ${background};
   }
   
   

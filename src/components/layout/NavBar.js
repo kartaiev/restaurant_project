@@ -15,7 +15,7 @@ import {
 } from '../../utilities';
 
 export const NavBar = ({ on, toggle }) => {
-  const pages = ['About', 'Gallery', 'Menu', 'Contact'];
+  const pages = ['About', 'Gallery', 'Menu', 'Reserve', 'Contact'];
   return (
     <Nav trans={!on ? 'slide' : ''}>
       <ul>
@@ -45,7 +45,7 @@ const Nav = styled.nav`
 
   ul {
     width: 70%;
-    height: 35vh;
+    height: 45vh;
     ${betweenStart({ fd: 'column' })};
     list-style: none;
 
@@ -74,11 +74,15 @@ const Nav = styled.nav`
       }
       
       &:nth-child(3) {
-      transition-delay: .4s;
+      transition-delay: .3s;
       }
       
       &:nth-child(4) {
-      transition-delay: .6s;
+      transition-delay: .4s;
+      }  
+      
+      &:nth-child(5) {
+      transition-delay: .5s;
       }  
       
       a {

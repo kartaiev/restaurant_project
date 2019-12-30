@@ -9,7 +9,7 @@ export const Title = styled.h2`
 `;
 
 export const ContactTitle = styled(Title)`
-  margin: 15vh 0 0 0;
+  margin: 15vh 0 5vh 0;
 `;
 
 export const Subtitle = styled.h3`

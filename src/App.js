@@ -11,8 +11,9 @@ import { Drinks } from './components/pages/menu/Drinks';
 import GlobalStyle from './utilities/Global';
 import Header from './components/layout/Header';
 import { Toggle } from './utilities';
-import GalleryComponent from './components/pages/GalleryComponent';
+import Gallery from './components/pages/Gallery';
 import { Subtitle } from './elements';
+import Reserve from './components/pages/Reserve';
 // import fb from './config/fbConfig';
 
 const App = () => {
@@ -36,16 +37,20 @@ const App = () => {
     item.dish.toLowerCase().includes(search.toLowerCase())
   );
 
+  //* Filtered food
   const foodUnfiltered = filteredMenu
     .filter(item => item.category === 'food')
     .map(item => item.type);
+
   const food = foodUnfiltered.filter(
     (item, i) => foodUnfiltered.indexOf(item) >= i
   );
 
+  //* Filtered drinks
   const drinksUnfiltered = filteredMenu
     .filter(item => item.category === 'drinks')
     .map(item => item.type);
+
   const drinks = drinksUnfiltered.filter(
     (item, i) => drinksUnfiltered.indexOf(item) >= i
   );
@@ -89,7 +94,7 @@ const App = () => {
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/about" component={About} />
-        <Route path="/gallery" component={GalleryComponent} />
+        <Route path="/gallery" component={Gallery} />
         <Route
           path="/menu/:menuCategory"
           render={() => {
@@ -113,6 +118,7 @@ const App = () => {
             />
           )}
         />
+        <Route path="/reserve" component={Reserve} />
         <Route path="/contact" component={Contact} />
       </Switch>
     </div>
