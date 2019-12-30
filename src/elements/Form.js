@@ -15,12 +15,12 @@ export const FormTag = styled.form`
     border: none;
     background: ${background};
     color: ${grey};
-    padding-top: 20px;
+    padding-top: 10px;
     outline: none;
 
     &:focus + label span,
     &:valid + label span {
-      transform: translateY(-150%);
+      transform: translateY(-200%);
       font-size: 0.8rem;
       color: ${yellow};
     }
