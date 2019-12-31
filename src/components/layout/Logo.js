@@ -16,7 +16,7 @@ export const Logo = () => {
 //* Style //
 
 const LogoTag = styled.img`
-  height: 5vh;
+  height: 7vh;
   padding-left: 1.5rem;
   cursor: pointer;
   z-index: 50;
