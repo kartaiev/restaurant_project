@@ -6,6 +6,7 @@ export const Title = styled.h2`
   color: ${yellow};
   font-size: 3rem;
   margin-top: -5vh;
+  margin-bottom: 5vh;
 `;
 
 export const ContactTitle = styled(Title)`
