@@ -35,8 +35,9 @@ const Sign = styled.form`
 
   div {
     width: 100%;
-    height: 30%;
+    height: 7vh;
     position: relative;
+    margin-bottom: 5vh;
 
     input {
       width: 100%;
@@ -46,10 +47,9 @@ const Sign = styled.form`
       color: ${grey};
       ${easeOut};
       outline: none;
-      padding: 5px 0 10px 0;
 
-      &:focus + span::after,
-      &:valid + span::after {
+      &:focus + span,
+      &:valid + span {
         background-position: left center;
       }
 
@@ -62,22 +62,10 @@ const Sign = styled.form`
       width: 100%;
       height: 1px;
       ${absolute({ yProp: 'bottom', y: '0' })};
-      pointer-events: none;
-
-      &::after {
-        content: '';
-        height: 1px;
-        width: 100%;
-        ${absolute({ yProp: 'bottom', y: '0' })};
-        background-image: linear-gradient(to right, ${red} 50%, ${grey} 50%);
-        background-size: 200% 100%;
-        background-position: right center;
-        ${easeOut};
-      }
+      background-image: linear-gradient(to right, ${red} 50%, ${grey} 50%);
+      background-size: 200% 100%;
+      background-position: right center;
+      ${easeOut};
     }
-  }
-
-  button {
-    margin-top: 5vh;
   }
 `;
