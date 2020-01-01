@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/elements/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/Form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/SignIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/SignIn.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,21 +182,7 @@
       <workItem from="1577869867468" duration="95000" />
       <workItem from="1577875766140" duration="5390000" />
       <workItem from="1577889397843" duration="154000" />
-      <workItem from="1577889928753" duration="3047000" />
-    </task>
-    <task id="LOCAL-00075" summary="menu-buttons style toggle">
-      <created>1576940444084</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1576940444086</updated>
-    </task>
-    <task id="LOCAL-00076" summary="menu-buttons style toggle">
-      <created>1576943665431</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1576943665432</updated>
+      <workItem from="1577889928753" duration="5678000" />
     </task>
     <task id="LOCAL-00077" summary="menu-buttons style toggle">
       <created>1577115977026</created>
@@ -527,7 +513,21 @@
       <option name="project" value="LOCAL" />
       <updated>1577893058804</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <task id="LOCAL-00124" summary="sign in">
+      <created>1577893476940</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1577893476940</updated>
+    </task>
+    <task id="LOCAL-00125" summary="sign in">
+      <created>1577893659347</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1577893659347</updated>
+    </task>
+    <option name="localTasksCounter" value="126" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -601,10 +601,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="322" y="48" key="#npm_start/0.23.1280.777@0.23.1280.777" timestamp="1577861609522" />
-    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1577893476434">
+    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1577893659137">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1577893476434" />
+    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1577893659137" />
     <state x="248" y="152" key="EditFileWatcherDialog" timestamp="1576193894905">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -633,10 +633,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="3" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1577722348887" />
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1577893479998">
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1577893662261">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1577893479998" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1577893662261" />
     <state x="346" y="232" key="cloudConfig.SelfSettingsDialog" timestamp="1577313845734">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
