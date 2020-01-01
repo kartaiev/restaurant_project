@@ -70,7 +70,7 @@ export const FormTag = styled.form`
 `;
 
 export const SignInForm = styled(FormTag)`
-  height: 40vh;
+  height: 18vh;
 
   div {
     height: 50%;
