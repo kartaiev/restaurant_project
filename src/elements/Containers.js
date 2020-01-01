@@ -16,6 +16,15 @@ export const Article = styled.article`
   overflow-y: scroll;
 `;
 
+export const Container = styled.div`
+  ${fullScreen};
+  ${startCenter({ fd: 'column' })};
+  position: relative;
+  background: ${background};
+  overflow-x: hidden;
+  overflow-y: scroll;
+`;
+
 export const Section = styled.section`
   width: 80%;
   height: 100vh;

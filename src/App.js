@@ -118,7 +118,15 @@ const App = () => {
             />
           )}
         />
-        <Route path="/reserve" component={Reserve} />
+        <Toggle>
+          {({ on, toggle }) => (
+            <Route
+              path="/reserve"
+              render={() => <Reserve on={on} toggle={toggle} />}
+            />
+          )}
+        </Toggle>
+
         <Route path="/contact" component={Contact} />
       </Switch>
     </div>

@@ -1,18 +1,18 @@
 import React from 'react';
-import { Article, Button, SignInSection } from '../../elements';
+import { Button, Container, SignInSection } from '../../elements';
 import SignIn from '../layout/SignIn';
+import SignUp from '../layout/SignUp';
 
-const Reserve = () => {
+const Reserve = ({ on, toggle }) => {
   return (
-    <Article>
+    <Container>
       <SignInSection>
-        <Button modifiers="big">
-          <span>Create new account</span>
+        <Button modifiers="big" onClick={toggle}>
+          <span>{on ? 'Create new account' : 'Sign into your account'}</span>
         </Button>
-
-        <SignIn />
+        {on ? <SignIn /> : <SignUp />}
       </SignInSection>
-    </Article>
+    </Container>
   );
 };
 
