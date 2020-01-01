@@ -1,18 +1,9 @@
 import styled from 'styled-components';
 
-import {
-  absolute,
-  background,
-  betweenCenter,
-  easeOut,
-  grey,
-  red,
-  yellow
-} from '../utilities';
+import { absolute, background, easeOut, grey, red, yellow } from '../utilities';
 import { rgba } from 'polished';
 
 export const FormTag = styled.form`
-  ${betweenCenter({ fd: 'column' })};
   width: 100%;
   position: relative;
   height: 7vh;
@@ -80,7 +71,6 @@ export const FormTag = styled.form`
 
 export const SignInForm = styled(FormTag)`
   height: 40vh;
-  ${betweenCenter({ fd: 'column' })};
 
   div {
     height: 50%;
