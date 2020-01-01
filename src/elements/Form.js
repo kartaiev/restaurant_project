@@ -1,6 +1,14 @@
 import styled from 'styled-components';
 
-import { absolute, background, betweenCenter, easeOut, grey, red, yellow } from '../utilities';
+import {
+  absolute,
+  background,
+  betweenCenter,
+  easeOut,
+  grey,
+  red,
+  yellow
+} from '../utilities';
 import { rgba } from 'polished';
 
 export const FormTag = styled.form`
@@ -24,6 +32,10 @@ export const FormTag = styled.form`
       color: ${grey};
       padding-top: 10px;
       outline: none;
+
+      &:focus {
+        background: ${background};
+      }
 
       &:focus + label span,
       &:valid + label span {
