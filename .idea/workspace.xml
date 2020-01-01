@@ -181,14 +181,7 @@
       <workItem from="1577869867468" duration="95000" />
       <workItem from="1577875766140" duration="5390000" />
       <workItem from="1577889397843" duration="154000" />
-      <workItem from="1577889928753" duration="6355000" />
-    </task>
-    <task id="LOCAL-00079" summary="refactoring scss to styled components">
-      <created>1577136590646</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1577136590646</updated>
+      <workItem from="1577889928753" duration="6518000" />
     </task>
     <task id="LOCAL-00080" summary="refactoring scss to styled components">
       <created>1577181340055</created>
@@ -526,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577896705840</updated>
     </task>
-    <option name="localTasksCounter" value="128" />
+    <task id="LOCAL-00128" summary="sign in">
+      <created>1577896823780</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1577896823780</updated>
+    </task>
+    <option name="localTasksCounter" value="129" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -600,10 +600,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="322" y="48" key="#npm_start/0.23.1280.777@0.23.1280.777" timestamp="1577861609522" />
-    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1577896705470">
+    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1577896823636">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1577896705470" />
+    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1577896823636" />
     <state x="248" y="152" key="EditFileWatcherDialog" timestamp="1576193894905">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -632,10 +632,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="3" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1577722348887" />
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1577896708811">
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1577896986707">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1577896708811" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1577896986707" />
     <state x="346" y="232" key="cloudConfig.SelfSettingsDialog" timestamp="1577313845734">
       <screen x="0" y="23" width="1280" height="777" />
     </state>

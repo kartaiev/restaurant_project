@@ -46,7 +46,7 @@ const Sign = styled.form`
       color: ${grey};
       ${easeOut};
       outline: none;
-      padding: 5px 0 5px 0;
+      padding: 5px 0 10px 0;
 
       &:focus + span::after,
       &:valid + span::after {
