@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import {
   background,
   betweenCenter,
+  centerCenter,
   fullScreen,
   startCenter
 } from '../utilities';
@@ -17,9 +18,15 @@ export const Article = styled.article`
 
 export const Section = styled.section`
   width: 80%;
+  height: 100vh;
   ${startCenter({ fd: 'column' })};
   position: relative;
   margin-top: 10vh;
+`;
+
+export const SignInSection = styled(Section)`
+  ${centerCenter({ fd: 'column' })};
+  margin-top: -5vh;
 `;
 
 export const Content = styled.div`

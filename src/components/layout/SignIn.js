@@ -1,11 +1,26 @@
 import React from 'react';
-import { Button } from '../../elements';
+import { AiFillFacebook, AiFillGoogleSquare } from 'react-icons/ai';
+import { Button, Subtitle } from '../../elements';
 import styled from 'styled-components';
-import { absolute, background, easeOut, grey, red } from '../../utilities';
+import {
+  absolute,
+  background,
+  centerCenter,
+  easeOut,
+  grey,
+  red,
+  yellow
+} from '../../utilities';
 
 const SignIn = () => {
   return (
     <Sign>
+      <Subtitle>Welcome back!</Subtitle>
+      <p>Sign in to reserve a table</p>
+      <Social>
+        <AiFillFacebook />
+        <AiFillGoogleSquare />
+      </Social>
       <div>
         <input
           name="email"
@@ -36,14 +51,13 @@ export default SignIn;
 
 const Sign = styled.form`
   width: 100%;
-  height: 40vh;
-  margin-top: 20vh;
+  height: 45vh;
 
   div {
     width: 100%;
     height: 7vh;
     position: relative;
-    margin-bottom: 5vh;
+    margin: 5vh 0;
 
     input {
       width: 100%;
@@ -63,10 +77,6 @@ const Sign = styled.form`
         color: ${grey};
         z-index: 200;
       }
-
-      &:-webkit-autofill {
-        background: ${background} !important;
-      }
     }
     span {
       width: 100%;
@@ -76,6 +86,22 @@ const Sign = styled.form`
       background-size: 200% 100%;
       background-position: right center;
       ${easeOut};
+    }
+  }
+`;
+
+const Social = styled.div`
+  width: 100%;
+  ${centerCenter} {
+    svg {
+      width: 40px;
+      height: 40px;
+      padding: 0 15%;
+
+      &:hover {
+        fill: ${yellow};
+        cursor: pointer;
+      }
     }
   }
 `;

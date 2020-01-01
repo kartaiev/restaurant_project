@@ -8,13 +8,13 @@ export const MenuBtns = ({ on, toggle }) => {
   return (
     <BtnsWrap>
       <NavLink to="/menu">
-        <Button onClick={toggle} type={on ? 'active' : ''}>
+        <Button disabled={on} onClick={toggle} type={on ? 'active' : ''}>
           <span>Food</span>
         </Button>
       </NavLink>
 
       <NavLink to="/menu/drinks">
-        <Button onClick={toggle} type={!on ? 'active' : ''}>
+        <Button disabled={!on} onClick={toggle} type={!on ? 'active' : ''}>
           <span>Drinks</span>
         </Button>
       </NavLink>

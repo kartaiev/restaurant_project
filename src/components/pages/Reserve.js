@@ -1,13 +1,17 @@
 import React from 'react';
-import { Article, Section } from '../../elements';
+import { Article, Button, SignInSection } from '../../elements';
 import SignIn from '../layout/SignIn';
 
 const Reserve = () => {
   return (
     <Article>
-      <Section>
+      <SignInSection>
+        <Button modifiers="big">
+          <span>Create new account</span>
+        </Button>
+
         <SignIn />
-      </Section>
+      </SignInSection>
     </Article>
   );
 };
