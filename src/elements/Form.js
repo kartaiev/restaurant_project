@@ -1,14 +1,6 @@
 import styled from 'styled-components';
 
-import {
-  absolute,
-  background,
-  betweenCenter,
-  easeOut,
-  grey,
-  red,
-  yellow
-} from '../utilities';
+import { absolute, background, betweenCenter, easeOut, grey, red, yellow } from '../utilities';
 import { rgba } from 'polished';
 
 export const FormTag = styled.form`
@@ -83,7 +75,7 @@ export const SignInForm = styled(FormTag)`
 
     input {
       height: 100%;
-      padding-top: 30px;
+      padding-top: 20px;
     }
 
     label {
