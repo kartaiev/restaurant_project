@@ -7,7 +7,13 @@ const SignIn = () => {
   return (
     <Sign>
       <div>
-        <input name="email" type="email" required placeholder="Email" />
+        <input
+          name="email"
+          type="email"
+          required
+          placeholder="Email"
+          autoComplete="off"
+        />
         <span />
       </div>
       <div>
