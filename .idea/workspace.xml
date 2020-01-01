@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/images/Group 1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/pages/Table.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layout/SignIn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/elements/Input.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Reserve.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Reserve.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/elements/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/Form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/elements/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,21 +181,7 @@
       <workItem from="1577869867468" duration="95000" />
       <workItem from="1577875766140" duration="5390000" />
       <workItem from="1577889397843" duration="154000" />
-      <workItem from="1577889928753" duration="2362000" />
-    </task>
-    <task id="LOCAL-00071" summary="photo responsive">
-      <created>1576835418556</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1576835418557</updated>
-    </task>
-    <task id="LOCAL-00072" summary="photo resizing">
-      <created>1576836963416</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1576836963416</updated>
+      <workItem from="1577889928753" duration="2605000" />
     </task>
     <task id="LOCAL-00073" summary="menu-buttons style toggle">
       <created>1576850415423</created>
@@ -534,7 +512,21 @@
       <option name="project" value="LOCAL" />
       <updated>1577750615426</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="sign in">
+      <created>1577892762092</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1577892762093</updated>
+    </task>
+    <task id="LOCAL-00121" summary="sign in">
+      <created>1577892879795</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1577892879795</updated>
+    </task>
+    <option name="localTasksCounter" value="122" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -543,7 +535,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="refactoring 'list from menuData' function." />
     <MESSAGE value="refactoring scss files" />
     <MESSAGE value="overlay" />
     <MESSAGE value="scss refactoring" />
@@ -568,7 +559,8 @@
     <MESSAGE value="reserve component setup" />
     <MESSAGE value="refactoring for reserve" />
     <MESSAGE value="logo bigger" />
-    <option name="LAST_COMMIT_MESSAGE" value="logo bigger" />
+    <MESSAGE value="sign in" />
+    <option name="LAST_COMMIT_MESSAGE" value="sign in" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -608,10 +600,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="322" y="48" key="#npm_start/0.23.1280.777@0.23.1280.777" timestamp="1577861609522" />
-    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1577892761636">
+    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1577892879493">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1577892761636" />
+    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1577892879493" />
     <state x="248" y="152" key="EditFileWatcherDialog" timestamp="1576193894905">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -640,10 +632,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="3" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1577722348887" />
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1577892766527">
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1577892883109">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1577892766527" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1577892883109" />
     <state x="346" y="232" key="cloudConfig.SelfSettingsDialog" timestamp="1577313845734">
       <screen x="0" y="23" width="1280" height="777" />
     </state>

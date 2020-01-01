@@ -75,7 +75,6 @@ export const SignInForm = styled(FormTag)`
 
     input {
       height: 100%;
-      padding-top: 20px;
     }
 
     label {
