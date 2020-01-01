@@ -1,11 +1,14 @@
 import React from 'react';
-import { Section } from '../../elements';
+import { Article, Section } from '../../elements';
+import SignIn from '../layout/SignIn';
 
 const Reserve = () => {
   return (
-    <Section>
-      <h1>Reserve!!!</h1>
-    </Section>
+    <Article>
+      <Section>
+        <SignIn />
+      </Section>
+    </Article>
   );
 };
 

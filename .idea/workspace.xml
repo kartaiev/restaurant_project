@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/images/Group 1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/pages/Table.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/SignIn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/elements/Input.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/elements/Titles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/Titles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Reserve.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Reserve.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/elements/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/Form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/elements/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,15 +88,15 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/fonts" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/assets/images/pages" />
       <recent name="$PROJECT_DIR$/src/assets/images" />
       <recent name="$PROJECT_DIR$/src/utilities" />
       <recent name="$PROJECT_DIR$/src/assets/images/gallery" />
       <recent name="$PROJECT_DIR$/src/config" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/assets/fonts" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -177,21 +184,12 @@
       <workItem from="1577640879489" duration="225000" />
       <workItem from="1577648770380" duration="12691000" />
       <workItem from="1577717353993" duration="4365000" />
-      <workItem from="1577731875328" duration="5832000" />
-    </task>
-    <task id="LOCAL-00069" summary="gallery">
-      <created>1576799891400</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1576799891400</updated>
-    </task>
-    <task id="LOCAL-00070" summary="gallery">
-      <created>1576799921450</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1576799921450</updated>
+      <workItem from="1577731875328" duration="6073000" />
+      <workItem from="1577820953726" duration="294000" />
+      <workItem from="1577869867468" duration="95000" />
+      <workItem from="1577875766140" duration="5390000" />
+      <workItem from="1577889397843" duration="154000" />
+      <workItem from="1577889928753" duration="2362000" />
     </task>
     <task id="LOCAL-00071" summary="photo responsive">
       <created>1576835418556</created>
@@ -522,7 +520,21 @@
       <option name="project" value="LOCAL" />
       <updated>1577750090936</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="refactoring for reserve">
+      <created>1577750531388</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1577750531388</updated>
+    </task>
+    <task id="LOCAL-00119" summary="logo bigger">
+      <created>1577750615426</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1577750615426</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -531,8 +543,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="menu from JSON - done" />
-    <MESSAGE value="menu styling" />
     <MESSAGE value="refactoring 'list from menuData' function." />
     <MESSAGE value="refactoring scss files" />
     <MESSAGE value="overlay" />
@@ -556,7 +566,9 @@
     <MESSAGE value="search design" />
     <MESSAGE value="gallery carousel" />
     <MESSAGE value="reserve component setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="reserve component setup" />
+    <MESSAGE value="refactoring for reserve" />
+    <MESSAGE value="logo bigger" />
+    <option name="LAST_COMMIT_MESSAGE" value="logo bigger" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -592,14 +604,14 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="315" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.777@0.23.1280.777" timestamp="1577315952115" />
-    <state x="322" y="48" key="#npm_start" timestamp="1577562451292">
+    <state x="322" y="48" key="#npm_start" timestamp="1577861609522">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="322" y="48" key="#npm_start/0.23.1280.777@0.23.1280.777" timestamp="1577562451292" />
-    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1577750531020">
+    <state x="322" y="48" key="#npm_start/0.23.1280.777@0.23.1280.777" timestamp="1577861609522" />
+    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1577892729278">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1577750531020" />
+    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1577892729278" />
     <state x="248" y="152" key="EditFileWatcherDialog" timestamp="1576193894905">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -608,30 +620,30 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="485" y="295" key="Github.ShareDialog/0.23.1280.777@0.23.1280.777" timestamp="1576241150516" />
-    <state width="1254" height="174" key="GridCell.Tab.0.bottom" timestamp="1577738683521">
+    <state width="1254" height="174" key="GridCell.Tab.0.bottom" timestamp="1577890432722">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1254" height="174" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1577738683521" />
-    <state width="1254" height="174" key="GridCell.Tab.0.center" timestamp="1577738683520">
+    <state width="1254" height="174" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1577890432722" />
+    <state width="1254" height="174" key="GridCell.Tab.0.center" timestamp="1577890432720">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1254" height="174" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1577738683520" />
-    <state width="1254" height="174" key="GridCell.Tab.0.left" timestamp="1577738683519">
+    <state width="1254" height="174" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1577890432720" />
+    <state width="1254" height="174" key="GridCell.Tab.0.left" timestamp="1577890432719">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1254" height="174" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1577738683519" />
-    <state width="1254" height="174" key="GridCell.Tab.0.right" timestamp="1577738683520">
+    <state width="1254" height="174" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1577890432719" />
+    <state width="1254" height="174" key="GridCell.Tab.0.right" timestamp="1577890432722">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1254" height="174" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1577738683520" />
+    <state width="1254" height="174" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1577890432722" />
     <state x="3" y="23" key="SettingsEditor" timestamp="1577722348887">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="3" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1577722348887" />
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1577750534817">
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1577750618352">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1577750534817" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1577750618352" />
     <state x="346" y="232" key="cloudConfig.SelfSettingsDialog" timestamp="1577313845734">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
