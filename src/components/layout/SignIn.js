@@ -57,6 +57,10 @@ const Sign = styled.form`
         color: ${grey};
         z-index: 200;
       }
+
+      &:-webkit-autofill {
+        background: ${background};
+      }
     }
     span {
       width: 100%;
