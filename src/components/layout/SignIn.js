@@ -1,21 +1,14 @@
 import React from 'react';
 import { Button } from '../../elements';
 import styled from 'styled-components';
-import {
-  absolute,
-  background,
-  easeOut,
-  grey,
-  red,
-  yellow
-} from '../../utilities';
+import { absolute, background, easeOut, grey, red } from '../../utilities';
 
 const SignIn = () => {
   return (
     <Sign>
       <div>
         <input name="email" type="email" required placeholder="email" />
-        <label htmlFor="email" />
+        <span />
       </div>
       <div>
         <input
@@ -24,7 +17,7 @@ const SignIn = () => {
           required
           placeholder="password"
         />
-        <label htmlFor="password" />
+        <span />
       </div>
       <Button modifiers="big">
         <span>Sign In</span>
@@ -53,19 +46,21 @@ const Sign = styled.form`
       color: ${grey};
       padding-top: 25px;
       ${easeOut};
+      outline: none;
 
-      &:focus + label::after,
-      &:valid + label::after {
+      &:focus + span::after,
+      &:valid + span::after {
         background-position: left center;
       }
 
       &::placeholder {
         color: ${grey};
+        z-index: 200;
       }
     }
-    label {
+    span {
       width: 100%;
-      height: 100%;
+      height: 1px;
       ${absolute({ yProp: 'bottom', y: '0' })};
       pointer-events: none;
 
@@ -74,7 +69,7 @@ const Sign = styled.form`
         height: 1px;
         width: 100%;
         ${absolute({ yProp: 'bottom', y: '0' })};
-        background-image: linear-gradient(to right, ${red} 50%, ${yellow} 50%);
+        background-image: linear-gradient(to right, ${red} 50%, ${grey} 50%);
         background-size: 200% 100%;
         background-position: right center;
         ${easeOut};
