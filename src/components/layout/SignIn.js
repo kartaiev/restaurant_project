@@ -7,7 +7,7 @@ const SignIn = () => {
   return (
     <Sign>
       <div>
-        <input name="email" type="email" required placeholder="email" />
+        <input name="email" type="email" required placeholder="Email" />
         <span />
       </div>
       <div>
@@ -15,7 +15,7 @@ const SignIn = () => {
           name="password"
           type="password"
           required
-          placeholder="password"
+          placeholder="Password"
         />
         <span />
       </div>
@@ -59,7 +59,7 @@ const Sign = styled.form`
       }
 
       &:-webkit-autofill {
-        background: ${background};
+        background: ${background} !important;
       }
     }
     span {
