@@ -1,10 +1,15 @@
 import React from 'react';
-import bcVideo from '../assets/video/bcvideo.mp4';
-import title from '../assets/images/HS_Logo.png';
+import bcVideo from '../../assets/video/bcvideo.mp4';
+import title from '../../assets/images/HS_Logo.png';
 import styled from 'styled-components';
-import { absolute, elementToCenter, fullScreen, overlay } from '../utilities';
+import {
+  absolute,
+  elementToCenter,
+  fullScreen,
+  overlay
+} from '../../utilities';
 
-export const Home = () => {
+const Home = () => {
   return (
     <VideoContainer className="video-wrapper">
       <video
@@ -19,6 +24,8 @@ export const Home = () => {
     </VideoContainer>
   );
 };
+
+export default Home;
 
 //* Style //
 const VideoContainer = styled.div`

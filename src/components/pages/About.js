@@ -10,7 +10,7 @@ import {
   Title
 } from '../../elements';
 
-export const About = () => {
+const About = () => {
   return (
     <Article>
       <Image modifiers="page" src={standingSteak} alt="standing steak" />
@@ -64,6 +64,8 @@ export const About = () => {
     </Article>
   );
 };
+
+export default About;
 
 const Paragraph = styled.p`
   padding: 1.5vh 0 5vh 0;

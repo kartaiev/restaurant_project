@@ -2,6 +2,7 @@ import React from 'react';
 import { AiFillFacebook, AiFillGoogleSquare } from 'react-icons/ai';
 import { Button, Subtitle } from '../../elements';
 import styled from 'styled-components';
+import { signInWithGoogle } from '../../config/fbConfig';
 import {
   absolute,
   background,
@@ -18,8 +19,12 @@ const SignIn = () => {
       <Subtitle>Welcome back!</Subtitle>
       <p>Sign in to reserve a table</p>
       <Social>
-        <AiFillFacebook />
-        <AiFillGoogleSquare />
+        <AiFillFacebook>
+          <button />
+        </AiFillFacebook>
+        <AiFillGoogleSquare>
+          <button onClick={signInWithGoogle} />
+        </AiFillGoogleSquare>
       </Social>
       <div>
         <input

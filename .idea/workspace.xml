@@ -2,11 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/layout/SignUp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Routes/ProtectedRoute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/Login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/contexts/AuthContext.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/BtnsGroup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/SignIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/SignIn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Contact.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/Reserve.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Reserve.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/elements/Containers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/Containers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/menu/Drinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/menu/Drinks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/menu/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/menu/Menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/fbConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/fbConfig.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/elements/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/Form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/elements/Input.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/elements/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,18 +94,18 @@
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/assets/fonts" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/pages" />
       <recent name="$PROJECT_DIR$/src/assets/images/pages" />
       <recent name="$PROJECT_DIR$/src/assets/images" />
       <recent name="$PROJECT_DIR$/src/utilities" />
       <recent name="$PROJECT_DIR$/src/assets/images/gallery" />
-      <recent name="$PROJECT_DIR$/src/config" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/fonts" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -186,14 +199,8 @@
       <workItem from="1577875766140" duration="5390000" />
       <workItem from="1577889397843" duration="154000" />
       <workItem from="1577889928753" duration="7902000" />
-      <workItem from="1577901024315" duration="7384000" />
-    </task>
-    <task id="LOCAL-00086" summary="contact">
-      <created>1577373555543</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1577373555543</updated>
+      <workItem from="1577901024315" duration="7501000" />
+      <workItem from="1577915368052" duration="12427000" />
     </task>
     <task id="LOCAL-00087" summary="contact">
       <created>1577375333513</created>
@@ -531,7 +538,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577912431823</updated>
     </task>
-    <option name="localTasksCounter" value="135" />
+    <task id="LOCAL-00135" summary="sign in">
+      <created>1577914189918</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1577914189918</updated>
+    </task>
+    <option name="localTasksCounter" value="136" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -597,18 +611,18 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="327" y="147" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1280.777@0.23.1280.777" timestamp="1577440609292" />
-    <state x="315" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1577315952115">
+    <state x="315" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1577915795121">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="315" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.777@0.23.1280.777" timestamp="1577315952115" />
+    <state x="315" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.777@0.23.1280.777" timestamp="1577915795121" />
     <state x="322" y="48" key="#npm_start" timestamp="1577861609522">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="322" y="48" key="#npm_start/0.23.1280.777@0.23.1280.777" timestamp="1577861609522" />
-    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1577912427964">
+    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1577914186790">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1577912427964" />
+    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1577914186790" />
     <state x="248" y="152" key="EditFileWatcherDialog" timestamp="1576193894905">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -617,30 +631,34 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="485" y="295" key="Github.ShareDialog/0.23.1280.777@0.23.1280.777" timestamp="1576241150516" />
-    <state width="1254" height="174" key="GridCell.Tab.0.bottom" timestamp="1577910945900">
+    <state width="1254" height="174" key="GridCell.Tab.0.bottom" timestamp="1577968937927">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1254" height="174" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1577910945900" />
-    <state width="1254" height="174" key="GridCell.Tab.0.center" timestamp="1577910945898">
+    <state width="1254" height="174" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1577968937927" />
+    <state width="1254" height="174" key="GridCell.Tab.0.center" timestamp="1577968937925">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1254" height="174" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1577910945898" />
-    <state width="1254" height="174" key="GridCell.Tab.0.left" timestamp="1577910945897">
+    <state width="1254" height="174" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1577968937925" />
+    <state width="1254" height="174" key="GridCell.Tab.0.left" timestamp="1577968937925">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1254" height="174" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1577910945897" />
-    <state width="1254" height="174" key="GridCell.Tab.0.right" timestamp="1577910945899">
+    <state width="1254" height="174" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1577968937925" />
+    <state width="1254" height="174" key="GridCell.Tab.0.right" timestamp="1577968937926">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1254" height="174" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1577910945899" />
-    <state x="3" y="23" key="SettingsEditor" timestamp="1577722348887">
+    <state width="1254" height="174" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1577968937926" />
+    <state x="335" y="64" key="RollbackChangesDialog" timestamp="1577965461543">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="3" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1577722348887" />
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1577912436427">
+    <state x="335" y="64" key="RollbackChangesDialog/0.23.1280.777@0.23.1280.777" timestamp="1577965461543" />
+    <state x="50" y="23" key="SettingsEditor" timestamp="1577952250656">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1577912436427" />
+    <state x="50" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1577952250656" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1577914201000">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1577914201000" />
     <state x="346" y="232" key="cloudConfig.SelfSettingsDialog" timestamp="1577313845734">
       <screen x="0" y="23" width="1280" height="777" />
     </state>

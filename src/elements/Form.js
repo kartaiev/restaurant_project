@@ -68,23 +68,3 @@ export const FormTag = styled.form`
     }
   }
 `;
-
-export const SignInForm = styled(FormTag)`
-  height: 18vh;
-
-  div {
-    height: 50%;
-
-    input {
-      height: 100%;
-    }
-
-    label {
-      height: 100%;
-    }
-  }
-
-  button {
-    margin-top: 5vh;
-  }
-`;

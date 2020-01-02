@@ -5,7 +5,7 @@ import { Toggle } from '../../../utilities';
 import { Article, Image, MenuContent, Section, Title } from '../../../elements';
 import Search from '../../layout/Search';
 
-export const Menu = ({ food, menuSectionFunc, onChange }) => {
+const Menu = ({ food, menuSectionFunc, onChange }) => {
   return (
     <Article>
       <Image modifiers="page" src={beefSteak} alt="beef steak with fork" />
@@ -21,3 +21,5 @@ export const Menu = ({ food, menuSectionFunc, onChange }) => {
     </Article>
   );
 };
+
+export default Menu;

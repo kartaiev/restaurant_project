@@ -10,7 +10,7 @@ import {
 import styled from 'styled-components';
 import { betweenCenter, betweenStart, startEnd } from '../../utilities';
 
-export const Contact = () => {
+const Contact = () => {
   return (
     <Article>
       <Section>
@@ -97,6 +97,8 @@ export const Contact = () => {
     </Article>
   );
 };
+
+export default Contact;
 
 const Map = styled.iframe`
   width: 125%;

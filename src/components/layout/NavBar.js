@@ -14,7 +14,7 @@ import {
   yellow
 } from '../../utilities';
 
-export const NavBar = ({ on, toggle }) => {
+const NavBar = ({ on, toggle }) => {
   const pages = ['About', 'Gallery', 'Menu', 'Reserve', 'Contact'];
   return (
     <Nav trans={!on ? 'slide' : ''}>
@@ -30,6 +30,8 @@ export const NavBar = ({ on, toggle }) => {
     </Nav>
   );
 };
+
+export default NavBar;
 
 //* Style //
 const Nav = styled.nav`
