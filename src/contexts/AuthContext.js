@@ -1,21 +1,13 @@
 import React, { createContext, useEffect, useState } from 'react';
-import fb from '../config/fbConfig';
+import { auth } from '../config/fbConfig';
 
 export const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
   const [currentUser, setCurrentUser] = useState(null);
 
-  let unsubscribeFromAuth = null;
-
   useEffect(() => {
-    unsubscribeFromAuth = fb.auth().onAuthStateChanged(setCurrentUser);
-  }, []);
-
-  useEffect(() => {
-    return () => {
-      unsubscribeFromAuth();
-    };
+    auth.onAuthStateChanged(setCurrentUser);
   }, []);
 
   return (

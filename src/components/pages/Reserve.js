@@ -1,10 +1,16 @@
 import React from 'react';
+import { Button, Container, Section } from '../../elements';
+import { auth } from '../../config/fbConfig';
 
 const Reserve = () => {
   return (
-    <div>
-      <h1>Reserve!!!</h1>
-    </div>
+    <Container>
+      <Section>
+        <Button onClick={() => auth.signOut()}>
+          <span>Sign Out</span>
+        </Button>
+      </Section>
+    </Container>
   );
 };
 

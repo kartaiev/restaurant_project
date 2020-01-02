@@ -80,13 +80,6 @@ const App = () => {
     ));
   };
 
-  //* CurrentUser State //
-  // const { currentUser, setCurrentUser } = useState(null);
-  //
-  // useEffect(() => {
-  //   auth.onAuthStateChanged(setCurrentUser);
-  // });
-
   return (
     <AuthProvider>
       <div className="App">
@@ -127,7 +120,8 @@ const App = () => {
               />
             )}
           />
-
+          <ProtectedRoute path="/reserve" component={Reserve} />
+          <Route path="/contact" component={Contact} />
           <Toggle>
             {({ on, toggle }) => (
               <Route
@@ -136,9 +130,6 @@ const App = () => {
               />
             )}
           </Toggle>
-
-          <ProtectedRoute path="/reserve" component={Reserve} />
-          <Route path="/contact" component={Contact} />
         </Switch>
       </div>
     </AuthProvider>

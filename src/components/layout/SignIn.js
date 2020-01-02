@@ -1,13 +1,33 @@
-import React from 'react';
-
+import React, { useCallback, useContext } from 'react';
+import { Redirect, withRouter } from 'react-router-dom';
+import { auth } from '../../config/fbConfig';
+import { AuthContext } from '../../contexts/AuthContext';
 import { Button, Subtitle } from '../../elements';
 import styled from 'styled-components';
-
 import { absolute, background, easeOut, grey, red } from '../../utilities';
 
-const SignIn = () => {
+const SignIn = ({ history }) => {
+  const handleLogin = useCallback(
+    async e => {
+      e.preventDefault();
+      const { email, password } = e.target.elements;
+      try {
+        await auth.signInWithEmailAndPassword(email.value, password.value);
+        history.push('/reserve');
+      } catch (error) {
+        alert(error);
+      }
+    },
+    [history]
+  );
+
+  const { currentUser } = useContext(AuthContext);
+
+  if (currentUser) {
+    return <Redirect to="/reserve" />;
+  }
   return (
-    <Sign>
+    <Sign onSubmit={handleLogin}>
       <Subtitle>Welcome back!</Subtitle>
       <p>Sign in to reserve a table</p>
       <div>
@@ -36,7 +56,7 @@ const SignIn = () => {
   );
 };
 
-export default SignIn;
+export default withRouter(SignIn);
 
 const Sign = styled.form`
   width: 100%;

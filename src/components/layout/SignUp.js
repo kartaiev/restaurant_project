@@ -1,11 +1,27 @@
-import React from 'react';
+import React, { useCallback } from 'react';
+import { withRouter } from 'react-router-dom';
+import { auth } from '../../config/fbConfig';
 import { Button, Subtitle } from '../../elements';
 import styled from 'styled-components';
 import { absolute, background, easeOut, grey, red } from '../../utilities';
 
-const SignUp = () => {
+const SignUp = ({ history }) => {
+  const handleSignUp = useCallback(
+    async e => {
+      e.preventDefault();
+      const { email, password } = e.target.elements;
+      try {
+        await auth.createUserWithEmailAndPassword(email.value, password.value);
+        history.push('/reserve');
+      } catch (error) {
+        alert(error);
+      }
+    },
+    [history]
+  );
+
   return (
-    <Sign>
+    <Sign onSubmit={handleSignUp}>
       <Subtitle>Hello, friend!</Subtitle>
       <p>Sign up to reserve a table</p>
       <div>
@@ -44,7 +60,7 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default withRouter(SignUp);
 
 const Sign = styled.form`
   width: 100%;
