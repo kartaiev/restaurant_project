@@ -13,6 +13,8 @@ const SignUp = ({ history }) => {
       try {
         await auth.createUserWithEmailAndPassword(email.value, password.value);
         history.push('/reserve');
+        email.value = '';
+        password.value = '';
       } catch (error) {
         alert(error);
       }
@@ -53,7 +55,7 @@ const SignUp = ({ history }) => {
         />
         <span />
       </div>
-      <Button modifiers="big">
+      <Button modifiers="big" type="submit">
         <span>Sign Up</span>
       </Button>
     </Sign>

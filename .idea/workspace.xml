@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout/SignIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/SignIn.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout/SignUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/SignUp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Reserve.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Reserve.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/fbConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/fbConfig.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contexts/AuthContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/contexts/AuthContext.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +79,7 @@
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -190,14 +186,7 @@
       <workItem from="1577889928753" duration="7902000" />
       <workItem from="1577901024315" duration="7501000" />
       <workItem from="1577915368052" duration="14579000" />
-      <workItem from="1577972930501" duration="4209000" />
-    </task>
-    <task id="LOCAL-00089" summary="function for menu">
-      <created>1577517436716</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1577517436717</updated>
+      <workItem from="1577972930501" duration="5810000" />
     </task>
     <task id="LOCAL-00090" summary="search logic">
       <created>1577539548804</created>
@@ -535,7 +524,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577971504184</updated>
     </task>
-    <option name="localTasksCounter" value="138" />
+    <task id="LOCAL-00138" summary="email authentication">
+      <created>1577978901162</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1577978901163</updated>
+    </task>
+    <option name="localTasksCounter" value="139" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -554,7 +550,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="refactoring scss files" />
     <MESSAGE value="overlay" />
     <MESSAGE value="scss refactoring" />
     <MESSAGE value="photo responsive" />
@@ -579,7 +574,8 @@
     <MESSAGE value="refactoring for reserve" />
     <MESSAGE value="logo bigger" />
     <MESSAGE value="sign in" />
-    <option name="LAST_COMMIT_MESSAGE" value="sign in" />
+    <MESSAGE value="email authentication" />
+    <option name="LAST_COMMIT_MESSAGE" value="email authentication" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -619,10 +615,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="322" y="48" key="#npm_start/0.23.1280.777@0.23.1280.777" timestamp="1577861609522" />
-    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1577971503072">
+    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1577978900693">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1577971503072" />
+    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1577978900693" />
     <state x="100" y="123" width="1080" height="577" key="DiffContextDialog" timestamp="1577977018690">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -655,14 +651,14 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="335" y="23" key="RollbackChangesDialog/0.23.1280.777@0.23.1280.777" timestamp="1577977277962" />
-    <state x="50" y="23" key="SettingsEditor" timestamp="1577952250656">
+    <state x="50" y="23" key="SettingsEditor" timestamp="1577982659605">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="50" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1577952250656" />
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1577971509124">
+    <state x="50" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1577982659605" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1577978910477">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1577971509124" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1577978910477" />
     <state x="346" y="232" key="cloudConfig.SelfSettingsDialog" timestamp="1577313845734">
       <screen x="0" y="23" width="1280" height="777" />
     </state>

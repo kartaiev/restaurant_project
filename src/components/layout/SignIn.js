@@ -1,4 +1,4 @@
-import React, { useCallback, useContext } from 'react';
+import React, { useContext } from 'react';
 import { Redirect, withRouter } from 'react-router-dom';
 import { auth } from '../../config/fbConfig';
 import { AuthContext } from '../../contexts/AuthContext';
@@ -7,19 +7,16 @@ import styled from 'styled-components';
 import { absolute, background, easeOut, grey, red } from '../../utilities';
 
 const SignIn = ({ history }) => {
-  const handleLogin = useCallback(
-    async e => {
-      e.preventDefault();
-      const { email, password } = e.target.elements;
-      try {
-        await auth.signInWithEmailAndPassword(email.value, password.value);
-        history.push('/reserve');
-      } catch (error) {
-        alert(error);
-      }
-    },
-    [history]
-  );
+  const handleLogin = async e => {
+    e.preventDefault();
+    const { email, password } = e.target.elements;
+    try {
+      await auth.signInWithEmailAndPassword(email.value, password.value);
+      history.push('/reserve');
+    } catch (error) {
+      alert(error);
+    }
+  };
 
   const { currentUser } = useContext(AuthContext);
 
@@ -49,7 +46,7 @@ const SignIn = ({ history }) => {
         />
         <span />
       </div>
-      <Button modifiers="big">
+      <Button modifiers="big" type="submit">
         <span>Sign In</span>
       </Button>
     </Sign>
