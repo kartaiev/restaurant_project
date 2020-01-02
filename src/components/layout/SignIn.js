@@ -1,31 +1,15 @@
 import React from 'react';
-import { AiFillFacebook, AiFillGoogleSquare } from 'react-icons/ai';
+
 import { Button, Subtitle } from '../../elements';
 import styled from 'styled-components';
-import { signInWithGoogle } from '../../config/fbConfig';
-import {
-  absolute,
-  background,
-  centerCenter,
-  easeOut,
-  grey,
-  red,
-  yellow
-} from '../../utilities';
+
+import { absolute, background, easeOut, grey, red } from '../../utilities';
 
 const SignIn = () => {
   return (
     <Sign>
       <Subtitle>Welcome back!</Subtitle>
       <p>Sign in to reserve a table</p>
-      <Social>
-        <AiFillFacebook>
-          <button />
-        </AiFillFacebook>
-        <AiFillGoogleSquare>
-          <button onClick={signInWithGoogle} />
-        </AiFillGoogleSquare>
-      </Social>
       <div>
         <input
           name="email"
@@ -91,22 +75,6 @@ const Sign = styled.form`
       background-size: 200% 100%;
       background-position: right center;
       ${easeOut};
-    }
-  }
-`;
-
-const Social = styled.div`
-  width: 100%;
-  ${centerCenter} {
-    svg {
-      width: 40px;
-      height: 40px;
-      padding: 0 15%;
-
-      &:hover {
-        fill: ${yellow};
-        cursor: pointer;
-      }
     }
   }
 `;
