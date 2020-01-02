@@ -1,22 +1,21 @@
 import React from 'react';
-import { FormTag } from '../../elements';
+import { StyledForm } from '../../elements';
 
-const Search = ({ onChange, onSubmit, label }) => {
+const Search = ({ onChange, onSubmit, placeholder }) => {
   return (
-    <FormTag onSubmit={onSubmit}>
+    <StyledForm onSubmit={onSubmit}>
       <div>
         <input
           type="search"
           name="search"
           required
           onChange={onChange}
+          placeholder={placeholder}
           autoComplete="off"
         />
-        <label htmlFor="search">
-          <span>{label}</span>
-        </label>
+        <span />
       </div>
-    </FormTag>
+    </StyledForm>
   );
 };
 

@@ -1,70 +1,43 @@
 import styled from 'styled-components';
+import { absolute, background, easeOut, grey, red } from '../utilities';
 
-import { absolute, background, easeOut, grey, red, yellow } from '../utilities';
-import { rgba } from 'polished';
-
-export const FormTag = styled.form`
+export const StyledForm = styled.form`
   width: 100%;
-  position: relative;
-  height: 7vh;
-  margin: 5vh 0 7vh 0;
+  height: 45vh;
 
   div {
-    height: 100%;
     width: 100%;
+    height: 7vh;
     position: relative;
-    overflow: hidden;
+    margin: 5vh 0;
 
     input {
       width: 100%;
       height: 100%;
-      border: none;
       background: ${background};
+      border: none;
       color: ${grey};
-      padding-top: 10px;
+      ${easeOut};
       outline: none;
 
-      &:focus {
-        background: ${background};
+      &:focus + span,
+      &:valid + span {
+        background-position: left center;
       }
 
-      &:focus + label span,
-      &:valid + label span {
-        //transform: translateY(-200%);
-        opacity: 0;
-        font-size: 0.8rem;
-        color: ${yellow};
-      }
-
-      &:focus + label::after,
-      &:valid + label::after {
-        transform: translateX(0);
+      &::placeholder {
+        color: ${grey};
+        z-index: 200;
       }
     }
-
-    label {
+    span {
       width: 100%;
-      height: 100%;
-      color: ${rgba('#cccccc', 0.6)};
-      ${absolute({ yProp: 'bottom' })};
-      border-bottom: 1px solid ${grey};
-      pointer-events: none;
-
-      &::after {
-        content: '';
-        ${absolute({ yProp: 'bottom', y: '-1px' })};
-        width: 100%;
-        height: 100%;
-        border-bottom: 1px solid ${red};
-        transform: translateX(-100%);
-        ${easeOut};
-      }
-
-      span {
-        position: absolute;
-        bottom: 5px;
-        ${easeOut};
-      }
+      height: 1px;
+      ${absolute({ yProp: 'bottom', y: '0' })};
+      background-image: linear-gradient(to right, ${red} 50%, ${grey} 50%);
+      background-size: 200% 100%;
+      background-position: right center;
+      ${easeOut};
     }
   }
 `;

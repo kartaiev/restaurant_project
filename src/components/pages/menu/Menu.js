@@ -15,7 +15,7 @@ const Menu = ({ food, menuSectionFunc, onChange }) => {
         <Toggle>
           {({ on, toggle }) => <MenuBtns on={on} toggle={toggle} />}
         </Toggle>
-        <Search onChange={onChange} label="Search food" />
+        <Search onChange={onChange} placeholder="Search food" />
         <MenuContent>{menuSectionFunc(food)}</MenuContent>
       </Section>
     </Article>
