@@ -190,14 +190,7 @@
       <workItem from="1578002243636" duration="216000" />
       <workItem from="1578002538237" duration="45000" />
       <workItem from="1578002611889" duration="2045000" />
-      <workItem from="1578039098892" duration="436000" />
-    </task>
-    <task id="LOCAL-00092" summary="map">
-      <created>1577636442651</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1577636442651</updated>
+      <workItem from="1578039098892" duration="757000" />
     </task>
     <task id="LOCAL-00093" summary="map">
       <created>1577636927610</created>
@@ -535,7 +528,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578004131350</updated>
     </task>
-    <option name="localTasksCounter" value="141" />
+    <task id="LOCAL-00141" summary="ie polyfill">
+      <created>1578054092079</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1578054092079</updated>
+    </task>
+    <option name="localTasksCounter" value="142" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -554,7 +554,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="scss refactoring" />
     <MESSAGE value="photo responsive" />
     <MESSAGE value="photo resizing" />
     <MESSAGE value="menu-buttons style toggle" />
@@ -579,7 +578,8 @@
     <MESSAGE value="sign in" />
     <MESSAGE value="email authentication" />
     <MESSAGE value="refac" />
-    <option name="LAST_COMMIT_MESSAGE" value="refac" />
+    <MESSAGE value="ie polyfill" />
+    <option name="LAST_COMMIT_MESSAGE" value="ie polyfill" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -619,10 +619,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="322" y="48" key="#npm_start/0.23.1280.777@0.23.1280.777" timestamp="1577861609522" />
-    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1578004130908">
+    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1578054091641">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1578004130908" />
+    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1578054091641" />
     <state x="100" y="123" width="1080" height="577" key="DiffContextDialog" timestamp="1577977018690">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -659,10 +659,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="81" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1578054005495" />
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1578004136302">
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1578054101336">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1578004136302" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1578054101336" />
     <state x="346" y="232" key="cloudConfig.SelfSettingsDialog" timestamp="1577313845734">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
