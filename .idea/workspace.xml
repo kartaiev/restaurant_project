@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/SignIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/SignIn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/SignUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/SignUp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/menu/Drinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/menu/Drinks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/menu/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/menu/Menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/elements/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/Form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +78,7 @@
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -194,14 +189,8 @@
       <workItem from="1577985424487" duration="480000" />
       <workItem from="1578002243636" duration="216000" />
       <workItem from="1578002538237" duration="45000" />
-      <workItem from="1578002611889" duration="1381000" />
-    </task>
-    <task id="LOCAL-00091" summary="search logic">
-      <created>1577553590345</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1577553590345</updated>
+      <workItem from="1578002611889" duration="2045000" />
+      <workItem from="1578039098892" duration="436000" />
     </task>
     <task id="LOCAL-00092" summary="map">
       <created>1577636442651</created>
@@ -539,7 +528,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577982803627</updated>
     </task>
-    <option name="localTasksCounter" value="140" />
+    <task id="LOCAL-00140" summary="refac">
+      <created>1578004131349</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1578004131350</updated>
+    </task>
+    <option name="localTasksCounter" value="141" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -558,7 +554,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="overlay" />
     <MESSAGE value="scss refactoring" />
     <MESSAGE value="photo responsive" />
     <MESSAGE value="photo resizing" />
@@ -583,7 +578,8 @@
     <MESSAGE value="logo bigger" />
     <MESSAGE value="sign in" />
     <MESSAGE value="email authentication" />
-    <option name="LAST_COMMIT_MESSAGE" value="email authentication" />
+    <MESSAGE value="refac" />
+    <option name="LAST_COMMIT_MESSAGE" value="refac" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -623,10 +619,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="322" y="48" key="#npm_start/0.23.1280.777@0.23.1280.777" timestamp="1577861609522" />
-    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1577982803467">
+    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1578004130908">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1577982803467" />
+    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1578004130908" />
     <state x="100" y="123" width="1080" height="577" key="DiffContextDialog" timestamp="1577977018690">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -659,14 +655,14 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="335" y="23" key="RollbackChangesDialog/0.23.1280.777@0.23.1280.777" timestamp="1577977277962" />
-    <state x="50" y="23" key="SettingsEditor" timestamp="1578004022422">
+    <state x="81" y="23" key="SettingsEditor" timestamp="1578054005495">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="50" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1578004022422" />
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1577982807401">
+    <state x="81" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1578054005495" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1578004136302">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1577982807401" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1578004136302" />
     <state x="346" y="232" key="cloudConfig.SelfSettingsDialog" timestamp="1577313845734">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
