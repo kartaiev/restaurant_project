@@ -2,16 +2,23 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 import { auth } from '../../config/fbConfig';
 import { Button, StyledForm, Subtitle } from '../../elements';
+import { createUserProfileDocument } from '../../contexts/AuthContext';
 
 const SignUp = ({ history }) => {
   const handleSignUp = async e => {
     e.preventDefault();
-    const { email, password } = e.target.elements;
+    const { email, password, displayName } = e.target.elements;
     try {
-      await auth.createUserWithEmailAndPassword(email.value, password.value);
+      const { user } = await auth.createUserWithEmailAndPassword(
+        email.value,
+        password.value
+      );
+
+      await createUserProfileDocument(user, { displayName: displayName.value });
+
       history.push('/reserve');
     } catch (error) {
-      alert(error);
+      alert(error.message);
     }
   };
 
@@ -21,7 +28,7 @@ const SignUp = ({ history }) => {
       <p>Sign up to reserve a table</p>
       <div>
         <input
-          name="name"
+          name="displayName"
           type="text"
           required
           placeholder="Name"

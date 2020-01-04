@@ -12,7 +12,7 @@ const SignIn = ({ history }) => {
       await auth.signInWithEmailAndPassword(email.value, password.value);
       history.push('/reserve');
     } catch (error) {
-      alert(error);
+      alert(error.message);
     }
   };
 
@@ -21,6 +21,7 @@ const SignIn = ({ history }) => {
   if (currentUser) {
     return <Redirect to="/reserve" />;
   }
+
   return (
     <StyledForm onSubmit={handleLogin}>
       <Subtitle>Welcome back!</Subtitle>
