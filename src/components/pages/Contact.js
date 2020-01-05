@@ -102,7 +102,7 @@ export default Contact;
 
 const Map = styled.iframe`
   width: 125%;
-  height: 500px;
+  min-height: 500px;
   margin-top: 5vh;
 `;
 

@@ -196,21 +196,7 @@
       <workItem from="1578055120624" duration="13917000" />
       <workItem from="1578151005603" duration="2820000" />
       <workItem from="1578156762792" duration="2074000" />
-      <workItem from="1578168524620" duration="4841000" />
-    </task>
-    <task id="LOCAL-00098" summary="new photo for menu">
-      <created>1577656323207</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1577656323207</updated>
-    </task>
-    <task id="LOCAL-00099" summary="new photo for menu">
-      <created>1577656860303</created>
-      <option name="number" value="00099" />
-      <option name="presentableId" value="LOCAL-00099" />
-      <option name="project" value="LOCAL" />
-      <updated>1577656860303</updated>
+      <workItem from="1578168524620" duration="5795000" />
     </task>
     <task id="LOCAL-00100" summary="new photo for menu">
       <created>1577658182919</created>
@@ -541,7 +527,21 @@
       <option name="project" value="LOCAL" />
       <updated>1578233050507</updated>
     </task>
-    <option name="localTasksCounter" value="147" />
+    <task id="LOCAL-00147" summary="calendar">
+      <created>1578233542660</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1578233542660</updated>
+    </task>
+    <task id="LOCAL-00148" summary="calendar">
+      <created>1578233657059</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1578233657060</updated>
+    </task>
+    <option name="localTasksCounter" value="149" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -633,10 +633,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="322" y="48" key="#npm_start/0.23.1280.777@0.23.1280.777" timestamp="1578055074082" />
-    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1578233633222">
+    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1578233656824">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1578233633222" />
+    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1578233656824" />
     <state x="100" y="123" width="1080" height="577" key="DiffContextDialog" timestamp="1577977018690">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -649,22 +649,22 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="485" y="295" key="Github.ShareDialog/0.23.1280.777@0.23.1280.777" timestamp="1576241150516" />
-    <state width="1254" height="192" key="GridCell.Tab.0.bottom" timestamp="1578168954012">
+    <state width="1254" height="192" key="GridCell.Tab.0.bottom" timestamp="1578234074106">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1254" height="192" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1578168954012" />
-    <state width="1254" height="192" key="GridCell.Tab.0.center" timestamp="1578168954010">
+    <state width="1254" height="192" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1578234074106" />
+    <state width="1254" height="192" key="GridCell.Tab.0.center" timestamp="1578234074104">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1254" height="192" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1578168954010" />
-    <state width="1254" height="192" key="GridCell.Tab.0.left" timestamp="1578168954009">
+    <state width="1254" height="192" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1578234074104" />
+    <state width="1254" height="192" key="GridCell.Tab.0.left" timestamp="1578234074104">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1254" height="192" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1578168954009" />
-    <state width="1254" height="192" key="GridCell.Tab.0.right" timestamp="1578168954011">
+    <state width="1254" height="192" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1578234074104" />
+    <state width="1254" height="192" key="GridCell.Tab.0.right" timestamp="1578234074105">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1254" height="192" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1578168954011" />
+    <state width="1254" height="192" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1578234074105" />
     <state x="289" y="68" key="MultipleFileMergeDialog" timestamp="1578233152137">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -677,10 +677,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="81" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1578168588588" />
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1578233548627">
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1578233670577">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1578233548626" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1578233670577" />
     <state x="346" y="232" key="cloudConfig.SelfSettingsDialog" timestamp="1577313845734">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -709,9 +709,9 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="358" y="269" width="858" height="350" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.23.1280.777@0.23.1280.777" timestamp="1576941427259" />
-    <state x="219" y="23" width="840" height="775" key="search.everywhere.popup" timestamp="1578173376562">
+    <state x="219" y="23" width="840" height="775" key="search.everywhere.popup" timestamp="1578234282609">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="219" y="23" width="840" height="775" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1578173376562" />
+    <state x="219" y="23" width="840" height="775" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1578234282609" />
   </component>
 </project>
