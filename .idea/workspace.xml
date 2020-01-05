@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="026060a5-a345-4f4a-854e-7c3e8326d619" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/routes/Routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Routes/ProtectedRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/ProtectedRoute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/SignUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/SignUp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Reserve.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Reserve.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,14 +196,7 @@
       <workItem from="1578055120624" duration="13917000" />
       <workItem from="1578151005603" duration="2820000" />
       <workItem from="1578156762792" duration="2074000" />
-      <workItem from="1578168524620" duration="4388000" />
-    </task>
-    <task id="LOCAL-00096" summary="contact">
-      <created>1577653527234</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1577653527235</updated>
+      <workItem from="1578168524620" duration="4558000" />
     </task>
     <task id="LOCAL-00097" summary="contact">
       <created>1577655850729</created>
@@ -551,7 +534,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578151426251</updated>
     </task>
-    <option name="localTasksCounter" value="145" />
+    <task id="LOCAL-00145" summary="calendar">
+      <created>1578232363543</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1578232363544</updated>
+    </task>
+    <option name="localTasksCounter" value="146" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -570,7 +560,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="photo resizing" />
     <MESSAGE value="menu-buttons style toggle" />
     <MESSAGE value="refactoring scss to styled components" />
     <MESSAGE value="refactoring scss to styled components - nav" />
@@ -595,7 +584,8 @@
     <MESSAGE value="refac" />
     <MESSAGE value="ie polyfill" />
     <MESSAGE value="storing displayName" />
-    <option name="LAST_COMMIT_MESSAGE" value="storing displayName" />
+    <MESSAGE value="calendar" />
+    <option name="LAST_COMMIT_MESSAGE" value="calendar" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -643,10 +633,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="322" y="48" key="#npm_start/0.23.1280.777@0.23.1280.777" timestamp="1578055074082" />
-    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1578151425706">
+    <state x="97" y="23" key="CommitChangelistDialog2" timestamp="1578232362894">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1578151425706" />
+    <state x="97" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1578232362894" />
     <state x="100" y="123" width="1080" height="577" key="DiffContextDialog" timestamp="1577977018690">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -683,10 +673,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="81" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1578168588588" />
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1578151433034">
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2" timestamp="1578232370268">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1578151433034" />
+    <state x="140" y="88" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1578232370268" />
     <state x="346" y="232" key="cloudConfig.SelfSettingsDialog" timestamp="1577313845734">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
