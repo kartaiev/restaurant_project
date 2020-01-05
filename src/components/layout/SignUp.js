@@ -9,12 +9,16 @@ const SignUp = ({ history }) => {
     e.preventDefault();
     const { email, password, displayName } = e.target.elements;
     try {
-      const { user } = await auth.createUserWithEmailAndPassword(
+      const { userAuth } = await auth.createUserWithEmailAndPassword(
         email.value,
         password.value
       );
 
-      await createUserProfileDocument(user, { displayName: displayName.value });
+      console.log(userAuth);
+
+      await createUserProfileDocument(userAuth, {
+        displayName: displayName.value
+      });
 
       history.push('/reserve');
     } catch (error) {

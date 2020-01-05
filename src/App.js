@@ -1,31 +1,22 @@
 import React, { useEffect, useState } from 'react';
-import { Route, Switch } from 'react-router-dom';
 import menuData from './data/menuData';
 import GlobalStyle from './utilities/Global';
 import { Subtitle } from './elements';
-import Home from './components/pages/Home';
 import NavBar from './components/layout/NavBar';
-import About from './components/pages/About';
-import Menu from './components/pages/menu/Menu';
-import Drinks from './components/pages/menu/Drinks';
-import Contact from './components/pages/Contact';
 import Header from './components/layout/Header';
 import { Toggle } from './utilities';
-import Gallery from './components/pages/Gallery';
-import Login from './components/pages/Login';
-import Reserve from './components/pages/Reserve';
-import ProtectedRoute from './Routes/ProtectedRoute';
 import { AuthProvider } from './contexts/AuthContext';
+import Routes from './routes/Routes';
 
 const App = () => {
-  //* Initial data state
+  //* Initial menu data state
   const [data, setData] = useState({
     menu: []
   });
 
   const { menu } = data;
 
-  //* Get data from JSON and update data state
+  //* Get menu data from JSON and update data state
   useEffect(() => {
     return setData({ menu: menuData });
   }, []);
@@ -80,6 +71,8 @@ const App = () => {
     ));
   };
 
+  const handleSearch = e => setSearch(e.target.value);
+
   return (
     <AuthProvider>
       <div className="App">
@@ -92,46 +85,13 @@ const App = () => {
             </div>
           )}
         </Toggle>
-
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/gallery" component={Gallery} />
-          <Route
-            path="/menu/:menuCategory"
-            render={() => {
-              return (
-                <Drinks
-                  drinks={drinks}
-                  menuSectionFunc={menuSectionFunc}
-                  onChange={e => setSearch(e.target.value)}
-                />
-              );
-            }}
-          />
-          <Route
-            path="/menu"
-            exact
-            render={() => (
-              <Menu
-                food={food}
-                menuSectionFunc={menuSectionFunc}
-                onChange={e => setSearch(e.target.value)}
-              />
-            )}
-          />
-          <ProtectedRoute path="/reserve" component={Reserve} />
-          <Route path="/contact" component={Contact} />
-          <Toggle>
-            {({ on, toggle }) => (
-              <Route
-                path="/login"
-                render={() => <Login on={on} toggle={toggle} />}
-              />
-            )}
-          </Toggle>
-        </Switch>
       </div>
+      <Routes
+        drinks={drinks}
+        food={food}
+        menuSectionFunc={menuSectionFunc}
+        handleSearch={handleSearch}
+      />
     </AuthProvider>
   );
 };
