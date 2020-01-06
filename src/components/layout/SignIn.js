@@ -1,15 +1,17 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Redirect, withRouter } from 'react-router-dom';
 import { auth } from '../../config/fbConfig';
 import { AuthContext } from '../../contexts/AuthContext';
 import { Button, StyledForm, Subtitle } from '../../elements';
 
 const SignIn = ({ history }) => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
   const handleLogin = async e => {
     e.preventDefault();
-    const { email, password } = e.target.elements;
     try {
-      await auth.signInWithEmailAndPassword(email.value, password.value);
+      await auth.signInWithEmailAndPassword(email, password);
       history.push('/reserve');
     } catch (error) {
       alert(error.message);
@@ -28,8 +30,10 @@ const SignIn = ({ history }) => {
       <p>Sign in to reserve a table</p>
       <div>
         <input
+          onChange={e => setEmail(e.target.value)}
           name="email"
           type="email"
+          value={email}
           required
           placeholder="Email"
           autoComplete="off"
@@ -38,8 +42,10 @@ const SignIn = ({ history }) => {
       </div>
       <div>
         <input
+          onChange={e => setPassword(e.target.value)}
           name="password"
           type="password"
+          value={password}
           required
           placeholder="Password"
         />

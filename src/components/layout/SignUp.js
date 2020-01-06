@@ -1,23 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { withRouter } from 'react-router-dom';
 import { auth } from '../../config/fbConfig';
 import { Button, StyledForm, Subtitle } from '../../elements';
 import { createUserProfileDocument } from '../../contexts/AuthContext';
 
 const SignUp = ({ history }) => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [displayName, setDisplayName] = useState('');
   const handleSignUp = async e => {
     e.preventDefault();
-    const { email, password, displayName } = e.target.elements;
     try {
       const { userAuth } = await auth.createUserWithEmailAndPassword(
-        email.value,
-        password.value
+        email,
+        password
       );
 
-      console.log(userAuth);
-
       await createUserProfileDocument(userAuth, {
-        displayName: displayName.value
+        displayName
       });
 
       history.push('/reserve');
@@ -32,8 +32,10 @@ const SignUp = ({ history }) => {
       <p>Sign up to reserve a table</p>
       <div>
         <input
+          onChange={e => setDisplayName(e.target.value)}
           name="displayName"
           type="text"
+          value={displayName}
           required
           placeholder="Name"
           autoComplete="off"
@@ -42,8 +44,10 @@ const SignUp = ({ history }) => {
       </div>
       <div>
         <input
+          onChange={e => setEmail(e.target.value)}
           name="email"
           type="email"
+          value={email}
           required
           placeholder="Email"
           autoComplete="off"
@@ -52,8 +56,10 @@ const SignUp = ({ history }) => {
       </div>
       <div>
         <input
+          onChange={e => setPassword(e.target.value)}
           name="password"
           type="password"
+          value={password}
           required
           placeholder="Password"
         />
