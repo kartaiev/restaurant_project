@@ -2,10 +2,8 @@ import React, { useEffect, useState } from 'react';
 import menuData from './data/menuData';
 import GlobalStyle from './utilities/Global';
 import { Subtitle } from './elements';
-import NavBar from './components/layout/NavBar';
-import Header from './components/layout/Header';
-import { Toggle } from './utilities';
 import { AuthProvider } from './contexts/AuthContext';
+import HomeRoute from './routes/HomeRoute';
 import Routes from './routes/Routes';
 
 const App = () => {
@@ -75,23 +73,16 @@ const App = () => {
 
   return (
     <AuthProvider>
-      <div className="App">
+      <>
+        <HomeRoute />
         <GlobalStyle />
-        <Toggle>
-          {({ on, toggle }) => (
-            <div>
-              <NavBar on={on} toggle={toggle} />
-              <Header on={on} toggle={toggle} />
-            </div>
-          )}
-        </Toggle>
-      </div>
-      <Routes
-        drinks={drinks}
-        food={food}
-        menuSectionFunc={menuSectionFunc}
-        handleSearch={handleSearch}
-      />
+        <Routes
+          drinks={drinks}
+          food={food}
+          menuSectionFunc={menuSectionFunc}
+          handleSearch={handleSearch}
+        />
+      </>
     </AuthProvider>
   );
 };

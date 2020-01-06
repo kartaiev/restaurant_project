@@ -2,7 +2,9 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import {
+  above,
   absolute,
+  background,
   betweenStart,
   centerCenter,
   easeOut,
@@ -37,14 +39,21 @@ export default NavBar;
 const Nav = styled.nav`
   ${fullScreen};
   ${centerCenter()};
-  ${fixed};
+  ${fixed({ xProp: 'right' })};
   background: ${overlay};
   backdrop-filter: blur(8px);
   ${easeOut};
-  transform: translateY(-110%);
   z-index: 25;
-  ${({ trans }) => trans === 'slide' && `transform: translateY(0); ${easeOut}`}
-
+  transform: translateY(-110%);
+  ${({ trans }) => trans === 'slide' && `transform: translateY(0); ${easeOut}`};
+  ${above.med`
+    width: 40%;
+    background: ${background};
+    border-left: 1px solid ${yellow};
+    transform: translateX(100%);
+    ${({ trans }) => trans === 'slide' && `transform: translateX(0)`};
+  `}
+  
   ul {
     width: 70%;
     height: 45vh;
@@ -56,7 +65,13 @@ const Nav = styled.nav`
       padding-bottom: 5px;
       transform: translateX(-600px);
       ${({ trans }) =>
-        trans === 'slide' && `transform: translateX(0); ${easeOut}`};  
+        trans === 'slide' && `transform: translateX(0); ${easeOut}`};
+      ${above.med`
+        transform: translateX(300px);
+        ${easeOut};
+        ${({ trans }) => trans === 'slide' && `transform: translateX(0)`};
+      `};
+   
       
        &::after {
         width: 7rem;

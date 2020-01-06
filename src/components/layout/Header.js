@@ -2,7 +2,7 @@ import React from 'react';
 import { Logo } from './Logo';
 import { Hamburger } from './Hamburger';
 import styled from 'styled-components';
-import { betweenCenter, fixed, overlay } from '../../utilities';
+import { above, betweenCenter, fixed, overlay } from '../../utilities';
 
 const Header = ({ on, toggle }) => {
   return (
@@ -23,4 +23,7 @@ const HeaderContainer = styled.header`
   ${fixed()};
   ${betweenCenter};
   z-index: 30;
+  ${above.med`
+    background-color: transparent;
+  `}
 `;

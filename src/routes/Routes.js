@@ -1,6 +1,5 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import Home from '../components/pages/Home';
 import About from '../components/pages/About';
 import Gallery from '../components/pages/Gallery';
 import Drinks from '../components/pages/menu/Drinks';
@@ -14,7 +13,6 @@ import Login from '../components/pages/Login';
 export default ({ food, drinks, menuSectionFunc, handleSearch }) => {
   return (
     <Switch>
-      <Route path="/" exact component={Home} />
       <Route path="/about" component={About} />
       <Route path="/gallery" component={Gallery} />
       <Route

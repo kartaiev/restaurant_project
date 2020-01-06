@@ -1,9 +1,12 @@
 import styled from 'styled-components';
-import { absolute, background, easeOut, grey, red } from '../utilities';
+import { above, absolute, background, easeOut, grey, red } from '../utilities';
 
 export const StyledForm = styled.form`
   width: 100%;
   height: 45vh;
+  ${above.med`
+    width: 80%;
+  `};
 
   div {
     width: 100%;

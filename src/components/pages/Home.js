@@ -3,15 +3,17 @@ import bcVideo from '../../assets/video/bcvideo.mp4';
 import title from '../../assets/images/HS_Logo.png';
 import styled from 'styled-components';
 import {
+  above,
   absolute,
+  easeOut,
   elementToCenter,
   fullScreen,
   overlay
 } from '../../utilities';
 
-const Home = () => {
+const Home = ({ on }) => {
   return (
-    <VideoContainer className="video-wrapper">
+    <VideoContainer trans={!on && 'slide'}>
       <video
         autoPlay
         loop
@@ -30,7 +32,12 @@ export default Home;
 //* Style //
 const VideoContainer = styled.div`
   ${fullScreen};
+  float: left;
   position: relative;
+  ${easeOut};
+  ${above.med`
+    ${({ trans }) => trans === 'slide' && `width: 60%; ${easeOut}; float: left`}
+  `};
 
   &::after {
     ${fullScreen};

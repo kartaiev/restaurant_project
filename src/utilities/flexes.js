@@ -28,10 +28,10 @@ export const betweenStart = ({ fd = 'row' } = {}) => css`
   align-items: flex-start;
 `;
 
-export const centerEnd = ({ fd = 'row' } = {}) => css`
+export const betweenEnd = ({ fd = 'row' } = {}) => css`
   display: flex;
   flex-direction: ${fd};
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-end;
 `;
 

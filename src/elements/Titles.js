@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { red, titleFont, yellow } from '../utilities';
+import { above, red, titleFont, yellow } from '../utilities';
 
 export const Title = styled.h2`
   ${titleFont};
@@ -7,6 +7,9 @@ export const Title = styled.h2`
   font-size: 3rem;
   margin-top: -5vh;
   margin-bottom: 5vh;
+  ${above.med`
+    margin-top: 10vh;
+  `};
 `;
 
 export const ContactTitle = styled(Title)`

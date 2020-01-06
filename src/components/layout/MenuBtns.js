@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import { Button } from '../../elements';
-import { betweenCenter } from '../../utilities';
+import { above, betweenCenter } from '../../utilities';
 
 export const MenuBtns = ({ on, toggle }) => {
   return (
@@ -25,6 +25,9 @@ export const MenuBtns = ({ on, toggle }) => {
 const BtnsWrap = styled.div`
   width: 100%;
   ${betweenCenter()};
+  ${above.med`
+    width: 80%;
+  `}
 
   a {
     width: 45%;

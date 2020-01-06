@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import {
+  above,
   background,
   betweenCenter,
   centerCenter,
@@ -14,6 +15,10 @@ export const Article = styled.article`
   background: ${background};
   overflow-x: hidden;
   overflow-y: scroll;
+  ${above.med`
+    ${betweenCenter};
+    overflow: hidden;
+  `}
 `;
 
 export const Container = styled.div`
@@ -31,6 +36,11 @@ export const Section = styled.section`
   ${startCenter({ fd: 'column' })};
   position: relative;
   margin-top: 10vh;
+  ${above.med`
+    width: 40%;
+    overflow: scroll;
+    margin-bottom: 10vh;
+  `}
 `;
 
 export const SignInSection = styled(Section)`
@@ -38,8 +48,19 @@ export const SignInSection = styled(Section)`
   margin-top: -5vh;
 `;
 
+export const ScrollWrap = styled.div`
+  width: 100%;
+  ${startCenter({ fd: 'column' })};
+  ${above.med`
+    overflow: scroll;
+  `}
+`;
+
 export const Content = styled.div`
   width: 100%;
+  ${above.med`
+    width: 80%;
+  `};
 `;
 
 export const MenuContent = styled(Content)`
