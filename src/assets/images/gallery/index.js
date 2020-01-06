@@ -12,7 +12,6 @@ export const pics1 = [
   loft2,
   loft3,
   loft4,
-  loft5,
   loft2L,
   loft3L,
   loft4L,
