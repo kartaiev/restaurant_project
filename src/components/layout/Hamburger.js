@@ -14,7 +14,7 @@ export const Hamburger = ({ on, toggle }) => {
 //* Style //
 const HamBtn = styled.div`
   height: 10vh;
-  width: 7%;
+  width: 30px;
   ${centerCenter({ fd: 'column' })};
   ${fixed({ x: '1.5rem', y: '1,5rem', xProp: 'right' })};
   ${easeOut};

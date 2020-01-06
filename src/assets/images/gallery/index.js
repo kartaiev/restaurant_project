@@ -3,26 +3,19 @@ import loft2 from './2.jpg';
 import loft3 from './3.jpg';
 import loft4 from './4.jpg';
 import loft5 from './5.jpg';
-import loft2L from './2L.jpeg';
 import loft3L from './3L.jpeg';
 import loft4L from './4L.jpg';
+import loft6 from './6.jpg';
+import loft7 from './7.jpg';
 
 export const pics1 = [
   loft1,
   loft2,
   loft3,
   loft4,
-  loft2L,
   loft3L,
   loft4L,
-  loft5
+  loft5,
+  loft6,
+  loft7
 ];
-
-export { loft1 };
-export { loft2 };
-export { loft3 };
-export { loft4 };
-export { loft5 };
-export { loft2L };
-export { loft3L };
-export { loft4L };
