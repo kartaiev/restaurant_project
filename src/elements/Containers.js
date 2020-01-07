@@ -1,12 +1,17 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import {
   above,
+  absolute,
   background,
   betweenCenter,
   centerCenter,
+  easeOut,
+  elementToCenter,
   fullScreen,
+  overlay,
   startCenter
 } from '../utilities';
+import { applyStyleModifiers } from 'styled-components-modifiers';
 
 export const Article = styled.article`
   ${fullScreen};
@@ -74,4 +79,42 @@ export const MenuContent = styled(Content)`
       padding: 1vh 0;
     }
   }
+`;
+
+ const VIDEO_MODIFIERS = {
+   page: () => css`
+    width: 60%;
+`
+ };
+
+export const VideoContainer = styled.div`
+  ${fullScreen};
+  float: left;
+  position: relative;
+  ${easeOut};
+  ${above.med`
+    ${({ trans }) => trans === 'slide' && `width: 60%; ${easeOut}; float: left`}
+  `};
+
+  &::after {
+    ${fullScreen};
+    ${absolute()};
+    background-color: ${overlay};
+    content: '';
+  }
+
+  img {
+    width: 45%;
+    ${elementToCenter};
+    z-index: 5;
+  }
+
+  video {
+    ${fullScreen};
+    min-width: 100%;
+    min-height: auto;
+    object-fit: cover;
+  }
+  
+  ${applyStyleModifiers(VIDEO_MODIFIERS)};
 `;

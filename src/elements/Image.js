@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
 import { applyStyleModifiers } from 'styled-components-modifiers';
 import { above } from '../utilities';
+import React from 'react';
 
 const IMAGE_MODIFIERS = {
   page: () => css`
@@ -22,9 +23,6 @@ export const Image = styled.img`
   ${applyStyleModifiers(IMAGE_MODIFIERS)};
 `;
 
-export const ImgWrap = styled.div`
-  width: 100%;
-  ${above.med`
-    width: 60%;
-  `};
-`;
+export const pageImage = (img) => (
+  <Image modifiers="page" src={img} alt='image' />
+);

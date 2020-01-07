@@ -1,14 +1,25 @@
 import React from 'react';
 import { MenuBtns } from '../../layout/MenuBtns';
-import beefSteak from '../../../assets/images/pages/menu.jpg';
+import steakOnBoard from '../../../assets/images/pages/menu.jpg';
 import { Toggle } from '../../../utilities';
-import { Article, Image, MenuContent, Section, Title } from '../../../elements';
+import { Article, MenuContent, pageImage, Section, Title } from '../../../elements';
 import Search from '../../layout/Search';
+import steakVid from '../../../assets/video/steakVid.mp4';
+import { videoElement } from '../../../elements/Video';
+import { useWindowWidth } from '../../../hooks/useWindowWidth';
 
 const Menu = ({ food, menuSectionFunc, onChange }) => {
+
+  const imgOrVid = useWindowWidth() <= 768
+    ?
+    pageImage(steakOnBoard)
+    :
+    videoElement(steakVid);
+
+
   return (
     <Article>
-      <Image modifiers="page" src={beefSteak} alt="beef steak with fork" />
+      {imgOrVid}
 
       <Section>
         <Title>Menu</Title>
