@@ -1,22 +1,25 @@
 import React from 'react';
 import { MenuBtns } from '../../layout/MenuBtns';
 import wine from '../../../assets/images/pages/drinks.jpg';
-import { Article, MenuContent, pageImageElement, Section, Title } from '../../../elements';
+import {
+  MenuContent,
+  pageImageElement,
+  Section,
+  Title
+} from '../../../elements';
 import Search from '../../layout/Search';
 import { useWindowWidth } from '../../../hooks/useWindowWidth';
 import { pageVideoElement } from '../../../elements/Video';
 import wineVid from '../../../assets/video/wineVid.mp4';
 
 const Drinks = ({ drinks, menuSectionFunc, onChange }) => {
-
-  const imgOrVid = useWindowWidth() <= 768
-    ?
-    pageImageElement(wine)
-    :
-    pageVideoElement(wineVid);
+  const imgOrVid =
+    useWindowWidth() <= 768
+      ? pageImageElement(wine)
+      : pageVideoElement(wineVid);
 
   return (
-    <Article className="article">
+    <>
       {imgOrVid}
 
       <Section>
@@ -26,7 +29,7 @@ const Drinks = ({ drinks, menuSectionFunc, onChange }) => {
 
         <MenuContent>{menuSectionFunc(drinks)}</MenuContent>
       </Section>
-    </Article>
+    </>
   );
 };
 

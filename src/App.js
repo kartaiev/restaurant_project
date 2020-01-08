@@ -3,8 +3,14 @@ import menuData from './data/menuData';
 import GlobalStyle from './utilities/Global';
 import { Subtitle } from './elements';
 import { AuthProvider } from './contexts/AuthContext';
-import HomeRoute from './routes/HomeRoute';
-import Routes from './routes/Routes';
+import {
+  ContactRoute,
+  GalleryRoute,
+  HomeRoute,
+  LoginRoute,
+  MenuRoutes,
+  ReserveRoute
+} from './routes';
 
 const App = () => {
   //* Initial menu data state
@@ -67,21 +73,23 @@ const App = () => {
     ));
   };
 
-
-
   return (
-    <AuthProvider>
-      <>
-        <HomeRoute />
-        <GlobalStyle />
-        <Routes
-          drinks={drinks}
-          food={food}
-          menuSectionFunc={menuSectionFunc}
-          handleSearch={e => setSearch(e.target.value)}
-        />
-      </>
-    </AuthProvider>
+    <>
+      <HomeRoute />
+      <GalleryRoute />
+      <AuthProvider>
+        <ReserveRoute />
+        <LoginRoute />
+      </AuthProvider>
+      <ContactRoute />
+      <MenuRoutes
+        drinks={drinks}
+        food={food}
+        menuSectionFunc={menuSectionFunc}
+        handleSearch={e => setSearch(e.target.value)}
+      />
+      <GlobalStyle />
+    </>
   );
 };
 
