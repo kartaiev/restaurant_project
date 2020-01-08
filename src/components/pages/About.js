@@ -3,7 +3,7 @@ import standingSteak from '../../assets/images/pages/about.jpg';
 import styled from 'styled-components';
 import { Article, Content, pageImageElement, pageVideoElement, Section, Subtitle, Title } from '../../elements';
 import { useWindowWidth } from '../../hooks/useWindowWidth';
-// import aboutVid from '../../assets/video/aboutVid.mp4';
+import aboutVid from '../../assets/video/aboutVid.mp4';
 
 const About = () => {
 
