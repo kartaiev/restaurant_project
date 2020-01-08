@@ -1,17 +1,5 @@
-import styled, { css } from 'styled-components';
-import {
-  above,
-  absolute,
-  background,
-  betweenCenter,
-  centerCenter,
-  easeOut,
-  elementToCenter,
-  fullScreen,
-  overlay,
-  startCenter
-} from '../utilities';
-import { applyStyleModifiers } from 'styled-components-modifiers';
+import styled from 'styled-components';
+import { above, background, betweenCenter, centerCenter, fullScreen, startCenter } from '../utilities';
 
 export const Article = styled.article`
   ${fullScreen};
@@ -53,14 +41,6 @@ export const SignInSection = styled(Section)`
   margin-top: -5vh;
 `;
 
-export const ScrollWrap = styled.div`
-  width: 100%;
-  ${startCenter({ fd: 'column' })};
-  ${above.med`
-    overflow: scroll;
-  `}
-`;
-
 export const Content = styled.div`
   width: 100%;
   ${above.med`
@@ -81,40 +61,6 @@ export const MenuContent = styled(Content)`
   }
 `;
 
- const VIDEO_MODIFIERS = {
-   page: () => css`
-    width: 60%;
-`
- };
 
-export const VideoContainer = styled.div`
-  ${fullScreen};
-  float: left;
-  position: relative;
-  ${easeOut};
-  ${above.med`
-    ${({ trans }) => trans === 'slide' && `width: 60%; ${easeOut}; float: left`}
-  `};
 
-  &::after {
-    ${fullScreen};
-    ${absolute()};
-    background-color: ${overlay};
-    content: '';
-  }
 
-  img {
-    width: 45%;
-    ${elementToCenter};
-    z-index: 5;
-  }
-
-  video {
-    ${fullScreen};
-    min-width: 100%;
-    min-height: auto;
-    object-fit: cover;
-  }
-  
-  ${applyStyleModifiers(VIDEO_MODIFIERS)};
-`;

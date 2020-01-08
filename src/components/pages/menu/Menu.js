@@ -2,19 +2,19 @@ import React from 'react';
 import { MenuBtns } from '../../layout/MenuBtns';
 import steakOnBoard from '../../../assets/images/pages/menu.jpg';
 import { Toggle } from '../../../utilities';
-import { Article, MenuContent, pageImage, Section, Title } from '../../../elements';
+import { Article, MenuContent, pageImageElement, Section, Title } from '../../../elements';
 import Search from '../../layout/Search';
 import steakVid from '../../../assets/video/steakVid.mp4';
-import { videoElement } from '../../../elements/Video';
+import { pageVideoElement } from '../../../elements/Video';
 import { useWindowWidth } from '../../../hooks/useWindowWidth';
 
 const Menu = ({ food, menuSectionFunc, onChange }) => {
 
   const imgOrVid = useWindowWidth() <= 768
     ?
-    pageImage(steakOnBoard)
+    pageImageElement(steakOnBoard)
     :
-    videoElement(steakVid);
+    pageVideoElement(steakVid);
 
 
   return (

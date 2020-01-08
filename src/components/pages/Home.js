@@ -3,7 +3,8 @@ import bcVideo from '../../assets/video/bcvideo.mp4';
 import title from '../../assets/images/HS_Logo.png';
 import { VideoContainer } from '../../elements';
 
-const Home = ({ on }) => {
+
+const Home = ({on}) => {
   return (
     <VideoContainer trans={!on && 'slide'}>
       <video

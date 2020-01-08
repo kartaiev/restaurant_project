@@ -59,8 +59,6 @@ const App = () => {
 
   //* Menu sections with a list of menu items func //
   const menuSectionFunc = category => {
-    console.log(filteredMenu);
-    console.log(search);
     return category.map((type, i) => (
       <div key={i}>
         <Subtitle>{type}</Subtitle>
@@ -69,7 +67,7 @@ const App = () => {
     ));
   };
 
-  const handleSearch = e => setSearch(e.target.value);
+
 
   return (
     <AuthProvider>
@@ -80,7 +78,7 @@ const App = () => {
           drinks={drinks}
           food={food}
           menuSectionFunc={menuSectionFunc}
-          handleSearch={handleSearch}
+          handleSearch={e => setSearch(e.target.value)}
         />
       </>
     </AuthProvider>

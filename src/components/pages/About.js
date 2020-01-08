@@ -1,19 +1,21 @@
 import React from 'react';
 import standingSteak from '../../assets/images/pages/about.jpg';
 import styled from 'styled-components';
-import {
-  Article,
-  Content,
-  Image,
-  Section,
-  Subtitle,
-  Title
-} from '../../elements';
+import { Article, Content, pageImageElement, pageVideoElement, Section, Subtitle, Title } from '../../elements';
+import { useWindowWidth } from '../../hooks/useWindowWidth';
+// import aboutVid from '../../assets/video/aboutVid.mp4';
 
 const About = () => {
+
+  const imgOrVid = useWindowWidth() <= 768
+    ?
+    pageImageElement(standingSteak)
+    :
+    pageVideoElement(aboutVid);
+
   return (
     <Article>
-      <Image modifiers="page" src={standingSteak} alt="standing steak" />
+      {imgOrVid}
 
       <Section>
         <Title>About</Title>

@@ -1,19 +1,19 @@
 import React from 'react';
 import { MenuBtns } from '../../layout/MenuBtns';
 import wine from '../../../assets/images/pages/drinks.jpg';
-import { Article, MenuContent, pageImage, Section, Title } from '../../../elements';
+import { Article, MenuContent, pageImageElement, Section, Title } from '../../../elements';
 import Search from '../../layout/Search';
 import { useWindowWidth } from '../../../hooks/useWindowWidth';
-import { videoElement } from '../../../elements/Video';
+import { pageVideoElement } from '../../../elements/Video';
 import wineVid from '../../../assets/video/wineVid.mp4';
 
 const Drinks = ({ drinks, menuSectionFunc, onChange }) => {
 
   const imgOrVid = useWindowWidth() <= 768
     ?
-    pageImage(wine)
+    pageImageElement(wine)
     :
-    videoElement(wineVid);
+    pageVideoElement(wineVid);
 
   return (
     <Article className="article">
