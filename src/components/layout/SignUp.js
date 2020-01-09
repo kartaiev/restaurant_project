@@ -11,13 +11,13 @@ const SignUp = ({ history }) => {
   const handleSignUp = async e => {
     e.preventDefault();
     try {
-      const { userAuth } = await auth.createUserWithEmailAndPassword(
+      const { user } = await auth.createUserWithEmailAndPassword(
         email,
         password
       );
 
-      await createUserProfileDocument(userAuth, {
-        displayName
+      await createUserProfileDocument(user, {
+        displayName: displayName
       });
 
       history.push('/reserve');

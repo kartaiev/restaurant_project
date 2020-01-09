@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import menuData from './data/menuData';
 import GlobalStyle from './utilities/Global';
 import { Subtitle } from './elements';
@@ -13,28 +13,16 @@ import {
 } from './routes';
 
 const App = () => {
-  //* Initial menu data state
-  const [data, setData] = useState({
-    menu: []
-  });
-
-  const { menu } = data;
-
-  //* Get menu data from JSON and update data state
-  useEffect(() => {
-    return setData({ menu: menuData });
-  }, []);
-
   //* Search input state //
   const [search, setSearch] = useState('');
 
   //* Filtered menu according to search input //
-  const filteredMenu = menu.filter(item =>
+  const menuSearchResult = menuData.filter(item =>
     item.dish.toLowerCase().includes(search.toLowerCase())
   );
 
-  //* Filtered food
-  const foodUnfiltered = filteredMenu
+  //* Removes duplicates food types //
+  const foodUnfiltered = menuSearchResult
     .filter(item => item.category === 'food')
     .map(item => item.type);
 
@@ -42,8 +30,8 @@ const App = () => {
     (item, i) => foodUnfiltered.indexOf(item) >= i
   );
 
-  //* Filtered drinks
-  const drinksUnfiltered = filteredMenu
+  //* Removes duplicates drinks types //
+  const drinksUnfiltered = menuSearchResult
     .filter(item => item.category === 'drinks')
     .map(item => item.type);
 
@@ -53,7 +41,7 @@ const App = () => {
 
   //* List of menu items according to type func //
   const menuListFunc = type => {
-    return filteredMenu
+    return menuSearchResult
       .filter(item => item.type === type)
       .map(item => (
         <li key={item.id}>

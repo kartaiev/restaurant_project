@@ -22,6 +22,7 @@ export default ({ food, drinks, menuSectionFunc, handleSearch }) => {
             );
           }}
         />
+
         <Route
           path="/menu"
           exact
