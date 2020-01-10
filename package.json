@@ -4,6 +4,10 @@
   "private": true,
   "dependencies": {
     "@babel/core": "7.7.4",
+    "@date-io/date-fns": "^2.0.1",
+    "@date-io/moment": "1.x",
+    "@material-ui/core": "^4.8.3",
+    "@material-ui/pickers": "^3.2.8",
     "@svgr/webpack": "4.3.3",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -38,6 +42,7 @@
     "jest-resolve": "24.9.0",
     "jest-watch-typeahead": "0.4.2",
     "mini-css-extract-plugin": "0.8.0",
+    "moment": "^2.24.0",
     "node-sass": "^4.13.0",
     "nuka-carousel": "^4.6.0",
     "optimize-css-assets-webpack-plugin": "5.0.3",
@@ -61,6 +66,7 @@
     "react-responsive-carousel": "^3.1.51",
     "react-router-dom": "^5.1.2",
     "react-scripts": "^3.3.0",
+    "react-time-picker": "^3.9.0",
     "resolve": "1.12.2",
     "resolve-url-loader": "3.1.1",
     "sass-loader": "8.0.0",
@@ -75,7 +81,8 @@
     "webpack": "4.41.2",
     "webpack-dev-server": "3.9.0",
     "webpack-manifest-plugin": "2.2.0",
-    "workbox-webpack-plugin": "4.3.1"
+    "workbox-webpack-plugin": "4.3.1",
+    "@material-ui/styles": "latest"
   },
   "scripts": {
     "start": "node scripts/start.js",

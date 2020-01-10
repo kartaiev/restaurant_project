@@ -4,6 +4,7 @@ import {
   Article,
   ContactTitle,
   Content,
+  GoogleMap,
   Section,
   Subtitle
 } from '../../elements';
@@ -84,27 +85,13 @@ const Contact = () => {
             </Time>
           </Details>
         </Content>
-        <Map
-          title="map"
-          id="gmap_canvas"
-          src="https://maps.google.com/maps?q=Holy%20Smoke%20Texas%20Style%20BBQ&t=&z=13&ie=UTF8&iwloc=&output=embed"
-          frameBorder="0"
-          scrolling="no"
-          marginHeight="0"
-          marginWidth="0"
-        />
       </Section>
+      <GoogleMap />
     </Article>
   );
 };
 
 export default Contact;
-
-const Map = styled.iframe`
-  width: 125%;
-  min-height: 500px;
-  margin-top: 5vh;
-`;
 
 const OpeningsWrap = styled.div`
   width: 100%;

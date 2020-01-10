@@ -1,29 +1,17 @@
-import React, { useContext, useState } from 'react';
-import Calendar from 'react-calendar';
-import { Button, Container, Section, Subtitle } from '../../elements';
-import { auth } from '../../config/fbConfig';
-import { AuthContext } from '../../contexts/AuthContext';
+import React, { useEffect, useState } from 'react';
+import { DatePick, Section } from '../../elements';
 
 const Reserve = () => {
-  const { currentUser } = useContext(AuthContext);
-  const [date, setDate] = useState(new Date());
+  const [selectedDate, setSelectDate] = useState(new Date());
+
+  useEffect(() => {
+    console.log(selectedDate);
+  }, [selectedDate]);
 
   return (
-    <Container>
-      <Section>
-        <Subtitle>Welcome back, {currentUser.displayName}</Subtitle>
-        <p>Choose date</p>
-        <Calendar
-          locale="en"
-          style={{ background: 'black' }}
-          onChange={date => setDate(date)}
-          value={date}
-        />
-        <Button modifiers="big" onClick={() => auth.signOut()}>
-          <span>Log Out</span>
-        </Button>
-      </Section>
-    </Container>
+    <Section>
+      <DatePick value={selectedDate} onChange={date => setSelectDate(date)} />
+    </Section>
   );
 };
 

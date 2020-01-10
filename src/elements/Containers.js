@@ -1,11 +1,11 @@
 import styled from 'styled-components';
-import { above, background, betweenCenter, centerCenter, fullScreen, startCenter } from '../utilities';
+import { above, betweenCenter, centerCenter, fullScreen, startCenter } from '../utilities';
 
 export const Article = styled.article`
   ${fullScreen};
   ${startCenter({ fd: 'column' })};
   position: relative;
-  background: ${background};
+  //background: aliceblue;
   overflow-x: hidden;
   overflow-y: scroll;
   ${above.med`
@@ -18,10 +18,16 @@ export const Container = styled.div`
   ${fullScreen};
   ${startCenter({ fd: 'column' })};
   position: relative;
-  background: ${background};
   overflow-x: hidden;
   overflow-y: scroll;
 `;
+
+// const SECTION_MODIFIERS = {
+//   contact: () => css`
+//     float: right;
+//     width: 50%;
+//   `
+// };
 
 export const Section = styled.section`
   width: 80%;
@@ -32,7 +38,7 @@ export const Section = styled.section`
   ${above.med`
     width: 40%;
     overflow: scroll;
-    margin-bottom: 10vh;
+    margin-bottom: 10vh;  
   `}
 `;
 
@@ -60,7 +66,3 @@ export const MenuContent = styled(Content)`
     }
   }
 `;
-
-
-
-
