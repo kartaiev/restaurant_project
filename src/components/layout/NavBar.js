@@ -44,8 +44,11 @@ const Nav = styled.nav`
   backdrop-filter: blur(8px);
   ${easeOut};
   z-index: 25;
+  visibility: hidden;
   transform: translateY(-110%);
-  ${({ trans }) => trans === 'slide' && `transform: translateY(0); ${easeOut}`};
+  ${({ trans }) =>
+    trans === 'slide' &&
+    `transform: translateY(0); ${easeOut}; visibility: visible`};
   ${above.med`
     width: 40%;
     background: ${background};
@@ -64,8 +67,10 @@ const Nav = styled.nav`
       position: relative;
       padding-bottom: 5px;
       transform: translateX(-600px);
+      visibility: hidden;
       ${({ trans }) =>
-        trans === 'slide' && `transform: translateX(0); ${easeOut}`};
+        trans === 'slide' &&
+        `transform: translateX(0); ${easeOut}; visibility: visible`};
       ${above.med`
         transform: translateX(300px);
         ${easeOut};

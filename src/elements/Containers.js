@@ -25,6 +25,10 @@ export const Container = styled.div`
   position: relative;
   overflow-x: hidden;
   overflow-y: scroll;
+  ${above.med`
+    ${betweenCenter};
+    overflow: hidden;
+  `}
 `;
 
 export const Section = styled.section`

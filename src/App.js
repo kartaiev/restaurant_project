@@ -22,23 +22,21 @@ const App = () => {
     item.dish.toLowerCase().includes(search.toLowerCase())
   );
 
+  const clearSearch = () => {
+    setSearch('');
+  };
+
   //* Removes duplicates food types //
   const foodUnfiltered = menuSearchResult
     .filter(item => item.category === 'food')
     .map(item => item.type);
-
-  const food = foodUnfiltered.filter(
-    (item, i) => foodUnfiltered.indexOf(item) >= i
-  );
+  const food = [...new Set(foodUnfiltered)];
 
   //* Removes duplicates drinks types //
   const drinksUnfiltered = menuSearchResult
     .filter(item => item.category === 'drinks')
     .map(item => item.type);
-
-  const drinks = drinksUnfiltered.filter(
-    (item, i) => drinksUnfiltered.indexOf(item) >= i
-  );
+  const drinks = [...new Set(drinksUnfiltered)];
 
   //* List of Menu items according to type func //
   const menuListFunc = type => {
@@ -73,6 +71,7 @@ const App = () => {
       </AuthProvider>
       <ContactRoute />
       <MenuRoutes
+        clearSearch={clearSearch}
         drinks={drinks}
         food={food}
         menuSectionFunc={menuSectionFunc}

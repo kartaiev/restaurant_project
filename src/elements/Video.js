@@ -1,11 +1,17 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { above, absolute, easeOut, elementToCenter, fullScreen, overlayLight } from '../utilities';
+import {
+  above,
+  absolute,
+  easeOut,
+  elementToCenter,
+  fullScreen,
+  overlayLight
+} from '../utilities';
 import { applyStyleModifiers } from 'styled-components-modifiers';
 
-
-export const pageVideoElement =(vid) => (
-  <VideoContainer modifiers='page'>
+export const pageVideoElement = vid => (
+  <VideoContainer modifiers="page">
     <video
       autoPlay
       loop
@@ -17,11 +23,10 @@ export const pageVideoElement =(vid) => (
   </VideoContainer>
 );
 
-
 const VIDEO_MODIFIERS = {
   page: () => css`
     width: 60%;
-`
+  `
 };
 
 export const VideoContainer = styled.div`
@@ -36,7 +41,7 @@ export const VideoContainer = styled.div`
   &::after {
     ${fullScreen};
     ${absolute()};
-    background-color: ${overlayLight};
+    // background-color: ${overlayLight};
     content: '';
   }
 

@@ -8,7 +8,7 @@ const DateAndTime = ({ displayName, value, onChange }) => {
   return (
     <>
       <Div>
-        <Subtitle>Select date and time, {displayName}</Subtitle>
+        <Subtitle>Welcome back, {displayName}</Subtitle>
         <p>
           You can reserve 7 days in advance. <br />
           We are open 10am – 11pm.

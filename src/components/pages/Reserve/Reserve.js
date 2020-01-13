@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { Button } from '../../../elements';
+import { Button, pageVideoElement } from '../../../elements';
 import { AuthContext } from '../../../contexts/AuthContext';
 import { auth } from '../../../config/fbConfig';
 import DateAndTime from './elements/DateAndTime';
@@ -12,8 +12,12 @@ import {
 
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
+import { useWindowWidth } from '../../../hooks/useWindowWidth';
+import reserveVid from '../../../assets/video/reserveVid.mp4';
 
 const Reserve = () => {
+  const Vid = useWindowWidth() > 768 && pageVideoElement(reserveVid);
+
   const { currentUser } = useContext(AuthContext);
   const [selectedDate, setSelectDate] = useState(new Date());
 
@@ -27,6 +31,7 @@ const Reserve = () => {
 
   return (
     <ReserveContainer>
+      {Vid}
       <ReserveWrap>
         <DateAndTime
           value={selectedDate}
@@ -54,6 +59,10 @@ export default Reserve;
 const ReserveContainer = styled.div`
   ${fullScreen}
   ${centerCenter({ fd: 'column' })}
+  ${above.med`
+    ${betweenCenter};
+    overflow: hidden;
+  `}
 `;
 
 const ReserveWrap = styled.div`
@@ -61,6 +70,12 @@ const ReserveWrap = styled.div`
   height: 80%;
   ${betweenCenter({ fd: 'column' })};
   margin-top: 5vh;
+
+  ${above.med`
+    width: 40%;
+    overflow: scroll;
+    margin-bottom: 10vh;  
+  `}
 
   label {
     padding-bottom: 1vh;

@@ -5,7 +5,13 @@ import Drinks from '../components/pages/Menu/Drinks';
 import Menu from '../components/pages/Menu/Menu';
 import { Article } from '../elements';
 
-export default ({ food, drinks, menuSectionFunc, handleSearch }) => {
+export default ({
+  food,
+  drinks,
+  menuSectionFunc,
+  handleSearch,
+  clearSearch
+}) => {
   return (
     <Switch>
       <Article>
@@ -15,6 +21,7 @@ export default ({ food, drinks, menuSectionFunc, handleSearch }) => {
           render={() => {
             return (
               <Drinks
+                clearSearch={clearSearch}
                 drinks={drinks}
                 menuSectionFunc={menuSectionFunc}
                 onChange={handleSearch}
@@ -28,6 +35,7 @@ export default ({ food, drinks, menuSectionFunc, handleSearch }) => {
           exact
           render={() => (
             <Menu
+              clearSearch={clearSearch}
               food={food}
               menuSectionFunc={menuSectionFunc}
               onChange={handleSearch}

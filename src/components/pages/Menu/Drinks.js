@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { MenuBtns } from './elements/MenuBtns';
 import wine from '../../../assets/images/pages/drinks.jpg';
 import {
@@ -12,7 +12,11 @@ import { useWindowWidth } from '../../../hooks/useWindowWidth';
 import { pageVideoElement } from '../../../elements/Video';
 import wineVid from '../../../assets/video/wineVid.mp4';
 
-const Drinks = ({ drinks, menuSectionFunc, onChange }) => {
+const Drinks = ({ drinks, menuSectionFunc, onChange, clearSearch }) => {
+  useEffect(() => {
+    clearSearch();
+  }, []);
+
   const imgOrVid =
     useWindowWidth() <= 768
       ? pageImageElement(wine)
