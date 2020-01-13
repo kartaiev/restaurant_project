@@ -1,3 +1,3 @@
 # epam_project
 Epam Restaurant Project
-https://epam-project-restaurant.netlify.com/
+https://epam-restaurant-project.firebaseapp.com/
