@@ -5,15 +5,20 @@ import {
   ContactTitle,
   Content,
   GoogleMap,
+  pageVideoElement,
   Section,
   Subtitle
-} from '../../elements';
+} from '../../../elements';
 import styled from 'styled-components';
-import { betweenCenter, betweenStart, startEnd } from '../../utilities';
+import { betweenCenter, betweenStart, startEnd } from '../../../utilities';
+import { useWindowWidth } from '../../../hooks/useWindowWidth';
+import contactVid from '../../../assets/video/contactVid.mp4';
 
 const Contact = () => {
+  const Vid = useWindowWidth() > 768 && pageVideoElement(contactVid);
   return (
     <Article>
+      {Vid}
       <Section>
         <ContactTitle>Contact</ContactTitle>
         <Content>
@@ -85,8 +90,8 @@ const Contact = () => {
             </Time>
           </Details>
         </Content>
+        <GoogleMap />
       </Section>
-      <GoogleMap />
     </Article>
   );
 };

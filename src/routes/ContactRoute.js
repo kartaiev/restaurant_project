@@ -1,4 +1,4 @@
-import Contact from '../components/pages/Contact';
+import Contact from '../components/pages/Contact/Contact';
 import { Route } from 'react-router-dom';
 import React from 'react';
 

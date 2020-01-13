@@ -13,7 +13,7 @@ import {
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import { useWindowWidth } from '../../../hooks/useWindowWidth';
-import reserveVid from '../../../assets/video/reserveVid.mp4';
+import reserveVid from '../../../assets/video/restaurantVid.mp4';
 
 const Reserve = () => {
   const Vid = useWindowWidth() > 768 && pageVideoElement(reserveVid);

@@ -41,7 +41,7 @@ export const VideoContainer = styled.div`
   &::after {
     ${fullScreen};
     ${absolute()};
-    // background-color: ${overlayLight};
+    background-color: ${overlayLight};
     content: '';
   }
 
@@ -57,6 +57,6 @@ export const VideoContainer = styled.div`
     min-height: auto;
     object-fit: cover;
   }
-  
+
   ${applyStyleModifiers(VIDEO_MODIFIERS)};
 `;

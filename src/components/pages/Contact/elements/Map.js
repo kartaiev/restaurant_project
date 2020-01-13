@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { above } from '../utilities';
+import { above } from '../../../../utilities';
 
 export const GoogleMap = () => (
   <Map
@@ -15,13 +15,11 @@ export const GoogleMap = () => (
 );
 
 const Map = styled.iframe`
-  width: 100%;
+  width: 125%;
   min-height: 500px;
   margin-top: 5vh;
 
   ${above.med`
-    height: 90%;
-    width: 50%;
-    float: left;
+    width: 100%; 
   `}
 `;
