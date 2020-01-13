@@ -1,6 +1,6 @@
 import { Toggle } from '../utilities';
 import { Route } from 'react-router-dom';
-import Login from '../components/pages/Login';
+import Login from '../components/pages/Login/Login';
 import React from 'react';
 
 export default () => (

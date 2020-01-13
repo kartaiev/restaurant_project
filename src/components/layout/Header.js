@@ -1,6 +1,6 @@
 import React from 'react';
-import { Logo } from './Logo';
-import { Hamburger } from './Hamburger';
+import { Logo } from '../../elements/Logo';
+import { Hamburger } from '../../elements/Hamburger';
 import styled from 'styled-components';
 import { above, betweenCenter, fixed, overlay } from '../../utilities';
 

@@ -3,7 +3,7 @@ import MomentUtils from '@date-io/moment';
 import { ThemeProvider } from '@material-ui/styles';
 import React from 'react';
 import { createMuiTheme } from '@material-ui/core';
-import { background, grey, red, yellow } from '../utilities';
+import { background, grey, red, yellow } from '../../../../utilities';
 
 const materialTheme = createMuiTheme({
   overrides: {
@@ -13,17 +13,17 @@ const materialTheme = createMuiTheme({
         color: background
       }
     },
+
     MuiInputBase: {
-      input: {
-        border: 'transparent',
-        color: grey
-      }
-    },
-    MuiOutlinedInput: {
-      input: {
-        border: `${grey} solid 1px`,
+      root: {
         color: grey,
-        value: 'none'
+        cursor: 'pointer',
+        border: `${yellow} solid 1px`,
+        width: '100%'
+      },
+      input: {
+        textAlign: 'center',
+        width: '100%'
       }
     },
 
@@ -32,6 +32,7 @@ const materialTheme = createMuiTheme({
         backgroundColor: yellow
       }
     },
+
     MuiPickersCalendarHeader: {
       switchHeader: {
         backgroundColor: grey,
@@ -49,12 +50,30 @@ const materialTheme = createMuiTheme({
       }
     },
 
+    MuiFormControl: {
+      root: {
+        width: '300px'
+      }
+    },
+
     MuiPickersClockPointer: {
       pointer: {
         backgroundColor: red
       },
       thumb: {
-        color: red
+        borderColor: red
+      }
+    },
+
+    PrivateNotchedOutline: {
+      root: {
+        border: `${yellow} solid 1px`
+      }
+    },
+
+    MuiPickersClock: {
+      pin: {
+        backgroundColor: red
       }
     },
 
@@ -87,14 +106,20 @@ const materialTheme = createMuiTheme({
   }
 });
 
-export const DatePick = ({ onChange, value }) => (
-  <ThemeProvider theme={materialTheme}>
-    <MuiPickersUtilsProvider utils={MomentUtils}>
-      <DateTimePicker
-        inputVariant="outlined"
-        value={value}
-        onChange={onChange}
-      />
-    </MuiPickersUtilsProvider>
-  </ThemeProvider>
-);
+export const DatePick = ({ onChange, value }) => {
+  let date = new Date();
+
+  return (
+    <ThemeProvider theme={materialTheme}>
+      <MuiPickersUtilsProvider utils={MomentUtils}>
+        <DateTimePicker
+          minDate={new Date()}
+          maxDate={date.setDate(date.getDate() + 7)}
+          inputVariant="outlined"
+          value={value}
+          onChange={onChange}
+        />
+      </MuiPickersUtilsProvider>
+    </ThemeProvider>
+  );
+};

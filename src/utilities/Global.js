@@ -7,6 +7,8 @@ const GlobalStyle = createGlobalStyle`
   ${normalize()};
   
   @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
  
   font-face {
     font-family: 'Sanchez', serif;
@@ -24,14 +26,12 @@ const GlobalStyle = createGlobalStyle`
   }
   
   body {
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 0.1rem;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.3;
     overflow: hidden;
     color: ${grey};
     background: ${background};
   }
-  
-  
   
   a {
     font-size: 1.5rem;

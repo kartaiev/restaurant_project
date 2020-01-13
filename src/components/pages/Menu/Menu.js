@@ -1,5 +1,5 @@
 import React from 'react';
-import { MenuBtns } from '../../layout/MenuBtns';
+import { MenuBtns } from './elements/MenuBtns';
 import steakOnBoard from '../../../assets/images/pages/menu.jpg';
 import { Toggle } from '../../../utilities';
 import {
@@ -8,7 +8,7 @@ import {
   Section,
   Title
 } from '../../../elements';
-import Search from '../../layout/Search';
+import Search from './elements/Search';
 import steakVid from '../../../assets/video/steakVid.mp4';
 import { pageVideoElement } from '../../../elements/Video';
 import { useWindowWidth } from '../../../hooks/useWindowWidth';

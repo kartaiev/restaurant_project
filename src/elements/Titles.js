@@ -22,6 +22,7 @@ export const Subtitle = styled.h3`
   position: relative;
   padding-bottom: 1vh;
   margin: 3vh 0 4vh 0;
+  text-align: center;
 
   &::after {
     width: 100%;

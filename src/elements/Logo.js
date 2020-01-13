@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { NavLink } from 'react-router-dom';
-import steakhouse from '../../assets/images/steakhouse.png';
+import steakhouse from '../assets/images/steakhouse.png';
 import styled from 'styled-components';
 
 export const Logo = () => {

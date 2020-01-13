@@ -9,14 +9,15 @@ import {
   HomeRoute,
   LoginRoute,
   MenuRoutes,
-  ReserveRoute
+  ReserveRoute,
+  TablesRoute
 } from './routes';
 
 const App = () => {
   //* Search input state //
   const [search, setSearch] = useState('');
 
-  //* Filtered menu according to search input //
+  //* Filtered Menu according to search input //
   const menuSearchResult = menuData.filter(item =>
     item.dish.toLowerCase().includes(search.toLowerCase())
   );
@@ -39,7 +40,7 @@ const App = () => {
     (item, i) => drinksUnfiltered.indexOf(item) >= i
   );
 
-  //* List of menu items according to type func //
+  //* List of Menu items according to type func //
   const menuListFunc = type => {
     return menuSearchResult
       .filter(item => item.type === type)
@@ -51,7 +52,7 @@ const App = () => {
       ));
   };
 
-  //* Menu sections with a list of menu items func //
+  //* Menu sections with a list of Menu items func //
   const menuSectionFunc = category => {
     return category.map((type, i) => (
       <div key={i}>
@@ -67,6 +68,7 @@ const App = () => {
       <GalleryRoute />
       <AuthProvider>
         <ReserveRoute />
+        <TablesRoute />
         <LoginRoute />
       </AuthProvider>
       <ContactRoute />

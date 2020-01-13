@@ -1,11 +1,16 @@
 import styled from 'styled-components';
-import { above, betweenCenter, centerCenter, fullScreen, startCenter } from '../utilities';
+import {
+  above,
+  betweenCenter,
+  centerCenter,
+  fullScreen,
+  startCenter
+} from '../utilities';
 
 export const Article = styled.article`
   ${fullScreen};
   ${startCenter({ fd: 'column' })};
   position: relative;
-  //background: aliceblue;
   overflow-x: hidden;
   overflow-y: scroll;
   ${above.med`
@@ -22,13 +27,6 @@ export const Container = styled.div`
   overflow-y: scroll;
 `;
 
-// const SECTION_MODIFIERS = {
-//   contact: () => css`
-//     float: right;
-//     width: 50%;
-//   `
-// };
-
 export const Section = styled.section`
   width: 80%;
   height: 100vh;
@@ -44,7 +42,7 @@ export const Section = styled.section`
 
 export const SignInSection = styled(Section)`
   ${centerCenter({ fd: 'column' })};
-  margin-top: -5vh;
+  margin-top: -20vh;
 `;
 
 export const Content = styled.div`

@@ -1,5 +1,5 @@
 import React from 'react';
-import { MenuBtns } from '../../layout/MenuBtns';
+import { MenuBtns } from './elements/MenuBtns';
 import wine from '../../../assets/images/pages/drinks.jpg';
 import {
   MenuContent,
@@ -7,7 +7,7 @@ import {
   Section,
   Title
 } from '../../../elements';
-import Search from '../../layout/Search';
+import Search from './elements/Search';
 import { useWindowWidth } from '../../../hooks/useWindowWidth';
 import { pageVideoElement } from '../../../elements/Video';
 import wineVid from '../../../assets/video/wineVid.mp4';

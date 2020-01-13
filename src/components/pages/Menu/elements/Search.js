@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledForm } from '../../elements';
+import { StyledForm } from '../../../../elements';
 
 const Search = ({ onChange, onSubmit, placeholder }) => {
   return (

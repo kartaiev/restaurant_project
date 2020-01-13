@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { centerCenter, easeOut, fixed, red, yellow } from '../../utilities';
+import { centerCenter, easeOut, fixed, red, yellow } from '../utilities';
 
 export const Hamburger = ({ on, toggle }) => {
   return (

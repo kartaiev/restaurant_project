@@ -1,7 +1,7 @@
 import React from 'react';
-import { Button, Container, SignInSection } from '../../elements';
-import SignIn from '../layout/SignIn';
-import SignUp from '../layout/SignUp';
+import { Button, Container, SignInSection } from '../../../elements';
+import SignIn from './elements/SignIn';
+import SignUp from './elements/SignUp';
 
 const Login = ({ on, toggle }) => {
   return (

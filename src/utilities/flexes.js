@@ -20,6 +20,12 @@ export const betweenCenter = ({ fd = 'row' } = {}) => css`
   justify-content: space-between;
   align-items: center;
 `;
+export const aroundCenter = ({ fd = 'row' } = {}) => css`
+  display: flex;
+  flex-direction: ${fd};
+  justify-content: space-around;
+  align-items: center;
+`;
 
 export const betweenStart = ({ fd = 'row' } = {}) => css`
   display: flex;
@@ -28,11 +34,11 @@ export const betweenStart = ({ fd = 'row' } = {}) => css`
   align-items: flex-start;
 `;
 
-export const betweenEnd = ({ fd = 'row' } = {}) => css`
+export const startStart = ({ fd = 'row' } = {}) => css`
   display: flex;
   flex-direction: ${fd};
-  justify-content: space-between;
-  align-items: flex-end;
+  justify-content: flex-start;
+  align-items: flex-start;
 `;
 
 export const startEnd = ({ fd = 'row' } = {}) => css`
@@ -40,4 +46,11 @@ export const startEnd = ({ fd = 'row' } = {}) => css`
   flex-direction: ${fd};
   justify-content: flex-start;
   align-items: flex-end;
+`;
+
+export const centerStart = ({ fd = 'row' } = {}) => css`
+  display: flex;
+  flex-direction: ${fd};
+  justify-content: center;
+  align-items: flex-start;
 `;

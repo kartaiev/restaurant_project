@@ -5,4 +5,4 @@ export * from './Image';
 export * from './Form';
 export * from './Video';
 export * from './Map';
-export * from './DatePick';
+export * from '../components/pages/Reserve/elements/DatePick';

@@ -6,6 +6,14 @@ const BUTTONS_MODIFIERS = {
   big: () => css`
     width: 100%;
     margin: 0 0 6vh 0;
+  `,
+  signOut: () => css`
+    width: 100%;
+    margin: 0;
+  `,
+  reserve: () => css`
+    width: 100%;
+    margin-top: 5vh;
   `
 };
 
@@ -17,6 +25,7 @@ export const Button = styled.button`
   background: ${background};
   padding: 1vh 0;
   outline: none;
+  border-radius: 3px;
   ${({ type }) =>
     type === 'active' && `color: ${yellow}; border: 1px solid ${red};`};
 

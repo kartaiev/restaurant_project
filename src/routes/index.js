@@ -4,6 +4,7 @@ import LoginRoute from './LoginRoute';
 import MenuRoutes from './Routes';
 import ReserveRoute from './ReserveRoute';
 import HomeRoute from './HomeRoute';
+import TablesRoute from './TablesRoute';
 
 export {
   ContactRoute,
@@ -11,5 +12,6 @@ export {
   MenuRoutes,
   LoginRoute,
   GalleryRoute,
-  HomeRoute
+  HomeRoute,
+  TablesRoute
 };

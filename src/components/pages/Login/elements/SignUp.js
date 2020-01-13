@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { withRouter } from 'react-router-dom';
-import { auth } from '../../config/fbConfig';
-import { Button, StyledForm, Subtitle } from '../../elements';
-import { createUserProfileDocument } from '../../contexts/AuthContext';
+import { auth } from '../../../../config/fbConfig';
+import { Button, StyledForm, Subtitle } from '../../../../elements';
+import { createUserProfileDocument } from '../../../../contexts/AuthContext';
 
 const SignUp = ({ history }) => {
   const [email, setEmail] = useState('');

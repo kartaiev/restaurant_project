@@ -1,8 +1,8 @@
 import React, { useContext, useState } from 'react';
 import { Redirect, withRouter } from 'react-router-dom';
-import { auth } from '../../config/fbConfig';
-import { AuthContext } from '../../contexts/AuthContext';
-import { Button, StyledForm, Subtitle } from '../../elements';
+import { auth } from '../../../../config/fbConfig';
+import { AuthContext } from '../../../../contexts/AuthContext';
+import { Button, StyledForm, Subtitle } from '../../../../elements';
 
 const SignIn = ({ history }) => {
   const [email, setEmail] = useState('');

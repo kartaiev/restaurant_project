@@ -3,7 +3,7 @@ import { above, absolute, background, easeOut, grey, red } from '../utilities';
 
 export const StyledForm = styled.form`
   width: 100%;
-  height: 45vh;
+  height: 15vh;
   ${above.med`
     width: 80%;
   `};
