@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "@babel/core": "7.7.4",
-    "@date-io/date-fns": "^2.0.1",
     "@date-io/moment": "1.x",
     "@material-ui/core": "^4.8.3",
     "@material-ui/pickers": "^3.2.8",
@@ -44,7 +43,6 @@
     "mini-css-extract-plugin": "0.8.0",
     "moment": "^2.24.0",
     "node-sass": "^4.13.0",
-    "nuka-carousel": "^4.6.0",
     "optimize-css-assets-webpack-plugin": "5.0.3",
     "pnp-webpack-plugin": "1.5.0",
     "polished": "^3.4.2",

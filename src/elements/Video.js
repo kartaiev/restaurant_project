@@ -26,6 +26,9 @@ export const pageVideoElement = vid => (
 const VIDEO_MODIFIERS = {
   page: () => css`
     width: 60%;
+    &:after {
+      background-color: transparent;
+    }
   `
 };
 

@@ -6,14 +6,6 @@ const BUTTONS_MODIFIERS = {
   big: () => css`
     width: 100%;
     margin: 0 0 6vh 0;
-  `,
-  signOut: () => css`
-    width: 100%;
-    margin: 0;
-  `,
-  reserve: () => css`
-    width: 100%;
-    margin-top: 5vh;
   `
 };
 
@@ -44,6 +36,7 @@ export const Button = styled.button`
     transform: scaleY(1);
     ${({ type }) => type === 'active' && `transform: scaleY(0)`};
   }
+
   &::after {
     width: calc(100% - 12px);
     height: calc(100% + 4px);

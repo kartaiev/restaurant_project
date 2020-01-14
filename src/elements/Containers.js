@@ -39,7 +39,8 @@ export const Section = styled.section`
   margin-top: 10vh;
   ${above.med`
     width: 40%;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
     margin-bottom: 10vh;  
   `}
 `;

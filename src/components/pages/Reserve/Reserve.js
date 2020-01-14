@@ -1,55 +1,64 @@
-import React, { useContext, useState } from 'react';
-import { Button, pageVideoElement } from '../../../elements';
+import React, { useContext, useEffect, useState } from 'react';
+import { pageVideoElement } from '../../../elements';
 import { AuthContext } from '../../../contexts/AuthContext';
-import { auth } from '../../../config/fbConfig';
-import DateAndTime from './elements/DateAndTime';
-import {
-  above,
-  betweenCenter,
-  centerCenter,
-  fullScreen
-} from '../../../utilities';
+import { above, betweenCenter, centerCenter, fullScreen } from '../../../utilities';
 
 import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
+
 import { useWindowWidth } from '../../../hooks/useWindowWidth';
 import reserveVid from '../../../assets/video/restaurantVid.mp4';
+import SelectDateandTime from './SelectDateandTime';
+import SelectTable from './SelectTable';
+import moment from 'moment';
 
-const Reserve = () => {
+const Reserve = ({ on, toggle }) => {
   const Vid = useWindowWidth() > 768 && pageVideoElement(reserveVid);
 
   const { currentUser } = useContext(AuthContext);
-  const [selectedDate, setSelectDate] = useState(new Date());
+  const [selectedDate, setSelectedDate] = useState(new Date());
+  const [message, setMessage] = useState('');
 
-  const handleSignOut = async () => {
-    try {
-      await auth.signOut();
-    } catch (error) {
-      console.log(error.message);
+  useEffect(() => {
+    !on && toggle();
+  }, []);
+
+  useEffect(() => {
+    const presentHour = moment(new Date()).hour();
+    const hour = moment(selectedDate).hour();
+    const presentDate = moment(new Date()).date();
+    const date = moment(selectedDate).date();
+
+    if (date === presentDate) {
+      if (
+        (hour < presentHour + 2 && hour > presentHour) ||
+        hour < presentHour
+      ) {
+        setMessage(
+          'We want to be prepared for your visit. So, select time at least 2 hours from now'
+        );
+      } else {
+        setMessage('');
+      }
+    } else {
+      setMessage('');
     }
-  };
+  }, [selectedDate]);
 
   return (
     <ReserveContainer>
       {Vid}
-      <ReserveWrap>
-        <DateAndTime
+      {on ? (
+        <SelectDateandTime
+          message={message}
+          on={on}
+          toggle={toggle}
           value={selectedDate}
-          onChange={date => setSelectDate(date)}
+          onChange={date => setSelectedDate(date)}
           displayName={currentUser.displayName}
         />
-
-        <BtnsWrap>
-          <Button onClick={handleSignOut}>
-            <span>Sign Out</span>
-          </Button>
-          <NavLink to="/tables">
-            <Button>
-              <span>Tables</span>
-            </Button>
-          </NavLink>
-        </BtnsWrap>
-      </ReserveWrap>
+      ) : (
+        <SelectTable on={on} toggle={toggle} />
+      )}
     </ReserveContainer>
   );
 };
@@ -62,51 +71,5 @@ const ReserveContainer = styled.div`
   ${above.med`
     ${betweenCenter};
     overflow: hidden;
-  `}
-`;
-
-const ReserveWrap = styled.div`
-  width: 80%;
-  height: 80%;
-  ${betweenCenter({ fd: 'column' })};
-  margin-top: 5vh;
-
-  ${above.med`
-    width: 40%;
-    overflow: scroll;
-    margin-bottom: 10vh;  
-  `}
-
-  label {
-    padding-bottom: 1vh;
-  }
-`;
-
-const BtnsWrap = styled.div`
-  width: 100%;
-  ${betweenCenter()};
-  margin-top: 5vh;
-  button {
-    width: 45%;
-  }
-
-  a {
-    width: 45%;
-    height: 100%;
-
-    ${Button} {
-      width: 100%;
-      height: 100%;
-      text-align: center;
-
-      span {
-        position: relative;
-        z-index: 1;
-      }
-    }
-  }
-
-  ${above.med`
-    width: 80%;
   `}
 `;

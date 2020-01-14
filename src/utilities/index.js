@@ -1,6 +1,4 @@
-import elevations from './elevations';
-
-import Toggle from './Toggle';
+import Toggle from './toggle';
 
 export * from './colors';
 export * from './breakpoints';
@@ -9,7 +7,5 @@ export * from './flexes';
 export * from './fonts';
 export * from './sizes';
 export * from './transitions';
-
-export { elevations };
 
 export { Toggle };

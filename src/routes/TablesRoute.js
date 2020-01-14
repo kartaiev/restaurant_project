@@ -1,5 +1,5 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import ChooseTable from '../components/pages/Reserve/ChooseTable';
+import SelectTable from '../components/pages/Reserve/SelectTable';
 
-export default () => <Route path="/tables" component={ChooseTable} />;
+export default () => <Route path="/tables" component={SelectTable} />;
