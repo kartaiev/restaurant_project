@@ -18,10 +18,13 @@ const App = () => {
   const [search, setSearch] = useState('');
 
   //* Filtered Menu according to search input //
-  const menuSearchResult = menuData.filter(item =>
-    item.dish.toLowerCase().includes(search.toLowerCase())
+  const menuSearchResult = menuData.filter(
+    item =>
+      item.dish.toLowerCase().includes(search.toLowerCase()) ||
+      item.type.toLowerCase().includes(search.toLowerCase())
   );
 
+  //* Clear search func //
   const clearSearch = () => {
     setSearch('');
   };

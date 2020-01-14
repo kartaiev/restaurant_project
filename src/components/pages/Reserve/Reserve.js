@@ -1,7 +1,12 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { pageVideoElement } from '../../../elements';
 import { AuthContext } from '../../../contexts/AuthContext';
-import { above, betweenCenter, centerCenter, fullScreen } from '../../../utilities';
+import {
+  above,
+  betweenCenter,
+  centerCenter,
+  fullScreen
+} from '../../../utilities';
 
 import styled from 'styled-components';
 
