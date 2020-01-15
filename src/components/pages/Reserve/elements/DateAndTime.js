@@ -11,7 +11,7 @@ const DateAndTime = ({ displayName, value, onChange, message }) => {
         <Subtitle>Welcome back, {displayName}</Subtitle>
         <p>
           You can reserve 7 days in advance. <br />
-          We are open 10am – 11pm. <br />
+          We are open 12am – 11pm. <br />
         </p>
         <Warning>{message}</Warning>
       </Div>
