@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { MenuBtns } from './elements/MenuBtns';
 import steakOnBoard from '../../../assets/images/pages/menu.jpg';
 import { Toggle } from '../../../utilities';
@@ -12,8 +12,13 @@ import Search from './elements/Search';
 import steakVid from '../../../assets/video/steakVid.mp4';
 import { pageVideoElement } from '../../../elements/Video';
 import { useWindowWidth } from '../../../hooks/useWindowWidth';
+import MenuContext from '../../../contexts/MenuContext';
 
-const Menu = ({ food, menuSectionFunc, onChange, clearSearch }) => {
+const Menu = () => {
+  const { food, menuSectionFunc, clearSearch, handleSearch } = useContext(
+    MenuContext
+  );
+
   useEffect(() => {
     clearSearch();
   }, []);
@@ -34,7 +39,7 @@ const Menu = ({ food, menuSectionFunc, onChange, clearSearch }) => {
             <MenuBtns on={on} toggle={toggle} clearSearch={clearSearch} />
           )}
         </Toggle>
-        <Search onChange={onChange} placeholder="Search food" />
+        <Search onChange={handleSearch} placeholder="Search food" />
 
         <MenuContent>{menuSectionFunc(food)}</MenuContent>
       </Section>
