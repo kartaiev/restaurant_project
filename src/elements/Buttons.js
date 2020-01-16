@@ -5,7 +5,6 @@ import { absolute, background, easeOut, grey, red, yellow } from '../utilities';
 const BUTTONS_MODIFIERS = {
   big: () => css`
     width: 100%;
-    margin: 0 0 6vh 0;
   `
 };
 

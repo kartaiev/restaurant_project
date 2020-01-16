@@ -1,7 +1,7 @@
-import NavBar from '../components/layout/NavBar';
-import Header from '../components/layout/Header';
+import NavBar from '../layout/NavBar';
+import Header from '../layout/Header';
 import { Route } from 'react-router-dom';
-import Home from '../components/pages/Home';
+import Home from '../pages/Home';
 import { Toggle } from '../utilities';
 import React from 'react';
 

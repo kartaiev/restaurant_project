@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import About from '../components/pages/About';
-import Drinks from '../components/pages/Menu/Drinks';
-import Menu from '../components/pages/Menu/Menu';
+import About from '../pages/About';
+import Drinks from '../pages/Menu/Drinks';
+import Menu from '../pages/Menu/Menu';
 import { Article } from '../elements';
 
 export default () => {

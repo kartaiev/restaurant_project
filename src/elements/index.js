@@ -4,5 +4,5 @@ export * from './Containers';
 export * from './Image';
 export * from './Form';
 export * from './Video';
-export * from '../components/pages/Contact/elements/Map';
-export * from '../components/pages/Reserve/elements/DatePick';
+export * from '../pages/Contact/elements/Map';
+export * from '../pages/Reserve/elements/DatePick';

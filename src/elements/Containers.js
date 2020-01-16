@@ -47,7 +47,15 @@ export const Section = styled.section`
 
 export const SignInSection = styled(Section)`
   ${centerCenter({ fd: 'column' })};
-  margin-top: -20vh;
+  margin: 7vh;
+
+  ${above.med`
+    width: 100%;
+    height: 100vh;
+    ${centerCenter};
+    overflow: hidden;
+    margin: 0;   
+  `}
 `;
 
 export const Content = styled.div`

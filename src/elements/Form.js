@@ -1,20 +1,37 @@
-import styled from 'styled-components';
-import { above, absolute, background, easeOut, grey, red } from '../utilities';
+import styled, { css } from 'styled-components';
+import {
+  above,
+  absolute,
+  background,
+  betweenStart,
+  easeOut,
+  grey,
+  red
+} from '../utilities';
+import { applyStyleModifiers } from 'styled-components-modifiers';
+
+const FORM_MODIFIERS = {
+  login: () => css`
+    height: 100%;
+  `,
+  menu: () => css`
+    height: 15vh;
+    margin: 5vh;
+    ${above.med`
+    width: 80%;
+  `};
+  `
+};
 
 export const StyledForm = styled.form`
   width: 100%;
-  height: 15vh;
+  
+  ${betweenStart({ fd: 'column' })};
   ${above.med`
-    width: 80%;
+    width: 60%;
   `};
-
-  div {
-    width: 100%;
-    height: 7vh;
-    position: relative;
-    margin: 5vh 0;
-
-    input {
+  
+  input {
       width: 100%;
       height: 100%;
       background: ${background};
@@ -43,4 +60,12 @@ export const StyledForm = styled.form`
       ${easeOut};
     }
   }
+  
+  ${applyStyleModifiers(FORM_MODIFIERS)}
+`;
+
+export const InputWrap = styled.div`
+  width: 100%;
+  height: 6vh;
+  position: relative;
 `;
