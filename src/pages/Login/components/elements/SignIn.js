@@ -6,13 +6,9 @@ import { Button, InputWrap, StyledForm } from '../../../../elements';
 import { useWindowWidth } from '../../../../hooks/useWindowWidth';
 import { SignInTitle } from './LoginTitles';
 import styled from 'styled-components';
-import {
-  betweenCenter,
-  centerCenter,
-  grey,
-  yellow
-} from '../../../../utilities';
+import { grey, yellow } from '../../../../utilities';
 import { FaGoogle } from 'react-icons/fa';
+import { LoginBtnsWrap } from './LoginContainers';
 
 const SignIn = ({ history }) => {
   const titleIsVisible = useWindowWidth() <= 768 && <SignInTitle />;
@@ -20,23 +16,26 @@ const SignIn = ({ history }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  //* Login to firebase with email and password
+  //* Login to firebase with email and password //
   const handleLogin = async e => {
     e.preventDefault();
     try {
       await auth.signInWithEmailAndPassword(email, password);
       history.push('/reserve');
+      setEmail('');
+      setPassword('');
     } catch (error) {
       alert(error.message);
     }
   };
 
+  //* Login to firebase with google //
   const handleGoogleAuth = async () => {
     try {
       await auth.signInWithPopup(googleAuthProvider);
       history.push('/reserve');
     } catch (error) {
-      alert(error.message);
+      console.log(error.message);
     }
   };
 
@@ -77,40 +76,21 @@ const SignIn = ({ history }) => {
           <p>Forgot your password?</p>
         </ForgotBtn>
       </div>
-      <BtnsWrap>
+      <LoginBtnsWrap>
         <Button type="submit">
           <span>Sign In</span>
         </Button>
-        <Button type="submit" onClick={handleGoogleAuth}>
+        <Button onClick={handleGoogleAuth}>
           <span>
             <FaGoogle />
           </span>
         </Button>
-      </BtnsWrap>
+      </LoginBtnsWrap>
     </StyledForm>
   );
 };
 
 export default withRouter(SignIn);
-
-const BtnsWrap = styled.div`
-  width: 100%;
-  height: 6vh;
-  ${betweenCenter()};
-
-  ${Button} {
-    width: 45%;
-    height: 100%;
-    text-align: center;
-
-    span {
-      position: relative;
-      z-index: 1;
-      background-image: none;
-      ${centerCenter};
-    }
-  }
-`;
 
 const ForgotBtn = styled.button`
   background: transparent;

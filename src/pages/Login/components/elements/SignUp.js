@@ -5,8 +5,7 @@ import { Button, InputWrap, StyledForm } from '../../../../elements';
 import { createUserProfileDocument } from '../../../../contexts/AuthContext';
 import { useWindowWidth } from '../../../../hooks/useWindowWidth';
 import { SignUpTitle } from './LoginTitles';
-import styled from 'styled-components';
-import { betweenCenter } from '../../../../utilities';
+import { LoginBtnsWrap } from './LoginContainers';
 
 const SignUp = ({ history }) => {
   const titleIsVisible = useWindowWidth() <= 768 && <SignUpTitle />;
@@ -70,31 +69,13 @@ const SignUp = ({ history }) => {
         <span />
       </InputWrap>
 
-      <BtnsWrap>
+      <LoginBtnsWrap modifiers="signUp">
         <Button modifiers="big" type="submit">
           <span>Sign Up</span>
         </Button>
-      </BtnsWrap>
+      </LoginBtnsWrap>
     </StyledForm>
   );
 };
 
 export default withRouter(SignUp);
-
-const BtnsWrap = styled.div`
-  width: 100%;
-  ${betweenCenter()};
-  height: 6vh;
-  ${Button} {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    //margin-top: 5vh;
-
-    span {
-      position: relative;
-      z-index: 1;
-      background-image: none;
-    }
-  }
-`;

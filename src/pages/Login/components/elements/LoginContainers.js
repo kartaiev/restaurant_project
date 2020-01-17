@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import {
   above,
   betweenCenter,
@@ -9,6 +9,8 @@ import {
   grey,
   startCenter
 } from '../../../../utilities';
+import { Button } from '../../../../elements';
+import { applyStyleModifiers } from 'styled-components-modifiers';
 
 export const MainLoginContainer = styled.section`
   ${fullScreen};
@@ -52,6 +54,35 @@ export const DesktopLoginContainer = styled.div`
   height: 50%;
   overflow: hidden;
   ${centerCenter}
+`;
+
+const LOGINBTNSWRAP_MODIFIERS = {
+  signUp: () => css`
+    ${Button} {
+      width: 100%;
+    }
+  `
+};
+
+export const LoginBtnsWrap = styled.div`
+  width: 100%;
+  height: 6vh;
+  ${betweenCenter()};
+
+  ${Button} {
+    width: 45%;
+    height: 100%;
+    text-align: center;
+
+    span {
+      position: relative;
+      z-index: 1;
+      background-image: none;
+      ${centerCenter};
+    }
+  }
+
+  ${applyStyleModifiers(LOGINBTNSWRAP_MODIFIERS)}
 `;
 
 export const LoginToggleContainer = styled.div`
