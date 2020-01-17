@@ -1,7 +1,7 @@
 import React, { createContext, useEffect, useState } from 'react';
 import fb, { auth } from '../config/fbConfig';
 
-export const AuthContext = createContext();
+export const AuthContext = createContext(undefined, undefined);
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
   if (!userAuth) return;

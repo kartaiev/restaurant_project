@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { Redirect, withRouter } from 'react-router-dom';
-import { auth } from '../../../../config/fbConfig';
+import { auth, googleAuthProvider } from '../../../../config/fbConfig';
 import { AuthContext } from '../../../../contexts/AuthContext';
 import { Button, InputWrap, StyledForm } from '../../../../elements';
 import { useWindowWidth } from '../../../../hooks/useWindowWidth';
@@ -25,6 +25,15 @@ const SignIn = ({ history }) => {
     e.preventDefault();
     try {
       await auth.signInWithEmailAndPassword(email, password);
+      history.push('/reserve');
+    } catch (error) {
+      alert(error.message);
+    }
+  };
+
+  const handleGoogleAuth = async () => {
+    try {
+      await auth.signInWithPopup(googleAuthProvider);
       history.push('/reserve');
     } catch (error) {
       alert(error.message);
@@ -72,7 +81,7 @@ const SignIn = ({ history }) => {
         <Button type="submit">
           <span>Sign In</span>
         </Button>
-        <Button type="submit">
+        <Button type="submit" onClick={handleGoogleAuth}>
           <span>
             <FaGoogle />
           </span>
@@ -106,11 +115,11 @@ const BtnsWrap = styled.div`
 const ForgotBtn = styled.button`
   background: transparent;
   border: none;
-  cursor: pointer;
   color: ${grey};
   height: 1rem;
 
   &:hover {
     color: ${yellow};
+    cursor: pointer;
   }
 `;

@@ -11,6 +11,7 @@ const DesktopLoginToggle = ({ on, toggle }) => {
     'In order to reserve a table you you must have an account. Would you like to create one?';
   const message2 =
     'Do you have an account already? What are you waiting for? Login!';
+
   return (
     <LoginToggleContainer>
       <LoginToggleContent>

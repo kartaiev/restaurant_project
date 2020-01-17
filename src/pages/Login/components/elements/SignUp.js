@@ -25,7 +25,6 @@ const SignUp = ({ history }) => {
       await createUserProfileDocument(user, {
         displayName: displayName
       });
-
       history.push('/reserve');
     } catch (error) {
       alert(error.message);
