@@ -16,21 +16,28 @@ const SignIn = ({ history }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
+  // useEffect(() => {
+  //   setEmail('');
+  //   setPassword('');
+  //   console.log(email);
+  // }, [email, password]);
+
   //* Login to firebase with email and password //
   const handleLogin = async e => {
     e.preventDefault();
     try {
       await auth.signInWithEmailAndPassword(email, password);
-      history.push('/reserve');
       setEmail('');
       setPassword('');
+      history.push('/reserve');
     } catch (error) {
       alert(error.message);
     }
   };
 
   //* Login to firebase with google //
-  const handleGoogleAuth = async () => {
+  const handleGoogleAuth = async e => {
+    e.preventDefault();
     try {
       await auth.signInWithPopup(googleAuthProvider);
       history.push('/reserve');
@@ -68,6 +75,7 @@ const SignIn = ({ history }) => {
           value={password}
           required
           placeholder="Password"
+          autoComplete="off"
         />
         <span />
       </InputWrap>

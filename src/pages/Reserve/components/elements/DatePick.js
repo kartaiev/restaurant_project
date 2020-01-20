@@ -3,7 +3,7 @@ import MomentUtils from '@date-io/moment';
 import { ThemeProvider } from '@material-ui/styles';
 import React from 'react';
 import { createMuiTheme } from '@material-ui/core';
-import { background, grey, red, yellow } from '../../../utilities';
+import { background, grey, red, yellow } from '../../../../utilities';
 
 const materialTheme = createMuiTheme({
   overrides: {

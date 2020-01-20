@@ -1,18 +1,11 @@
 import React from 'react';
 import DateAndTime from './elements/DateAndTime';
-import { Button } from '../../elements';
+import { Button } from '../../../elements';
 import styled from 'styled-components';
-import { above, betweenCenter } from '../../utilities';
-import { auth } from '../../config/fbConfig';
+import { above, betweenCenter } from '../../../utilities';
+import { auth } from '../../../config/fbConfig';
 
-const SelectDateandTime = ({
-  value,
-  onChange,
-  displayName,
-  toggle,
-  message,
-  label
-}) => {
+const SelectDateandTime = ({ toggle }) => {
   const handleSignOut = async () => {
     try {
       await auth.signOut();
@@ -23,13 +16,7 @@ const SelectDateandTime = ({
 
   return (
     <ReserveWrap>
-      <DateAndTime
-        label={label}
-        message={message}
-        value={value}
-        onChange={onChange}
-        displayName={displayName}
-      />
+      <DateAndTime />
 
       <BtnsWrap>
         <Button onClick={handleSignOut}>
