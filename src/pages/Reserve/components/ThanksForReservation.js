@@ -17,7 +17,7 @@ const ThanksForReservation = ({ toggle }) => {
 
   useEffect(() => {
     handleGetReservationInfo();
-    console.log('test3')
+    console.log('test4');
   }, []);
 
   const handleCancelReservation = () => {
