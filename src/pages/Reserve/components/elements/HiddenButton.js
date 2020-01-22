@@ -17,13 +17,15 @@ export const HiddenButton = styled.button`
 
   span {
     position: absolute;
-    z-index: 100;
     ${elementToCenter};
     font-size: 1.5rem;
-  }
+    color: ${({ state }) =>
+      state === 'selected' ? `${yellow}` : `${background}`};
 
-  &:hover {
-    ${easeOut};
-    color: ${({ state }) => (state === 'selected' ? `${yellow}` : `${red}`)};
+    &:hover {
+      ${easeOut};
+      color: ${({ state }) =>
+        state === 'selected' ? `${background}` : `${red}`};
+    }
   }
 `;

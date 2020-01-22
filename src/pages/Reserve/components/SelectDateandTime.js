@@ -1,11 +1,20 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import DateAndTime from './elements/DateAndTime';
-import { Button } from '../../../elements';
-import styled from 'styled-components';
-import { above, betweenCenter } from '../../../utilities';
+import { Button, ReservedButton } from '../../../elements';
 import { auth } from '../../../config/fbConfig';
+import { ReserveContext } from '../../../contexts/ReserveContext';
+import {
+  DateTimeBtnsWrap,
+  MainDateTimeContainer
+} from './elements/ReserveContainers';
 
 const SelectDateandTime = ({ toggle }) => {
+  const { dateIsCorrect, setMessage } = useContext(ReserveContext);
+
+  useEffect(() => {
+    setMessage('');
+  }, []);
+
   const handleSignOut = async () => {
     try {
       await auth.signOut();
@@ -15,57 +24,20 @@ const SelectDateandTime = ({ toggle }) => {
   };
 
   return (
-    <ReserveWrap>
+    <MainDateTimeContainer>
       <DateAndTime />
 
-      <BtnsWrap>
+      <DateTimeBtnsWrap>
         <Button onClick={handleSignOut}>
           <span>Sign Out</span>
         </Button>
 
-        <Button onClick={toggle}>
+        <ReservedButton disabled={!dateIsCorrect} onClick={toggle}>
           <span>Tables</span>
-        </Button>
-      </BtnsWrap>
-    </ReserveWrap>
+        </ReservedButton>
+      </DateTimeBtnsWrap>
+    </MainDateTimeContainer>
   );
 };
 
 export default SelectDateandTime;
-
-const ReserveWrap = styled.div`
-  width: 85%;
-  height: 80%;
-  ${betweenCenter({ fd: 'column' })};
-  margin-top: 5vh;
-
-  ${above.med`
-    width: 40%;
-    overflow: hidden;    
-  `}
-
-  label {
-    padding-bottom: 1vh;
-  }
-`;
-
-const BtnsWrap = styled.div`
-  width: 100%;
-  ${betweenCenter()};
-  margin-top: 5vh;
-
-  ${above.med`
-    width: 85%;  
-  `}
-
-  ${Button} {
-    width: 45%;
-    height: 100%;
-    text-align: center;
-
-    span {
-      position: relative;
-      z-index: 1;
-    }
-  }
-`;

@@ -8,12 +8,15 @@ const RightTableFunc = () => {
   const { tableSelected, handleTableSelected } = useContext(ReserveContext);
   return Object.keys(tableSelected)
     .filter(table => +table.slice(-1) > 6)
-    .map(table => (
+    .map((table, i) => (
       <HiddenButton
+        key={i}
         onClick={handleTableSelected(`${table}`)}
         state={tableSelected[table] ? 'selected' : ''}
       >
-        <span>{table.slice(-1)}</span>
+        <span state={tableSelected[table] ? 'selected' : ''}>
+          {table.slice(-1)}
+        </span>
         <img
           src={tableSelected[table] ? TableFor4Red : TableFor4Yellow}
           alt="table"

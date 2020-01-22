@@ -9,25 +9,76 @@ export const ReserveContext = createContext(undefined, undefined);
 export const ReserveProvider = ({ children }) => {
   const { currentUser } = useContext(AuthContext);
 
-  //* Date and Time selection //
-  const [selectedDate, setSelectedDate] = useState(new Date());
+  //* Date and Time selection / deselection //
+  const [dateSelected, setDateSelected] = useState(new Date());
 
-  const handleSelectDateAndTime = date => setSelectedDate(date);
+  const handleSelectDateAndTime = date => setDateSelected(date);
 
-  // //* Table availability //
-  // const [tableAvailible, setTableAvailible] = useState({
-  //   table1: false,
-  //   table2: false,
-  //   table3: false,
-  //   table4: false,
-  //   table5: false,
-  //   table6: false,
-  //   table7: false,
-  //   table8: false,
-  //   table9: false
-  // });
+  const handleDateAndTimeDeselected = () => setDateSelected(new Date());
 
-  //* Table selection //
+  //* Warning messages if the wrong time was selected //
+  useEffect(() => {
+    setDateIsCorrect(false);
+  }, []);
+  const [message, setMessage] = useState('');
+  const [label, setLabel] = useState('Select date and time:');
+  const [dateIsCorrect, setDateIsCorrect] = useState(false);
+
+  useDidUpdate(() => {
+    const presentHour = moment(new Date()).hour();
+    const selectedHour = moment(dateSelected).hour();
+    const presentDate = moment(new Date()).date();
+    const date = moment(dateSelected).date();
+    const openingHour = 12;
+    const closingHour = 23;
+    const warningMessage1 =
+      'Sorry, we are not open at this time. Select a time between 12PM and 11PM';
+    const warningMessage2 = `We'd like to be prepared for your visit. So, select a time at least 2 hours from now`;
+
+    if (date !== presentDate) {
+      if (selectedHour > closingHour || selectedHour < openingHour) {
+        setMessage(warningMessage1);
+        setDateIsCorrect(false);
+      } else {
+        setMessage('');
+        setLabel('You selected:');
+        setDateIsCorrect(true);
+      }
+    } else {
+      if (selectedHour > closingHour || selectedHour < openingHour) {
+        setMessage(warningMessage1);
+        setDateIsCorrect(false);
+      } else if (
+        (selectedHour > presentHour && selectedHour < presentHour + 2) ||
+        selectedHour < presentHour
+      ) {
+        setMessage(warningMessage2);
+        setDateIsCorrect(false);
+      } else if (selectedHour === presentHour) {
+        setMessage(warningMessage2);
+        setDateIsCorrect(false);
+      } else {
+        setMessage('');
+        setLabel('You selected:');
+        setDateIsCorrect(true);
+      }
+    }
+  }, [dateSelected]);
+
+  //* Table availability //
+  const [tableAvailible, setTableAvailible] = useState({
+    table1: false,
+    table2: false,
+    table3: false,
+    table4: false,
+    table5: false,
+    table6: false,
+    table7: false,
+    table8: false,
+    table9: false
+  });
+
+  //* Table selection / deselection //
   const [tableSelected, setTableSelected] = useState({
     table1: false,
     table2: false,
@@ -44,8 +95,16 @@ export const ReserveProvider = ({ children }) => {
     setTableSelected({ ...tableSelected, [table]: !tableSelected[table] });
   };
 
+  const handleTableDeselected = () => {
+    const table = Object.keys(tableSelected).find(
+      key => tableSelected[key] === true
+    );
+    setTableSelected({ ...tableSelected, [table]: false });
+  };
+
   //* Table reserved //
   const [tableReserved, setTableReserved] = useState('');
+  const [isReserved, setIsReserved] = useState(false);
 
   useEffect(() => {
     setTableReserved(
@@ -54,63 +113,75 @@ export const ReserveProvider = ({ children }) => {
   }, [tableSelected]);
 
   //* Sending reservation to the back //
-  const handleSendingReservation = async e => {
-    e.preventDefault();
+  const handleSendingReservation = async () => {
     try {
       await fb.collection('reservations').add({
         userId: currentUser.id,
-        dateTime: +selectedDate,
+        dateTime: +dateSelected,
         table: tableReserved
       });
+      setIsReserved(true);
     } catch (error) {
       console.log(error.message);
     }
   };
 
-  //* Warning messages if the wrong time was selected //
-  const [message, setMessage] = useState('');
-  const [label, setLabel] = useState('Select date and time:');
+  //* Getting reservation info from the back //
+  const [reservationInfo, setReservationInfo] = useState({
+    docId: ''
+  });
 
-  useDidUpdate(() => {
-    const presentHour = moment(new Date()).hour();
-    const selectedHour = moment(selectedDate).hour();
-    const presentDate = moment(new Date()).date();
-    const date = moment(selectedDate).date();
-    const openingHour = 12;
-    const closingHour = 23;
-    const warningMessage1 =
-      'Sorry, we are not open at this time. Select time between 12PM and 11PM';
-    const warningMessage2 = `We'd like to be prepared for your visit. So, select time at least 2 hours from now`;
-
-    if (date !== presentDate) {
-      selectedHour > closingHour || selectedHour < openingHour
-        ? setMessage(warningMessage1)
-        : setMessage('');
-      setLabel('You selected:');
-    } else {
-      if (selectedHour > closingHour || selectedHour < openingHour) {
-        setMessage(warningMessage1);
-      } else if (
-        (selectedHour > presentHour && selectedHour < presentHour + 2) ||
-        selectedHour < presentHour
-      ) {
-        setMessage(warningMessage2);
-      } else setMessage('');
-      setLabel('You selected:');
+  const handleGetReservationInfo = async () => {
+    try {
+      await fb
+        .collection('reservations')
+        .where('dateTime', '==', +dateSelected)
+        .where('userId', '==', currentUser.id)
+        .onSnapshot(snapshot =>
+          snapshot.forEach(doc =>
+            setReservationInfo({ ...doc.data(), docId: doc.id })
+          )
+        );
+    } catch (error) {
+      console.log(error.message);
     }
-  }, [selectedDate]);
+  };
+
+  //* Delete reservation from the back //
+  const handleDeleteReservation = async () => {
+    try {
+      await fb
+        .collection('reservations')
+        .doc(reservationInfo.docId)
+        .delete();
+      setReservationInfo({ ...{}, docId: '' });
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
 
   return (
     <ReserveContext.Provider
       value={{
-        selectedDate,
+        dateSelected,
         handleSelectDateAndTime,
         handleSendingReservation,
+        handleDateAndTimeDeselected,
+        dateIsCorrect,
         label,
         message,
         setTableSelected,
         tableSelected,
-        handleTableSelected
+        tableReserved,
+        handleTableSelected,
+        handleTableDeselected,
+        isReserved,
+        setIsReserved,
+        reservationInfo,
+        setReservationInfo,
+        handleGetReservationInfo,
+        handleDeleteReservation,
+        setMessage
       }}
     >
       {children}

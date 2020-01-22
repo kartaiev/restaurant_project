@@ -2,36 +2,28 @@ import React, { useContext } from 'react';
 import { Button, Subtitle } from '../../../elements';
 import { ReserveContext } from '../../../contexts/ReserveContext';
 import {
-  LeftRightTablesContainer,
-  MainReservedContainer,
-  MiddleTablesContainer,
-  ReserveBtnsWrap,
-  TablesContainer
+  MainTablesContainer,
+  TablesBtnsWrap
 } from './elements/ReserveContainers';
-import LeftTablesFunc from './elements/Tables/LeftTablesFunc';
-import RightTableFunc from './elements/Tables/RightTableFunc';
-import MiddleTableFunc from './elements/Tables/MiddleTableFunc';
+
+import AllTables from './elements/Tables/AllTables';
 
 const SelectTable = ({ toggle }) => {
   const { handleSendingReservation } = useContext(ReserveContext);
 
   return (
-    <MainReservedContainer>
+    <MainTablesContainer>
       <Subtitle>Select a table</Subtitle>
-      <TablesContainer>
-        <LeftRightTablesContainer>{LeftTablesFunc()}</LeftRightTablesContainer>
-        <MiddleTablesContainer>{MiddleTableFunc()}</MiddleTablesContainer>
-        <LeftRightTablesContainer>{RightTableFunc()}</LeftRightTablesContainer>
-      </TablesContainer>
-      <ReserveBtnsWrap>
+      <AllTables />
+      <TablesBtnsWrap>
         <Button onClick={toggle}>
           <span>Back</span>
         </Button>
         <Button onClick={handleSendingReservation}>
           <span>Select</span>
         </Button>
-      </ReserveBtnsWrap>
-    </MainReservedContainer>
+      </TablesBtnsWrap>
+    </MainTablesContainer>
   );
 };
 

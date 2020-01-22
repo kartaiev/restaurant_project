@@ -17,9 +17,9 @@ const materialTheme = createMuiTheme({
     MuiInputBase: {
       root: {
         color: grey,
-        cursor: 'pointer',
         border: `${yellow} solid 1px`,
-        width: '100%'
+        width: '100%',
+        cursor: 'pointer'
       },
       input: {
         textAlign: 'center',
@@ -52,7 +52,8 @@ const materialTheme = createMuiTheme({
 
     MuiFormControl: {
       root: {
-        width: '300px'
+        width: '300px',
+        cursor: 'pointer'
       }
     },
 

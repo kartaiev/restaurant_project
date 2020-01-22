@@ -65,3 +65,48 @@ export const Button = styled.button`
 
   ${applyStyleModifiers(BUTTONS_MODIFIERS)}
 `;
+
+export const ReservedButton = styled(Button)`
+  &:disabled {
+    cursor: default;
+
+    &:hover {
+      color: ${grey};
+      border: 1px solid ${grey};
+      cursor: default;
+    }
+
+    &::before {
+      width: calc(100% + 4px);
+      height: calc(100% - 12px);
+      content: '';
+      ${absolute({ x: '-2px', y: '6px' })};
+      background: ${background};
+      ${easeOut};
+      transform: scaleY(1);
+      ${({ type }) => type === 'active' && `transform: scaleY(1)`};
+    }
+
+    &::after {
+      width: calc(100% - 12px);
+      height: calc(100% + 4px);
+      content: '';
+      ${absolute({ y: '-2px', x: '6px' })};
+      background: ${background};
+      ${easeOut};
+      transform: scaleX(1);
+      transition-delay: 0.5s;
+      ${({ type }) => type === 'active' && `transform: scaleX(1)`};
+    }
+
+    &:hover:before {
+      transform: scaleY(1);
+    }
+
+    &:hover:after {
+      transform: scaleX(1);
+    }
+  }
+
+  ${applyStyleModifiers(BUTTONS_MODIFIERS)}
+`;
