@@ -23,6 +23,6 @@ export const Image = styled.img`
   ${applyStyleModifiers(IMAGE_MODIFIERS)};
 `;
 
-export const pageImageElement = (img) => (
-  <Image modifiers="page" src={img} alt='image' />
+export const pageImageElement = img => (
+  <Image modifiers="page" src={img} alt="image" />
 );
