@@ -66,17 +66,37 @@ export const ReserveProvider = ({ children }) => {
   }, [dateSelected]);
 
   //* Table availability //
-  const [tableAvailible, setTableAvailible] = useState({
-    table1: false,
-    table2: false,
-    table3: false,
-    table4: false,
-    table5: false,
-    table6: false,
-    table7: false,
-    table8: false,
-    table9: false
-  });
+  const [tablesNotAvailable, setTablesNotAvailable] = useState([]);
+
+  const checkingAvailability = async () => {
+    try {
+      await fb
+        .collection('reservations')
+        .where('dateTime', '>', dateSelected - 3600000)
+        .where('dateTime', '<', dateSelected + 3600000)
+        .onSnapshot(querySnapshot => {
+          const notAvail = [];
+          querySnapshot.forEach(doc => notAvail.push(doc.data().table));
+          setTablesNotAvailable(notAvail);
+        });
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
+
+  useEffect(() => {
+    checkingAvailability();
+    console.log(tablesNotAvailable);
+  }, [dateSelected]);
+
+  //* Which table to render //
+
+  const whichTable = (table, greyTable, redTable, yellowTable) =>
+    tablesNotAvailable.indexOf(table) !== -1
+      ? greyTable
+      : tableSelected[table]
+      ? redTable
+      : yellowTable;
 
   //* Table selection / deselection //
   const [tableSelected, setTableSelected] = useState({
@@ -181,7 +201,9 @@ export const ReserveProvider = ({ children }) => {
         setReservationInfo,
         handleGetReservationInfo,
         handleDeleteReservation,
-        setMessage
+        setMessage,
+        tablesNotAvailable,
+        whichTable
       }}
     >
       {children}

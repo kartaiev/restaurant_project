@@ -1,5 +1,9 @@
 import React, { useContext, useEffect } from 'react';
-import { MainThanksContainer, ThanksBtnsWrap, ThanksReservationInfo } from './elements/ReserveContainers';
+import {
+  MainThanksContainer,
+  ThanksBtnsWrap,
+  ThanksReservationInfo
+} from './elements/ReserveContainers';
 import { Button, Subtitle } from '../../../elements';
 import { ReserveContext } from '../../../contexts/ReserveContext';
 import moment from 'moment';
@@ -12,13 +16,17 @@ const ThanksForReservation = ({ toggle }) => {
     handleDateAndTimeDeselected,
     handleDeleteReservation,
     handleTableDeselected,
-    setIsReserved
+    setIsReserved,
+    reservationInfo
   } = useContext(ReserveContext);
 
   useEffect(() => {
     handleGetReservationInfo();
-    console.log('test4');
   }, []);
+
+  useEffect(() => {
+    console.log(reservationInfo);
+  }, [reservationInfo]);
 
   const handleCancelReservation = () => {
     setIsReserved(false);

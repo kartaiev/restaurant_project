@@ -28,4 +28,16 @@ export const HiddenButton = styled.button`
         state === 'selected' ? `${background}` : `${red}`};
     }
   }
+
+  &:disabled {
+    cursor: default;
+
+    span {
+      color: ${background};
+
+      &:hover {
+        color: ${background};
+      }
+    }
+  }
 `;
