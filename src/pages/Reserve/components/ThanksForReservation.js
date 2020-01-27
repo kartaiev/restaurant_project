@@ -1,4 +1,5 @@
 import React, { useContext, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import {
   MainThanksContainer,
   ThanksBtnsWrap,
@@ -8,32 +9,24 @@ import { Button, Subtitle } from '../../../elements';
 import { ReserveContext } from '../../../contexts/ReserveContext';
 import moment from 'moment';
 
-const ThanksForReservation = ({ toggle }) => {
+const ThanksForReservation = () => {
   const {
     tableReserved,
     dateSelected,
     handleGetReservationInfo,
     handleDateAndTimeDeselected,
     handleDeleteReservation,
-    handleTableDeselected,
-    setIsReserved,
-    reservationInfo
+    handleTableDeselected
   } = useContext(ReserveContext);
 
   useEffect(() => {
     handleGetReservationInfo();
   }, []);
 
-  useEffect(() => {
-    console.log(reservationInfo);
-  }, [reservationInfo]);
-
   const handleCancelReservation = () => {
-    setIsReserved(false);
     handleDeleteReservation();
     handleTableDeselected();
     handleDateAndTimeDeselected();
-    toggle();
   };
 
   return (
@@ -49,9 +42,16 @@ const ThanksForReservation = ({ toggle }) => {
         </p>
       </ThanksReservationInfo>
       <ThanksBtnsWrap>
-        <Button onClick={handleCancelReservation}>
-          <span>Cancel your reservation</span>
-        </Button>
+        <Link to="/reserve">
+          <Button onClick={handleCancelReservation}>
+            <span>Cancel</span>
+          </Button>
+        </Link>
+        <Link to="/reserve/reservations">
+          <Button>
+            <span>Reservations</span>
+          </Button>
+        </Link>
       </ThanksBtnsWrap>
     </MainThanksContainer>
   );

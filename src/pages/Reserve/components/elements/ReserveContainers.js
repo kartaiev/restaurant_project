@@ -101,17 +101,23 @@ export const TablesBtnsWrap = styled.div`
       z-index: 1;
     }
   }
+  a {
+    width: 45%;
+    height: 100%;
+
+    ${Button} {
+      width: 100%;
+      height: 100%;
+      text-align: center;
+    }
+  }
 `;
 
 export const DateTimeBtnsWrap = styled(TablesBtnsWrap)``;
 
 export const MainThanksContainer = styled(MainTablesContainer)``;
 
-export const ThanksBtnsWrap = styled(TablesBtnsWrap)`
-  ${Button} {
-    width: 100%;
-  }
-`;
+export const ThanksBtnsWrap = styled(TablesBtnsWrap)``;
 
 export const ThanksReservationInfo = styled.div`
   ${betweenStart({ fd: 'column' })};

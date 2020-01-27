@@ -1,4 +1,5 @@
 import React, { useContext, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import DateAndTime from './elements/DateAndTime';
 import { Button, ReservedButton } from '../../../elements';
 import { auth } from '../../../config/fbConfig';
@@ -8,7 +9,7 @@ import {
   MainDateTimeContainer
 } from './elements/ReserveContainers';
 
-const SelectDateandTime = ({ toggle }) => {
+const SelectDateandTime = () => {
   const { dateIsCorrect, setMessage } = useContext(ReserveContext);
 
   useEffect(() => {
@@ -32,9 +33,11 @@ const SelectDateandTime = ({ toggle }) => {
           <span>Sign Out</span>
         </Button>
 
-        <ReservedButton disabled={!dateIsCorrect} onClick={toggle}>
-          <span>Tables</span>
-        </ReservedButton>
+        <Link to="/reserve/table">
+          <ReservedButton disabled={!dateIsCorrect}>
+            <span>Tables</span>
+          </ReservedButton>
+        </Link>
       </DateTimeBtnsWrap>
     </MainDateTimeContainer>
   );

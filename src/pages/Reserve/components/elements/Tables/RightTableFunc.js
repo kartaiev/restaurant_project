@@ -12,6 +12,7 @@ const RightTableFunc = () => {
     whichTable,
     tablesNotAvailable
   } = useContext(ReserveContext);
+
   return Object.keys(tableSelected)
     .filter(table => +table.slice(-1) > 6)
     .map((table, i) => (

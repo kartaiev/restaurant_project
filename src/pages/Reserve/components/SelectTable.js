@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import { Button, Subtitle } from '../../../elements';
 import { ReserveContext } from '../../../contexts/ReserveContext';
 import {
@@ -8,7 +9,7 @@ import {
 
 import AllTables from './elements/Tables/AllTables';
 
-const SelectTable = ({ toggle }) => {
+const SelectTable = () => {
   const { handleSendingReservation } = useContext(ReserveContext);
 
   return (
@@ -16,12 +17,16 @@ const SelectTable = ({ toggle }) => {
       <Subtitle>Select a table</Subtitle>
       <AllTables />
       <TablesBtnsWrap>
-        <Button onClick={toggle}>
-          <span>Back</span>
-        </Button>
-        <Button onClick={handleSendingReservation}>
-          <span>Select</span>
-        </Button>
+        <Link to="/reserve">
+          <Button>
+            <span>Back</span>
+          </Button>
+        </Link>
+        <Link to="/reserve/thanks">
+          <Button onClick={handleSendingReservation}>
+            <span>Select</span>
+          </Button>
+        </Link>
       </TablesBtnsWrap>
     </MainTablesContainer>
   );

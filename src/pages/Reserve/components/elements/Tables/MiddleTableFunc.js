@@ -12,6 +12,7 @@ const MiddleTableFunc = () => {
     whichTable,
     tablesNotAvailable
   } = useContext(ReserveContext);
+
   return Object.keys(tableSelected)
     .filter(table => +table.slice(-1) > 4 && +table.slice(-1) < 7)
     .map((table, i) => (

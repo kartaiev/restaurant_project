@@ -124,7 +124,6 @@ export const ReserveProvider = ({ children }) => {
 
   //* Table reserved //
   const [tableReserved, setTableReserved] = useState('');
-  const [isReserved, setIsReserved] = useState(false);
 
   useEffect(() => {
     setTableReserved(
@@ -140,7 +139,6 @@ export const ReserveProvider = ({ children }) => {
         dateTime: +dateSelected,
         table: tableReserved
       });
-      setIsReserved(true);
     } catch (error) {
       console.log(error.message);
     }
@@ -157,8 +155,8 @@ export const ReserveProvider = ({ children }) => {
         .collection('reservations')
         .where('dateTime', '==', +dateSelected)
         .where('userId', '==', currentUser.id)
-        .onSnapshot(snapshot =>
-          snapshot.forEach(doc =>
+        .onSnapshot(querySnapshot =>
+          querySnapshot.forEach(doc =>
             setReservationInfo({ ...doc.data(), docId: doc.id })
           )
         );
@@ -195,8 +193,6 @@ export const ReserveProvider = ({ children }) => {
         tableReserved,
         handleTableSelected,
         handleTableDeselected,
-        isReserved,
-        setIsReserved,
         reservationInfo,
         setReservationInfo,
         handleGetReservationInfo,
