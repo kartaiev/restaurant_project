@@ -182,6 +182,7 @@ export const ReserveProvider = ({ children }) => {
     <ReserveContext.Provider
       value={{
         dateSelected,
+        setDateSelected,
         handleSelectDateAndTime,
         handleSendingReservation,
         handleDateAndTimeDeselected,

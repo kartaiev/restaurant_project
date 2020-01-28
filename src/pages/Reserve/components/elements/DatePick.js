@@ -14,6 +14,21 @@ const materialTheme = createMuiTheme({
       }
     },
 
+    MuiButtonBase: {
+      root: {
+        cursor: 'pointer'
+      }
+    },
+
+    MuiButton: {
+      root: {
+        cursor: 'pointer'
+      },
+      label: {
+        color: background
+      }
+    },
+
     MuiInputBase: {
       root: {
         color: grey,
@@ -22,6 +37,7 @@ const materialTheme = createMuiTheme({
         cursor: 'pointer'
       },
       input: {
+        color: grey,
         textAlign: 'center',
         width: '100%'
       }
