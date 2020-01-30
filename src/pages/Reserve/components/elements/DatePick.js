@@ -1,9 +1,10 @@
 import { DateTimePicker, MuiPickersUtilsProvider } from '@material-ui/pickers';
 import MomentUtils from '@date-io/moment';
 import { ThemeProvider } from '@material-ui/styles';
-import React from 'react';
+import React, { useContext } from 'react';
 import { createMuiTheme } from '@material-ui/core';
 import { background, grey, red, yellow } from '../../../../utilities';
+import { ReserveContext } from '../../../../contexts/ReserveContext';
 
 const materialTheme = createMuiTheme({
   overrides: {
@@ -123,7 +124,8 @@ const materialTheme = createMuiTheme({
   }
 });
 
-export const DatePick = ({ onChange, value }) => {
+export const DatePick = () => {
+  const { dateSelected, setDateSelected } = useContext(ReserveContext);
   let date = new Date();
 
   return (
@@ -133,8 +135,8 @@ export const DatePick = ({ onChange, value }) => {
           minDate={new Date()}
           maxDate={date.setDate(date.getDate() + 7)}
           inputVariant="outlined"
-          value={value}
-          onChange={onChange}
+          value={dateSelected}
+          onChange={date => setDateSelected(date)}
         />
       </MuiPickersUtilsProvider>
     </ThemeProvider>

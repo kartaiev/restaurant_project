@@ -2,10 +2,14 @@ import styled from 'styled-components';
 import {
   above,
   aroundCenter,
+  aroundStart,
   betweenCenter,
   betweenStart,
   centerCenter,
+  easeOut,
   fullScreen,
+  grey,
+  red,
   yellow
 } from '../../../../utilities';
 import { Button, Subtitle } from '../../../../elements';
@@ -42,6 +46,8 @@ export const MainTablesContainer = styled.div`
 
 export const MainDateTimeContainer = styled(MainTablesContainer)``;
 
+export const MainReservationsContainer = styled(MainTablesContainer)``;
+
 export const DateTimeContainer = styled.div`
   ${centerCenter({ fd: 'column' })};
   ${above.med`
@@ -51,6 +57,16 @@ export const DateTimeContainer = styled.div`
   p {
     text-align: center;
     color: ${rgba('#cccccc', 0.6)};
+  }
+
+  a {
+    color: ${rgba('#cccccc', 0.6)};
+    margin-top: 5vh;
+
+    &:hover {
+      cursor: pointer;
+      color: ${yellow};
+    }
   }
 `;
 
@@ -131,4 +147,36 @@ export const ThanksReservationInfo = styled.div`
       color: ${yellow};
     }
   }
+`;
+
+export const ReservationsContainer = styled.div`
+  width: 100%;
+  ${betweenCenter({ fd: 'column' })};
+`;
+
+export const ReservationWrap = styled.div`
+  width: 100%;
+  height: 12vh;
+  ${betweenCenter};
+  border-bottom: 1px solid ${rgba('#cccccc', 0.4)};
+
+  svg {
+    fill: ${grey};
+    width: 25px;
+    height: 25px;
+    ${easeOut};
+
+    &:hover {
+      fill: ${red};
+    }
+  }
+
+  ${above.med`
+   width: 85%;
+  `}
+`;
+
+export const ReservationContent = styled.div`
+  height: 100%;
+  ${aroundStart({ fd: 'column' })};
 `;

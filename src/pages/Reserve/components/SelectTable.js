@@ -1,6 +1,6 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Button, Subtitle } from '../../../elements';
+import { Button, ReservedButton, Subtitle } from '../../../elements';
 import { ReserveContext } from '../../../contexts/ReserveContext';
 import {
   MainTablesContainer,
@@ -10,7 +10,16 @@ import {
 import AllTables from './elements/Tables/AllTables';
 
 const SelectTable = () => {
-  const { handleSendingReservation } = useContext(ReserveContext);
+  const {
+    handleSendingReservation,
+    checkingAvailability,
+    tableSelected,
+    dateSelected
+  } = useContext(ReserveContext);
+
+  useEffect(() => {
+    checkingAvailability();
+  }, [dateSelected]);
 
   return (
     <MainTablesContainer>
@@ -23,9 +32,12 @@ const SelectTable = () => {
           </Button>
         </Link>
         <Link to="/reserve/thanks">
-          <Button onClick={handleSendingReservation}>
+          <ReservedButton
+            disabled={!Object.values(tableSelected).find(val => val === true)}
+            onClick={handleSendingReservation}
+          >
             <span>Select</span>
-          </Button>
+          </ReservedButton>
         </Link>
       </TablesBtnsWrap>
     </MainTablesContainer>

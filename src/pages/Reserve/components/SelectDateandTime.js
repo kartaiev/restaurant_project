@@ -2,7 +2,6 @@ import React, { useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import DateAndTime from './elements/DateAndTime';
 import { Button, ReservedButton } from '../../../elements';
-import { auth } from '../../../config/fbConfig';
 import { ReserveContext } from '../../../contexts/ReserveContext';
 import {
   DateTimeBtnsWrap,
@@ -10,19 +9,13 @@ import {
 } from './elements/ReserveContainers';
 
 const SelectDateandTime = () => {
-  const { dateIsCorrect, setMessage } = useContext(ReserveContext);
+  const { dateIsCorrect, setMessage, handleSignOut } = useContext(
+    ReserveContext
+  );
 
   useEffect(() => {
     setMessage('');
   }, []);
-
-  const handleSignOut = async () => {
-    try {
-      await auth.signOut();
-    } catch (error) {
-      console.log(error.message);
-    }
-  };
 
   return (
     <MainDateTimeContainer>

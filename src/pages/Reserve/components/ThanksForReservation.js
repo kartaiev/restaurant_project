@@ -14,20 +14,12 @@ const ThanksForReservation = () => {
     tableReserved,
     dateSelected,
     handleGetReservationInfo,
-    handleDateAndTimeDeselected,
-    handleDeleteReservation,
-    handleTableDeselected
+    handleCancelReservation
   } = useContext(ReserveContext);
 
   useEffect(() => {
     handleGetReservationInfo();
   }, []);
-
-  const handleCancelReservation = () => {
-    handleDeleteReservation();
-    handleTableDeselected();
-    handleDateAndTimeDeselected();
-  };
 
   return (
     <MainThanksContainer>

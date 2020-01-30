@@ -3,6 +3,7 @@ import { DatePick, Subtitle } from '../../../../elements';
 import { AuthContext } from '../../../../contexts/AuthContext';
 import { ReserveContext } from '../../../../contexts/ReserveContext';
 import { DateTimeContainer, Warning } from './ReserveContainers';
+import { Link } from 'react-router-dom';
 
 const DateAndTime = () => {
   const { currentUser } = useContext(AuthContext);
@@ -18,6 +19,7 @@ const DateAndTime = () => {
           You can reserve 7 days in advance. <br />
           We are open 12PM – 11PM. <br />
         </p>
+        <Link to="/reserve/reservations">Your reservations</Link>
         <Warning>{message}</Warning>
       </DateTimeContainer>
 
@@ -28,7 +30,6 @@ const DateAndTime = () => {
           value={dateSelected}
           onChange={handleSelectDateAndTime}
         />
-
       </DateTimeContainer>
     </>
   );

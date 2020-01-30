@@ -26,6 +26,12 @@ export const aroundCenter = ({ fd = 'row' } = {}) => css`
   justify-content: space-around;
   align-items: center;
 `;
+export const aroundStart = ({ fd = 'row' } = {}) => css`
+  display: flex;
+  flex-direction: ${fd};
+  justify-content: space-around;
+  align-items: flex-start;
+`;
 
 export const betweenStart = ({ fd = 'row' } = {}) => css`
   display: flex;

@@ -4,8 +4,16 @@ import TableFor2Red from '../../../../../assets/images/tables/TableFor2Red.png';
 import TableFor2Yellow from '../../../../../assets/images/tables/TableFor2Yellow.png';
 import TableFor2Grey from '../../../../../assets/images/tables/TableFor2Grey.png';
 import { ReserveContext } from '../../../../../contexts/ReserveContext';
+import { useSpring } from 'react-spring';
 
 const LeftTableFunc = () => {
+  const fade = useSpring({
+    from: {
+      opacity: 0
+    },
+    opacity: 1
+  });
+
   const {
     tableSelected,
     handleTableSelected,
@@ -26,6 +34,7 @@ const LeftTableFunc = () => {
           {table.slice(-1)}
         </span>
         <img
+          style={fade}
           src={whichTable(table, TableFor2Grey, TableFor2Red, TableFor2Yellow)}
           alt="table"
         />

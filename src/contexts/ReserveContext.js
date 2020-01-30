@@ -2,17 +2,24 @@ import React, { createContext, useContext, useEffect, useState } from 'react';
 import { AuthContext } from './AuthContext';
 import useDidUpdate from '../hooks/useDidUpdate';
 import moment from 'moment';
-import fb from '../config/fbConfig';
+import fb, { auth } from '../config/fbConfig';
 
 export const ReserveContext = createContext(undefined, undefined);
 
 export const ReserveProvider = ({ children }) => {
   const { currentUser } = useContext(AuthContext);
 
+  //* Signing out //
+  const handleSignOut = async () => {
+    try {
+      await auth.signOut();
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
+
   //* Date and Time selection / deselection //
   const [dateSelected, setDateSelected] = useState(new Date());
-
-  const handleSelectDateAndTime = date => setDateSelected(date);
 
   const handleDateAndTimeDeselected = () => setDateSelected(new Date());
 
@@ -67,7 +74,6 @@ export const ReserveProvider = ({ children }) => {
 
   //* Table availability //
   const [tablesNotAvailable, setTablesNotAvailable] = useState([]);
-
   const checkingAvailability = async () => {
     try {
       await fb
@@ -75,19 +81,14 @@ export const ReserveProvider = ({ children }) => {
         .where('dateTime', '>', dateSelected - 3600000)
         .where('dateTime', '<', dateSelected + 3600000)
         .onSnapshot(querySnapshot => {
-          const notAvail = [];
-          querySnapshot.forEach(doc => notAvail.push(doc.data().table));
-          setTablesNotAvailable(notAvail);
+          querySnapshot.forEach(doc =>
+            setTablesNotAvailable(prevState => [...prevState, doc.data().table])
+          );
         });
     } catch (error) {
       console.log(error.message);
     }
   };
-
-  useEffect(() => {
-    checkingAvailability();
-    console.log(tablesNotAvailable);
-  }, [dateSelected]);
 
   //* Which table to render //
 
@@ -132,7 +133,7 @@ export const ReserveProvider = ({ children }) => {
   }, [tableSelected]);
 
   //* Sending reservation to the back //
-  const handleSendingReservation = async () => {
+  const handleSendingReserveToUserAcc = async () => {
     try {
       await fb.collection('reservations').add({
         userId: currentUser.id,
@@ -142,6 +143,26 @@ export const ReserveProvider = ({ children }) => {
     } catch (error) {
       console.log(error.message);
     }
+  };
+
+  const handleSendingReserveToRestaurant = async () => {
+    try {
+      await fb
+        .collection('users')
+        .doc(currentUser.id)
+        .collection('orders')
+        .add({
+          dateTime: +dateSelected,
+          table: tableReserved
+        });
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
+
+  const handleSendingReservation = async () => {
+    await handleSendingReserveToUserAcc();
+    await handleSendingReserveToRestaurant();
   };
 
   //* Getting reservation info from the back //
@@ -178,12 +199,65 @@ export const ReserveProvider = ({ children }) => {
     }
   };
 
+  //* Cancel reservation //
+  const handleCancelReservation = async () => {
+    await handleDeleteReservation();
+    handleTableDeselected();
+    handleDateAndTimeDeselected();
+  };
+
+  //* Getting all reservations //
+  const [reservations, setReservations] = useState([]);
+  const [fetching, setFetching] = useState(false);
+
+  const handleGettingAllReservations = async () => {
+    try {
+      setFetching(true);
+      await fb
+        .collection('users')
+        .doc(currentUser.id)
+        .collection('orders')
+        .onSnapshot(querySnapshot =>
+          querySnapshot
+            .docChanges()
+            .forEach(
+              change =>
+                change.type === 'added' &&
+                setReservations(prevState => [...prevState, change.doc.data()])
+            )
+        );
+
+      setFetching(false);
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
+
+  //* For pagination //
+  const [currPage, setCurrPage] = useState(1);
+  const [reservationsPerPage] = useState(5);
+
+  const indexOfLastReservation = currPage * reservationsPerPage;
+  const indexOfFirstReservation = indexOfLastReservation - reservationsPerPage;
+  const sortedReservations = reservations.sort((a, b) => {
+    return b.dateTime - a.dateTime;
+  });
+  const currReservations = sortedReservations.slice(
+    indexOfFirstReservation,
+    indexOfLastReservation
+  );
+
+  const paginate = num => setCurrPage(num);
+
+  //*==========================//
+
   return (
     <ReserveContext.Provider
       value={{
+        handleSignOut,
         dateSelected,
         setDateSelected,
-        handleSelectDateAndTime,
+        checkingAvailability,
         handleSendingReservation,
         handleDateAndTimeDeselected,
         dateIsCorrect,
@@ -197,10 +271,16 @@ export const ReserveProvider = ({ children }) => {
         reservationInfo,
         setReservationInfo,
         handleGetReservationInfo,
-        handleDeleteReservation,
+        handleCancelReservation,
         setMessage,
         tablesNotAvailable,
-        whichTable
+        whichTable,
+        handleGettingAllReservations,
+        reservations,
+        fetching,
+        currReservations,
+        reservationsPerPage,
+        paginate
       }}
     >
       {children}
