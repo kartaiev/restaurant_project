@@ -15,6 +15,15 @@ export const HiddenButton = styled.button`
   border: none;
   cursor: pointer;
 
+  svg {
+    width: 25px;
+    height: 25px;
+
+    &:hover {
+      fill: ${yellow};
+    }
+  }
+
   span {
     position: absolute;
     ${elementToCenter};
