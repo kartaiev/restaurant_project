@@ -75,16 +75,15 @@ export const ReserveProvider = ({ children }) => {
   //* Table availability //
   const [tablesNotAvailable, setTablesNotAvailable] = useState([]);
   const checkingAvailability = async () => {
+    setTablesNotAvailable([])
     try {
-      await fb
-        .collection('reservations')
+      fb
+        .collectionGroup('orders')
         .where('dateTime', '>', dateSelected - 3600000)
         .where('dateTime', '<', dateSelected + 3600000)
-        .onSnapshot(querySnapshot => {
-          querySnapshot.forEach(doc =>
-            setTablesNotAvailable(prevState => [...prevState, doc.data().table])
-          );
-        });
+        .onSnapshot(snapshot => snapshot.forEach(doc => setTablesNotAvailable(prevState => [...prevState, doc.data().table])));
+
+      console.log(tablesNotAvailable);
     } catch (error) {
       console.log(error.message);
     }
@@ -133,10 +132,11 @@ export const ReserveProvider = ({ children }) => {
   }, [tableSelected]);
 
   //* Sending reservation to the back //
-  const handleSendingReserveToUserAcc = async () => {
+  const handleSendingReserveToRestaurant = async () => {
     try {
       await fb.collection('reservations').add({
         userId: currentUser.id,
+        name: currentUser.displayName,
         dateTime: +dateSelected,
         table: tableReserved
       });
@@ -145,7 +145,7 @@ export const ReserveProvider = ({ children }) => {
     }
   };
 
-  const handleSendingReserveToRestaurant = async () => {
+  const handleSendingReserveToUserAcc = async () => {
     try {
       await fb
         .collection('users')
@@ -165,45 +165,21 @@ export const ReserveProvider = ({ children }) => {
     await handleSendingReserveToRestaurant();
   };
 
-  //* Getting reservation info from the back //
-  const [reservationInfo, setReservationInfo] = useState({
-    docId: ''
-  });
-
-  const handleGetReservationInfo = async () => {
-    try {
-      await fb
-        .collection('reservations')
-        .where('dateTime', '==', +dateSelected)
-        .where('userId', '==', currentUser.id)
-        .onSnapshot(querySnapshot =>
-          querySnapshot.forEach(doc =>
-            setReservationInfo({ ...doc.data(), docId: doc.id })
-          )
-        );
-    } catch (error) {
-      console.log(error.message);
-    }
-  };
-
   //* Delete reservation from the back //
-  const handleDeleteReservation = async () => {
-    try {
-      await fb
-        .collection('reservations')
-        .doc(reservationInfo.docId)
-        .delete();
-      setReservationInfo({ ...{}, docId: '' });
-    } catch (error) {
-      console.log(error.message);
-    }
-  };
 
-  //* Cancel reservation //
-  const handleCancelReservation = async () => {
-    await handleDeleteReservation();
-    handleTableDeselected();
-    handleDateAndTimeDeselected();
+  const handleDeleteReserveFromUser = id => {
+    return async () => {
+      try {
+        await fb
+          .collection('users')
+          .doc(currentUser.id)
+          .collection('orders')
+          .doc(id)
+          .delete();
+      } catch (error) {
+        console.log(error.message);
+      }
+    };
   };
 
   //* Getting all reservations //
@@ -213,21 +189,35 @@ export const ReserveProvider = ({ children }) => {
   const handleGettingAllReservations = async () => {
     try {
       setFetching(true);
-      await fb
+      setReservations([]);
+      fb
         .collection('users')
         .doc(currentUser.id)
         .collection('orders')
-        .onSnapshot(querySnapshot =>
-          querySnapshot
-            .docChanges()
-            .forEach(
-              change =>
-                change.type === 'added' &&
-                setReservations(prevState => [...prevState, change.doc.data()])
-            )
-        );
-
+        .onSnapshot(querySnapshot => querySnapshot.docChanges().forEach(change => {
+          change.type === 'added' &&
+            setReservations(state => [
+              ...state,
+              { id: change.doc.id, ...change.doc.data() }
+            ]);
+        }));
       setFetching(false);
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
+  const filterReservations = async () => {
+    try {
+      fb
+        .collection('users')
+        .doc(currentUser.id)
+        .collection('orders')
+        .onSnapshot(querySnapshot => querySnapshot.docChanges().forEach(change => {
+          if (change.type === 'removed') {
+            const reservs = reservations.filter(reserv => reserv.id !== change.doc.id);
+            setReservations([...reservs]);
+          }
+        }));
     } catch (error) {
       console.log(error.message);
     }
@@ -268,19 +258,18 @@ export const ReserveProvider = ({ children }) => {
         tableReserved,
         handleTableSelected,
         handleTableDeselected,
-        reservationInfo,
-        setReservationInfo,
-        handleGetReservationInfo,
-        handleCancelReservation,
         setMessage,
         tablesNotAvailable,
         whichTable,
         handleGettingAllReservations,
         reservations,
+        setReservations,
         fetching,
         currReservations,
         reservationsPerPage,
-        paginate
+        paginate,
+        handleDeleteReserveFromUser,
+        filterReservations
       }}
     >
       {children}

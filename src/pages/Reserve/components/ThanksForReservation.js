@@ -10,16 +10,7 @@ import { ReserveContext } from '../../../contexts/ReserveContext';
 import moment from 'moment';
 
 const ThanksForReservation = () => {
-  const {
-    tableReserved,
-    dateSelected,
-    handleGetReservationInfo,
-    handleCancelReservation
-  } = useContext(ReserveContext);
-
-  useEffect(() => {
-    handleGetReservationInfo();
-  }, []);
+  const { tableReserved, dateSelected } = useContext(ReserveContext);
 
   return (
     <MainThanksContainer>
@@ -34,14 +25,9 @@ const ThanksForReservation = () => {
         </p>
       </ThanksReservationInfo>
       <ThanksBtnsWrap>
-        <Link to="/reserve">
-          <Button onClick={handleCancelReservation}>
-            <span>Cancel</span>
-          </Button>
-        </Link>
         <Link to="/reserve/reservations">
           <Button>
-            <span>Reservations</span>
+            <span>Your reservations</span>
           </Button>
         </Link>
       </ThanksBtnsWrap>

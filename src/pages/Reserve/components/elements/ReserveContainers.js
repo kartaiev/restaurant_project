@@ -133,7 +133,14 @@ export const DateTimeBtnsWrap = styled(TablesBtnsWrap)``;
 
 export const MainThanksContainer = styled(MainTablesContainer)``;
 
-export const ThanksBtnsWrap = styled(TablesBtnsWrap)``;
+export const ThanksBtnsWrap = styled(TablesBtnsWrap)`
+  a {
+    width: 100%;
+    ${Button} {
+      width: 100%;
+    }
+  }
+`;
 
 export const ThanksReservationInfo = styled.div`
   ${betweenStart({ fd: 'column' })};
@@ -179,4 +186,9 @@ export const ReservationWrap = styled.div`
 export const ReservationContent = styled.div`
   height: 100%;
   ${aroundStart({ fd: 'column' })};
+`;
+
+export const ReservationsBtnWrap = styled.div`
+  ${betweenCenter};
+  width: 20%;
 `;

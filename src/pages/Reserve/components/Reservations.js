@@ -2,56 +2,63 @@ import React, { useContext, useEffect } from 'react';
 import {
   MainReservationsContainer,
   ReservationContent,
+  ReservationsBtnWrap,
   ReservationsContainer,
   ReservationWrap
 } from './elements/ReserveContainers';
 import { Subtitle } from '../../../elements';
 import { Roller } from 'react-awesome-spinners';
-import {
-  centerCenter,
-  easeOut,
-  fixed,
-  grey,
-  red,
-  yellow
-} from '../../../utilities';
 import { ReserveContext } from '../../../contexts/ReserveContext';
 import moment from 'moment';
-import styled from 'styled-components';
 import Pagination from './elements/Pagination';
 import { HiddenButton } from './elements/HiddenButton';
+import { FiEdit } from 'react-icons/fi';
+import { DelBtn, EditBtn } from './elements/PseudoBtns';
 
 const Reservations = () => {
   const {
     handleGettingAllReservations,
     fetching,
     currReservations,
-    handleDeleteReservation
+    setReservations,
+    handleDeleteReserveFromUser,
+    filterReservations
   } = useContext(ReserveContext);
 
   useEffect(() => {
     handleGettingAllReservations();
-  }, []);
+  }, [setReservations]);
+
+  useEffect(() => {
+    filterReservations();
+  }, [filterReservations]);
 
   return (
     <MainReservationsContainer>
       <Subtitle>Reservations:</Subtitle>
       <ReservationsContainer>
         {fetching ? (
-          <Roller style={{ color: yellow }} />
+          <Roller />
         ) : (
           currReservations.map((doc, id) => (
             <ReservationWrap key={id}>
               <ReservationContent>
                 <p>{moment(doc.dateTime).format('LLL')}</p>
-                <p>{doc.table}</p>
+                <p>table {doc.table.slice(-1)}</p>
               </ReservationContent>
-              <HiddenButton onClick={handleDeleteReservation}>
-                <DelBtn>
-                  <span />
-                  <span />
-                </DelBtn>
-              </HiddenButton>
+              <ReservationsBtnWrap>
+                <HiddenButton>
+                  <EditBtn>
+                    <FiEdit />
+                  </EditBtn>
+                </HiddenButton>
+                <HiddenButton onClick={handleDeleteReserveFromUser(doc.id)}>
+                  <DelBtn>
+                    <span />
+                    <span />
+                  </DelBtn>
+                </HiddenButton>
+              </ReservationsBtnWrap>
             </ReservationWrap>
           ))
         )}
@@ -62,32 +69,3 @@ const Reservations = () => {
 };
 
 export default Reservations;
-
-const DelBtn = styled.div`
-  height: 10vh;
-  width: 25px;
-  ${centerCenter};
-  cursor: pointer;
-  ${fixed({ x: '3%', y: '1,5rem', xProp: 'right' })};
-
-  &:hover > span {
-    background-color: ${red};
-  }
-
-  span {
-    width: 100%;
-    height: 2px;
-    background-color: ${grey};
-    position: absolute;
-    left: 0;
-    ${easeOut};
-
-    &:nth-child(1) {
-      transform: rotate(45deg);
-    }
-
-    &:nth-child(2) {
-      transform: rotate(-45deg);
-    }
-  }
-`;
