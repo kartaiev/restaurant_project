@@ -5,7 +5,7 @@ import { PaginationNav } from './PaginationNav';
 const Pagination = () => {
   const pageNums = [];
 
-  const { reservationsPerPage, reservations, paginate } = useContext(
+  const { reservationsPerPage, reservations, handlePaginate } = useContext(
     ReserveContext
   );
 
@@ -23,7 +23,7 @@ const Pagination = () => {
         {pageNums.map(num => {
           return (
             <li key={num}>
-              <a onClick={() => paginate(num)} href="#">
+              <a onClick={() => handlePaginate(num)} href="#">
                 {num}
               </a>
             </li>

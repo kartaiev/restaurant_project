@@ -3,6 +3,7 @@ import { AuthContext } from './AuthContext';
 import useDidUpdate from '../hooks/useDidUpdate';
 import moment from 'moment';
 import fb, { auth } from '../config/fbConfig';
+import { HiddenButton } from '../pages/Reserve/components/elements/HiddenButton';
 
 export const ReserveContext = createContext(undefined, undefined);
 
@@ -74,29 +75,23 @@ export const ReserveProvider = ({ children }) => {
 
   //* Table availability //
   const [tablesNotAvailable, setTablesNotAvailable] = useState([]);
-  const checkingAvailability = async () => {
-    setTablesNotAvailable([])
+  const handleCheckingAvailability = () => {
+    setTablesNotAvailable([]);
     try {
-      fb
-        .collectionGroup('orders')
+      fb.collectionGroup('orders')
         .where('dateTime', '>', dateSelected - 3600000)
         .where('dateTime', '<', dateSelected + 3600000)
-        .onSnapshot(snapshot => snapshot.forEach(doc => setTablesNotAvailable(prevState => [...prevState, doc.data().table])));
+        .onSnapshot(snapshot =>
+          snapshot.forEach(doc =>
+            setTablesNotAvailable(prevState => [...prevState, doc.data().table])
+          )
+        );
 
       console.log(tablesNotAvailable);
     } catch (error) {
       console.log(error.message);
     }
   };
-
-  //* Which table to render //
-
-  const whichTable = (table, greyTable, redTable, yellowTable) =>
-    tablesNotAvailable.indexOf(table) !== -1
-      ? greyTable
-      : tableSelected[table]
-      ? redTable
-      : yellowTable;
 
   //* Table selection / deselection //
   const [tableSelected, setTableSelected] = useState({
@@ -122,6 +117,36 @@ export const ReserveProvider = ({ children }) => {
     setTableSelected({ ...tableSelected, [table]: false });
   };
 
+  //* Which table to render //
+  const whichTableToRender = (table, greyTable, redTable, yellowTable) =>
+    tablesNotAvailable.indexOf(table) !== -1
+      ? greyTable
+      : tableSelected[table]
+      ? redTable
+      : yellowTable;
+
+  //* Tables section creation func //
+  const tablesSectionFunc = (filter, greyTable, redTable, yellowTable) => {
+    return Object.keys(tableSelected)
+      .filter(filter)
+      .map((table, i) => (
+        <HiddenButton
+          disabled={tablesNotAvailable.indexOf(table) !== -1}
+          key={i}
+          onClick={handleTableSelected(`${table}`)}
+          state={tableSelected[table] ? 'selected' : ''}
+        >
+          <span state={tableSelected[table] ? 'selected' : ''}>
+            {table.slice(-1)}
+          </span>
+          <img
+            src={whichTableToRender(table, greyTable, redTable, yellowTable)}
+            alt="table"
+          />
+        </HiddenButton>
+      ));
+  };
+
   //* Table reserved //
   const [tableReserved, setTableReserved] = useState('');
 
@@ -132,20 +157,7 @@ export const ReserveProvider = ({ children }) => {
   }, [tableSelected]);
 
   //* Sending reservation to the back //
-  const handleSendingReserveToRestaurant = async () => {
-    try {
-      await fb.collection('reservations').add({
-        userId: currentUser.id,
-        name: currentUser.displayName,
-        dateTime: +dateSelected,
-        table: tableReserved
-      });
-    } catch (error) {
-      console.log(error.message);
-    }
-  };
-
-  const handleSendingReserveToUserAcc = async () => {
+  const handleSendingReserveToTheUserAcc = async () => {
     try {
       await fb
         .collection('users')
@@ -158,11 +170,6 @@ export const ReserveProvider = ({ children }) => {
     } catch (error) {
       console.log(error.message);
     }
-  };
-
-  const handleSendingReservation = async () => {
-    await handleSendingReserveToUserAcc();
-    await handleSendingReserveToRestaurant();
   };
 
   //* Delete reservation from the back //
@@ -182,7 +189,7 @@ export const ReserveProvider = ({ children }) => {
     };
   };
 
-  //* Getting all reservations //
+  //* Getting all reservations from the back to render in UI //
   const [reservations, setReservations] = useState([]);
   const [fetching, setFetching] = useState(false);
 
@@ -190,34 +197,42 @@ export const ReserveProvider = ({ children }) => {
     try {
       setFetching(true);
       setReservations([]);
-      fb
+      await fb
         .collection('users')
         .doc(currentUser.id)
         .collection('orders')
-        .onSnapshot(querySnapshot => querySnapshot.docChanges().forEach(change => {
-          change.type === 'added' &&
-            setReservations(state => [
-              ...state,
-              { id: change.doc.id, ...change.doc.data() }
-            ]);
-        }));
+        .onSnapshot(querySnapshot =>
+          querySnapshot.docChanges().forEach(change => {
+            change.type === 'added' &&
+              setReservations(state => [
+                ...state,
+                { id: change.doc.id, ...change.doc.data() }
+              ]);
+          })
+        );
       setFetching(false);
     } catch (error) {
       console.log(error.message);
     }
   };
-  const filterReservations = async () => {
+
+  //* Deleting reservation from UI
+  const handleFilterReservations = async () => {
     try {
-      fb
+      await fb
         .collection('users')
         .doc(currentUser.id)
         .collection('orders')
-        .onSnapshot(querySnapshot => querySnapshot.docChanges().forEach(change => {
-          if (change.type === 'removed') {
-            const reservs = reservations.filter(reserv => reserv.id !== change.doc.id);
-            setReservations([...reservs]);
-          }
-        }));
+        .onSnapshot(querySnapshot =>
+          querySnapshot.docChanges().forEach(change => {
+            if (change.type === 'removed') {
+              const reservs = reservations.filter(
+                reserv => reserv.id !== change.doc.id
+              );
+              setReservations([...reservs]);
+            }
+          })
+        );
     } catch (error) {
       console.log(error.message);
     }
@@ -237,18 +252,19 @@ export const ReserveProvider = ({ children }) => {
     indexOfLastReservation
   );
 
-  const paginate = num => setCurrPage(num);
+  const handlePaginate = num => setCurrPage(num);
 
-  //*==========================//
+  //*===========================//
 
   return (
     <ReserveContext.Provider
       value={{
         handleSignOut,
+        tablesSectionFunc,
         dateSelected,
         setDateSelected,
-        checkingAvailability,
-        handleSendingReservation,
+        handleCheckingAvailability,
+        handleSendingReserveToTheUserAcc,
         handleDateAndTimeDeselected,
         dateIsCorrect,
         label,
@@ -260,16 +276,16 @@ export const ReserveProvider = ({ children }) => {
         handleTableDeselected,
         setMessage,
         tablesNotAvailable,
-        whichTable,
+        whichTableToRender,
         handleGettingAllReservations,
         reservations,
         setReservations,
         fetching,
         currReservations,
         reservationsPerPage,
-        paginate,
+        handlePaginate,
         handleDeleteReserveFromUser,
-        filterReservations
+        handleFilterReservations
       }}
     >
       {children}

@@ -16,12 +16,6 @@ const SignIn = ({ history }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  // useEffect(() => {
-  //   setEmail('');
-  //   setPassword('');
-  //   console.log(email);
-  // }, [email, password]);
-
   //* Login to firebase with email and password //
   const handleLogin = async e => {
     e.preventDefault();

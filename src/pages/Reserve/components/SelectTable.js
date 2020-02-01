@@ -7,18 +7,18 @@ import {
   TablesBtnsWrap
 } from './elements/ReserveContainers';
 
-import AllTables from './elements/Tables/AllTables';
+import AllTables from './elements/AllTables';
 
 const SelectTable = () => {
   const {
-    handleSendingReservation,
-    checkingAvailability,
+    handleSendingReserveToTheUserAcc,
+    handleCheckingAvailability,
     tableSelected,
     dateSelected
   } = useContext(ReserveContext);
 
   useEffect(() => {
-    checkingAvailability();
+    handleCheckingAvailability();
   }, [dateSelected]);
 
   return (
@@ -34,7 +34,7 @@ const SelectTable = () => {
         <Link to="/reserve/thanks">
           <ReservedButton
             disabled={!Object.values(tableSelected).find(val => val === true)}
-            onClick={handleSendingReservation}
+            onClick={handleSendingReserveToTheUserAcc}
           >
             <span>Select</span>
           </ReservedButton>

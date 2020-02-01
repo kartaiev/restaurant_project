@@ -62,6 +62,7 @@ export const DateTimeContainer = styled.div`
   a {
     color: ${rgba('#cccccc', 0.6)};
     margin-top: 5vh;
+    ${easeOut};
 
     &:hover {
       cursor: pointer;
@@ -186,6 +187,8 @@ export const ReservationWrap = styled.div`
 export const ReservationContent = styled.div`
   height: 100%;
   ${aroundStart({ fd: 'column' })};
+  color: ${({ time }) =>
+    time === 'past' ? `${rgba('#cccccc', 0.6)}` : `${yellow}`};
 `;
 
 export const ReservationsBtnWrap = styled.div`

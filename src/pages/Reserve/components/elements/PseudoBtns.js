@@ -4,12 +4,13 @@ import {
   centerCenter,
   easeOut,
   grey,
-  red
+  red,
+  yellow
 } from '../../../../utilities';
 
 export const DelBtn = styled.div`
-  height: 10vh;
   width: 25px;
+  height: 10vh;
   ${centerCenter};
   cursor: pointer;
   ${absolute({ x: '3%', y: '1,5rem', xProp: 'right' })};
@@ -25,6 +26,7 @@ export const DelBtn = styled.div`
     position: absolute;
     left: 0;
     ${easeOut};
+    display: ${({ time }) => time === 'past' && 'none'};
 
     &:nth-child(1) {
       transform: rotate(45deg);
@@ -37,7 +39,19 @@ export const DelBtn = styled.div`
 `;
 
 export const EditBtn = styled.div`
+  display: ${({ time }) => time === 'past' && 'none'};
   height: 10vh;
   width: 25px;
   ${centerCenter};
+  cursor: pointer;
+
+  svg {
+    width: 25px;
+    height: 25px;
+    display: ${({ time }) => time === 'past' && 'none'};
+
+    &:hover {
+      fill: ${yellow};
+    }
+  }
 `;

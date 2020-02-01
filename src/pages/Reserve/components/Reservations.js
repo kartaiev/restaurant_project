@@ -20,18 +20,17 @@ const Reservations = () => {
     handleGettingAllReservations,
     fetching,
     currReservations,
-    setReservations,
     handleDeleteReserveFromUser,
-    filterReservations
+    handleFilterReservations
   } = useContext(ReserveContext);
 
   useEffect(() => {
     handleGettingAllReservations();
-  }, [setReservations]);
+  }, []);
 
   useEffect(() => {
-    filterReservations();
-  }, [filterReservations]);
+    handleFilterReservations();
+  }, [handleFilterReservations]);
 
   return (
     <MainReservationsContainer>
@@ -42,23 +41,25 @@ const Reservations = () => {
         ) : (
           currReservations.map((doc, id) => (
             <ReservationWrap key={id}>
-              <ReservationContent>
+              <ReservationContent time={doc.dateTime <= +new Date() && 'past'}>
                 <p>{moment(doc.dateTime).format('LLL')}</p>
                 <p>table {doc.table.slice(-1)}</p>
               </ReservationContent>
-              <ReservationsBtnWrap>
-                <HiddenButton>
-                  <EditBtn>
-                    <FiEdit />
-                  </EditBtn>
-                </HiddenButton>
-                <HiddenButton onClick={handleDeleteReserveFromUser(doc.id)}>
-                  <DelBtn>
-                    <span />
-                    <span />
-                  </DelBtn>
-                </HiddenButton>
-              </ReservationsBtnWrap>
+              {doc.dateTime > +new Date() && (
+                <ReservationsBtnWrap>
+                  <HiddenButton>
+                    <EditBtn>
+                      <FiEdit />
+                    </EditBtn>
+                  </HiddenButton>
+                  <HiddenButton onClick={handleDeleteReserveFromUser(doc.id)}>
+                    <DelBtn>
+                      <span />
+                      <span />
+                    </DelBtn>
+                  </HiddenButton>
+                </ReservationsBtnWrap>
+              )}
             </ReservationWrap>
           ))
         )}

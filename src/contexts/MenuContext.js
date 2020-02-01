@@ -2,7 +2,7 @@ import React, { createContext, useState } from 'react';
 import menuData from '../data/menuData';
 import { Subtitle } from '../elements';
 
-export const MenuContext = createContext();
+export const MenuContext = createContext(undefined, undefined);
 
 export const MenuProvider = ({ children }) => {
   //* Search input state //
@@ -11,15 +11,15 @@ export const MenuProvider = ({ children }) => {
   //* Getting search input func //
   const handleSearch = e => setSearch(e.target.value);
 
-  //* Filtered Menu according to search input //
-  const menuSearchResult = menuData.filter(item =>
-    item.dish.toLowerCase().includes(search.toLowerCase())
-  );
-
   //* Clear search func //
   const clearSearch = () => {
     setSearch('');
   };
+
+  //* Filtered Menu according to search input //
+  const menuSearchResult = menuData.filter(item =>
+    item.dish.toLowerCase().includes(search.toLowerCase())
+  );
 
   //* List of Menu items according to type func //
   const menuListFunc = type => {
