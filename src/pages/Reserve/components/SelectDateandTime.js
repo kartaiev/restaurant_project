@@ -3,10 +3,7 @@ import { Link } from 'react-router-dom';
 import DateAndTime from './elements/DateAndTime';
 import { Button, ReservedButton } from '../../../elements';
 import { ReserveContext } from '../../../contexts/ReserveContext';
-import {
-  DateTimeBtnsWrap,
-  MainDateTimeContainer
-} from './elements/ReserveContainers';
+import { DateTimeBtnsWrap } from './elements/ReserveContainers';
 
 const SelectDateandTime = () => {
   const { dateIsCorrect, setMessage, handleSignOut } = useContext(
@@ -18,7 +15,7 @@ const SelectDateandTime = () => {
   }, []);
 
   return (
-    <MainDateTimeContainer>
+    <>
       <DateAndTime />
 
       <DateTimeBtnsWrap>
@@ -32,7 +29,7 @@ const SelectDateandTime = () => {
           </ReservedButton>
         </Link>
       </DateTimeBtnsWrap>
-    </MainDateTimeContainer>
+    </>
   );
 };
 

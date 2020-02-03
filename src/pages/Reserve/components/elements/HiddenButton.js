@@ -1,12 +1,5 @@
 import styled from 'styled-components';
-import {
-  background,
-  centerCenter,
-  easeOut,
-  elementToCenter,
-  red,
-  yellow
-} from '../../../../utilities';
+import { background, centerCenter, easeOut, elementToCenter, red, yellow } from '../../../../utilities';
 
 export const HiddenButton = styled.button`
   background-color: ${background};
@@ -15,18 +8,18 @@ export const HiddenButton = styled.button`
   border: none;
   cursor: pointer;
 
+  &:hover > span {
+    ${easeOut};
+    color: ${({ state }) =>
+      state === 'selected' ? `${background}` : `${red}`};
+  }
+
   span {
     position: absolute;
     ${elementToCenter};
     font-size: 1.5rem;
     color: ${({ state }) =>
       state === 'selected' ? `${yellow}` : `${background}`};
-
-    &:hover {
-      ${easeOut};
-      color: ${({ state }) =>
-        state === 'selected' ? `${background}` : `${red}`};
-    }
   }
 
   &:disabled {

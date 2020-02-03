@@ -173,7 +173,6 @@ export const ReserveProvider = ({ children }) => {
   };
 
   //* Delete reservation from the back //
-
   const handleDeleteReserveFromUser = id => {
     return async () => {
       try {
@@ -238,7 +237,7 @@ export const ReserveProvider = ({ children }) => {
     }
   };
 
-  //* For pagination //
+  //* Pagination //
   const [currPage, setCurrPage] = useState(1);
   const [reservationsPerPage] = useState(5);
 
@@ -254,7 +253,7 @@ export const ReserveProvider = ({ children }) => {
 
   const handlePaginate = num => setCurrPage(num);
 
-  //*===========================//
+  //?=============================================?//
 
   return (
     <ReserveContext.Provider

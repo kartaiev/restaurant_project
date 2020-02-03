@@ -4,4 +4,5 @@ export const grey = '#cccccc';
 export const background = 'rgb(14, 18, 21)';
 export const overlay = 'rgba(14, 18, 21, .75)';
 export const overlayLight = 'rgba(14, 18, 21, .4)';
+export const overlayDark = 'rgba(14, 18, 21, .9)';
 export const login = 'rgb(22,30,33)';

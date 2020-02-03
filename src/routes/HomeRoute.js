@@ -11,7 +11,7 @@ export default () => (
       <>
         <NavBar on={on} toggle={toggle} />
         <Header on={on} toggle={toggle} />
-        <Route path="/" exact render={() => <Home on={on} />} />
+        <Route path="/" exact render={() => <Home on={on} toggle={toggle} />} />
       </>
     )}
   </Toggle>

@@ -24,7 +24,7 @@ export const MainReserveContainer = styled.div`
   `}
 `;
 
-export const MainTablesContainer = styled.div`
+export const ReserveContainer = styled.div`
   width: 85%;
   height: 80%;
   ${betweenCenter({ fd: 'column' })};
@@ -43,10 +43,6 @@ export const MainTablesContainer = styled.div`
     padding-bottom: 1vh;
   }
 `;
-
-export const MainDateTimeContainer = styled(MainTablesContainer)``;
-
-export const MainReservationsContainer = styled(MainTablesContainer)``;
 
 export const DateTimeContainer = styled.div`
   ${centerCenter({ fd: 'column' })};
@@ -132,8 +128,6 @@ export const TablesBtnsWrap = styled.div`
 
 export const DateTimeBtnsWrap = styled(TablesBtnsWrap)``;
 
-export const MainThanksContainer = styled(MainTablesContainer)``;
-
 export const ThanksBtnsWrap = styled(TablesBtnsWrap)`
   a {
     width: 100%;
@@ -189,9 +183,4 @@ export const ReservationContent = styled.div`
   ${aroundStart({ fd: 'column' })};
   color: ${({ time }) =>
     time === 'past' ? `${rgba('#cccccc', 0.6)}` : `${yellow}`};
-`;
-
-export const ReservationsBtnWrap = styled.div`
-  ${betweenCenter};
-  width: 20%;
 `;

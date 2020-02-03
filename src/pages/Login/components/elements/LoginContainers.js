@@ -1,5 +1,13 @@
 import styled, { css } from 'styled-components';
-import { above, betweenCenter, betweenStart, centerCenter, fullScreen, grey, startCenter } from '../../../../utilities';
+import {
+  above,
+  betweenCenter,
+  betweenStart,
+  centerCenter,
+  fullScreen,
+  grey,
+  startCenter
+} from '../../../../utilities';
 import { Button } from '../../../../elements';
 import { applyStyleModifiers } from 'styled-components-modifiers';
 

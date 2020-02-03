@@ -2,10 +2,7 @@ import React, { useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Button, ReservedButton, Subtitle } from '../../../elements';
 import { ReserveContext } from '../../../contexts/ReserveContext';
-import {
-  MainTablesContainer,
-  TablesBtnsWrap
-} from './elements/ReserveContainers';
+import { TablesBtnsWrap } from './elements/ReserveContainers';
 
 import AllTables from './elements/AllTables';
 
@@ -22,7 +19,7 @@ const SelectTable = () => {
   }, [dateSelected]);
 
   return (
-    <MainTablesContainer>
+    <>
       <Subtitle>Select a table</Subtitle>
       <AllTables />
       <TablesBtnsWrap>
@@ -40,7 +37,7 @@ const SelectTable = () => {
           </ReservedButton>
         </Link>
       </TablesBtnsWrap>
-    </MainTablesContainer>
+    </>
   );
 };
 

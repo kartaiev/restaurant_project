@@ -4,8 +4,7 @@ import {
   centerCenter,
   easeOut,
   grey,
-  red,
-  yellow
+  red
 } from '../../../../utilities';
 
 export const DelBtn = styled.div`
@@ -34,24 +33,6 @@ export const DelBtn = styled.div`
 
     &:nth-child(2) {
       transform: rotate(-45deg);
-    }
-  }
-`;
-
-export const EditBtn = styled.div`
-  display: ${({ time }) => time === 'past' && 'none'};
-  height: 10vh;
-  width: 25px;
-  ${centerCenter};
-  cursor: pointer;
-
-  svg {
-    width: 25px;
-    height: 25px;
-    display: ${({ time }) => time === 'past' && 'none'};
-
-    &:hover {
-      fill: ${yellow};
     }
   }
 `;
