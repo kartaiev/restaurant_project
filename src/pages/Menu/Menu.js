@@ -5,7 +5,7 @@ import { Toggle } from '../../utilities';
 import { MenuContent, pageImageElement, Section, Title } from '../../elements';
 import Search from './elements/Search';
 import steakVid from '../../assets/video/steakVid.mp4';
-import { pageVideoElement } from '../../elements/Video';
+import { pageVideoElement } from '../../elements';
 import { useWindowWidth } from '../../hooks/useWindowWidth';
 import MenuContext from '../../contexts/MenuContext';
 
